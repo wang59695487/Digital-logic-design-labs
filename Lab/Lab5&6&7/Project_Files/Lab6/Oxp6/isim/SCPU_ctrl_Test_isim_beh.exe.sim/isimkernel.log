@@ -1,0 +1,5 @@
+Command line:
+   SCPU_ctrl_Test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57704

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/test_2/computer_/3/v1.5/VGA.v -lang verilog -prj Exp07-MUX -o VGA.spl -module VGA -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w VGA.spl E:/test_2/computer_/3/v1.5/VGA.sym 

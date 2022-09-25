@@ -1,0 +1,1548 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc7k160t-1-ffg676
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+WARNING:Xst:2838 - Path definition '$XILINX/vhdl/xst/nt64/unimacro' in file C:/Xilinx/14.7/ISE_DS/ISE/vhdl/xst/nt64/hdc.ini is invalid and being ignored.  Check the path and ensure that any environment variable specification is legal.
+WARNING:Xst:2838 - Path definition '$XILINX/vhdl/xst/nt64/xilinxcorelib' in file C:/Xilinx/14.7/ISE_DS/ISE/vhdl/xst/nt64/hdc.ini is invalid and being ignored.  Check the path and ensure that any environment variable specification is legal.
+Analyzing Verilog file "D:\ALU\AddSub1b.vf" into library work
+Parsing module <Adder1b_MUSER_AddSub1b>.
+Parsing module <AddSub1b>.
+Analyzing Verilog file "D:\ALU\AND31.v" into library work
+Parsing module <AND32>.
+Analyzing Verilog file "D:\ALU\AddSub4b_zzh.vf" into library work
+Parsing module <AddSub4b_zzh>.
+Analyzing Verilog file "D:\ALU\solve_mod.v" into library work
+Parsing module <solve_mod>.
+Analyzing Verilog file "D:\ALU\pbdebounce.v" into library work
+Parsing module <pbdebounce>.
+Analyzing Verilog file "D:\ALU\AddSub16b_zzh.vf" into library work
+Parsing module <AddSub4b_zzh_MUSER_AddSub16b_zzh>.
+Parsing module <AddSub16b_zzh>.
+Analyzing Verilog file "D:\ALU\SSeg7_Dev_IO.v" into library work
+Parsing module <SSeg7_Dev>.
+Analyzing Verilog file "D:\ALU\select.v" into library work
+Parsing module <select>.
+Analyzing Verilog file "D:\ALU\s2.v" into library work
+Parsing module <s2>.
+Analyzing Verilog file "D:\ALU\multiplier.v" into library work
+Parsing module <multiplier>.
+Analyzing Verilog file "D:\ALU\int_mul.v" into library work
+Parsing module <int_mul>.
+Analyzing Verilog file "D:\ALU\int_LR.v" into library work
+Parsing module <int_LR>.
+Analyzing Verilog file "D:\ALU\int_div.v" into library work
+Parsing module <int_div>.
+Analyzing Verilog file "D:\ALU\divider.v" into library work
+Parsing module <divider>.
+Analyzing Verilog file "D:\ALU\CreateNum.v" into library work
+Parsing module <CreateNum>.
+Analyzing Verilog file "D:\ALU\clkdiv.v" into library work
+Parsing module <clkdiv>.
+Analyzing Verilog file "D:\ALU\AddSub64b_zzh.vf" into library work
+Parsing module <AddSub4b_zzh_MUSER_AddSub64b_zzh>.
+Parsing module <AddSub16b_zzh_MUSER_AddSub64b_zzh>.
+Parsing module <AddSub64b_zzh>.
+Analyzing Verilog file "D:\ALU\adder.v" into library work
+Parsing module <adder>.
+Analyzing Verilog file "D:\ALU\top.v" into library work
+Parsing module <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "D:\ALU\top.v" Line 72: Port Co is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\ALU\top.v" Line 80: Port Co is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\ALU\top.v" Line 95: Port dlas is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\ALU\top.v" Line 113: Port i_ack is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\ALU\top.v" Line 123: Port i_ack is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\ALU\top.v" Line 134: Port i_ack is not connected to this instance
+
+Elaborating module <top>.
+WARNING:HDLCompiler:604 - "D:\ALU\top.v" Line 58: Module instantiation should have an instance name
+
+Elaborating module <CreateNum>.
+
+Elaborating module <pbdebounce>.
+
+Elaborating module <BUF>.
+
+Elaborating module <clkdiv>.
+
+Elaborating module <AddSub64b_zzh>.
+
+Elaborating module <AddSub16b_zzh_MUSER_AddSub64b_zzh>.
+
+Elaborating module <AddSub4b_zzh_MUSER_AddSub64b_zzh>.
+
+Elaborating module <AddSub1b>.
+
+Elaborating module <Adder1b_MUSER_AddSub1b>.
+
+Elaborating module <XOR2>.
+
+Elaborating module <AND2>.
+
+Elaborating module <OR3>.
+
+Elaborating module <int_mul>.
+
+Elaborating module <int_div>.
+
+Elaborating module <solve_mod>.
+
+Elaborating module <AND32>.
+WARNING:HDLCompiler:189 - "D:\ALU\top.v" Line 100: Size mismatch in connection of port <shang>. Formal port size is 32-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "D:\ALU\top.v" Line 101: Size mismatch in connection of port <yu>. Formal port size is 32-bit while actual signal size is 64-bit.
+
+Elaborating module <int_LR>.
+
+Elaborating module <adder>.
+WARNING:HDLCompiler:413 - "D:\ALU\adder.v" Line 77: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\adder.v" Line 78: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\adder.v" Line 124: Result of 24-bit expression is truncated to fit in 23-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\adder.v" Line 131: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\adder.v" Line 132: Result of 24-bit expression is truncated to fit in 23-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\adder.v" Line 139: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\adder.v" Line 140: Result of 24-bit expression is truncated to fit in 23-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\adder.v" Line 168: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\adder.v" Line 174: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\adder.v" Line 215: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\adder.v" Line 230: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\adder.v" Line 245: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\adder.v" Line 260: Result of 25-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\adder.v" Line 263: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\adder.v" Line 272: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:189 - "D:\ALU\top.v" Line 114: Size mismatch in connection of port <clk>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:\ALU\top.v" Line 118: Size mismatch in connection of port <i_stb_a>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:\ALU\top.v" Line 119: Size mismatch in connection of port <i_stb_b>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:\ALU\top.v" Line 120: Size mismatch in connection of port <o_z_ack>. Formal port size is 1-bit while actual signal size is 32-bit.
+
+Elaborating module <divider>.
+WARNING:HDLCompiler:413 - "D:\ALU\divider.v" Line 81: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\divider.v" Line 82: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\divider.v" Line 185: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\divider.v" Line 197: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\divider.v" Line 234: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\divider.v" Line 252: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\divider.v" Line 267: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\divider.v" Line 282: Result of 25-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\divider.v" Line 285: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\divider.v" Line 294: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:189 - "D:\ALU\top.v" Line 124: Size mismatch in connection of port <clk>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:\ALU\top.v" Line 128: Size mismatch in connection of port <i_stb_a>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:\ALU\top.v" Line 129: Size mismatch in connection of port <i_stb_b>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:\ALU\top.v" Line 130: Size mismatch in connection of port <o_z_ack>. Formal port size is 1-bit while actual signal size is 32-bit.
+
+Elaborating module <multiplier>.
+WARNING:HDLCompiler:413 - "D:\ALU\multiplier.v" Line 78: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\multiplier.v" Line 79: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\multiplier.v" Line 165: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\multiplier.v" Line 177: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\multiplier.v" Line 184: Result of 12-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\multiplier.v" Line 202: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\multiplier.v" Line 217: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\multiplier.v" Line 232: Result of 25-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\multiplier.v" Line 235: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\ALU\multiplier.v" Line 244: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:189 - "D:\ALU\top.v" Line 135: Size mismatch in connection of port <clk>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:\ALU\top.v" Line 139: Size mismatch in connection of port <i_stb_a>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:\ALU\top.v" Line 140: Size mismatch in connection of port <i_stb_b>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:\ALU\top.v" Line 141: Size mismatch in connection of port <o_z_ack>. Formal port size is 1-bit while actual signal size is 32-bit.
+
+Elaborating module <select>.
+WARNING:HDLCompiler:91 - "D:\ALU\select.v" Line 49: Signal <ty> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "D:\ALU\select.v" Line 49: Result of 5-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:91 - "D:\ALU\select.v" Line 54: Signal <CASE> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\ALU\select.v" Line 56: Signal <AaddB> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\ALU\select.v" Line 59: Signal <AsubB> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\ALU\select.v" Line 62: Signal <AmulB> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\ALU\select.v" Line 65: Signal <AdivB> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\ALU\select.v" Line 68: Signal <AmodB> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\ALU\select.v" Line 71: Signal <fAaddB> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\ALU\select.v" Line 74: Signal <fAmulB> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\ALU\select.v" Line 77: Signal <fAdivB> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:295 - "D:\ALU\select.v" Line 79: case condition never applies
+WARNING:HDLCompiler:295 - "D:\ALU\select.v" Line 82: case condition never applies
+WARNING:HDLCompiler:295 - "D:\ALU\select.v" Line 85: case condition never applies
+WARNING:HDLCompiler:295 - "D:\ALU\select.v" Line 88: case condition never applies
+WARNING:HDLCompiler:295 - "D:\ALU\select.v" Line 91: case condition never applies
+WARNING:HDLCompiler:295 - "D:\ALU\select.v" Line 94: case condition never applies
+WARNING:HDLCompiler:295 - "D:\ALU\select.v" Line 97: case condition never applies
+WARNING:HDLCompiler:295 - "D:\ALU\select.v" Line 100: case condition never applies
+WARNING:HDLCompiler:295 - "D:\ALU\select.v" Line 103: case condition never applies
+WARNING:HDLCompiler:295 - "D:\ALU\select.v" Line 106: case condition never applies
+
+Elaborating module <s2>.
+WARNING:HDLCompiler:91 - "D:\ALU\s2.v" Line 35: Signal <ty> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\ALU\s2.v" Line 40: Signal <CASE> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\ALU\s2.v" Line 42: Signal <A> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\ALU\s2.v" Line 45: Signal <B> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\ALU\s2.v" Line 48: Signal <ANS> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\ALU\s2.v" Line 51: Signal <ANS> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:604 - "D:\ALU\top.v" Line 179: Module instantiation should have an instance name
+
+Elaborating module <SSeg7_Dev>.
+WARNING:HDLCompiler:1499 - "D:\ALU\SSeg7_Dev_IO.v" Line 21: Empty module <SSeg7_Dev> remains a black box.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "D:\ALU\top.v".
+WARNING:Xst:647 - Input <sw<9:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\ALU\top.v" line 72: Output port <Co> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ALU\top.v" line 80: Output port <Co> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ALU\top.v" line 95: Output port <dlas> of the instance <XLXI_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ALU\top.v" line 95: Output port <dans> of the instance <XLXI_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ALU\top.v" line 95: Output port <sub> of the instance <XLXI_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ALU\top.v" line 113: Output port <i_ack> of the instance <fpuadd> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ALU\top.v" line 113: Output port <o_z_stb> of the instance <fpuadd> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ALU\top.v" line 123: Output port <i_ack> of the instance <fpudiv> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ALU\top.v" line 123: Output port <o_z_stb> of the instance <fpudiv> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ALU\top.v" line 134: Output port <i_ack> of the instance <fpumul> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ALU\top.v" line 134: Output port <o_z_stb> of the instance <fpumul> is unconnected or connected to loadless signal.
+    Summary:
+Unit <top> synthesized.
+
+Synthesizing Unit <CreateNum>.
+    Related source file is "D:\ALU\CreateNum.v".
+    Found 1-bit register for signal <A<30>>.
+    Found 1-bit register for signal <A<29>>.
+    Found 1-bit register for signal <A<28>>.
+    Found 1-bit register for signal <A<27>>.
+    Found 1-bit register for signal <A<26>>.
+    Found 1-bit register for signal <A<25>>.
+    Found 1-bit register for signal <A<24>>.
+    Found 1-bit register for signal <A<23>>.
+    Found 1-bit register for signal <A<22>>.
+    Found 1-bit register for signal <A<21>>.
+    Found 1-bit register for signal <A<20>>.
+    Found 1-bit register for signal <A<19>>.
+    Found 1-bit register for signal <A<18>>.
+    Found 1-bit register for signal <A<17>>.
+    Found 1-bit register for signal <A<16>>.
+    Found 1-bit register for signal <A<15>>.
+    Found 1-bit register for signal <A<14>>.
+    Found 1-bit register for signal <A<13>>.
+    Found 1-bit register for signal <A<12>>.
+    Found 1-bit register for signal <A<11>>.
+    Found 1-bit register for signal <A<10>>.
+    Found 1-bit register for signal <A<9>>.
+    Found 1-bit register for signal <A<8>>.
+    Found 1-bit register for signal <A<7>>.
+    Found 1-bit register for signal <A<6>>.
+    Found 1-bit register for signal <A<5>>.
+    Found 1-bit register for signal <A<4>>.
+    Found 1-bit register for signal <A<3>>.
+    Found 1-bit register for signal <A<2>>.
+    Found 1-bit register for signal <A<1>>.
+    Found 1-bit register for signal <A<0>>.
+    Found 1-bit register for signal <B<31>>.
+    Found 1-bit register for signal <B<30>>.
+    Found 1-bit register for signal <B<29>>.
+    Found 1-bit register for signal <B<28>>.
+    Found 1-bit register for signal <B<27>>.
+    Found 1-bit register for signal <B<26>>.
+    Found 1-bit register for signal <B<25>>.
+    Found 1-bit register for signal <B<24>>.
+    Found 1-bit register for signal <B<23>>.
+    Found 1-bit register for signal <B<22>>.
+    Found 1-bit register for signal <B<21>>.
+    Found 1-bit register for signal <B<20>>.
+    Found 1-bit register for signal <B<19>>.
+    Found 1-bit register for signal <B<18>>.
+    Found 1-bit register for signal <B<17>>.
+    Found 1-bit register for signal <B<16>>.
+    Found 1-bit register for signal <B<15>>.
+    Found 1-bit register for signal <B<14>>.
+    Found 1-bit register for signal <B<13>>.
+    Found 1-bit register for signal <B<12>>.
+    Found 1-bit register for signal <B<11>>.
+    Found 1-bit register for signal <B<10>>.
+    Found 1-bit register for signal <B<9>>.
+    Found 1-bit register for signal <B<8>>.
+    Found 1-bit register for signal <B<7>>.
+    Found 1-bit register for signal <B<6>>.
+    Found 1-bit register for signal <B<5>>.
+    Found 1-bit register for signal <B<4>>.
+    Found 1-bit register for signal <B<3>>.
+    Found 1-bit register for signal <B<2>>.
+    Found 1-bit register for signal <B<1>>.
+    Found 1-bit register for signal <B<0>>.
+    Found 1-bit register for signal <A<31>>.
+    Found 4-bit adder for signal <A[3]_GND_2_o_add_2_OUT> created at line 42.
+    Found 4-bit adder for signal <B[3]_GND_2_o_add_4_OUT> created at line 46.
+    Found 4-bit adder for signal <A[7]_GND_2_o_add_6_OUT> created at line 52.
+    Found 4-bit adder for signal <B[7]_GND_2_o_add_8_OUT> created at line 56.
+    Found 4-bit adder for signal <A[11]_GND_2_o_add_10_OUT> created at line 62.
+    Found 4-bit adder for signal <B[11]_GND_2_o_add_12_OUT> created at line 66.
+    Found 4-bit adder for signal <A[15]_GND_2_o_add_14_OUT> created at line 72.
+    Found 4-bit adder for signal <B[15]_GND_2_o_add_16_OUT> created at line 76.
+    Found 4-bit adder for signal <A[19]_GND_2_o_add_18_OUT> created at line 82.
+    Found 4-bit adder for signal <B[19]_GND_2_o_add_20_OUT> created at line 86.
+    Found 4-bit adder for signal <A[23]_GND_2_o_add_22_OUT> created at line 92.
+    Found 4-bit adder for signal <B[23]_GND_2_o_add_24_OUT> created at line 96.
+    Found 4-bit adder for signal <A[27]_GND_2_o_add_26_OUT> created at line 102.
+    Found 4-bit adder for signal <B[27]_GND_2_o_add_28_OUT> created at line 106.
+    Found 4-bit adder for signal <A[31]_GND_2_o_add_30_OUT> created at line 112.
+    Found 4-bit adder for signal <B[31]_GND_2_o_add_32_OUT> created at line 116.
+    Summary:
+	inferred  16 Adder/Subtractor(s).
+	inferred  64 D-type flip-flop(s).
+Unit <CreateNum> synthesized.
+
+Synthesizing Unit <pbdebounce>.
+    Related source file is "D:\ALU\pbdebounce.v".
+    Found 1-bit register for signal <pbreg>.
+    Found 7-bit register for signal <pbshift<6:0>>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <pbdebounce> synthesized.
+
+Synthesizing Unit <clkdiv>.
+    Related source file is "D:\ALU\clkdiv.v".
+    Found 32-bit register for signal <clkdiv>.
+    Found 32-bit adder for signal <clkdiv[31]_GND_5_o_add_0_OUT> created at line 27.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <clkdiv> synthesized.
+
+Synthesizing Unit <AddSub64b_zzh>.
+    Related source file is "D:\ALU\AddSub64b_zzh.vf".
+    Summary:
+	no macro.
+Unit <AddSub64b_zzh> synthesized.
+
+Synthesizing Unit <AddSub16b_zzh_MUSER_AddSub64b_zzh>.
+    Related source file is "D:\ALU\AddSub64b_zzh.vf".
+    Summary:
+	no macro.
+Unit <AddSub16b_zzh_MUSER_AddSub64b_zzh> synthesized.
+
+Synthesizing Unit <AddSub4b_zzh_MUSER_AddSub64b_zzh>.
+    Related source file is "D:\ALU\AddSub64b_zzh.vf".
+    Summary:
+	no macro.
+Unit <AddSub4b_zzh_MUSER_AddSub64b_zzh> synthesized.
+
+Synthesizing Unit <AddSub1b>.
+    Related source file is "D:\ALU\AddSub1b.vf".
+    Summary:
+	no macro.
+Unit <AddSub1b> synthesized.
+
+Synthesizing Unit <Adder1b_MUSER_AddSub1b>.
+    Related source file is "D:\ALU\AddSub1b.vf".
+    Summary:
+	no macro.
+Unit <Adder1b_MUSER_AddSub1b> synthesized.
+
+Synthesizing Unit <int_mul>.
+    Related source file is "D:\ALU\int_mul.v".
+WARNING:Xst:647 - Input <clk_div<15:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk_div<31:22>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 65-bit register for signal <las>.
+    Found 65-bit register for signal <ans>.
+    Found 65-bit adder for signal <sum> created at line 35.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 130 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <int_mul> synthesized.
+
+Synthesizing Unit <int_div>.
+    Related source file is "D:\ALU\int_div.v".
+WARNING:Xst:647 - Input <clk_div<15:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk_div<31:22>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 64-bit register for signal <las>.
+    Found 64-bit register for signal <ans>.
+    Found 64-bit adder for signal <add> created at line 36.
+    Found 32-bit adder for signal <B[31]_GND_15_o_add_2_OUT> created at line 37.
+    Found 64-bit adder for signal <sub> created at line 37.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 128 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <int_div> synthesized.
+
+Synthesizing Unit <solve_mod>.
+    Related source file is "D:\ALU\solve_mod.v".
+    Found 32-bit adder for signal <C> created at line 29.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <solve_mod> synthesized.
+
+Synthesizing Unit <AND32>.
+    Related source file is "D:\ALU\AND31.v".
+    Summary:
+	no macro.
+Unit <AND32> synthesized.
+
+Synthesizing Unit <int_LR>.
+    Related source file is "D:\ALU\int_LR.v".
+    Found 32-bit shifter logical left for signal <AlB1> created at line 25
+    Found 32-bit shifter logical right for signal <ArB1> created at line 26
+    Found 32-bit shifter logical left for signal <Al2> created at line 42
+    Found 32-bit shifter logical right for signal <Ar2> created at line 43
+    Found 64-bit shifter logical left for signal <Al3> created at line 51
+    Found 64-bit shifter logical right for signal <Ar3> created at line 52
+    Summary:
+	inferred   6 Multiplexer(s).
+	inferred   6 Combinational logic shifter(s).
+Unit <int_LR> synthesized.
+
+Synthesizing Unit <adder>.
+    Related source file is "D:\ALU\adder.v".
+        get_a = 4'b0000
+        get_b = 4'b0001
+        unpack = 4'b0010
+        special = 4'b0011
+        align = 4'b0100
+        add_0 = 4'b0101
+        add_1 = 4'b0110
+        normalize_1 = 4'b0111
+        normalize_2 = 4'b1000
+        round = 4'b1001
+        pack = 4'b1010
+        set_z = 4'b1011
+    Found 32-bit register for signal <t_o_z>.
+    Found 4-bit register for signal <state>.
+    Found 32-bit register for signal <z>.
+    Found 24-bit register for signal <z_m>.
+    Found 10-bit register for signal <z_e>.
+    Found 1-bit register for signal <guard>.
+    Found 1-bit register for signal <round_bit>.
+    Found 1-bit register for signal <sticky>.
+    Found 28-bit register for signal <sum>.
+    Found 1-bit register for signal <z_s>.
+    Found 10-bit register for signal <b_e>.
+    Found 27-bit register for signal <b_m>.
+    Found 10-bit register for signal <a_e>.
+    Found 27-bit register for signal <a_m>.
+    Found 1-bit register for signal <a_s>.
+    Found 1-bit register for signal <b_s>.
+    Found 1-bit register for signal <t_i_ack>.
+    Found 32-bit register for signal <b>.
+    Found 32-bit register for signal <a>.
+    Found 1-bit register for signal <t_o_z_stb>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 27                                             |
+    | Inputs             | 13                                             |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit subtractor for signal <GND_87_o_GND_87_o_sub_7_OUT> created at line 77.
+    Found 9-bit subtractor for signal <GND_87_o_GND_87_o_sub_8_OUT> created at line 78.
+    Found 28-bit subtractor for signal <GND_87_o_GND_87_o_sub_71_OUT> created at line 196.
+    Found 28-bit subtractor for signal <GND_87_o_GND_87_o_sub_72_OUT> created at line 200.
+    Found 8-bit adder for signal <b_e[7]_GND_87_o_add_23_OUT> created at line 131.
+    Found 8-bit adder for signal <a_e[7]_GND_87_o_add_26_OUT> created at line 139.
+    Found 10-bit adder for signal <b_e[9]_GND_87_o_add_56_OUT> created at line 168.
+    Found 10-bit adder for signal <a_e[9]_GND_87_o_add_58_OUT> created at line 174.
+    Found 28-bit adder for signal <n0313> created at line 189.
+    Found 24-bit adder for signal <z_m[23]_GND_87_o_add_87_OUT> created at line 260.
+    Found 10-bit adder for signal <z_e[9]_GND_87_o_add_89_OUT> created at line 263.
+    Found 8-bit adder for signal <z_e[7]_GND_87_o_add_93_OUT> created at line 272.
+    Found 10-bit subtractor for signal <GND_87_o_GND_87_o_sub_79_OUT<9:0>> created at line 230.
+    Found 1-bit comparator equal for signal <n0021> created at line 102
+    Found 10-bit comparator greater for signal <a_e[9]_b_e[9]_LessThan_56_o> created at line 166
+    Found 10-bit comparator greater for signal <b_e[9]_a_e[9]_LessThan_58_o> created at line 172
+    Found 27-bit comparator lessequal for signal <n0093> created at line 194
+    Found 32-bit comparator greater for signal <z_e[9]_PWR_19_o_LessThan_78_o> created at line 228
+    Found 32-bit comparator greater for signal <PWR_19_o_z_e[9]_LessThan_83_o> created at line 243
+    Found 32-bit comparator greater for signal <z_e[9]_GND_87_o_LessThan_99_o> created at line 282
+    Summary:
+	inferred  11 Adder/Subtractor(s).
+	inferred 272 D-type flip-flop(s).
+	inferred   7 Comparator(s).
+	inferred  61 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <adder> synthesized.
+
+Synthesizing Unit <divider>.
+    Related source file is "D:\ALU\divider.v".
+        get_a = 4'b0000
+        get_b = 4'b0001
+        unpack = 4'b0010
+        special = 4'b0011
+        normalize_a = 4'b0100
+        normalize_b = 4'b0101
+        div_0 = 4'b0110
+        div_1 = 4'b0111
+        div_2 = 4'b1000
+        div_3 = 4'b1001
+        normalize_1 = 4'b1010
+        normalize_2 = 4'b1011
+        round = 4'b1100
+        pack = 4'b1101
+        set_z = 4'b1110
+    Found 32-bit register for signal <t_o_z>.
+    Found 4-bit register for signal <state>.
+    Found 32-bit register for signal <z>.
+    Found 24-bit register for signal <z_m>.
+    Found 10-bit register for signal <z_e>.
+    Found 1-bit register for signal <guard>.
+    Found 1-bit register for signal <round_bit>.
+    Found 1-bit register for signal <sticky>.
+    Found 1-bit register for signal <quo<26>>.
+    Found 1-bit register for signal <quo<25>>.
+    Found 1-bit register for signal <quo<24>>.
+    Found 1-bit register for signal <quo<23>>.
+    Found 1-bit register for signal <quo<22>>.
+    Found 1-bit register for signal <quo<21>>.
+    Found 1-bit register for signal <quo<20>>.
+    Found 1-bit register for signal <quo<19>>.
+    Found 1-bit register for signal <quo<18>>.
+    Found 1-bit register for signal <quo<17>>.
+    Found 1-bit register for signal <quo<16>>.
+    Found 1-bit register for signal <quo<15>>.
+    Found 1-bit register for signal <quo<14>>.
+    Found 1-bit register for signal <quo<13>>.
+    Found 1-bit register for signal <quo<12>>.
+    Found 1-bit register for signal <quo<11>>.
+    Found 1-bit register for signal <quo<10>>.
+    Found 1-bit register for signal <quo<9>>.
+    Found 1-bit register for signal <quo<8>>.
+    Found 1-bit register for signal <quo<7>>.
+    Found 1-bit register for signal <quo<6>>.
+    Found 1-bit register for signal <quo<5>>.
+    Found 1-bit register for signal <quo<4>>.
+    Found 1-bit register for signal <quo<3>>.
+    Found 1-bit register for signal <quo<2>>.
+    Found 1-bit register for signal <quo<1>>.
+    Found 1-bit register for signal <quo<0>>.
+    Found 51-bit register for signal <remainder>.
+    Found 6-bit register for signal <cnt>.
+    Found 51-bit register for signal <dividend>.
+    Found 1-bit register for signal <z_s>.
+    Found 51-bit register for signal <divisor>.
+    Found 24-bit register for signal <b_m>.
+    Found 10-bit register for signal <b_e>.
+    Found 24-bit register for signal <a_m>.
+    Found 10-bit register for signal <a_e>.
+    Found 1-bit register for signal <a_s>.
+    Found 1-bit register for signal <b_s>.
+    Found 1-bit register for signal <t_i_ack>.
+    Found 32-bit register for signal <b>.
+    Found 32-bit register for signal <a>.
+    Found 1-bit register for signal <t_o_z_stb>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 15                                             |
+    | Transitions        | 31                                             |
+    | Inputs             | 14                                             |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit subtractor for signal <GND_88_o_GND_88_o_sub_7_OUT> created at line 81.
+    Found 9-bit subtractor for signal <GND_88_o_GND_88_o_sub_8_OUT> created at line 82.
+    Found 10-bit subtractor for signal <a_e[9]_b_e[9]_sub_63_OUT> created at line 204.
+    Found 51-bit subtractor for signal <remainder[50]_divisor[50]_sub_65_OUT> created at line 227.
+    Found 6-bit adder for signal <cnt[5]_GND_88_o_add_67_OUT> created at line 234.
+    Found 24-bit adder for signal <z_m[23]_GND_88_o_add_82_OUT> created at line 282.
+    Found 10-bit adder for signal <z_e[9]_GND_88_o_add_84_OUT> created at line 285.
+    Found 8-bit adder for signal <z_e[7]_GND_88_o_add_88_OUT> created at line 294.
+    Found 10-bit subtractor for signal <GND_88_o_GND_88_o_sub_55_OUT<9:0>> created at line 185.
+    Found 10-bit subtractor for signal <GND_88_o_GND_88_o_sub_59_OUT<9:0>> created at line 197.
+    Found 10-bit subtractor for signal <GND_88_o_GND_88_o_sub_74_OUT<9:0>> created at line 252.
+    Found 51-bit comparator greater for signal <n0080> created at line 224
+    Found 32-bit comparator greater for signal <z_e[9]_PWR_23_o_LessThan_73_o> created at line 250
+    Found 32-bit comparator greater for signal <PWR_23_o_z_e[9]_LessThan_78_o> created at line 265
+    Found 32-bit comparator greater for signal <z_e[9]_GND_88_o_LessThan_92_o> created at line 301
+    Summary:
+	inferred   9 Adder/Subtractor(s).
+	inferred 424 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred 112 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <divider> synthesized.
+
+Synthesizing Unit <multiplier>.
+    Related source file is "D:\ALU\multiplier.v".
+        get_a = 4'b0000
+        get_b = 4'b0001
+        unpack = 4'b0010
+        special = 4'b0011
+        normalize_a = 4'b0100
+        normalize_b = 4'b0101
+        mul_0 = 4'b0110
+        mul_1 = 4'b0111
+        normalize_1 = 4'b1000
+        normalize_2 = 4'b1001
+        round = 4'b1010
+        pack = 4'b1011
+        set_z = 4'b1100
+    Found 32-bit register for signal <t_o_z>.
+    Found 4-bit register for signal <state>.
+    Found 32-bit register for signal <z>.
+    Found 24-bit register for signal <z_m>.
+    Found 10-bit register for signal <z_e>.
+    Found 1-bit register for signal <guard>.
+    Found 1-bit register for signal <round_bit>.
+    Found 1-bit register for signal <sticky>.
+    Found 1-bit register for signal <z_s>.
+    Found 50-bit register for signal <product>.
+    Found 24-bit register for signal <b_m>.
+    Found 10-bit register for signal <b_e>.
+    Found 24-bit register for signal <a_m>.
+    Found 10-bit register for signal <a_e>.
+    Found 1-bit register for signal <a_s>.
+    Found 1-bit register for signal <b_s>.
+    Found 1-bit register for signal <t_i_ack>.
+    Found 32-bit register for signal <b>.
+    Found 32-bit register for signal <a>.
+    Found 1-bit register for signal <t_o_z_stb>.
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 13                                             |
+    | Transitions        | 23                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit subtractor for signal <GND_89_o_GND_89_o_sub_7_OUT> created at line 78.
+    Found 9-bit subtractor for signal <GND_89_o_GND_89_o_sub_8_OUT> created at line 79.
+    Found 11-bit adder for signal <n0301> created at line 184.
+    Found 11-bit adder for signal <n0235> created at line 184.
+    Found 24-bit adder for signal <z_m[23]_GND_89_o_add_66_OUT> created at line 232.
+    Found 10-bit adder for signal <z_e[9]_GND_89_o_add_68_OUT> created at line 235.
+    Found 8-bit adder for signal <z_e[7]_GND_89_o_add_72_OUT> created at line 244.
+    Found 10-bit subtractor for signal <GND_89_o_GND_89_o_sub_45_OUT<9:0>> created at line 165.
+    Found 10-bit subtractor for signal <GND_89_o_GND_89_o_sub_49_OUT<9:0>> created at line 177.
+    Found 10-bit subtractor for signal <GND_89_o_GND_89_o_sub_58_OUT<9:0>> created at line 202.
+    Found 24x24-bit multiplier for signal <a_m[23]_b_m[23]_MuLt_54_OUT> created at line 185.
+    Found 32-bit comparator greater for signal <PWR_26_o_z_e[9]_LessThan_62_o> created at line 215
+    Found 32-bit comparator greater for signal <z_e[9]_GND_89_o_LessThan_76_o> created at line 251
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred 288 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  74 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <multiplier> synthesized.
+
+Synthesizing Unit <select>.
+    Related source file is "D:\ALU\select.v".
+WARNING:Xst:647 - Input <AorB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <AxorB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <AandB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Anot> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <AlB1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ArB1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <AlB2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ArB2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <AlB3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ArB3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ty<4:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 64-bit 8-to-1 multiplexer for signal <mid> created at line 54.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <select> synthesized.
+
+Synthesizing Unit <s2>.
+    Related source file is "D:\ALU\s2.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit 4-to-1 multiplexer for signal <mid> created at line 40.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <s2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 24x24-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 51
+ 10-bit adder                                          : 3
+ 10-bit addsub                                         : 2
+ 10-bit subtractor                                     : 5
+ 11-bit adder                                          : 2
+ 24-bit adder                                          : 3
+ 28-bit addsub                                         : 1
+ 32-bit adder                                          : 3
+ 4-bit adder                                           : 16
+ 51-bit subtractor                                     : 1
+ 6-bit adder                                           : 1
+ 64-bit adder                                          : 2
+ 65-bit adder                                          : 1
+ 8-bit adder                                           : 5
+ 9-bit subtractor                                      : 6
+# Registers                                            : 85
+ 1-bit register                                        : 24
+ 10-bit register                                       : 9
+ 2-bit register                                        : 2
+ 24-bit register                                       : 8
+ 27-bit register                                       : 2
+ 28-bit register                                       : 1
+ 32-bit register                                       : 13
+ 4-bit register                                        : 16
+ 50-bit register                                       : 1
+ 51-bit register                                       : 3
+ 6-bit register                                        : 1
+ 64-bit register                                       : 2
+ 65-bit register                                       : 2
+ 7-bit register                                        : 1
+# Comparators                                          : 13
+ 1-bit comparator equal                                : 1
+ 10-bit comparator greater                             : 2
+ 27-bit comparator lessequal                           : 1
+ 32-bit comparator greater                             : 8
+ 51-bit comparator greater                             : 1
+# Multiplexers                                         : 260
+ 1-bit 2-to-1 multiplexer                              : 178
+ 10-bit 2-to-1 multiplexer                             : 18
+ 24-bit 2-to-1 multiplexer                             : 17
+ 27-bit 2-to-1 multiplexer                             : 4
+ 28-bit 2-to-1 multiplexer                             : 4
+ 32-bit 2-to-1 multiplexer                             : 26
+ 32-bit 4-to-1 multiplexer                             : 1
+ 51-bit 2-to-1 multiplexer                             : 3
+ 6-bit 2-to-1 multiplexer                              : 1
+ 64-bit 2-to-1 multiplexer                             : 5
+ 64-bit 8-to-1 multiplexer                             : 1
+ 65-bit 2-to-1 multiplexer                             : 2
+# Logic shifters                                       : 6
+ 32-bit shifter logical left                           : 2
+ 32-bit shifter logical right                          : 2
+ 64-bit shifter logical left                           : 1
+ 64-bit shifter logical right                          : 1
+# FSMs                                                 : 3
+# Xors                                                 : 3
+ 1-bit xor2                                            : 2
+ 64-bit xor2                                           : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <SSeg7_Dev.ngc>.
+Loading core <SSeg7_Dev> for timing and area information for instance <_i000006>.
+WARNING:Xst:1290 - Hierarchical block <Plus> is unconnected in block <top>.
+   It will be removed from the design.
+INFO:Xst:2261 - The FF/Latch <divisor_24> in Unit <fpudiv> is equivalent to the following 26 FFs/Latches, which will be removed : <divisor_25> <divisor_26> <divisor_27> <divisor_28> <divisor_29> <divisor_30> <divisor_31> <divisor_32> <divisor_33> <divisor_34> <divisor_35> <divisor_36> <divisor_37> <divisor_38> <divisor_39> <divisor_40> <divisor_41> <divisor_42> <divisor_43> <divisor_44> <divisor_45> <divisor_46> <divisor_47> <divisor_48> <divisor_49> <divisor_50> 
+INFO:Xst:2261 - The FF/Latch <product_0> in Unit <fpumul> is equivalent to the following FF/Latch, which will be removed : <product_1> 
+WARNING:Xst:1710 - FF/Latch <divisor_24> (without init value) has a constant value of 0 in block <fpudiv>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <product_0> (without init value) has a constant value of 0 in block <fpumul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <las_64> of sequential type is unconnected in block <XLXI_3>.
+WARNING:Xst:2404 -  FFs/Latches <divisor<50:24>> (without init value) have a constant value of 0 in block <divider>.
+
+Synthesizing (advanced) Unit <CreateNum>.
+The following registers are absorbed into counter <A<28>_A<29>_A<30>_A<31>>: 1 register on signal <A<28>_A<29>_A<30>_A<31>>.
+The following registers are absorbed into counter <A<24>_A<25>_A<26>_A<27>>: 1 register on signal <A<24>_A<25>_A<26>_A<27>>.
+The following registers are absorbed into counter <A<20>_A<21>_A<22>_A<23>>: 1 register on signal <A<20>_A<21>_A<22>_A<23>>.
+The following registers are absorbed into counter <A<16>_A<17>_A<18>_A<19>>: 1 register on signal <A<16>_A<17>_A<18>_A<19>>.
+The following registers are absorbed into counter <A<12>_A<13>_A<14>_A<15>>: 1 register on signal <A<12>_A<13>_A<14>_A<15>>.
+The following registers are absorbed into counter <A<8>_A<9>_A<10>_A<11>>: 1 register on signal <A<8>_A<9>_A<10>_A<11>>.
+The following registers are absorbed into counter <A<4>_A<5>_A<6>_A<7>>: 1 register on signal <A<4>_A<5>_A<6>_A<7>>.
+The following registers are absorbed into counter <A<3:0>>: 1 register on signal <A<3:0>>.
+The following registers are absorbed into counter <B<28>_B<29>_B<30>_B<31>>: 1 register on signal <B<28>_B<29>_B<30>_B<31>>.
+The following registers are absorbed into counter <B<24>_B<25>_B<26>_B<27>>: 1 register on signal <B<24>_B<25>_B<26>_B<27>>.
+The following registers are absorbed into counter <B<20>_B<21>_B<22>_B<23>>: 1 register on signal <B<20>_B<21>_B<22>_B<23>>.
+The following registers are absorbed into counter <B<16>_B<17>_B<18>_B<19>>: 1 register on signal <B<16>_B<17>_B<18>_B<19>>.
+The following registers are absorbed into counter <B<12>_B<13>_B<14>_B<15>>: 1 register on signal <B<12>_B<13>_B<14>_B<15>>.
+The following registers are absorbed into counter <B<8>_B<9>_B<10>_B<11>>: 1 register on signal <B<8>_B<9>_B<10>_B<11>>.
+The following registers are absorbed into counter <B<4>_B<5>_B<6>_B<7>>: 1 register on signal <B<4>_B<5>_B<6>_B<7>>.
+The following registers are absorbed into counter <B<3:0>>: 1 register on signal <B<3:0>>.
+Unit <CreateNum> synthesized (advanced).
+
+Synthesizing (advanced) Unit <adder>.
+The following registers are absorbed into counter <b_e>: 1 register on signal <b_e>.
+The following registers are absorbed into counter <a_e>: 1 register on signal <a_e>.
+Unit <adder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clkdiv>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+Unit <clkdiv> synthesized (advanced).
+
+Synthesizing (advanced) Unit <divider>.
+The following registers are absorbed into accumulator <remainder>: 1 register on signal <remainder>.
+The following registers are absorbed into counter <z_m>: 1 register on signal <z_m>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+The following registers are absorbed into counter <a_e>: 1 register on signal <a_e>.
+The following registers are absorbed into counter <b_e>: 1 register on signal <b_e>.
+Unit <divider> synthesized (advanced).
+
+Synthesizing (advanced) Unit <multiplier>.
+The following registers are absorbed into counter <z_e>: 1 register on signal <z_e>.
+The following registers are absorbed into counter <b_e>: 1 register on signal <b_e>.
+The following registers are absorbed into counter <a_e>: 1 register on signal <a_e>.
+	Found pipelined multiplier on signal <a_m[23]_b_m[23]_MuLt_54_OUT>:INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_a_m[23]_b_m[23]_MuLt_54_OUT by adding 3 register level(s).
+Unit <multiplier> synthesized (advanced).
+WARNING:Xst:2677 - Node <las_64> of sequential type is unconnected in block <int_mul>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 24x24-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 23
+ 10-bit adder                                          : 1
+ 10-bit adder carry in                                 : 1
+ 10-bit addsub                                         : 1
+ 10-bit subtractor                                     : 1
+ 24-bit adder                                          : 2
+ 28-bit addsub                                         : 1
+ 32-bit adder                                          : 2
+ 64-bit adder                                          : 2
+ 65-bit adder                                          : 1
+ 8-bit adder                                           : 5
+ 9-bit subtractor                                      : 6
+# Counters                                             : 26
+ 10-bit down counter                                   : 4
+ 10-bit up counter                                     : 2
+ 10-bit updown counter                                 : 1
+ 24-bit up counter                                     : 1
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 16
+ 6-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 51-bit down loadable accumulator                      : 1
+# Registers                                            : 1071
+ Flip-Flops                                            : 1071
+# Comparators                                          : 13
+ 1-bit comparator equal                                : 1
+ 10-bit comparator greater                             : 2
+ 27-bit comparator lessequal                           : 1
+ 32-bit comparator greater                             : 8
+ 51-bit comparator greater                             : 1
+# Multiplexers                                         : 273
+ 1-bit 2-to-1 multiplexer                              : 202
+ 10-bit 2-to-1 multiplexer                             : 11
+ 24-bit 2-to-1 multiplexer                             : 15
+ 27-bit 2-to-1 multiplexer                             : 4
+ 28-bit 2-to-1 multiplexer                             : 4
+ 32-bit 2-to-1 multiplexer                             : 26
+ 32-bit 4-to-1 multiplexer                             : 1
+ 51-bit 2-to-1 multiplexer                             : 2
+ 64-bit 2-to-1 multiplexer                             : 5
+ 64-bit 8-to-1 multiplexer                             : 1
+ 65-bit 2-to-1 multiplexer                             : 2
+# Logic shifters                                       : 6
+ 32-bit shifter logical left                           : 2
+ 32-bit shifter logical right                          : 2
+ 64-bit shifter logical left                           : 1
+ 64-bit shifter logical right                          : 1
+# FSMs                                                 : 3
+# Xors                                                 : 3
+ 1-bit xor2                                            : 2
+ 64-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <product_0> (without init value) has a constant value of 0 in block <multiplier>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <product_1> (without init value) has a constant value of 0 in block <multiplier>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2973 - All outputs of instance <Plus> of block <int_LR> are unconnected in block <top>. Underlying logic will be removed.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <fpuadd/FSM_0> on signal <state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 1011  | 1011
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1001  | 1001
+ 1010  | 1010
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <fpudiv/FSM_1> on signal <state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 1110  | 1110
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1001  | 1001
+ 1010  | 1010
+ 1011  | 1011
+ 1100  | 1100
+ 1101  | 1101
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <fpumul/FSM_2> on signal <state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 1100  | 1100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1001  | 1001
+ 1010  | 1010
+ 1011  | 1011
+-------------------
+WARNING:Xst:1710 - FF/Latch <dividend_26> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_25> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_24> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_23> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_22> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_21> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_20> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_19> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_18> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_17> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_16> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_15> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_14> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_13> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_12> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_11> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_10> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_9> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_8> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_7> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_6> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_5> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_4> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_3> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_2> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_1> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dividend_0> (without init value) has a constant value of 0 in block <divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/ans_64> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <XLXI_4/ans_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <XLXI_0/clkdiv_22> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <XLXI_0/clkdiv_23> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <XLXI_0/clkdiv_24> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <XLXI_0/clkdiv_25> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <XLXI_0/clkdiv_26> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <XLXI_0/clkdiv_27> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <XLXI_0/clkdiv_28> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <XLXI_0/clkdiv_29> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <XLXI_0/clkdiv_30> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <XLXI_0/clkdiv_31> of sequential type is unconnected in block <top>.
+
+Optimizing unit <top> ...
+
+Optimizing unit <CreateNum> ...
+
+Optimizing unit <pbdebounce> ...
+
+Optimizing unit <adder> ...
+
+Optimizing unit <divider> ...
+
+Optimizing unit <multiplier> ...
+
+Optimizing unit <int_LR> ...
+WARNING:Xst:2677 - Node <fpuadd/t_o_z_stb> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <fpudiv/t_o_z_stb> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <fpumul/t_o_z_stb> of sequential type is unconnected in block <top>.
+INFO:Xst:2261 - The FF/Latch <fpuadd/a_e_9> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <fpuadd/a_e_8> 
+INFO:Xst:2261 - The FF/Latch <fpuadd/b_e_9> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <fpuadd/b_e_8> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1253
+ Flip-Flops                                            : 1253
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 4059
+#      AND2                        : 392
+#      AND3                        : 88
+#      AND4                        : 72
+#      BUF                         : 1
+#      GND                         : 1
+#      INV                         : 94
+#      LUT1                        : 68
+#      LUT2                        : 255
+#      LUT3                        : 390
+#      LUT4                        : 263
+#      LUT5                        : 442
+#      LUT6                        : 443
+#      MULT_AND                    : 9
+#      MUXCY                       : 443
+#      MUXF7                       : 50
+#      OR2                         : 56
+#      OR3                         : 152
+#      OR4                         : 32
+#      VCC                         : 2
+#      XOR2                        : 384
+#      XORCY                       : 422
+# FlipFlops/Latches                : 1329
+#      FD                          : 226
+#      FDC                         : 10
+#      FDE                         : 1078
+#      FDR                         : 15
+# Clock Buffers                    : 4
+#      BUFG                        : 3
+#      BUFGP                       : 1
+# IO Buffers                       : 15
+#      IBUF                        : 10
+#      OBUF                        : 5
+# DSPs                             : 2
+#      DSP48E1                     : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1329  out of  202800     0%  
+ Number of Slice LUTs:                 1955  out of  101400     1%  
+    Number used as Logic:              1955  out of  101400     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2248
+   Number with an unused Flip Flop:     919  out of   2248    40%  
+   Number with an unused LUT:           293  out of   2248    13%  
+   Number of fully used LUT-FF pairs:  1036  out of   2248    46%  
+   Number of unique control sets:        66
+
+IO Utilization: 
+ Number of IOs:                          24
+ Number of bonded IOBs:                  16  out of    400     4%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                4  out of     32    12%  
+ Number of DSP48E1s:                      2  out of    600     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)          | Load  |
+-----------------------------------+--------------------------------+-------+
+XLXI_0/clkdiv_16                   | BUFG                           | 255   |
+clk                                | BUFGP                          | 98    |
+_i000001/XLXI_0/pbreg              | BUFG                           | 64    |
+XLXI_0/clkdiv_17                   | NONE(_i000001/XLXI_0/pbshift_6)| 8     |
+XLXI_0/clkdiv_0                    | BUFG                           | 906   |
+-----------------------------------+--------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.751ns (Maximum Frequency: 210.482MHz)
+   Minimum input arrival time before clock: 5.747ns
+   Maximum output required time after clock: 0.740ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_0/clkdiv_16'
+  Clock period: 2.567ns (frequency: 389.560MHz)
+  Total number of paths / destination ports: 6717 / 255
+-------------------------------------------------------------------------
+Delay:               2.567ns (Levels of Logic = 34)
+  Source:            XLXI_4/ans_32 (FF)
+  Destination:       XLXI_4/ans_1 (FF)
+  Source Clock:      XLXI_0/clkdiv_16 rising
+  Destination Clock: XLXI_0/clkdiv_16 rising
+
+  Data Path: XLXI_4/ans_32 to XLXI_4/ans_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.282   0.491  XLXI_4/ans_32 (XLXI_4/ans_32)
+     LUT2:I0->O            1   0.053   0.000  XLXI_4/Madd_add_lut<32> (XLXI_4/Madd_add_lut<32>)
+     MUXCY:S->O            1   0.291   0.000  XLXI_4/Madd_add_cy<32> (XLXI_4/Madd_add_cy<32>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<33> (XLXI_4/Madd_add_cy<33>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<34> (XLXI_4/Madd_add_cy<34>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<35> (XLXI_4/Madd_add_cy<35>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<36> (XLXI_4/Madd_add_cy<36>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<37> (XLXI_4/Madd_add_cy<37>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<38> (XLXI_4/Madd_add_cy<38>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<39> (XLXI_4/Madd_add_cy<39>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<40> (XLXI_4/Madd_add_cy<40>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<41> (XLXI_4/Madd_add_cy<41>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<42> (XLXI_4/Madd_add_cy<42>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<43> (XLXI_4/Madd_add_cy<43>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<44> (XLXI_4/Madd_add_cy<44>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<45> (XLXI_4/Madd_add_cy<45>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<46> (XLXI_4/Madd_add_cy<46>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<47> (XLXI_4/Madd_add_cy<47>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<48> (XLXI_4/Madd_add_cy<48>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<49> (XLXI_4/Madd_add_cy<49>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<50> (XLXI_4/Madd_add_cy<50>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<51> (XLXI_4/Madd_add_cy<51>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<52> (XLXI_4/Madd_add_cy<52>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<53> (XLXI_4/Madd_add_cy<53>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<54> (XLXI_4/Madd_add_cy<54>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<55> (XLXI_4/Madd_add_cy<55>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<56> (XLXI_4/Madd_add_cy<56>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<57> (XLXI_4/Madd_add_cy<57>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<58> (XLXI_4/Madd_add_cy<58>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<59> (XLXI_4/Madd_add_cy<59>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<60> (XLXI_4/Madd_add_cy<60>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_4/Madd_add_cy<61> (XLXI_4/Madd_add_cy<61>)
+     MUXCY:CI->O           0   0.015   0.000  XLXI_4/Madd_add_cy<62> (XLXI_4/Madd_add_cy<62>)
+     XORCY:CI->O           3   0.320   0.616  XLXI_4/Madd_add_xor<63> (XLXI_4/add<63>)
+     LUT5:I2->O            1   0.053   0.000  XLXI_4/Mmux__n0055111 (XLXI_4/_n0055<1>)
+     FD:D                      0.011          XLXI_4/ans_1
+    ----------------------------------------
+    Total                      2.567ns (1.460ns logic, 1.107ns route)
+                                       (56.9% logic, 43.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.472ns (frequency: 404.606MHz)
+  Total number of paths / destination ports: 1454 / 98
+-------------------------------------------------------------------------
+Delay:               2.472ns (Levels of Logic = 4)
+  Source:            _i000006/M2/shift_count_2 (FF)
+  Destination:       _i000006/M2/buffer_63 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: _i000006/M2/shift_count_2 to _i000006/M2/buffer_63
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.282   0.745  M2/shift_count_2 (M2/shift_count<2>)
+     LUT5:I0->O            1   0.053   0.485  M2/_n0075_inv31 (M2/_n0075_inv_bdd3)
+     LUT6:I4->O            1   0.053   0.000  M2/_n0103_inv12_G (N28)
+     MUXF7:I1->O          64   0.217   0.573  M2/_n0103_inv12 (M2/_n0103_inv)
+     LUT3:I2->O            1   0.053   0.000  M2/buffer_63_rstpot (M2/buffer_63_rstpot)
+     FD:D                      0.011          M2/buffer_63
+    ----------------------------------------
+    Total                      2.472ns (0.669ns logic, 1.803ns route)
+                                       (27.1% logic, 72.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock '_i000001/XLXI_0/pbreg'
+  Clock period: 1.256ns (frequency: 796.178MHz)
+  Total number of paths / destination ports: 160 / 64
+-------------------------------------------------------------------------
+Delay:               1.256ns (Levels of Logic = 1)
+  Source:            _i000001/A<3:0>_3 (FF)
+  Destination:       _i000001/A<3:0>_3 (FF)
+  Source Clock:      _i000001/XLXI_0/pbreg rising
+  Destination Clock: _i000001/XLXI_0/pbreg rising
+
+  Data Path: _i000001/A<3:0>_3 to _i000001/A<3:0>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             16   0.282   0.497  _i000001/A<3:0>_3 (_i000001/A<3:0>_3)
+     INV:I->O              1   0.067   0.399  _i000001/Mcount_A<3:0>_xor<0>11_INV_0 (_i000001/Result<0>7)
+     FDE:D                     0.011          _i000001/A<3:0>_3
+    ----------------------------------------
+    Total                      1.256ns (0.360ns logic, 0.896ns route)
+                                       (28.7% logic, 71.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_0/clkdiv_17'
+  Clock period: 1.645ns (frequency: 607.903MHz)
+  Total number of paths / destination ports: 21 / 7
+-------------------------------------------------------------------------
+Delay:               1.645ns (Levels of Logic = 3)
+  Source:            _i000001/XLXI_0/pbshift_3 (FF)
+  Destination:       _i000001/XLXI_0/pbreg (FF)
+  Source Clock:      XLXI_0/clkdiv_17 rising
+  Destination Clock: XLXI_0/clkdiv_17 rising
+
+  Data Path: _i000001/XLXI_0/pbshift_3 to _i000001/XLXI_0/pbreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.282   0.616  _i000001/XLXI_0/pbshift_3 (_i000001/XLXI_0/pbshift_3)
+     LUT3:I0->O            1   0.053   0.413  _i000001/XLXI_0/pbshift[6]_PWR_3_o_equal_3_o<6>_SW0 (N74)
+     LUT6:I5->O            1   0.053   0.000  _i000001/XLXI_0/pbreg_rstpot_G (N288)
+     MUXF7:I1->O           1   0.217   0.000  _i000001/XLXI_0/pbreg_rstpot (_i000001/XLXI_0/pbreg_rstpot)
+     FD:D                      0.011          _i000001/XLXI_0/pbreg
+    ----------------------------------------
+    Total                      1.645ns (0.616ns logic, 1.029ns route)
+                                       (37.4% logic, 62.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_0/clkdiv_0'
+  Clock period: 4.751ns (frequency: 210.482MHz)
+  Total number of paths / destination ports: 102693 / 1728
+-------------------------------------------------------------------------
+Delay:               4.751ns (Levels of Logic = 0)
+  Source:            fpumul/Mmult_a_m[23]_b_m[23]_MuLt_54_OUT (DSP)
+  Destination:       fpumul/Mmult_a_m[23]_b_m[23]_MuLt_54_OUT1 (DSP)
+  Source Clock:      XLXI_0/clkdiv_0 rising
+  Destination Clock: XLXI_0/clkdiv_0 rising
+
+  Data Path: fpumul/Mmult_a_m[23]_b_m[23]_MuLt_54_OUT to fpumul/Mmult_a_m[23]_b_m[23]_MuLt_54_OUT1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     DSP48E1:CLK->PCOUT47    1   3.564   0.000  fpumul/Mmult_a_m[23]_b_m[23]_MuLt_54_OUT (fpumul/Mmult_a_m[23]_b_m[23]_MuLt_54_OUT_PCOUT_to_Mmult_a_m[23]_b_m[23]_MuLt_54_OUT1_PCIN_47)
+     DSP48E1:PCIN47            1.187          fpumul/Mmult_a_m[23]_b_m[23]_MuLt_54_OUT1
+    ----------------------------------------
+    Total                      4.751ns (4.751ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_i000001/XLXI_0/pbreg'
+  Total number of paths / destination ports: 320 / 64
+-------------------------------------------------------------------------
+Offset:              1.553ns (Levels of Logic = 2)
+  Source:            sw<14> (PAD)
+  Destination:       _i000001/B<3:0>_0 (FF)
+  Destination Clock: _i000001/XLXI_0/pbreg rising
+
+  Data Path: sw<14> to _i000001/B<3:0>_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            48   0.000   0.881  sw_14_IBUF (sw_14_IBUF)
+     LUT5:I0->O            4   0.053   0.419  _i000001/_n0776_inv11 (_i000001/_n0776_inv)
+     FDE:CE                    0.200          _i000001/B<24>_B<25>_B<26>_B<27>_3
+    ----------------------------------------
+    Total                      1.553ns (0.253ns logic, 1.300ns route)
+                                       (16.3% logic, 83.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_0/clkdiv_17'
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Offset:              1.174ns (Levels of Logic = 4)
+  Source:            btn (PAD)
+  Destination:       _i000001/XLXI_0/pbreg (FF)
+  Destination Clock: XLXI_0/clkdiv_17 rising
+
+  Data Path: btn to _i000001/XLXI_0/pbreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.000   0.427  btn_IBUF (btn_IBUF)
+     LUT3:I2->O            1   0.053   0.413  _i000001/XLXI_0/pbshift[6]_PWR_3_o_equal_3_o<6>_SW0 (N74)
+     LUT6:I5->O            1   0.053   0.000  _i000001/XLXI_0/pbreg_rstpot_G (N288)
+     MUXF7:I1->O           1   0.217   0.000  _i000001/XLXI_0/pbreg_rstpot (_i000001/XLXI_0/pbreg_rstpot)
+     FD:D                      0.011          _i000001/XLXI_0/pbreg
+    ----------------------------------------
+    Total                      1.174ns (0.334ns logic, 0.840ns route)
+                                       (28.4% logic, 71.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_0/clkdiv_0'
+  Total number of paths / destination ports: 15 / 15
+-------------------------------------------------------------------------
+Offset:              0.816ns (Levels of Logic = 1)
+  Source:            sw<15> (PAD)
+  Destination:       fpuadd/state_FSM_FFd1 (FF)
+  Destination Clock: XLXI_0/clkdiv_0 rising
+
+  Data Path: sw<15> to fpuadd/state_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            15   0.000   0.491  sw_15_IBUF (sw_15_IBUF)
+     FDR:R                     0.325          fpuadd/state_FSM_FFd3
+    ----------------------------------------
+    Total                      0.816ns (0.325ns logic, 0.491ns route)
+                                       (39.8% logic, 60.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 7520 / 64
+-------------------------------------------------------------------------
+Offset:              5.747ns (Levels of Logic = 11)
+  Source:            sw<1> (PAD)
+  Destination:       _i000006/M2/buffer_60 (FF)
+  Destination Clock: clk rising
+
+  Data Path: sw<1> to _i000006/M2/buffer_60
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            96   0.000   0.906  sw_1_IBUF (sw_1_IBUF)
+     LUT6:I0->O            1   0.053   0.000  XLXI_5/Mmux_mid_3 (XLXI_5/Mmux_mid_3)
+     MUXF7:I1->O           1   0.217   0.485  XLXI_5/Mmux_mid_2_f7 (ANS<0>)
+     LUT6:I4->O           14   0.053   0.484  XLXI_6/Mmux_mid1 (NUMBER<0>)
+     begin scope: '_i000006:Hexs<0>'
+     INV:I->O              6   0.067   0.772  SM1/HTS7/MSEG/XLXI_4 (SM1/HTS7/MSEG/XLXN_24)
+     AND4:I0->O            1   0.053   0.739  SM1/HTS7/MSEG/XLXI_28 (SM1/HTS7/MSEG/XLXN_141)
+     OR4:I0->O             1   0.053   0.725  SM1/HTS7/MSEG/XLXI_29 (SM1/HTS7/MSEG/XLXN_211)
+     OR2:I1->O             1   0.053   0.485  SM1/HTS7/MSEG/XLXI_50 (XLXN_390<60>)
+     LUT6:I4->O            1   0.053   0.485  M2/mux12011 (M2/state[1]_GND_3_o_wide_mux_15_OUT<60>)
+     LUT3:I1->O            1   0.053   0.000  M2/buffer_60_rstpot (M2/buffer_60_rstpot)
+     FD:D                      0.011          M2/buffer_60
+    ----------------------------------------
+    Total                      5.747ns (0.666ns logic, 5.081ns route)
+                                       (11.6% logic, 88.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              0.740ns (Levels of Logic = 2)
+  Source:            _i000006/M2/s_clk (FF)
+  Destination:       seg_clk (PAD)
+  Source Clock:      clk rising
+
+  Data Path: _i000006/M2/s_clk to seg_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.282   0.458  M2/s_clk (seg_clk)
+     end scope: '_i000006:seg_clk'
+     OBUF:I->O                 0.000          seg_clk_OBUF (seg_clk)
+    ----------------------------------------
+    Total                      0.740ns (0.282ns logic, 0.458ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock XLXI_0/clkdiv_0
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+XLXI_0/clkdiv_0      |    4.751|         |         |         |
+_i000001/XLXI_0/pbreg|    0.790|         |         |         |
+---------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_0/clkdiv_16
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+XLXI_0/clkdiv_16     |    2.567|         |         |         |
+_i000001/XLXI_0/pbreg|    3.519|         |         |         |
+clk                  |    2.056|         |         |         |
+---------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_0/clkdiv_17
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+XLXI_0/clkdiv_17|    1.645|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock _i000001/XLXI_0/pbreg
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+_i000001/XLXI_0/pbreg|    1.256|         |         |         |
+---------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+XLXI_0/clkdiv_0      |    5.758|         |         |         |
+XLXI_0/clkdiv_16     |    7.253|         |         |         |
+_i000001/XLXI_0/pbreg|  107.885|         |         |         |
+clk                  |    2.472|         |         |         |
+---------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 17.08 secs
+ 
+--> 
+
+Total memory usage is 435312 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  157 (   0 filtered)
+Number of infos    :   18 (   0 filtered)
+

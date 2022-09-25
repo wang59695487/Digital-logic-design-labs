@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/asus/Desktop/Computer_Organization/Lab/Lab3&4/Project_File/Lab4/ALU/MUX8T1_32.v -lang verilog -prj ALU -o MUX8T1_32.spl -module MUX8T1_32 -template D:/ISE/ise/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 MUX8T1_32.spl C:/Users/asus/Desktop/Computer_Organization/Lab/Lab3&4/Project_File/Lab4/ALU/MUX8T1_32.sym 

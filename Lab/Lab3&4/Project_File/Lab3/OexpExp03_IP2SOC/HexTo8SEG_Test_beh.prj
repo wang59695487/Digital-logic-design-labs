@@ -1,0 +1,4 @@
+verilog work "MC14495.vf"
+verilog work "HexTo8SEG.v"
+verilog work "HexTo8SEG_Test.v"
+verilog work "D:/ISE/ise/14.7/ISE_DS/ISE//verilog/src/glbl.v"

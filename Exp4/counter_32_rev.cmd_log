@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/test_1/logicproject/10/Top_Fsm/counter_32_rev.v -lang verilog -prj Exp07-MUX -o counter_32_rev.spl -module counter_32_rev -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w counter_32_rev.spl E:/test_1/logicproject/10/Top_Fsm/counter_32_rev.sym 

@@ -1,0 +1,22 @@
+
+
+
+// Instantiate the module
+Controller instance_name (
+    .opcode(opcode), 
+    .Func(Func), 
+    .ALU_control(ALU_control), 
+    .RtRd(RtRd), 
+    .SrcB(SrcB), 
+    .Wreg(Wreg), 
+    .WMem(WMem), 
+    .M2Reg(M2Reg), 
+    .beq(beq), 
+    .bne(bne), 
+    .JAL(JAL), 
+    .Jump(Jump), 
+    .JR(JR), 
+    .shift(shift)
+    );
+
+

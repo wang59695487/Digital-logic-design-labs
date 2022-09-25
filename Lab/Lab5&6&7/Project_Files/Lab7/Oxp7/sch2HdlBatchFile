@@ -1,0 +1,2 @@
+sch2hdl,-sympath,G:/Lab7/Oxp7_Test/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,G:/Lab7/Oxp7_Test/Data_path.vf,-w,G:/Lab7/Oxp7_Test/Data_path.sch
+sch2hdl,-sympath,G:/Lab7/Oxp7_Test/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,G:/Lab7/Oxp7_Test/SCPU.vf,-w,G:/Lab7/Oxp7_Test/SCPU.sch

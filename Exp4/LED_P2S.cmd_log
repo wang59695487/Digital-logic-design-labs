@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/test_2/computer_/1/111/v1.4/LED_P2S_IO.v -lang verilog -prj Exp07-MUX -o LED_P2S.spl -module LED_P2S -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w LED_P2S.spl E:/test_2/computer_/1/111/v1.4/LED_P2S.sym 

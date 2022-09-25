@@ -1,0 +1,1 @@
+sch2hdl -sympath I:/Exp07/ngc -intstyle ise -family kintex7 -verilog MUX4T1_4_drc.vf -w I:/framework/MUX4T1_4.sch 

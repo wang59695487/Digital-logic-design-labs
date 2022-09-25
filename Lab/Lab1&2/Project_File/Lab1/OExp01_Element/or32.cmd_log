@@ -1,0 +1,4 @@
+vhdtdtfi -lib work C:/Users/asus/Desktop/Computer_Organization/Lab/Lab1&2/Project_File/Lab1/OExp01_Element/or32.v -lang verilog -prj OExp01_Element -o or32.spl -module or32 -template D:/ISE/ise/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 or32.spl C:/Users/asus/Desktop/Computer_Organization/Lab/Lab1&2/Project_File/Lab1/OExp01_Element/or32.sym 
+vhdtdtfi -lib work C:/Users/asus/Desktop/Computer_Organization/Lab/Lab1&2/Project_File/Lab1/OExp01_Element/or32.v -lang verilog -prj OExp01_Element -o or32.spl -module or32 -template D:/ISE/ise/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 or32.spl C:/Users/asus/Desktop/Computer_Organization/Lab/Lab1&2/Project_File/Lab1/OExp01_Element/or32.sym 

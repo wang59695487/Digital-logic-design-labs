@@ -1,0 +1,3 @@
+verilog isim_temp "MUX8T1_8.v"
+verilog isim_temp "MUX8T1_8_Test.v"
+verilog isim_temp "F:/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,62 @@
+sch2hdl -sympath G:/organization/counter/ipcore_dir -intstyle ise -family kintex7 -verilog framework_drc.vf -w G:/organization/counter/code/framework.sch 
+xst -intstyle ise -ifn "G:/organization/counter/framework.xst" -ofn "G:/organization/counter/framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc code/frame_ucf.ucf -p xc7k160t-ffg676-2L framework.ngc framework.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc code/frame_ucf.ucf -p xc7k160t-ffg676-2L framework.ngc framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o framework_map.ncd framework.ngd framework.pcf 
+par -w -intstyle ise -ol high -mt off framework_map.ncd framework.ncd framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml framework.twx framework.ncd -o framework.twr framework.pcf 
+bitgen -intstyle ise -f framework.ut framework.ncd 
+xst -intstyle ise -ifn "G:/organization/counter/framework.xst" -ofn "G:/organization/counter/framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc code/frame_ucf.ucf -p xc7k160t-ffg676-2L framework.ngc framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o framework_map.ncd framework.ngd framework.pcf 
+par -w -intstyle ise -ol high -mt off framework_map.ncd framework.ncd framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml framework.twx framework.ncd -o framework.twr framework.pcf 
+bitgen -intstyle ise -f framework.ut framework.ncd 
+sch2hdl -sympath G:/organization/HYF5681_03/ipcore_dir -intstyle ise -family kintex7 -verilog framework_drc.vf -w G:/organization/HYF5681_03/code/framework.sch 
+xst -intstyle ise -ifn "G:/organization/HYF5681_03/framework.xst" -ofn "G:/organization/HYF5681_03/framework.syr" 
+xst -intstyle ise -ifn "G:/organization/HYF5681_03/framework.xst" -ofn "G:/organization/HYF5681_03/framework.syr" 
+xst -intstyle ise -ifn "G:/organization/HYF5681_03/framework.xst" -ofn "G:/organization/HYF5681_03/framework.syr" 
+xst -intstyle ise -ifn "G:/organization/HYF5681_03/framework.xst" -ofn "G:/organization/HYF5681_03/framework.syr" 
+xst -intstyle ise -ifn "G:/organization/HYF5681_03/framework.xst" -ofn "G:/organization/HYF5681_03/framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc code/frame_ucf.ucf -p xc7k160t-ffg676-2L framework.ngc framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o framework_map.ncd framework.ngd framework.pcf 
+par -w -intstyle ise -ol high -mt off framework_map.ncd framework.ncd framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml framework.twx framework.ncd -o framework.twr framework.pcf 
+bitgen -intstyle ise -f framework.ut framework.ncd 
+xst -intstyle ise -ifn "G:/organization/HYF5681_03/framework.xst" -ofn "G:/organization/HYF5681_03/framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc code/frame_ucf.ucf -p xc7k160t-ffg676-2L framework.ngc framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o framework_map.ncd framework.ngd framework.pcf 
+par -w -intstyle ise -ol high -mt off framework_map.ncd framework.ncd framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml framework.twx framework.ncd -o framework.twr framework.pcf 
+bitgen -intstyle ise -f framework.ut framework.ncd 
+xst -intstyle ise -ifn "G:/organization/HYF5681_03/framework.xst" -ofn "G:/organization/HYF5681_03/framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc code/frame_ucf.ucf -p xc7k160t-ffg676-2L framework.ngc framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o framework_map.ncd framework.ngd framework.pcf 
+par -w -intstyle ise -ol high -mt off framework_map.ncd framework.ncd framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml framework.twx framework.ncd -o framework.twr framework.pcf 
+bitgen -intstyle ise -f framework.ut framework.ncd 
+xst -intstyle ise -ifn "C:/Users/TLT3620/Documents/Tencent Files/627464892/FileRecv/HYF5681_03/JJT2420-04/framework.xst" -ofn "C:/Users/TLT3620/Documents/Tencent Files/627464892/FileRecv/HYF5681_03/JJT2420-04/framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "code/frame_ucf.ucf" -p xc7k160t-ffg676-2L "framework.ngc" framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o framework_map.ncd framework.ngd framework.pcf 
+par -w -intstyle ise -ol high -mt off framework_map.ncd framework.ncd framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml framework.twx framework.ncd -o framework.twr framework.pcf 
+bitgen -intstyle ise -f framework.ut framework.ncd 
+xst -intstyle ise -ifn "C:/Users/TLT3620/Documents/Tencent Files/627464892/FileRecv/HYF5681_03/JJT2420-04/framework.xst" -ofn "C:/Users/TLT3620/Documents/Tencent Files/627464892/FileRecv/HYF5681_03/JJT2420-04/framework.syr" 
+xst -intstyle ise -ifn "C:/Users/TLT3620/Documents/Tencent Files/627464892/FileRecv/HYF5681_03/JJT2420-04/framework.xst" -ofn "C:/Users/TLT3620/Documents/Tencent Files/627464892/FileRecv/HYF5681_03/JJT2420-04/framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "code/frame_ucf.ucf" -p xc7k160t-ffg676-2L "framework.ngc" framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o framework_map.ncd framework.ngd framework.pcf 
+par -w -intstyle ise -ol high -mt off framework_map.ncd framework.ncd framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml framework.twx framework.ncd -o framework.twr framework.pcf 
+bitgen -intstyle ise -f framework.ut framework.ncd 
+xst -intstyle ise -ifn "E:/3160102420/JJT2420-04/framework.xst" -ofn "E:/3160102420/JJT2420-04/framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc code/frame_ucf.ucf -p xc7k160t-ffg676-2L framework.ngc framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o framework_map.ncd framework.ngd framework.pcf 
+par -w -intstyle ise -ol high -mt off framework_map.ncd framework.ncd framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml framework.twx framework.ncd -o framework.twr framework.pcf 
+bitgen -intstyle ise -f framework.ut framework.ncd 
+xst -intstyle ise -ifn "E:/exp05/JJT2420-05/framework.xst" -ofn "E:/exp05/JJT2420-05/framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc code/frame_ucf.ucf -p xc7k160t-ffg676-2L framework.ngc framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o framework_map.ncd framework.ngd framework.pcf 
+par -w -intstyle ise -ol high -mt off framework_map.ncd framework.ncd framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml framework.twx framework.ncd -o framework.twr framework.pcf 
+bitgen -intstyle ise -f framework.ut framework.ncd 

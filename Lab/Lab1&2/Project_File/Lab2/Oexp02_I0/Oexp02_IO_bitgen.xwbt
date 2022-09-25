@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\asus\Desktop\Computer_Organization\Lab\Lab2\Oexp02_I0\Oexp02_IO.ncd
+OUTFILE=C:\Users\asus\Desktop\Computer_Organization\Lab\Lab2\Oexp02_I0\Oexp02_IO.bit
+FAMILY=Kintex7
+PART=xc7k160t-2lffg676
+WORKINGDIR=C:\Users\asus\Desktop\Computer_Organization\Lab\Lab2\Oexp02_I0
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661

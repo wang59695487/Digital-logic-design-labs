@@ -1,0 +1,60 @@
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab2/Oexp02_I0/Oexp02_IO.xst" -ofn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab2/Oexp02_I0/Oexp02_IO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-2L Oexp02_IO.ngc Oexp02_IO.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Oexp02_IO_map.ncd Oexp02_IO.ngd Oexp02_IO.pcf 
+par -w -intstyle ise -ol high -mt off Oexp02_IO_map.ncd Oexp02_IO.ncd Oexp02_IO.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Oexp02_IO.twx Oexp02_IO.ncd -o Oexp02_IO.twr Oexp02_IO.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f Oexp02_IO.ut Oexp02_IO.ncd 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab2/Oexp02_I0/Oexp02_IO.xst" -ofn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab2/Oexp02_I0/Oexp02_IO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-2L Oexp02_IO.ngc Oexp02_IO.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Oexp02_IO_map.ncd Oexp02_IO.ngd Oexp02_IO.pcf 
+par -w -intstyle ise -ol high -mt off Oexp02_IO_map.ncd Oexp02_IO.ncd Oexp02_IO.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Oexp02_IO.twx Oexp02_IO.ncd -o Oexp02_IO.twr Oexp02_IO.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f Oexp02_IO.ut Oexp02_IO.ncd 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab2/Oexp02_I0/Oexp02_IO.xst" -ofn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab2/Oexp02_I0/Oexp02_IO.syr" 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab2/Oexp02_I0/Oexp02_IO.xst" -ofn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab2/Oexp02_I0/Oexp02_IO.syr" 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab2/Oexp02_I0/Oexp02_IO.xst" -ofn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab2/Oexp02_I0/Oexp02_IO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-2L Oexp02_IO.ngc Oexp02_IO.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Oexp02_IO_map.ncd Oexp02_IO.ngd Oexp02_IO.pcf 
+par -w -intstyle ise -ol high -mt off Oexp02_IO_map.ncd Oexp02_IO.ncd Oexp02_IO.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Oexp02_IO.twx Oexp02_IO.ncd -o Oexp02_IO.twr Oexp02_IO.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f Oexp02_IO.ut Oexp02_IO.ncd 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab3/OexpExp03_IP2SOC/Oexp02_IO.xst" -ofn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab3/OexpExp03_IP2SOC/Oexp02_IO.syr" 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab3/OexpExp03_IP2SOC/Oexp02_IO.xst" -ofn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab3/OexpExp03_IP2SOC/Oexp02_IO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc SOC-Sword.ucf -p xc7k160t-ffg676-2L Oexp02_IO.ngc Oexp02_IO.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Oexp02_IO_map.ncd Oexp02_IO.ngd Oexp02_IO.pcf 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab3/OexpExp03_IP2SOC/Oexp02_IO.xst" -ofn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab3/OexpExp03_IP2SOC/Oexp02_IO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc SOC-Sword.ucf -p xc7k160t-ffg676-2L Oexp02_IO.ngc Oexp02_IO.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Oexp02_IO_map.ncd Oexp02_IO.ngd Oexp02_IO.pcf 
+par -w -intstyle ise -ol high -mt off Oexp02_IO_map.ncd Oexp02_IO.ncd Oexp02_IO.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Oexp02_IO.twx Oexp02_IO.ncd -o Oexp02_IO.twr Oexp02_IO.pcf -ucf SOC-Sword.ucf 
+bitgen -intstyle ise -f Oexp02_IO.ut Oexp02_IO.ncd 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab3/OexpExp03_IP2SOC/Oexp02_IO.xst" -ofn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab3/OexpExp03_IP2SOC/Oexp02_IO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc SOC-Sword.ucf -p xc7k160t-ffg676-2L Oexp02_IO.ngc Oexp02_IO.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Oexp02_IO_map.ncd Oexp02_IO.ngd Oexp02_IO.pcf 
+par -w -intstyle ise -ol high -mt off Oexp02_IO_map.ncd Oexp02_IO.ncd Oexp02_IO.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Oexp02_IO.twx Oexp02_IO.ncd -o Oexp02_IO.twr Oexp02_IO.pcf -ucf SOC-Sword.ucf 
+bitgen -intstyle ise -f Oexp02_IO.ut Oexp02_IO.ncd 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab3/OexpExp03_IP2SOC/Oexp02_IO.xst" -ofn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab3/OexpExp03_IP2SOC/Oexp02_IO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc SOC-Sword.ucf -p xc7k160t-ffg676-2L Oexp02_IO.ngc Oexp02_IO.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Oexp02_IO_map.ncd Oexp02_IO.ngd Oexp02_IO.pcf 
+par -w -intstyle ise -ol high -mt off Oexp02_IO_map.ncd Oexp02_IO.ncd Oexp02_IO.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Oexp02_IO.twx Oexp02_IO.ncd -o Oexp02_IO.twr Oexp02_IO.pcf -ucf SOC-Sword.ucf 
+bitgen -intstyle ise -f Oexp02_IO.ut Oexp02_IO.ncd 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab3/OexpExp03_IP2SOC/Oexp02_IO.xst" -ofn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab3/OexpExp03_IP2SOC/Oexp02_IO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc SOC-Sword.ucf -p xc7k160t-ffg676-2L Oexp02_IO.ngc Oexp02_IO.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Oexp02_IO_map.ncd Oexp02_IO.ngd Oexp02_IO.pcf 
+par -w -intstyle ise -ol high -mt off Oexp02_IO_map.ncd Oexp02_IO.ncd Oexp02_IO.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Oexp02_IO.twx Oexp02_IO.ncd -o Oexp02_IO.twr Oexp02_IO.pcf -ucf SOC-Sword.ucf 
+bitgen -intstyle ise -f Oexp02_IO.ut Oexp02_IO.ncd 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab3/OexpExp03_IP2SOC/Oexp02_IO.xst" -ofn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab3/OexpExp03_IP2SOC/Oexp02_IO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc SOC-Sword.ucf -p xc7k160t-ffg676-2L Oexp02_IO.ngc Oexp02_IO.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Oexp02_IO_map.ncd Oexp02_IO.ngd Oexp02_IO.pcf 
+par -w -intstyle ise -ol high -mt off Oexp02_IO_map.ncd Oexp02_IO.ncd Oexp02_IO.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Oexp02_IO.twx Oexp02_IO.ncd -o Oexp02_IO.twr Oexp02_IO.pcf -ucf SOC-Sword.ucf 
+bitgen -intstyle ise -f Oexp02_IO.ut Oexp02_IO.ncd 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab3/OexpExp03_IP2SOC/Oexp02_IO.xst" -ofn "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab3/OexpExp03_IP2SOC/Oexp02_IO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc SOC-Sword.ucf -p xc7k160t-ffg676-2L Oexp02_IO.ngc Oexp02_IO.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Oexp02_IO_map.ncd Oexp02_IO.ngd Oexp02_IO.pcf 
+par -w -intstyle ise -ol high -mt off Oexp02_IO_map.ncd Oexp02_IO.ncd Oexp02_IO.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Oexp02_IO.twx Oexp02_IO.ncd -o Oexp02_IO.twr Oexp02_IO.pcf -ucf SOC-Sword.ucf 
+bitgen -intstyle ise -f Oexp02_IO.ut Oexp02_IO.ncd 

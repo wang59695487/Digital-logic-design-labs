@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\asus\Desktop\Computer_Organization\Lab\Lab5\Oxp6\OExp04_IP2CPU.ncd
+OUTFILE=C:\Users\asus\Desktop\Computer_Organization\Lab\Lab5\Oxp6\OExp04_IP2CPU.bit
+FAMILY=Kintex7
+PART=xc7k160t-2lffg676
+WORKINGDIR=C:\Users\asus\Desktop\Computer_Organization\Lab\Lab5\Oxp6
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661

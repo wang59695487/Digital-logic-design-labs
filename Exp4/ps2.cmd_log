@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/test_2/computer_/3/v1.5/ps2.v -lang verilog -prj Exp07-MUX -o ps2.spl -module ps2 -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w ps2.spl E:/test_2/computer_/3/v1.5/ps2.sym 

@@ -1,0 +1,4 @@
+sch2hdl -sympath I:/Exp07/ngc -intstyle ise -family kintex7 -verilog Display_drc.vf -w I:/framework/code/Display.sch 
+sch2sym -intstyle ise -family kintex7 -refsym Display I:/framework/code/Display.sch I:/framework/Display.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym Display I:/framework/code/Display.sch I:/framework/Display.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym Display I:/framework/code/Display.sch I:/framework/Display.sym 

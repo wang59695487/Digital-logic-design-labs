@@ -1,0 +1,6 @@
+sch2hdl -sympath D:/v1.6.1/ipcore_dir -intstyle ise -family kintex7 -verilog SCPU_drc.vf -w D:/v1.6.1/SCPU.sch 
+sch2sym -intstyle ise -family kintex7 -w -refsym SCPU D:/v1.6.1/SCPU.sch D:/v1.6.1/SCPU.sym 
+sch2hdl -sympath D:/v1.6.1/ipcore_dir -intstyle ise -family kintex7 -verilog SCPU_drc.vf -w D:/v1.6.1/SCPU.sch 
+sch2sym -intstyle ise -family kintex7 -w -refsym SCPU D:/v1.6.1/SCPU.sch D:/v1.6.1/SCPU.sym 
+sch2hdl -sympath D:/v1.6.1/ipcore_dir -intstyle ise -family kintex7 -verilog SCPU_drc.vf -w D:/v1.6.1/SCPU.sch 
+sch2sym -intstyle ise -family kintex7 -w -refsym SCPU D:/v1.6.1/SCPU.sch D:/v1.6.1/SCPU.sym 

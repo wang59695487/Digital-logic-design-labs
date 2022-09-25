@@ -1,0 +1,4 @@
+vhdtdtfi -lib work I:/framework/clkdiv.v -lang verilog -prj framework -o clkdiv.spl -module clkdiv -template D:/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w clkdiv.spl I:/framework/clkdiv.sym 
+vhdtdtfi -lib work I:/framework/clkdiv.v -lang verilog -prj framework -o clkdiv.spl -module clkdiv -template D:/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w clkdiv.spl I:/framework/clkdiv.sym 

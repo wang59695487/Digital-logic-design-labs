@@ -1,0 +1,21 @@
+[Inputs]
+=opcode[5:0]=
+=Func[5:0]=
+[Outputs]
+RegDst
+ALUSrc
+MemtoReg
+RegWrite
+MemRead
+MemWrite
+Bne
+Beq
+JAL
+Jump
+JR
+shift
+=ALU_control[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Controller
+

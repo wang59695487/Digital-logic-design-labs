@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="Exp07-MUX" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ALU E:|test_1|logicproject|8|Framework|ALU.v</ClosedNode>
+         <ClosedNode>/ALU E:|test_2|computer_|1|111|test_2|ALU.v</ClosedNode>
+         <ClosedNode>/ALU E:|test_2|computer_|1|111|v1.4|ALU.v</ClosedNode>
+         <ClosedNode>/ALU E:|test_2|computer_|1|test_2|ALU.v</ClosedNode>
+         <ClosedNode>/ALU E:|test_2|computer_|3|v1.5|ALU.v/ADD_32 - adc32</ClosedNode>
+         <ClosedNode>/ALU E:|test_2|computer_|3|v1.5|ALU.v/MUX1 - MUX8T1_32</ClosedNode>
+         <ClosedNode>/ALU E:|test_2|computer_|3|v1.6.1|ALU.v</ClosedNode>
+         <ClosedNode>/ALU E:|test_2|computer_|3|v1.6|ALU.v</ClosedNode>
+         <ClosedNode>/ALU G:|test_2|Top_Fsm _2|ALU.v</ClosedNode>
+         <ClosedNode>/Arduino E:|test_1|logicproject|10|Top_Fsm|Arduino.sch</ClosedNode>
+         <ClosedNode>/Arduino E:|test_1|logicproject|11|Top_Fsm|Arduino.sch</ClosedNode>
+         <ClosedNode>/Arduino E:|test_1|logicproject|12|Top_Fsm _1|Arduino.sch</ClosedNode>
+         <ClosedNode>/Arduino E:|test_1|logicproject|13|Top_Fsm _2|Arduino.sch/XLXI_4 - Seg7_Dev</ClosedNode>
+         <ClosedNode>/Arduino E:|test_1|logicproject|7|test1|Exp07-MUX|Arduino.sch/XLXI_4 - Seg7_Dev/XLXI_2 - ScanSync</ClosedNode>
+         <ClosedNode>/Arduino E:|test_1|logicproject|7|test1|Exp07-MUX|Arduino.sch/XLXI_4 - Seg7_Dev/XLXI_6 - MUX_8</ClosedNode>
+         <ClosedNode>/Arduino E:|test_1|logicproject|7|test1|Exp07-MUX|Arduino.sch/XLXI_4 - Seg7_Dev/XLXI_8 - SCANSYNC_1</ClosedNode>
+         <ClosedNode>/Arduino E:|test_1|logicproject|8|Framework|Arduino.sch</ClosedNode>
+         <ClosedNode>/Arduino E:|test_2|computer_|1|111|test_2|Arduino.sch</ClosedNode>
+         <ClosedNode>/Arduino E:|test_2|computer_|1|111|v1.4|Arduino.sch</ClosedNode>
+         <ClosedNode>/Arduino E:|test_2|computer_|1|test_2|Arduino.sch</ClosedNode>
+         <ClosedNode>/Arduino E:|test_2|computer_|3|v1.5|Arduino.sch/XLXI_4 - Seg7_Dev</ClosedNode>
+         <ClosedNode>/Arduino E:|test_2|computer_|3|v1.6.1|Arduino.sch</ClosedNode>
+         <ClosedNode>/Arduino E:|test_2|computer_|3|v1.6|Arduino.sch</ClosedNode>
+         <ClosedNode>/Arduino G:|test_2|Top_Fsm _2|Arduino.sch</ClosedNode>
+         <ClosedNode>/Counter_4bit E:|test_1|logicproject|10|Top_Fsm|Counter_4bit.sch</ClosedNode>
+         <ClosedNode>/Counter_4bit E:|test_2|computer_|1|111|test_2|Counter_4bit.sch</ClosedNode>
+         <ClosedNode>/Counter_4bit E:|test_2|computer_|1|test_2|Counter_4bit.sch</ClosedNode>
+         <ClosedNode>/Counter_4bit E:|test_2|computer_|3|v1.5|Counter_4bit.sch</ClosedNode>
+         <ClosedNode>/Counter_4bit E:|test_2|computer_|3|v1.6|Counter_4bit.sch</ClosedNode>
+         <ClosedNode>/Counter_4bit G:|test_2|Top_Fsm _2|Counter_4bit.sch</ClosedNode>
+         <ClosedNode>/DM74LS194 E:|test_1|logicproject|12|Top_Fsm _1|DM74LS194.sch</ClosedNode>
+         <ClosedNode>/Display E:|test_1|logicproject|7|test1|Exp07-MUX|Display.sch</ClosedNode>
+         <ClosedNode>/Framework D:|v1.6.1|Framework.sch/XLXI_12 - Display</ClosedNode>
+         <ClosedNode>/Framework D:|v1.6.1|Framework.sch/XLXI_15 - Seg7_Dev</ClosedNode>
+         <ClosedNode>/Framework D:|v1.6.1|Framework.sch/XLXI_40 - GPIO</ClosedNode>
+         <ClosedNode>/Framework D:|v1.6.1|Framework.sch/XLXI_5 - Multi_8CH32</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|10|Top_Fsm|Framework.sch/XLXI_12 - Display</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|10|Top_Fsm|Framework.sch/XLXI_15 - Seg7_Dev</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|10|Top_Fsm|Framework.sch/XLXI_18 - ALU</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|10|Top_Fsm|Framework.sch/XLXI_19 - Counter_4bit</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|10|Top_Fsm|Framework.sch/XLXI_5 - Multi_8CH32</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|10|Top_Fsm|Framework.sch/XLXI_6 - GPIO</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|11|Top_Fsm _1|Framework.sch/XLXI_12 - Display</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|11|Top_Fsm _1|Framework.sch/XLXI_15 - Seg7_Dev</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|11|Top_Fsm _1|Framework.sch/XLXI_18 - ALU</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|11|Top_Fsm _1|Framework.sch/XLXI_19 - Counter_4bit</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|11|Top_Fsm _1|Framework.sch/XLXI_5 - Multi_8CH32</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|11|Top_Fsm _1|Framework.sch/XLXI_6 - GPIO</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|11|Top_Fsm|Framework.sch</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|11|Top_Fsm|Framework.sch/XLXI_12 - Display</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|11|Top_Fsm|Framework.sch/XLXI_15 - Seg7_Dev</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|11|Top_Fsm|Framework.sch/XLXI_18 - ALU</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|11|Top_Fsm|Framework.sch/XLXI_18 - ALU/MUX1 - MUX8T1_32/XLXI_1 - MUX8T1_8</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|11|Top_Fsm|Framework.sch/XLXI_18 - ALU/MUX1 - MUX8T1_32/XLXI_2 - MUX8T1_8</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|11|Top_Fsm|Framework.sch/XLXI_18 - ALU/MUX1 - MUX8T1_32/XLXI_3 - MUX8T1_8</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|11|Top_Fsm|Framework.sch/XLXI_18 - ALU/MUX1 - MUX8T1_32/XLXI_4 - MUX8T1_8</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|11|Top_Fsm|Framework.sch/XLXI_19 - Counter_4bit</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|11|Top_Fsm|Framework.sch/XLXI_5 - Multi_8CH32</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|11|Top_Fsm|Framework.sch/XLXI_6 - GPIO</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|12|Top_Fsm _1|Framework.sch/XLXI_12 - Display/XLXI_4 - MUX_64</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|12|Top_Fsm _1|Framework.sch/XLXI_12 - Display/XLXI_6 - HexTo8SEG</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|12|Top_Fsm _1|Framework.sch/XLXI_15 - Seg7_Dev</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|12|Top_Fsm _1|Framework.sch/XLXI_18 - ALU</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|12|Top_Fsm _1|Framework.sch/XLXI_19 - Counter_4bit</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|12|Top_Fsm _1|Framework.sch/XLXI_22 - Regs_8_32</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|12|Top_Fsm _1|Framework.sch/XLXI_23 - Shift_32/XLXI_2 - SN74LS194</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|12|Top_Fsm _1|Framework.sch/XLXI_23 - Shift_32/XLXI_3 - SN74LS194</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|12|Top_Fsm _1|Framework.sch/XLXI_23 - Shift_32/XLXI_4 - SN74LS194</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|12|Top_Fsm _1|Framework.sch/XLXI_23 - Shift_32/XLXI_5 - SN74LS194</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|12|Top_Fsm _1|Framework.sch/XLXI_23 - Shift_32/XLXI_6 - SN74LS194</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|12|Top_Fsm _1|Framework.sch/XLXI_23 - Shift_32/XLXI_8 - SN74LS194</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|12|Top_Fsm _1|Framework.sch/XLXI_23 - Shift_32/XLXI_9 - SN74LS194</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|12|Top_Fsm _1|Framework.sch/XLXI_5 - Multi_8CH32</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|12|Top_Fsm _1|Framework.sch/XLXI_6 - GPIO</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|13|Top_Fsm _2|Framework.sch/XLXI_12 - Display</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|13|Top_Fsm _2|Framework.sch/XLXI_15 - Seg7_Dev</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|13|Top_Fsm _2|Framework.sch/XLXI_18 - ALU</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|13|Top_Fsm _2|Framework.sch/XLXI_19 - Counter_4bit</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|13|Top_Fsm _2|Framework.sch/XLXI_22 - Regs_8_32</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|13|Top_Fsm _2|Framework.sch/XLXI_23 - Shift_32</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|13|Top_Fsm _2|Framework.sch/XLXI_5 - Multi_8CH32</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|13|Top_Fsm _2|Framework.sch/XLXI_6 - GPIO</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_10 - Seg7_Dev</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_10 - Seg7_Dev/XLXI_6 - MUX_8</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_10 - Seg7_Dev/XLXI_8 - SCANSYNC_1</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_12 - Display</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_12 - Display/XLXI_4 - MUX_64</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_12 - Display/XLXI_6 - HexTo8SEG</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_12 - Display/XLXI_6 - HexTo8SEG/HTS0 - Hex2Seg</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_12 - Display/XLXI_6 - HexTo8SEG/HTS1 - Hex2Seg</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_12 - Display/XLXI_6 - HexTo8SEG/HTS2 - Hex2Seg</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_12 - Display/XLXI_6 - HexTo8SEG/HTS3 - Hex2Seg</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_12 - Display/XLXI_6 - HexTo8SEG/HTS4 - Hex2Seg</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_12 - Display/XLXI_6 - HexTo8SEG/HTS5 - Hex2Seg</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_12 - Display/XLXI_6 - HexTo8SEG/HTS6 - Hex2Seg</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_12 - Display/XLXI_6 - HexTo8SEG/HTS7 - Hex2Seg</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_13 - Seg7_Dev/XLXI_6 - MUX_8</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_13 - Seg7_Dev/XLXI_8 - SCANSYNC_1</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_15 - Seg7_Dev</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_4 - Display</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_4 - Display/XLXI_2 - HexTo8SEG/HTS0 - Hex2Seg</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_4 - Display/XLXI_2 - HexTo8SEG/HTS1 - Hex2Seg</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_4 - Display/XLXI_2 - HexTo8SEG/HTS2 - Hex2Seg</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_4 - Display/XLXI_2 - HexTo8SEG/HTS3 - Hex2Seg</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_4 - Display/XLXI_2 - HexTo8SEG/HTS4 - Hex2Seg</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_4 - Display/XLXI_2 - HexTo8SEG/HTS5 - Hex2Seg</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_4 - Display/XLXI_2 - HexTo8SEG/HTS6 - Hex2Seg</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_4 - Display/XLXI_2 - HexTo8SEG/HTS7 - Hex2Seg</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_4 - Display/XLXI_4 - MUX_64</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_4 - Display/XLXI_6 - HexTo8SEG</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_5 - Multi_8CH32/MUX1_DispData - MUX8T1_32</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_5 - Multi_8CH32/MUX2_Blink - MUX8T1_8</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_5 - Multi_8CH32/MUX3_Blink - MUX8T1_8</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|7|test1|Exp07-MUX|Framework.sch/XLXI_6 - GPIO</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|8|Framework|Framework.sch/XLXI_12 - Display</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|8|Framework|Framework.sch/XLXI_15 - Seg7_Dev</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|8|Framework|Framework.sch/XLXI_17 - ALU/MUX1 - MUX8T1_32</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|8|Framework|Framework.sch/XLXI_18 - ALU/MUX1 - MUX8T1_32/XLXI_2 - MUX8T1_8</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|8|Framework|Framework.sch/XLXI_18 - ALU/MUX1 - MUX8T1_32/XLXI_3 - MUX8T1_8</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|8|Framework|Framework.sch/XLXI_18 - ALU/MUX1 - MUX8T1_32/XLXI_4 - MUX8T1_8</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|8|Framework|Framework.sch/XLXI_5 - Multi_8CH32</ClosedNode>
+         <ClosedNode>/Framework E:|test_1|logicproject|8|Framework|Framework.sch/XLXI_6 - GPIO</ClosedNode>
+         <ClosedNode>/Framework E:|test_2|computer_|1|111|test_2|Framework.sch/XLXI_12 - Display</ClosedNode>
+         <ClosedNode>/Framework E:|test_2|computer_|1|111|test_2|Framework.sch/XLXI_15 - Seg7_Dev</ClosedNode>
+         <ClosedNode>/Framework E:|test_2|computer_|1|111|test_2|Framework.sch/XLXI_5 - Multi_8CH32</ClosedNode>
+         <ClosedNode>/Framework E:|test_2|computer_|1|111|test_2|Framework.sch/XLXI_6 - GPIO</ClosedNode>
+         <ClosedNode>/Framework E:|test_2|computer_|1|111|v1.4|Framework.sch/XLXI_12 - Display/XLXI_4 - MUX_64</ClosedNode>
+         <ClosedNode>/Framework E:|test_2|computer_|1|111|v1.4|Framework.sch/XLXI_12 - Display/XLXI_6 - HexTo8SEG</ClosedNode>
+         <ClosedNode>/Framework E:|test_2|computer_|1|111|v1.4|Framework.sch/XLXI_15 - Seg7_Dev</ClosedNode>
+         <ClosedNode>/Framework E:|test_2|computer_|1|111|v1.4|Framework.sch/XLXI_5 - Multi_8CH32</ClosedNode>
+         <ClosedNode>/Framework E:|test_2|computer_|1|test_2|Framework.sch/XLXI_5 - Multi_8CH32</ClosedNode>
+         <ClosedNode>/Framework E:|test_2|computer_|3|v1.5|Framework.sch/XLXI_12 - Display</ClosedNode>
+         <ClosedNode>/Framework E:|test_2|computer_|3|v1.5|Framework.sch/XLXI_15 - Seg7_Dev</ClosedNode>
+         <ClosedNode>/Framework E:|test_2|computer_|3|v1.5|Framework.sch/XLXI_15 - Seg7_Dev/XLXI_6 - MUX_8</ClosedNode>
+         <ClosedNode>/Framework E:|test_2|computer_|3|v1.5|Framework.sch/XLXI_15 - Seg7_Dev/XLXI_8 - SCANSYNC_1</ClosedNode>
+         <ClosedNode>/Framework E:|test_2|computer_|3|v1.5|Framework.sch/XLXI_5 - Multi_8CH32</ClosedNode>
+         <ClosedNode>/Framework E:|test_2|computer_|3|v1.6|Framework.sch/XLXI_12 - Display/XLXI_4 - MUX_64</ClosedNode>
+         <ClosedNode>/Framework E:|test_2|computer_|3|v1.6|Framework.sch/XLXI_12 - Display/XLXI_6 - HexTo8SEG</ClosedNode>
+         <ClosedNode>/Framework E:|test_2|computer_|3|v1.6|Framework.sch/XLXI_15 - Seg7_Dev</ClosedNode>
+         <ClosedNode>/Framework E:|test_2|computer_|3|v1.6|Framework.sch/XLXI_5 - Multi_8CH32</ClosedNode>
+         <ClosedNode>/Framework G:|test_2|Top_Fsm _2|Framework.sch</ClosedNode>
+         <ClosedNode>/Framework H:|file|test_2|Framework.sch/XLXI_12 - Display</ClosedNode>
+         <ClosedNode>/Framework H:|file|test_2|Framework.sch/XLXI_5 - Multi_8CH32</ClosedNode>
+         <ClosedNode>/Framework H:|file|test_2|Framework.sch/XLXI_6 - GPIO</ClosedNode>
+         <ClosedNode>/GPIO E:|test_1|logicproject|7|test1|Exp07-MUX|GPIO.v</ClosedNode>
+         <ClosedNode>/HexTo8SEG E:|test_1|logicproject|7|test1|Exp07-MUX|HexTo8SEG.v</ClosedNode>
+         <ClosedNode>/MUX8T1_32 E:|test_1|logicproject|7|test1|Exp07-MUX|MUX8T1_32.sch</ClosedNode>
+         <ClosedNode>/MUX8T1_8 E:|test_1|logicproject|7|test1|Exp07-MUX|MUX8T1_8.sch</ClosedNode>
+         <ClosedNode>/MUX8T1_8 E:|test_1|logicproject|7|test|Exp07-MUX|MUX8T1_8.sch</ClosedNode>
+         <ClosedNode>/MUX_16 E:|test_1|logicproject|7|test1|Exp07-MUX|MUX_16.sch</ClosedNode>
+         <ClosedNode>/MUX_64 E:|test_1|logicproject|7|test1|Exp07-MUX|MUX_64.sch</ClosedNode>
+         <ClosedNode>/Multi_8CH32 E:|test_1|logicproject|7|test1|Exp07-MUX|Multi_8CH32.v</ClosedNode>
+         <ClosedNode>/Reg_32 E:|test_1|logicproject|11|Top_Fsm|Reg_32.v/R2 - Regs_8bit</ClosedNode>
+         <ClosedNode>/Reg_32 E:|test_1|logicproject|11|Top_Fsm|Reg_32.v/R3 - Regs_8bit</ClosedNode>
+         <ClosedNode>/Reg_32 E:|test_1|logicproject|11|Top_Fsm|Reg_32.v/R4 - Regs_8bit</ClosedNode>
+         <ClosedNode>/Regs_8_32 D:|v1.6.1|Regs_8_32.sch</ClosedNode>
+         <ClosedNode>/Regs_8_32 E:|test_1|logicproject|11|Top_Fsm|Regs_8_32.sch/XLXI_1 - Reg_32</ClosedNode>
+         <ClosedNode>/Regs_8_32 E:|test_1|logicproject|11|Top_Fsm|Regs_8_32.sch/XLXI_2 - Reg_32</ClosedNode>
+         <ClosedNode>/Regs_8_32 E:|test_1|logicproject|11|Top_Fsm|Regs_8_32.sch/XLXI_3 - Reg_32</ClosedNode>
+         <ClosedNode>/Regs_8_32 E:|test_1|logicproject|11|Top_Fsm|Regs_8_32.sch/XLXI_4 - Reg_32</ClosedNode>
+         <ClosedNode>/Regs_8_32 E:|test_1|logicproject|11|Top_Fsm|Regs_8_32.sch/XLXI_5 - Reg_32</ClosedNode>
+         <ClosedNode>/Regs_8_32 E:|test_1|logicproject|11|Top_Fsm|Regs_8_32.sch/XLXI_6 - Reg_32</ClosedNode>
+         <ClosedNode>/Regs_8_32 E:|test_1|logicproject|11|Top_Fsm|Regs_8_32.sch/XLXI_7 - Reg_32</ClosedNode>
+         <ClosedNode>/Regs_8_32 E:|test_1|logicproject|11|Top_Fsm|Regs_8_32.sch/XLXI_8 - Reg_32</ClosedNode>
+         <ClosedNode>/Regs_8_32 E:|test_2|computer_|3|v1.5|Regs_8_32.sch</ClosedNode>
+         <ClosedNode>/Regs_8_32 E:|test_2|computer_|3|v1.6|Regs_8_32.sch</ClosedNode>
+         <ClosedNode>/Regs_8_32 E:|v1.6.1|Regs_8_32.sch</ClosedNode>
+         <ClosedNode>/Regs_8_32 G:|test_2|Top_Fsm _2|Regs_8_32.sch</ClosedNode>
+         <ClosedNode>/SN74LS194 D:|v1.6.1|SN74LS194.sch</ClosedNode>
+         <ClosedNode>/SN74LS194 E:|test_1|logicproject|13|Top_Fsm _2|SN74LS194.sch</ClosedNode>
+         <ClosedNode>/SN74LS194 E:|test_2|computer_|3|v1.5|SN74LS194.sch</ClosedNode>
+         <ClosedNode>/Show D:|v1.6.1|Show.sch</ClosedNode>
+         <ClosedNode>/Show E:|test_1|logicproject|11|Top_Fsm|Show.sch</ClosedNode>
+         <ClosedNode>/Show E:|test_1|logicproject|13|Top_Fsm _2|Show.sch</ClosedNode>
+         <ClosedNode>/Show E:|test_1|logicproject|7|test1|Exp07-MUX|Show.sch</ClosedNode>
+         <ClosedNode>/Show E:|test_1|logicproject|7|test1|Exp07-MUX|Show.sch/XLXI_12 - Seg7_Dev16/XLXI_1 - ScanSync</ClosedNode>
+         <ClosedNode>/Show E:|test_1|logicproject|8|Framework|Show.sch</ClosedNode>
+         <ClosedNode>/Show E:|test_2|computer_|3|v1.5|Show.sch</ClosedNode>
+         <ClosedNode>/Show E:|test_2|computer_|3|v1.6|Show.sch</ClosedNode>
+         <ClosedNode>/Show G:|test_2|Top_Fsm _2|Show.sch</ClosedNode>
+         <ClosedNode>/adc32 E:|test_1|logicproject|8|Framework|adc32.sch</ClosedNode>
+         <ClosedNode>/add4b D:|v1.6.1|add4b.sch</ClosedNode>
+         <ClosedNode>/add4b E:|test_1|logicproject|11|Top_Fsm|add4b.sch</ClosedNode>
+         <ClosedNode>/add4b E:|test_1|logicproject|13|Top_Fsm _2|add4b.sch</ClosedNode>
+         <ClosedNode>/add4b E:|test_1|logicproject|8|Framework|add4b.sch</ClosedNode>
+         <ClosedNode>/add4b E:|test_2|computer_|3|v1.5|add4b.sch</ClosedNode>
+         <ClosedNode>/add4b E:|test_2|computer_|3|v1.6|add4b.sch</ClosedNode>
+         <ClosedNode>/ift_32 D:|v1.6.1|ift_32.v</ClosedNode>
+         <ClosedNode>/ift_32 E:|test_2|computer_|3|v1.5|ift_32.v</ClosedNode>
+         <ClosedNode>/ift_32 E:|test_2|computer_|3|v1.6|ift_32.v</ClosedNode>
+         <ClosedNode>/lock D:|v1.6.1|lock.v</ClosedNode>
+         <ClosedNode>/lock E:|test_1|logicproject|11|Top_Fsm|lock.v</ClosedNode>
+         <ClosedNode>/lock E:|test_1|logicproject|13|Top_Fsm _2|lock.v</ClosedNode>
+         <ClosedNode>/lock E:|test_2|computer_|3|v1.5|lock.v</ClosedNode>
+         <ClosedNode>/lock E:|test_2|computer_|3|v1.6|lock.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >50</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001bc000000020000000000000000000000000200000064ffffffff000000810000000300000002000001bc0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Framework (D:/Exp4/Framework.sch)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Update All Schematic Files</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000124000000010000000100000000000000000000000064ffffffff000000810000000000000001000001240000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Update All Schematic Files</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002a2000000040101000100000000000000000000000064ffffffff000000810000000000000004000000a400000001000000000000007b00000001000000000000007800000001000000000000010b0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>D:\Exp4\adc32.sch</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000121000000010001000100000000000000000000000064ffffffff000000810000000000000001000001210000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000113000000010000000100000000000000000000000064ffffffff000000810000000000000001000001130000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/MUX4T1_4_MUX4T1_4_sch_tb E:|test_1|logicproject|7|test|Exp07-MUX|QAQ.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000011e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000011e0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>MUX4T1_4_MUX4T1_4_sch_tb (E:/test_1/logicproject/7/test/Exp07-MUX/QAQ.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>ISim Simulator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000143000000010000000100000000000000000000000064ffffffff000000810000000000000001000001430000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" />
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000143000000010000000100000000000000000000000064ffffffff000000810000000000000001000001430000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000012d0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000124000000010000000100000000000000000000000064ffffffff000000810000000000000001000001240000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fb000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fb0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_NGC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000124000000010000000100000000000000000000000064ffffffff000000810000000000000001000001240000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_BMM" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" />
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fb000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fb0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

@@ -1,0 +1,6 @@
+vhdtdtfi -lib work E:/test_1/logicproject/7/test1/Exp07-MUX/GPIO.v -lang verilog -prj Exp07-MUX -o GPIO.spl -module GPIO -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 GPIO.spl E:/test_1/logicproject/7/test1/Exp07-MUX/GPIO.sym 
+vhdtdtfi -lib work E:/test_2/computer_/3/v1.5/GPIO.v -lang verilog -prj Exp07-MUX -o GPIO.spl -module GPIO -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w GPIO.spl E:/test_2/computer_/3/v1.5/GPIO.sym 
+vhdtdtfi -lib work E:/test_2/computer_/3/v1.5/GPIO.v -lang verilog -prj Exp07-MUX -o GPIO.spl -module GPIO -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w GPIO.spl E:/test_2/computer_/3/v1.5/GPIO.sym 

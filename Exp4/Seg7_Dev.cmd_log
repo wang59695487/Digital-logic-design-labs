@@ -1,0 +1,9 @@
+sch2sym -intstyle ise -family kintex7 -refsym Seg7_Dev E:/test_1/logicproject/7/test1/Exp07-MUX/Seg7_Dev.sch E:/test_1/logicproject/7/test1/Exp07-MUX/Seg7_Dev.sym 
+sch2sym -intstyle ise -family kintex7 -refsym Seg7_Dev E:/test_1/logicproject/7/test1/Exp07-MUX/Seg7_Dev.sch E:/test_1/logicproject/7/test1/Exp07-MUX/Seg7_Dev.sym 
+sch2sym -intstyle ise -family kintex7 -refsym Seg7_Dev E:/test_1/logicproject/7/test1/Exp07-MUX/Seg7_Dev.sch E:/test_1/logicproject/7/test1/Exp07-MUX/Seg7_Dev.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog Seg7_Dev_drc.vf -w E:/test_1/logicproject/7/test1/Exp07-MUX/Seg7_Dev.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog Seg7_Dev.vf -w E:/test_1/logicproject/7/test1/Exp07-MUX/Seg7_Dev.sch 
+sch2sym -intstyle ise -family kintex7 -refsym Seg7_Dev E:/test_1/logicproject/7/test1/Exp07-MUX/Seg7_Dev.sch E:/test_1/logicproject/7/test1/Exp07-MUX/Seg7_Dev.sym 
+sch2sym -intstyle ise -family kintex7 -refsym Seg7_Dev E:/test_1/logicproject/7/test1/Exp07-MUX/Seg7_Dev.sch E:/test_1/logicproject/7/test1/Exp07-MUX/Seg7_Dev.sym 
+sch2sym -intstyle ise -family kintex7 -refsym Seg7_Dev E:/test_1/logicproject/7/test1/Exp07-MUX/Seg7_Dev.sch E:/test_1/logicproject/7/test1/Exp07-MUX/Seg7_Dev.sym 
+sch2sym -intstyle ise -family kintex7 -refsym Seg7_Dev E:/test_1/logicproject/7/test1/Exp07-MUX/Seg7_Dev.sch E:/test_1/logicproject/7/test1/Exp07-MUX/Seg7_Dev.sym 

@@ -1,0 +1,20 @@
+// Verilog instantiation template created from schematic D:\z\Lab2\Lab2\SSeg7_Dev.sch - Tue Mar 12 17:23:29 2019
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   SSeg7_Dev UUT (
+		.seg_clk(    ), 
+		.seg_sout(    ), 
+		.SEG_PEN(    ), 
+		.seg_clrn(    ), 
+		.clk(    ), 
+		.rst(    ), 
+		.Start(    ), 
+		.SW0(    ), 
+		.flash(    ), 
+		.LES(    ), 
+		.point(    ), 
+		.Hexs(    )
+   );

@@ -1,0 +1,7 @@
+vhdtdtfi -lang verilog -prj LAB3_SCPU -o "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/Controller.tfi" -lib work "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz//Controller.v" -module Controller -template F:/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work E:/Lab3/Lab3/Controller.v -lang verilog -prj LAB3_SCPU -o Controller.spl -module Controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Controller.spl E:/Lab3/Lab3/Controller.sym 
+vhdtdtfi -lib work E:/Lab3/Lab3/Controller.v -lang verilog -prj LAB3_SCPU -o Controller.spl -module Controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Controller.spl E:/Lab3/Lab3/Controller.sym 
+vhdtdtfi -lib work E:/Lab3/Lab3/Controller.v -lang verilog -prj LAB3_SCPU -o Controller.spl -module Controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Controller.spl E:/Lab3/Lab3/Controller.sym 

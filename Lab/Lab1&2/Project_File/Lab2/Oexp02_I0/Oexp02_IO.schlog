@@ -1,0 +1,11 @@
+select figure at 3267 2299 8 -branches -sn=1
+select figure at 3267 2299 8 -branches -all -sn=1
+select figure at 4121 3766 8 -branches -sn=1
+select figure at 3985 3699 8 -branches -sn=1
+select figure at 3888 3632 8 -branches -sn=1
+select figure at 3898 3636 8 -branches -sn=1
+select figure at 3884 3629 8 -branches -sn=1
+select figure at 3892 3636 8 -branches -sn=1
+select figure at 3886 3634 8 -branches -sn=1
+select figure at 3886 3634 8 -branches -all -sn=1
+select figure at 4128 3661 8 -branches -sn=1

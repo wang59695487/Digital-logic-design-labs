@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family kintex7 -refsym add E:/test_1/logicproject/8/Framework/add.sch E:/test_1/logicproject/8/Framework/add.sym 
+sch2sym -intstyle ise -family kintex7 -refsym add E:/test_1/logicproject/8/Framework/add.sch E:/test_1/logicproject/8/Framework/add.sym 

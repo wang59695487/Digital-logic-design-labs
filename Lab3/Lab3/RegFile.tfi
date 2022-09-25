@@ -1,0 +1,17 @@
+
+
+
+// Instantiate the module
+RegFile instance_name (
+    .clk(clk), 
+    .rst(rst), 
+    .wt(wt), 
+    .Data_in(Data_in), 
+    .RS_addrA(RS_addrA), 
+    .RT_addrB(RT_addrB), 
+    .WT_addr(WT_addr), 
+    .R_dataA(R_dataA), 
+    .R_dataB(R_dataB)
+    );
+
+

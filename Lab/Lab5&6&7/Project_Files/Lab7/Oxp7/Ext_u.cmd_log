@@ -1,0 +1,2 @@
+vhdtdtfi -lib work G:/Oxp7/Ext_u.v -lang verilog -prj OExp03_IP2SOC -o Ext_u.spl -module Ext_u -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Ext_u.spl G:/Oxp7/Ext_u.sym 

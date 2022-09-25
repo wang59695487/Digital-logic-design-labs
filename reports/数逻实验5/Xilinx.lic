@@ -1,0 +1,28 @@
+# ----- REMOVE LINES ABOVE HERE --------------------------
+#
+# This license is valid from Thu Dec 10 15:28:48 UTC 2015.
+#
+# This is license NODELOCKED to HOSTID=c018850cdb76;
+# there is no need to run lmgrd for this license.
+#
+#
+# This is a permanent license generated on Thu Dec 10 15:28:48 UTC 2015
+INCREMENT ZEDWEBPACK_XC7Z020 xilinxd 2016.03 permanent uncounted \
+1860EE7F2E7B \
+VENDOR_STRING=qfpp888,ZEDWEBPACK_XC7Z020,software,permanent,_211016031_1777506664_210599442_749 \
+HOSTID=c018850cdb76 ISSUER="Xilinx Inc" START=10-Dec-2015 \
+TS_OK
+#
+#
+# ----------------------------------------------------------------------
+#  The following PACKAGE definition is a REQUIRED part of this license:
+#
+PACKAGE ZEDWEBPACK_XC7Z020 xilinxd 2016.03 D8F44EAEAF2E \
+COMPONENTS="SDK ChipScopePro_SIOTK ChipscopePro WebPACK XPS \
+Simulation Implementation Analyzer Synthesis XC7Z020 ISIM \
+PlanAhead" OPTIONS=SUITE
+#
+# ------------------------------------------------------------------------------
+#
+# ----- REMOVE LINES BELOW HERE --------------------------
+

@@ -1,0 +1,1392 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Framework_drc.vf
+// /___/   /\     Timestamp : 12/14/2018 10:24:26
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: D:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family kintex7 -verilog Framework_drc.vf -w E:/test_1/logicproject/11/Top_Fsm/Framework.sch
+//Design Name: Framework
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Decoder_38_MUSER_Framework(A, 
+                                  B, 
+                                  C, 
+                                  D0, 
+                                  D1, 
+                                  D2, 
+                                  D3, 
+                                  D4, 
+                                  D5, 
+                                  D6, 
+                                  D7);
+
+    input A;
+    input B;
+    input C;
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   output D4;
+   output D5;
+   output D6;
+   output D7;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_8;
+   wire XLXN_10;
+   wire XLXN_12;
+   wire XLXN_14;
+   wire XLXN_16;
+   
+   INV  XLXI_1 (.I(A), 
+               .O(XLXN_1));
+   INV  XLXI_2 (.I(B), 
+               .O(XLXN_2));
+   AND2  XLXI_3 (.I0(XLXN_2), 
+                .I1(XLXN_1), 
+                .O(XLXN_8));
+   AND2  XLXI_4 (.I0(XLXN_2), 
+                .I1(A), 
+                .O(XLXN_10));
+   AND2  XLXI_5 (.I0(B), 
+                .I1(XLXN_1), 
+                .O(XLXN_12));
+   AND2  XLXI_6 (.I0(B), 
+                .I1(A), 
+                .O(XLXN_14));
+   INV  XLXI_7 (.I(C), 
+               .O(XLXN_16));
+   AND2  XLXI_8 (.I0(XLXN_16), 
+                .I1(XLXN_8), 
+                .O(D0));
+   AND2  XLXI_9 (.I0(XLXN_16), 
+                .I1(XLXN_10), 
+                .O(D1));
+   AND2  XLXI_10 (.I0(XLXN_16), 
+                 .I1(XLXN_12), 
+                 .O(D2));
+   AND2  XLXI_11 (.I0(XLXN_16), 
+                 .I1(XLXN_14), 
+                 .O(D3));
+   AND2  XLXI_12 (.I0(C), 
+                 .I1(XLXN_8), 
+                 .O(D4));
+   AND2  XLXI_13 (.I0(C), 
+                 .I1(XLXN_10), 
+                 .O(D5));
+   AND2  XLXI_14 (.I0(C), 
+                 .I1(XLXN_12), 
+                 .O(D6));
+   AND2  XLXI_15 (.I0(C), 
+                 .I1(XLXN_14), 
+                 .O(D7));
+endmodule
+`timescale 1ns / 1ps
+
+module Regs_8_32_MUSER_Framework(Addr_A, 
+                                 Addr_B, 
+                                 Addr_W, 
+                                 clk, 
+                                 cr, 
+                                 Di, 
+                                 WE, 
+                                 QA, 
+                                 QB);
+
+    input [2:0] Addr_A;
+    input [2:0] Addr_B;
+    input [2:0] Addr_W;
+    input clk;
+    input cr;
+    input [31:0] Di;
+    input WE;
+   output [31:0] QA;
+   output [31:0] QB;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_37;
+   wire XLXN_38;
+   wire XLXN_39;
+   wire XLXN_40;
+   wire XLXN_41;
+   wire XLXN_42;
+   wire XLXN_43;
+   wire XLXN_44;
+   wire [31:0] XLXN_45;
+   wire [31:0] XLXN_46;
+   wire [31:0] XLXN_49;
+   wire [31:0] XLXN_50;
+   wire [31:0] XLXN_51;
+   wire [31:0] XLXN_52;
+   wire [31:0] XLXN_53;
+   wire [31:0] XLXN_54;
+   
+   Reg_32  XLXI_1 (.C(XLXN_1), 
+                  .clear(cr), 
+                  .clk(clk), 
+                  .D(Di[31:0]), 
+                  .Q(XLXN_45[31:0]));
+   Reg_32  XLXI_2 (.C(XLXN_2), 
+                  .clear(cr), 
+                  .clk(clk), 
+                  .D(Di[31:0]), 
+                  .Q(XLXN_46[31:0]));
+   Reg_32  XLXI_3 (.C(XLXN_3), 
+                  .clear(cr), 
+                  .clk(clk), 
+                  .D(Di[31:0]), 
+                  .Q(XLXN_49[31:0]));
+   Reg_32  XLXI_4 (.C(XLXN_4), 
+                  .clear(cr), 
+                  .clk(clk), 
+                  .D(Di[31:0]), 
+                  .Q(XLXN_50[31:0]));
+   Reg_32  XLXI_5 (.C(XLXN_5), 
+                  .clear(cr), 
+                  .clk(clk), 
+                  .D(Di[31:0]), 
+                  .Q(XLXN_51[31:0]));
+   Reg_32  XLXI_6 (.C(XLXN_6), 
+                  .clear(cr), 
+                  .clk(clk), 
+                  .D(Di[31:0]), 
+                  .Q(XLXN_52[31:0]));
+   Reg_32  XLXI_7 (.C(XLXN_7), 
+                  .clear(cr), 
+                  .clk(clk), 
+                  .D(Di[31:0]), 
+                  .Q(XLXN_53[31:0]));
+   Reg_32  XLXI_8 (.C(XLXN_8), 
+                  .clear(cr), 
+                  .clk(clk), 
+                  .D(Di[31:0]), 
+                  .Q(XLXN_54[31:0]));
+   AND2  XLXI_9 (.I0(XLXN_37), 
+                .I1(WE), 
+                .O(XLXN_1));
+   AND2  XLXI_10 (.I0(XLXN_38), 
+                 .I1(WE), 
+                 .O(XLXN_2));
+   AND2  XLXI_11 (.I0(XLXN_39), 
+                 .I1(WE), 
+                 .O(XLXN_3));
+   AND2  XLXI_12 (.I0(XLXN_40), 
+                 .I1(WE), 
+                 .O(XLXN_4));
+   AND2  XLXI_14 (.I0(XLXN_41), 
+                 .I1(WE), 
+                 .O(XLXN_5));
+   AND2  XLXI_15 (.I0(XLXN_42), 
+                 .I1(WE), 
+                 .O(XLXN_6));
+   AND2  XLXI_16 (.I0(XLXN_43), 
+                 .I1(WE), 
+                 .O(XLXN_7));
+   AND2  XLXI_17 (.I0(XLXN_44), 
+                 .I1(WE), 
+                 .O(XLXN_8));
+   Decoder_38_MUSER_Framework  XLXI_18 (.A(Addr_W[0]), 
+                                       .B(Addr_W[1]), 
+                                       .C(Addr_W[2]), 
+                                       .D0(XLXN_37), 
+                                       .D1(XLXN_38), 
+                                       .D2(XLXN_39), 
+                                       .D3(XLXN_40), 
+                                       .D4(XLXN_41), 
+                                       .D5(XLXN_42), 
+                                       .D6(XLXN_43), 
+                                       .D7(XLXN_44));
+   Choose32_8_1  XLXI_21 (.choose(Addr_A[2:0]), 
+                         .Data0(XLXN_45[31:0]), 
+                         .Data1(XLXN_46[31:0]), 
+                         .Data2(XLXN_49[31:0]), 
+                         .Data3(XLXN_50[31:0]), 
+                         .Data4(XLXN_51[31:0]), 
+                         .Data5(XLXN_52[31:0]), 
+                         .Data6(XLXN_53[31:0]), 
+                         .Data7(XLXN_54[31:0]), 
+                         .Data_out(QA[31:0]));
+   Choose32_8_1  XLXI_22 (.choose(Addr_B[2:0]), 
+                         .Data0(XLXN_45[31:0]), 
+                         .Data1(XLXN_46[31:0]), 
+                         .Data2(XLXN_49[31:0]), 
+                         .Data3(XLXN_50[31:0]), 
+                         .Data4(XLXN_51[31:0]), 
+                         .Data5(XLXN_52[31:0]), 
+                         .Data6(XLXN_53[31:0]), 
+                         .Data7(XLXN_54[31:0]), 
+                         .Data_out(QB[31:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module MB_DFF_MUSER_Framework(Cp, 
+                              D, 
+                              Rn, 
+                              Sn, 
+                              Q, 
+                              Qn);
+
+    input Cp;
+    input D;
+    input Rn;
+    input Sn;
+   output Q;
+   output Qn;
+   
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire Q_DUMMY;
+   wire Qn_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   assign Qn = Qn_DUMMY;
+   NAND3  XLXI_1 (.I0(XLXN_13), 
+                 .I1(Sn), 
+                 .I2(XLXN_7), 
+                 .O(XLXN_6));
+   NAND3  XLXI_2 (.I0(Rn), 
+                 .I1(Cp), 
+                 .I2(XLXN_6), 
+                 .O(XLXN_7));
+   NAND3  XLXI_3 (.I0(XLXN_14), 
+                 .I1(Rn), 
+                 .I2(D), 
+                 .O(XLXN_13));
+   NAND3  XLXI_4 (.I0(Cp), 
+                 .I1(XLXN_13), 
+                 .I2(XLXN_7), 
+                 .O(XLXN_14));
+   NAND3  XLXI_5 (.I0(Qn_DUMMY), 
+                 .I1(XLXN_7), 
+                 .I2(Sn), 
+                 .O(Q_DUMMY));
+   NAND3  XLXI_6 (.I0(Rn), 
+                 .I1(XLXN_14), 
+                 .I2(Q_DUMMY), 
+                 .O(Qn_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module Counter_4bit_MUSER_Framework(clk, 
+                                    Qa, 
+                                    Qb, 
+                                    Qc, 
+                                    Qd, 
+                                    Rc);
+
+    input clk;
+   output Qa;
+   output Qb;
+   output Qc;
+   output Qd;
+   output Rc;
+   
+   wire nQa;
+   wire nQb;
+   wire nQc;
+   wire nQd;
+   wire XLXN_21;
+   wire XLXN_22;
+   wire XLXN_23;
+   wire Qa_DUMMY;
+   wire Qb_DUMMY;
+   wire Qc_DUMMY;
+   wire Qd_DUMMY;
+   
+   assign Qa = Qa_DUMMY;
+   assign Qb = Qb_DUMMY;
+   assign Qc = Qc_DUMMY;
+   assign Qd = Qd_DUMMY;
+   MB_DFF_MUSER_Framework  XLXI_1 (.Cp(clk), 
+                                  .D(nQa), 
+                                  .Rn(), 
+                                  .Sn(), 
+                                  .Q(Qa_DUMMY), 
+                                  .Qn());
+   MB_DFF_MUSER_Framework  XLXI_2 (.Cp(clk), 
+                                  .D(XLXN_23), 
+                                  .Rn(), 
+                                  .Sn(), 
+                                  .Q(Qb_DUMMY), 
+                                  .Qn());
+   MB_DFF_MUSER_Framework  XLXI_3 (.Cp(clk), 
+                                  .D(XLXN_22), 
+                                  .Rn(), 
+                                  .Sn(), 
+                                  .Q(Qc_DUMMY), 
+                                  .Qn());
+   MB_DFF_MUSER_Framework  XLXI_4 (.Cp(clk), 
+                                  .D(XLXN_21), 
+                                  .Rn(), 
+                                  .Sn(), 
+                                  .Q(Qd_DUMMY), 
+                                  .Qn());
+   INV  XLXI_5 (.I(Qa_DUMMY), 
+               .O(nQa));
+   NOR2  XLXI_6 (.I0(nQa), 
+                .I1(nQb), 
+                .O());
+   NOR3  XLXI_7 (.I0(nQa), 
+                .I1(nQb), 
+                .I2(nQc), 
+                .O());
+   NOR4  XLXI_8 (.I0(nQa), 
+                .I1(nQb), 
+                .I2(nQc), 
+                .I3(nQd), 
+                .O(Rc));
+   XNOR2  XLXI_9 (.I0(nQb), 
+                 .I1(Qa_DUMMY), 
+                 .O(XLXN_23));
+   XNOR2  XLXI_10 (.I0(nQc), 
+                  .I1(), 
+                  .O(XLXN_22));
+   XNOR2  XLXI_11 (.I0(nQd), 
+                  .I1(), 
+                  .O(XLXN_21));
+   INV  XLXI_12 (.I(Qc_DUMMY), 
+                .O(nQc));
+   INV  XLXI_13 (.I(Qd_DUMMY), 
+                .O(nQd));
+   INV  XLXI_14 (.I(Qb_DUMMY), 
+                .O(nQb));
+endmodule
+`timescale 1ns / 1ps
+
+module MUX4T1_4_MUSER_Framework(I0, 
+                                I1, 
+                                I2, 
+                                I3, 
+                                s, 
+                                o);
+
+    input [3:0] I0;
+    input [3:0] I1;
+    input [3:0] I2;
+    input [3:0] I3;
+    input [1:0] s;
+   output [3:0] o;
+   
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_32;
+   wire XLXN_33;
+   wire XLXN_34;
+   wire XLXN_35;
+   wire XLXN_38;
+   wire XLXN_39;
+   wire XLXN_40;
+   wire XLXN_41;
+   wire XLXN_43;
+   wire XLXN_44;
+   wire XLXN_45;
+   wire XLXN_46;
+   wire XLXN_48;
+   wire XLXN_49;
+   wire XLXN_50;
+   wire XLXN_51;
+   wire XLXN_62;
+   wire XLXN_120;
+   wire x_3;
+   wire x_22;
+   
+   INV  XLXI_1 (.I(s[1]), 
+               .O(XLXN_6));
+   INV  XLXI_2 (.I(s[0]), 
+               .O(XLXN_7));
+   AND2  XLXI_3 (.I0(XLXN_7), 
+                .I1(XLXN_6), 
+                .O(x_22));
+   AND2  XLXI_4 (.I0(s[0]), 
+                .I1(XLXN_6), 
+                .O(XLXN_120));
+   AND2  XLXI_5 (.I0(s[1]), 
+                .I1(XLXN_7), 
+                .O(x_3));
+   AND2  XLXI_6 (.I0(s[1]), 
+                .I1(s[0]), 
+                .O(XLXN_62));
+   AND2  XLXI_7 (.I0(I0[0]), 
+                .I1(x_22), 
+                .O(XLXN_32));
+   AND2  XLXI_8 (.I0(I1[0]), 
+                .I1(XLXN_120), 
+                .O(XLXN_33));
+   AND2  XLXI_9 (.I0(I2[0]), 
+                .I1(x_3), 
+                .O(XLXN_34));
+   AND2  XLXI_10 (.I0(I3[0]), 
+                 .I1(XLXN_62), 
+                 .O(XLXN_35));
+   OR4  XLXI_11 (.I0(XLXN_35), 
+                .I1(XLXN_34), 
+                .I2(XLXN_33), 
+                .I3(XLXN_32), 
+                .O(o[0]));
+   AND2  XLXI_12 (.I0(I0[1]), 
+                 .I1(x_22), 
+                 .O(XLXN_38));
+   AND2  XLXI_13 (.I0(I1[1]), 
+                 .I1(XLXN_120), 
+                 .O(XLXN_39));
+   AND2  XLXI_14 (.I0(I2[1]), 
+                 .I1(x_3), 
+                 .O(XLXN_40));
+   AND2  XLXI_15 (.I0(I3[1]), 
+                 .I1(XLXN_62), 
+                 .O(XLXN_41));
+   OR4  XLXI_16 (.I0(XLXN_41), 
+                .I1(XLXN_40), 
+                .I2(XLXN_39), 
+                .I3(XLXN_38), 
+                .O(o[1]));
+   AND2  XLXI_17 (.I0(I0[2]), 
+                 .I1(x_22), 
+                 .O(XLXN_43));
+   AND2  XLXI_18 (.I0(I1[2]), 
+                 .I1(XLXN_120), 
+                 .O(XLXN_44));
+   AND2  XLXI_19 (.I0(I2[2]), 
+                 .I1(x_3), 
+                 .O(XLXN_45));
+   AND2  XLXI_20 (.I0(I3[2]), 
+                 .I1(XLXN_62), 
+                 .O(XLXN_46));
+   OR4  XLXI_21 (.I0(XLXN_46), 
+                .I1(XLXN_45), 
+                .I2(XLXN_44), 
+                .I3(XLXN_43), 
+                .O(o[2]));
+   AND2  XLXI_22 (.I0(I0[3]), 
+                 .I1(x_22), 
+                 .O(XLXN_48));
+   AND2  XLXI_23 (.I0(I1[3]), 
+                 .I1(XLXN_120), 
+                 .O(XLXN_49));
+   AND2  XLXI_24 (.I0(I2[3]), 
+                 .I1(x_3), 
+                 .O(XLXN_50));
+   AND2  XLXI_25 (.I0(I3[3]), 
+                 .I1(XLXN_62), 
+                 .O(XLXN_51));
+   OR4  XLXI_26 (.I0(XLXN_51), 
+                .I1(XLXN_50), 
+                .I2(XLXN_49), 
+                .I3(XLXN_48), 
+                .O(o[3]));
+endmodule
+`timescale 1ns / 1ps
+
+module MUX8T1_8_MUSER_Framework(I0, 
+                                I1, 
+                                I2, 
+                                I3, 
+                                I4, 
+                                I5, 
+                                I6, 
+                                I7, 
+                                s, 
+                                o);
+
+    input [7:0] I0;
+    input [7:0] I1;
+    input [7:0] I2;
+    input [7:0] I3;
+    input [7:0] I4;
+    input [7:0] I5;
+    input [7:0] I6;
+    input [7:0] I7;
+    input [2:0] s;
+   output [7:0] o;
+   
+   wire [3:0] o0;
+   wire [3:0] o1;
+   wire [3:0] o2;
+   wire [3:0] o3;
+   wire XLXN_33;
+   wire XLXN_34;
+   wire XLXN_39;
+   wire XLXN_40;
+   wire XLXN_41;
+   wire XLXN_42;
+   wire XLXN_43;
+   wire XLXN_44;
+   wire XLXN_45;
+   wire XLXN_46;
+   wire XLXN_47;
+   wire XLXN_48;
+   wire XLXN_49;
+   wire XLXN_50;
+   wire XLXN_51;
+   wire XLXN_52;
+   wire XLXN_108;
+   
+   AND2  XLXI_10 (.I0(o0[0]), 
+                 .I1(XLXN_108), 
+                 .O(XLXN_33));
+   AND2  XLXI_11 (.I0(o1[0]), 
+                 .I1(s[2]), 
+                 .O(XLXN_34));
+   OR2  XLXI_14 (.I0(XLXN_34), 
+                .I1(XLXN_33), 
+                .O(o[0]));
+   AND2  XLXI_15 (.I0(o0[1]), 
+                 .I1(XLXN_108), 
+                 .O(XLXN_40));
+   AND2  XLXI_16 (.I0(o1[1]), 
+                 .I1(s[2]), 
+                 .O(XLXN_39));
+   OR2  XLXI_17 (.I0(XLXN_39), 
+                .I1(XLXN_40), 
+                .O(o[1]));
+   AND2  XLXI_18 (.I0(o0[2]), 
+                 .I1(XLXN_108), 
+                 .O(XLXN_42));
+   AND2  XLXI_19 (.I0(o1[2]), 
+                 .I1(s[2]), 
+                 .O(XLXN_41));
+   OR2  XLXI_20 (.I0(XLXN_41), 
+                .I1(XLXN_42), 
+                .O(o[2]));
+   AND2  XLXI_21 (.I0(o0[3]), 
+                 .I1(XLXN_108), 
+                 .O(XLXN_44));
+   AND2  XLXI_22 (.I0(o1[3]), 
+                 .I1(s[2]), 
+                 .O(XLXN_43));
+   OR2  XLXI_23 (.I0(XLXN_43), 
+                .I1(XLXN_44), 
+                .O(o[3]));
+   AND2  XLXI_24 (.I0(o2[0]), 
+                 .I1(XLXN_108), 
+                 .O(XLXN_46));
+   AND2  XLXI_25 (.I0(o3[0]), 
+                 .I1(s[2]), 
+                 .O(XLXN_45));
+   OR2  XLXI_26 (.I0(XLXN_45), 
+                .I1(XLXN_46), 
+                .O(o[4]));
+   AND2  XLXI_27 (.I0(o2[1]), 
+                 .I1(XLXN_108), 
+                 .O(XLXN_48));
+   AND2  XLXI_28 (.I0(o3[1]), 
+                 .I1(s[2]), 
+                 .O(XLXN_47));
+   OR2  XLXI_29 (.I0(XLXN_47), 
+                .I1(XLXN_48), 
+                .O(o[5]));
+   AND2  XLXI_30 (.I0(o2[2]), 
+                 .I1(XLXN_108), 
+                 .O(XLXN_50));
+   AND2  XLXI_31 (.I0(o3[2]), 
+                 .I1(s[2]), 
+                 .O(XLXN_49));
+   OR2  XLXI_32 (.I0(XLXN_49), 
+                .I1(XLXN_50), 
+                .O(o[6]));
+   AND2  XLXI_33 (.I0(o2[3]), 
+                 .I1(XLXN_108), 
+                 .O(XLXN_52));
+   AND2  XLXI_34 (.I0(o3[3]), 
+                 .I1(s[2]), 
+                 .O(XLXN_51));
+   OR2  XLXI_35 (.I0(XLXN_51), 
+                .I1(XLXN_52), 
+                .O(o[7]));
+   INV  XLXI_36 (.I(s[2]), 
+                .O(XLXN_108));
+   MUX4T1_4_MUSER_Framework  XLXI_37 (.I0(I0[3:0]), 
+                                     .I1(I1[3:0]), 
+                                     .I2(I2[3:0]), 
+                                     .I3(I3[3:0]), 
+                                     .s(s[1:0]), 
+                                     .o(o0[3:0]));
+   MUX4T1_4_MUSER_Framework  XLXI_38 (.I0(I4[3:0]), 
+                                     .I1(I5[3:0]), 
+                                     .I2(I6[3:0]), 
+                                     .I3(I7[3:0]), 
+                                     .s(s[1:0]), 
+                                     .o(o1[3:0]));
+   MUX4T1_4_MUSER_Framework  XLXI_39 (.I0(I0[7:4]), 
+                                     .I1(I1[7:4]), 
+                                     .I2(I2[7:4]), 
+                                     .I3(I3[7:4]), 
+                                     .s(s[1:0]), 
+                                     .o(o2[3:0]));
+   MUX4T1_4_MUSER_Framework  XLXI_40 (.I0(I4[7:4]), 
+                                     .I1(I5[7:4]), 
+                                     .I2(I6[7:4]), 
+                                     .I3(I7[7:4]), 
+                                     .s(s[1:0]), 
+                                     .o(o3[3:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module SCANSYNC_1_MUSER_Framework(Hexs, 
+                                  LES, 
+                                  point, 
+                                  Scan, 
+                                  AN, 
+                                  Hexo, 
+                                  LE, 
+                                  p);
+
+    input [31:0] Hexs;
+    input [7:0] LES;
+    input [7:0] point;
+    input [2:0] Scan;
+   output [3:0] AN;
+   output [3:0] Hexo;
+   output LE;
+   output p;
+   
+   wire [7:0] COM;
+   wire G0;
+   wire [7:0] Hex;
+   wire V5;
+   
+   MUX8T1_8_MUSER_Framework  XLXI_1 (.I0({Hexs[3:0], G0, G0, G0, G0}), 
+                                    .I1({Hexs[7:4], G0, G0, G0, G0}), 
+                                    .I2({Hexs[11:8], G0, G0, G0, G0}), 
+                                    .I3({Hexs[15:12], G0, G0, G0, G0}), 
+                                    .I4({Hexs[19:16], G0, G0, G0, G0}), 
+                                    .I5({Hexs[23:20], G0, G0, G0, G0}), 
+                                    .I6({Hexs[27:24], G0, G0, G0, G0}), 
+                                    .I7({Hexs[31:28], G0, G0, G0, G0}), 
+                                    .s(Scan[2:0]), 
+                                    .o(Hex[7:0]));
+   MUX8T1_8_MUSER_Framework  XLXI_2 (.I0({LES[0], point[0], G0, G0, V5, V5, V5, 
+         G0}), 
+                                    .I1({LES[1], point[1], G0, G0, V5, V5, G0, 
+         V5}), 
+                                    .I2({LES[2], point[2], G0, G0, V5, G0, V5, 
+         V5}), 
+                                    .I3({LES[3], point[3], G0, G0, G0, V5, V5, 
+         V5}), 
+                                    .I4({LES[4], point[4], G0, G0, V5, V5, V5, 
+         G0}), 
+                                    .I5({LES[5], point[5], G0, G0, V5, V5, G0, 
+         V5}), 
+                                    .I6({LES[6], point[6], G0, G0, V5, G0, V5, 
+         V5}), 
+                                    .I7({LES[7], point[7], G0, G0, G0, V5, V5, 
+         V5}), 
+                                    .s(Scan[2:0]), 
+                                    .o(COM[7:0]));
+   VCC  XLXI_5 (.P(V5));
+   GND  XLXI_6 (.G(G0));
+   BUF  XLXI_7 (.I(Hex[7]), 
+               .O(Hexo[3]));
+   BUF  XLXI_8 (.I(Hex[6]), 
+               .O(Hexo[2]));
+   BUF  XLXI_9 (.I(Hex[5]), 
+               .O(Hexo[1]));
+   BUF  XLXI_10 (.I(Hex[4]), 
+                .O(Hexo[0]));
+   BUF  XLXI_11 (.I(COM[3]), 
+                .O(AN[3]));
+   BUF  XLXI_12 (.I(COM[2]), 
+                .O(AN[2]));
+   BUF  XLXI_13 (.I(COM[1]), 
+                .O(AN[1]));
+   BUF  XLXI_14 (.I(COM[0]), 
+                .O(AN[0]));
+   BUF  XLXI_15 (.I(COM[7]), 
+                .O(LE));
+   BUF  XLXI_16 (.I(COM[6]), 
+                .O(p));
+endmodule
+`timescale 1ns / 1ps
+
+module MUX_4_MUSER_Framework(ai, 
+                             bi, 
+                             s, 
+                             ou);
+
+    input [3:0] ai;
+    input [3:0] bi;
+    input s;
+   output [3:0] ou;
+   
+   wire XLXN_16;
+   wire XLXN_17;
+   wire XLXN_18;
+   wire XLXN_19;
+   wire XLXN_20;
+   wire XLXN_21;
+   wire XLXN_22;
+   wire XLXN_23;
+   wire XLXN_25;
+   
+   AND2  XLXI_1 (.I0(ai[0]), 
+                .I1(XLXN_25), 
+                .O(XLXN_16));
+   AND2  XLXI_2 (.I0(ai[1]), 
+                .I1(XLXN_25), 
+                .O(XLXN_17));
+   AND2  XLXI_3 (.I0(ai[2]), 
+                .I1(XLXN_25), 
+                .O(XLXN_18));
+   AND2  XLXI_4 (.I0(ai[3]), 
+                .I1(XLXN_25), 
+                .O(XLXN_19));
+   AND2  XLXI_8 (.I0(bi[0]), 
+                .I1(s), 
+                .O(XLXN_20));
+   AND2  XLXI_9 (.I0(bi[2]), 
+                .I1(s), 
+                .O(XLXN_22));
+   AND2  XLXI_10 (.I0(bi[3]), 
+                 .I1(s), 
+                 .O(XLXN_23));
+   AND2  XLXI_11 (.I0(bi[1]), 
+                 .I1(s), 
+                 .O(XLXN_21));
+   OR2  XLXI_16 (.I0(XLXN_20), 
+                .I1(XLXN_16), 
+                .O(ou[0]));
+   OR2  XLXI_17 (.I0(XLXN_21), 
+                .I1(XLXN_17), 
+                .O(ou[1]));
+   OR2  XLXI_18 (.I0(XLXN_22), 
+                .I1(XLXN_18), 
+                .O(ou[2]));
+   OR2  XLXI_19 (.I0(XLXN_23), 
+                .I1(XLXN_19), 
+                .O(ou[3]));
+   INV  XLXI_20 (.I(s), 
+                .O(XLXN_25));
+endmodule
+`timescale 1ns / 1ps
+
+module MUX_8_MUSER_Framework(a, 
+                             b, 
+                             s, 
+                             ou);
+
+    input [7:0] a;
+    input [7:0] b;
+    input s;
+   output [7:0] ou;
+   
+   
+   MUX_4_MUSER_Framework  XLXI_1 (.ai(a[3:0]), 
+                                 .bi(b[3:0]), 
+                                 .s(s), 
+                                 .ou(ou[3:0]));
+   MUX_4_MUSER_Framework  XLXI_2 (.ai(a[7:4]), 
+                                 .bi(b[7:4]), 
+                                 .s(s), 
+                                 .ou(ou[7:4]));
+endmodule
+`timescale 1ns / 1ps
+
+module MC14495_ZJU_MUSER_Framework(D0, 
+                                   D1, 
+                                   D2, 
+                                   D3, 
+                                   LE, 
+                                   point, 
+                                   a, 
+                                   b, 
+                                   c, 
+                                   d, 
+                                   e, 
+                                   f, 
+                                   g, 
+                                   p);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input LE;
+    input point;
+   output a;
+   output b;
+   output c;
+   output d;
+   output e;
+   output f;
+   output g;
+   output p;
+   
+   wire XLXN_14;
+   wire XLXN_107;
+   wire XLXN_110;
+   wire XLXN_137;
+   wire XLXN_138;
+   wire XLXN_139;
+   wire XLXN_140;
+   wire XLXN_183;
+   wire XLXN_198;
+   wire XLXN_200;
+   wire XLXN_205;
+   wire XLXN_209;
+   wire XLXN_210;
+   wire XLXN_215;
+   wire XLXN_218;
+   wire XLXN_219;
+   wire XLXN_221;
+   wire XLXN_234;
+   wire XLXN_235;
+   wire XLXN_236;
+   wire XLXN_265;
+   wire XLXN_405;
+   wire XLXN_406;
+   wire XLXN_407;
+   wire XLXN_434;
+   wire XLXN_439;
+   wire XLXN_464;
+   wire XLXN_465;
+   wire XLXN_472;
+   wire XLXN_546;
+   wire XLXN_563;
+   wire XLXN_571;
+   
+   OR2  XLXI_1 (.I0(LE), 
+               .I1(XLXN_265), 
+               .O(g));
+   OR2  XLXI_8 (.I0(LE), 
+               .I1(XLXN_465), 
+               .O(f));
+   OR2  XLXI_9 (.I0(LE), 
+               .I1(XLXN_215), 
+               .O(e));
+   OR2  XLXI_10 (.I0(LE), 
+                .I1(XLXN_205), 
+                .O(d));
+   OR2  XLXI_11 (.I0(LE), 
+                .I1(XLXN_183), 
+                .O(c));
+   OR2  XLXI_12 (.I0(LE), 
+                .I1(XLXN_464), 
+                .O(b));
+   OR2  XLXI_13 (.I0(LE), 
+                .I1(XLXN_14), 
+                .O(a));
+   INV  XLXI_14 (.I(point), 
+                .O(p));
+   OR4  XLXI_15 (.I0(XLXN_110), 
+                .I1(XLXN_434), 
+                .I2(XLXN_439), 
+                .I3(XLXN_107), 
+                .O(XLXN_14));
+   OR4  XLXI_16 (.I0(XLXN_140), 
+                .I1(XLXN_139), 
+                .I2(XLXN_138), 
+                .I3(XLXN_137), 
+                .O(XLXN_464));
+   AND4  XLXI_55 (.I0(D0), 
+                 .I1(XLXN_571), 
+                 .I2(XLXN_472), 
+                 .I3(XLXN_546), 
+                 .O(XLXN_107));
+   AND4  XLXI_56 (.I0(XLXN_563), 
+                 .I1(XLXN_472), 
+                 .I2(D2), 
+                 .I3(XLXN_546), 
+                 .O(XLXN_439));
+   AND4  XLXI_57 (.I0(D0), 
+                 .I1(XLXN_472), 
+                 .I2(D2), 
+                 .I3(D3), 
+                 .O(XLXN_434));
+   AND4  XLXI_58 (.I0(D0), 
+                 .I1(D1), 
+                 .I2(XLXN_571), 
+                 .I3(D3), 
+                 .O(XLXN_110));
+   AND4  XLXI_79 (.I0(D0), 
+                 .I1(XLXN_472), 
+                 .I2(D2), 
+                 .I3(XLXN_546), 
+                 .O(XLXN_137));
+   AND3  XLXI_135 (.I0(XLXN_563), 
+                  .I1(D1), 
+                  .I2(D2), 
+                  .O(XLXN_138));
+   AND3  XLXI_136 (.I0(XLXN_563), 
+                  .I1(D2), 
+                  .I2(D3), 
+                  .O(XLXN_139));
+   AND3  XLXI_142 (.I0(D0), 
+                  .I1(D1), 
+                  .I2(D3), 
+                  .O(XLXN_140));
+   OR3  XLXI_143 (.I0(XLXN_198), 
+                 .I1(XLXN_200), 
+                 .I2(XLXN_139), 
+                 .O(XLXN_183));
+   AND3  XLXI_144 (.I0(D1), 
+                  .I1(D2), 
+                  .I2(D3), 
+                  .O(XLXN_198));
+   AND4  XLXI_154 (.I0(XLXN_563), 
+                  .I1(D1), 
+                  .I2(XLXN_571), 
+                  .I3(XLXN_546), 
+                  .O(XLXN_200));
+   OR4  XLXI_156 (.I0(XLXN_210), 
+                 .I1(XLXN_209), 
+                 .I2(XLXN_439), 
+                 .I3(XLXN_107), 
+                 .O(XLXN_205));
+   AND3  XLXI_157 (.I0(D0), 
+                  .I1(D1), 
+                  .I2(D2), 
+                  .O(XLXN_209));
+   AND4  XLXI_158 (.I0(XLXN_563), 
+                  .I1(D1), 
+                  .I2(XLXN_571), 
+                  .I3(D3), 
+                  .O(XLXN_210));
+   AND2  XLXI_163 (.I0(D0), 
+                  .I1(XLXN_546), 
+                  .O(XLXN_218));
+   OR3  XLXI_164 (.I0(XLXN_221), 
+                 .I1(XLXN_219), 
+                 .I2(XLXN_218), 
+                 .O(XLXN_215));
+   AND3  XLXI_165 (.I0(D0), 
+                  .I1(XLXN_472), 
+                  .I2(XLXN_571), 
+                  .O(XLXN_221));
+   AND3  XLXI_166 (.I0(XLXN_472), 
+                  .I1(D2), 
+                  .I2(XLXN_546), 
+                  .O(XLXN_219));
+   OR4  XLXI_172 (.I0(XLXN_234), 
+                 .I1(XLXN_235), 
+                 .I2(XLXN_236), 
+                 .I3(XLXN_434), 
+                 .O(XLXN_465));
+   AND3  XLXI_175 (.I0(D1), 
+                  .I1(XLXN_571), 
+                  .I2(XLXN_546), 
+                  .O(XLXN_235));
+   AND3  XLXI_176 (.I0(D0), 
+                  .I1(XLXN_571), 
+                  .I2(XLXN_546), 
+                  .O(XLXN_236));
+   AND3  XLXI_177 (.I0(D0), 
+                  .I1(D1), 
+                  .I2(XLXN_546), 
+                  .O(XLXN_234));
+   OR3  XLXI_184 (.I0(XLXN_405), 
+                 .I1(XLXN_406), 
+                 .I2(XLXN_407), 
+                 .O(XLXN_265));
+   AND3  XLXI_185 (.I0(XLXN_472), 
+                  .I1(XLXN_571), 
+                  .I2(XLXN_546), 
+                  .O(XLXN_407));
+   AND4  XLXI_186 (.I0(D0), 
+                  .I1(D1), 
+                  .I2(D2), 
+                  .I3(XLXN_546), 
+                  .O(XLXN_406));
+   AND4  XLXI_187 (.I0(XLXN_563), 
+                  .I1(XLXN_472), 
+                  .I2(D2), 
+                  .I3(D3), 
+                  .O(XLXN_405));
+   INV  XLXI_324 (.I(D0), 
+                 .O(XLXN_563));
+   INV  XLXI_325 (.I(D1), 
+                 .O(XLXN_472));
+   INV  XLXI_326 (.I(D2), 
+                 .O(XLXN_571));
+   INV  XLXI_327 (.I(D3), 
+                 .O(XLXN_546));
+endmodule
+`timescale 1ns / 1ps
+
+module Seg7_Dev_MUSER_Framework(flash, 
+                                Hexs, 
+                                LES, 
+                                point, 
+                                Scan, 
+                                SW0, 
+                                AN, 
+                                SEGMENT);
+
+    input flash;
+    input [31:0] Hexs;
+    input [7:0] LES;
+    input [7:0] point;
+    input [2:0] Scan;
+    input SW0;
+   output [3:0] AN;
+   output [7:0] SEGMENT;
+   
+   wire [3:0] Hex;
+   wire [7:0] SEG_TXT;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_15;
+   wire [7:0] XLXN_22;
+   
+   MC14495_ZJU_MUSER_Framework  XLXI_3 (.D0(Hex[0]), 
+                                       .D1(Hex[1]), 
+                                       .D2(Hex[2]), 
+                                       .D3(Hex[3]), 
+                                       .LE(XLXN_5), 
+                                       .point(XLXN_15), 
+                                       .a(SEG_TXT[0]), 
+                                       .b(SEG_TXT[1]), 
+                                       .c(SEG_TXT[2]), 
+                                       .d(SEG_TXT[3]), 
+                                       .e(SEG_TXT[4]), 
+                                       .f(SEG_TXT[5]), 
+                                       .g(SEG_TXT[6]), 
+                                       .p(SEG_TXT[7]));
+   MUX_8_MUSER_Framework  XLXI_6 (.a(XLXN_22[7:0]), 
+                                 .b(SEG_TXT[7:0]), 
+                                 .s(SW0), 
+                                 .ou(SEGMENT[7:0]));
+   AND2  XLXI_7 (.I0(XLXN_4), 
+                .I1(flash), 
+                .O(XLXN_5));
+   SCANSYNC_1_MUSER_Framework  XLXI_8 (.Hexs(Hexs[31:0]), 
+                                      .LES(LES[7:0]), 
+                                      .point(point[7:0]), 
+                                      .Scan(Scan[2:0]), 
+                                      .AN(AN[3:0]), 
+                                      .Hexo(Hex[3:0]), 
+                                      .LE(XLXN_4), 
+                                      .p(XLXN_15));
+   Seg_map  XLXI_12 (.Hexs(Hexs[31:0]), 
+                    .Scan(Scan[2:0]), 
+                    .Seg_map(XLXN_22[7:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module MUX_16_MUSER_Framework(ai, 
+                              bi, 
+                              s, 
+                              ou);
+
+    input [15:0] ai;
+    input [15:0] bi;
+    input s;
+   output [15:0] ou;
+   
+   
+   MUX_4_MUSER_Framework  XLXI_1 (.ai(ai[3:0]), 
+                                 .bi(bi[3:0]), 
+                                 .s(s), 
+                                 .ou(ou[3:0]));
+   MUX_4_MUSER_Framework  XLXI_2 (.ai(ai[7:4]), 
+                                 .bi(bi[7:4]), 
+                                 .s(s), 
+                                 .ou(ou[7:4]));
+   MUX_4_MUSER_Framework  XLXI_3 (.ai(ai[11:8]), 
+                                 .bi(bi[11:8]), 
+                                 .s(s), 
+                                 .ou(ou[11:8]));
+   MUX_4_MUSER_Framework  XLXI_4 (.ai(ai[15:12]), 
+                                 .bi(bi[15:12]), 
+                                 .s(s), 
+                                 .ou(ou[15:12]));
+endmodule
+`timescale 1ns / 1ps
+
+module MUX_64_MUSER_Framework(ai, 
+                              bi, 
+                              s, 
+                              ou);
+
+    input [63:0] ai;
+    input [63:0] bi;
+    input s;
+   output [63:0] ou;
+   
+   
+   MUX_16_MUSER_Framework  XLXI_7 (.ai(ai[15:0]), 
+                                  .bi(bi[15:0]), 
+                                  .s(s), 
+                                  .ou(ou[15:0]));
+   MUX_16_MUSER_Framework  XLXI_8 (.ai(ai[31:16]), 
+                                  .bi(bi[31:16]), 
+                                  .s(s), 
+                                  .ou(ou[31:16]));
+   MUX_16_MUSER_Framework  XLXI_10 (.ai(ai[47:32]), 
+                                   .bi(bi[47:32]), 
+                                   .s(s), 
+                                   .ou(ou[47:32]));
+   MUX_16_MUSER_Framework  XLXI_11 (.ai(ai[63:48]), 
+                                   .bi(bi[63:48]), 
+                                   .s(s), 
+                                   .ou(ou[63:48]));
+endmodule
+`timescale 1ns / 1ps
+
+module Display_MUSER_Framework(clk, 
+                               flash, 
+                               Hex, 
+                               LES, 
+                               point, 
+                               rst, 
+                               Start, 
+                               SW0, 
+                               seg_clk, 
+                               seg_clm, 
+                               SEG_PEN, 
+                               seg_sout);
+
+    input clk;
+    input flash;
+    input [31:0] Hex;
+    input [7:0] LES;
+    input [7:0] point;
+    input rst;
+    input Start;
+    input SW0;
+   output seg_clk;
+   output seg_clm;
+   output SEG_PEN;
+   output seg_sout;
+   
+   wire [63:0] ou;
+   wire [63:0] Seg_map;
+   wire [63:0] SEG_TXT;
+   
+   P2S  XLXI_1 (.clk(clk), 
+               .P_Data(ou[63:0]), 
+               .rst(rst), 
+               .Serial(Start), 
+               .EN(SEG_PEN), 
+               .sout(seg_sout), 
+               .s_clk(seg_clk), 
+               .s_clrn(seg_clm));
+   SSeg_map  XLXI_3 (.Disp_num({Hex[31:0], Hex[31:0]}), 
+                    .Seg_map(Seg_map[63:0]));
+   MUX_64_MUSER_Framework  XLXI_4 (.ai(SEG_TXT[63:0]), 
+                                  .bi(Seg_map[63:0]), 
+                                  .s(SW0), 
+                                  .ou(ou[63:0]));
+   HexTo8SEG  XLXI_6 (.flash(flash), 
+                     .Hex(Hex[31:0]), 
+                     .LES(LES[7:0]), 
+                     .points(point[7:0]), 
+                     .SEG_TXT(SEG_TXT[63:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module Framework(clk_100mhz, 
+                 K_COL, 
+                 RSTN, 
+                 SW, 
+                 AN, 
+                 Buzzer, 
+                 CR, 
+                 K_ROW, 
+                 LED, 
+                 LEDCLK, 
+                 LEDCLR, 
+                 LEDDT, 
+                 LEDEN, 
+                 RDY, 
+                 readn, 
+                 SEGCLK, 
+                 SEGCLR, 
+                 SEGDT, 
+                 SEGEN, 
+                 SEGMENT);
+
+    input clk_100mhz;
+    input [3:0] K_COL;
+    input RSTN;
+    input [15:0] SW;
+   output [3:0] AN;
+   output Buzzer;
+   output CR;
+   output [4:0] K_ROW;
+   output [7:0] LED;
+   output LEDCLK;
+   output LEDCLR;
+   output LEDDT;
+   output LEDEN;
+   output RDY;
+   output readn;
+   output SEGCLK;
+   output SEGCLR;
+   output SEGDT;
+   output SEGEN;
+   output [7:0] SEGMENT;
+   
+   wire [31:0] Ai;
+   wire [31:0] Bi;
+   wire [7:0] blink;
+   wire [7:0] blink_out;
+   wire [3:0] BTN_OK;
+   wire Co;
+   wire [31:0] Disp_num;
+   wire [31:0] Div;
+   wire G0;
+   wire N0;
+   wire [7:0] point_out;
+   wire [3:0] Pulse;
+   wire Qa;
+   wire Qb;
+   wire Qc;
+   wire Qd;
+   wire Rc_4;
+   wire Rc_32;
+   wire rst;
+   wire [15:0] SW_OK;
+   wire V5;
+   wire [4:0] XLXN_20;
+   wire [31:0] XLXN_73;
+   wire [31:0] XLXN_74;
+   wire [31:0] XLXN_75;
+   wire [31:0] XLXN_80;
+   wire [31:0] XLXN_87;
+   wire zero;
+   wire RDY_DUMMY;
+   wire readn_DUMMY;
+   
+   assign RDY = RDY_DUMMY;
+   assign readn = readn_DUMMY;
+   SAnti_jitter  XLXI_1 (.clk(clk_100mhz), 
+                        .Key_y(K_COL[3:0]), 
+                        .readn(readn_DUMMY), 
+                        .RSTN(RSTN), 
+                        .SW(SW[15:0]), 
+                        .BTN_OK(BTN_OK[3:0]), 
+                        .CR(CR), 
+                        .Key_out(XLXN_20[4:0]), 
+                        .Key_ready(RDY_DUMMY), 
+                        .Key_x(K_ROW[4:0]), 
+                        .pulse_out(Pulse[3:0]), 
+                        .rst(rst), 
+                        .SW_OK(SW_OK[15:0]));
+   SEnter_2_32  XLXI_2 (.BTN(BTN_OK[2:0]), 
+                       .clk(clk_100mhz), 
+                       .Ctrl({SW_OK[7:5], SW_OK[15], SW_OK[0]}), 
+                       .Din(XLXN_20[4:0]), 
+                       .D_ready(RDY_DUMMY), 
+                       .Ai(Ai[31:0]), 
+                       .Bi(Bi[31:0]), 
+                       .blink(blink[7:0]), 
+                       .readn(readn_DUMMY));
+   clkdiv  XLXI_3 (.clk(clk_100mhz), 
+                  .rst(rst), 
+                  .clkdiv(Div[31:0]));
+   Multi_8CH32  XLXI_5 (.blink_in({N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
+         N0, blink[3:0], N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
+         N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
+         N0, N0, blink[7:0], blink[7:0]}), 
+                       .clk(clk_100mhz), 
+                       .Data0(Ai[31:0]), 
+                       .EN(V5), 
+                       .point_in({Div[31:0], Div[31:0]}), 
+                       .rst(rst), 
+                       .Test(SW_OK[7:5]), 
+                       .Test_data1(Bi[31:0]), 
+                       .Test_data2(XLXN_80[31:0]), 
+                       .Test_data3(XLXN_87[31:0]), 
+                       .Test_data4(), 
+                       .Test_data5(XLXN_74[31:0]), 
+                       .Test_data6(XLXN_75[31:0]), 
+                       .Test_data7(Div[31:0]), 
+                       .blink_out(blink_out[7:0]), 
+                       .Disp_num(Disp_num[31:0]), 
+                       .point_out(point_out[7:0]));
+   GPIO  XLXI_6 (.clk(clk_100mhz), 
+                .EN(V5), 
+                .P_Data({Div[31:8], Rc_32, Rc_4, Qd, Qc, Qb, Qa, N0, Co}), 
+                .rst(rst), 
+                .Start(Div[20]), 
+                .GPIOf0(), 
+                .led_clk(LEDCLK), 
+                .led_clrn(LEDCLR), 
+                .LED_PEN(LEDEN), 
+                .led_sout(LEDDT));
+   VCC  XLXI_7 (.P(V5));
+   GND  XLXI_8 (.G(G0));
+   PIO  XLXI_9 (.clk(clk_100mhz), 
+               .EN(V5), 
+               .PData_in({Div[31:8], Rc_32, Rc_4, Qd, Qc, Qb, Qa, N0, Co}), 
+               .rst(N0), 
+               .GPIOf0(), 
+               .LED(LED[7:0]));
+   BUF  XLXI_11 (.I(V5), 
+                .O(Buzzer));
+   Display_MUSER_Framework  XLXI_12 (.clk(clk_100mhz), 
+                                    .flash(Div[25]), 
+                                    .Hex(Disp_num[31:0]), 
+                                    .LES(blink_out[7:0]), 
+                                    .point(point_out[7:0]), 
+                                    .rst(rst), 
+                                    .Start(Div[20]), 
+                                    .SW0(SW_OK[0]), 
+                                    .seg_clk(SEGCLK), 
+                                    .seg_clm(SEGCLR), 
+                                    .SEG_PEN(SEGEN), 
+                                    .seg_sout(SEGDT));
+   Seg7_Dev_MUSER_Framework  XLXI_15 (.flash(Div[25]), 
+                                     .Hexs(Disp_num[31:0]), 
+                                     .LES(blink_out[7:0]), 
+                                     .point(point_out[7:0]), 
+                                     .Scan({SW_OK[1], Div[19:18]}), 
+                                     .SW0(SW_OK[0]), 
+                                     .AN(AN[3:0]), 
+                                     .SEGMENT(SEGMENT[7:0]));
+   ALU  XLXI_18 (.A(XLXN_73[31:0]), 
+                .ALU_Ctr(SW_OK[4:2]), 
+                .B(XLXN_75[31:0]), 
+                .Co(Co), 
+                .overflow(), 
+                .res(XLXN_80[31:0]), 
+                .zero(zero));
+   Counter_4bit_MUSER_Framework  XLXI_19 (.clk(Div[26]), 
+                                         .Qa(Qa), 
+                                         .Qb(Qb), 
+                                         .Qc(Qc), 
+                                         .Qd(Qd), 
+                                         .Rc(Rc_4));
+   counter_32bit_rev  XLXI_20 (.clk(Div[26]), 
+                              .Load(BTN_OK[1]), 
+                              .PData(), 
+                              .s(BTN_OK[0]), 
+                              .cnt(XLXN_87[31:0]), 
+                              .Rc(Rc_32));
+   MUX2T1_32  XLXI_21 (.I0(Ai[31:0]), 
+                      .I1(XLXN_74[31:0]), 
+                      .s(Bi[13]), 
+                      .o(XLXN_73[31:0]));
+   Regs_8_32_MUSER_Framework  XLXI_22 (.Addr_A(Bi[2:0]), 
+                                      .Addr_B(Bi[6:4]), 
+                                      .Addr_W(Bi[10:8]), 
+                                      .clk(BTN_OK[3]), 
+                                      .cr(rst), 
+                                      .Di(XLXN_80[31:0]), 
+                                      .WE(Bi[12]), 
+                                      .QA(XLXN_74[31:0]), 
+                                      .QB(XLXN_75[31:0]));
+endmodule

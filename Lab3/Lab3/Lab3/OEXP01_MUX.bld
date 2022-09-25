@@ -1,0 +1,78 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p
+xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd
+
+Reading NGO file "E:/Lab3/Lab3/OEXP01_MUX.ngc" ...
+Loading design module "E:\Lab3\Lab3/SAnti_jitter.ngc"...
+Loading design module "E:\Lab3\Lab3/SEnter_2_32.ngc"...
+Loading design module "E:\Lab3\Lab3/MIO_BUS.ngc"...
+Loading design module "E:\Lab3\Lab3/PIO.ngc"...
+Loading design module "ipcore_dir/RAM_B.ngc"...
+Loading design module "E:\Lab3\Lab3/Seg7_Dev.ngc"...
+Loading design module "ipcore_dir/ROM_D.ngc"...
+Loading design module "E:\Lab3\Lab3/P2S.ngc"...
+Loading design module "E:\Lab3\Lab3/LEDP2S.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "Exp02.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'XLXI_37/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<31>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<30>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<29>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<28>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<27>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<26>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<25>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<24>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<23>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<22>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<21>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<20>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<19>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<18>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<17>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<16>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<15>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<14>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<13>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<12>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_37/dina<0>' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  33
+
+Total memory usage is 4500448 kilobytes
+
+Writing NGD file "OEXP01_MUX.ngd" ...
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   6 sec
+
+Writing NGDBUILD log file "OEXP01_MUX.bld"...

@@ -1,0 +1,14 @@
+[Inputs]
+=A[31:0]=
+=B[31:0]=
+[Outputs]
+=AlB1[31:0]=
+=ArB1[31:0]=
+=AlB2[31:0]=
+=ArB2[31:0]=
+=AlB3[31:0]=
+=ArB3[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel int_LR
+

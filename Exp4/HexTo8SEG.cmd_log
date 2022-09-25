@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/test_1/logicproject/7/test1/Exp07-MUX/HexTo8SEG.v -lang verilog -prj Exp07-MUX -o HexTo8SEG.spl -module HexTo8SEG -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 HexTo8SEG.spl E:/test_1/logicproject/7/test1/Exp07-MUX/HexTo8SEG.sym 

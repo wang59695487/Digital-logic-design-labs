@@ -1,0 +1,28 @@
+Command line:
+   HexTo8Seg_Test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54318
+
+Sun Mar 17 10:32:21 2019
+
+
+ Elaboration Time: 0.171875 sec
+
+ Current Memory Usage: 5988.37 Meg
+
+ Total Signals          : 323
+ Total Nets             : 326
+ Total Signal Drivers   : 265
+ Total Blocks           : 11
+ Total Primitive Blocks : 9
+ Total Processes        : 268
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 487
+
+ Total Simulation Time: 0.828125 sec
+
+ Current Memory Usage: 5359.19 Meg
+
+Sun Mar 17 10:51:25 2019
+

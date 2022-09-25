@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/Zhangxin/Desktop/ALU/1111/las/ALU/int_LR.v -lang verilog -prj ALU -o int_LR.spl -module int_LR -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 int_LR.spl C:/Users/Zhangxin/Desktop/ALU/1111/las/ALU/int_LR.sym 

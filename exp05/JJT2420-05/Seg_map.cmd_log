@@ -1,0 +1,2 @@
+vhdtdtfi -lib work I:/framework/code/Seg_map.v -lang verilog -prj framework -o Seg_map.spl -module Seg_map -template D:/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Seg_map.spl I:/framework/Seg_map.sym 

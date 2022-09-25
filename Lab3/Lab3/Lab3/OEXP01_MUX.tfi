@@ -1,0 +1,28 @@
+// Verilog instantiation template created from schematic E:\Lab3\Lab3\OEXP01_MUX.sch - Mon May 20 17:16:27 2019
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   OEXP01_MUX UUT (
+		.RSTN(    ), 
+		.K_COL(    ), 
+		.K_ROW(    ), 
+		.SW(    ), 
+		.CR(    ), 
+		.RDY(    ), 
+		.readn(    ), 
+		.SEGCLK(    ), 
+		.SEGDT(    ), 
+		.SEGEN(    ), 
+		.SEGCLR(    ), 
+		.clk_100mhz(    ), 
+		.LEDCLR(    ), 
+		.LEDEN(    ), 
+		.LEDDT(    ), 
+		.LEDCLK(    ), 
+		.LED(    ), 
+		.AN(    ), 
+		.Buzzer(    ), 
+		.SEGMENT(    )
+   );

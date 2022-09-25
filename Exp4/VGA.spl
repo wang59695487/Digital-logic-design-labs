@@ -1,0 +1,16 @@
+[Inputs]
+clk
+reset
+=Din[11:0]=
+[Outputs]
+HS
+VS
+=vga_x[9:0]=
+=vga_y[8:0]=
+=R[3:0]=
+=G[3:0]=
+=B[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel VGA
+

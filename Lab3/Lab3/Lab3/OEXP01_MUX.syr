@@ -1,0 +1,2266 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: OEXP01_MUX.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "OEXP01_MUX.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "OEXP01_MUX"
+Output Format                      : NGC
+Target Device                      : xc7k160t-1-ffg676
+
+---- Source Options
+Top Module Name                    : OEXP01_MUX
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\Lab3\Lab3\MyMC14495.v" into library work
+Parsing module <MyMC14495>.
+Analyzing Verilog file "E:\Lab3\Lab3\UnSignExtent.v" into library work
+Parsing module <UnSignExtent>.
+Analyzing Verilog file "E:\Lab3\Lab3\SSeg_map.v" into library work
+Parsing module <SSeg_map>.
+Analyzing Verilog file "E:\Lab3\Lab3\SLL2.v" into library work
+Parsing module <SLL2>.
+Analyzing Verilog file "E:\Lab3\Lab3\SignExtent.v" into library work
+Parsing module <SignExtent>.
+Analyzing Verilog file "E:\Lab3\Lab3\RegFile.v" into library work
+Parsing module <RegFile>.
+Analyzing Verilog file "E:\Lab3\Lab3\PC.v" into library work
+Parsing module <PC>.
+Analyzing Verilog file "E:\Lab3\Lab3\P2S_IO.v" into library work
+Parsing module <P2S>.
+Analyzing Verilog file "E:\Lab3\Lab3\MUX8T1_8.v" into library work
+Parsing module <MUX8T1_8>.
+Analyzing Verilog file "E:\Lab3\Lab3\MUX8T1_32.v" into library work
+Parsing module <MUX8T1_32>.
+Analyzing Verilog file "E:\Lab3\Lab3\MUX2T1_64.v" into library work
+Parsing module <MUX2T1_64>.
+Analyzing Verilog file "E:\Lab3\Lab3\MUX2T1_5.v" into library work
+Parsing module <MUX2T1_5>.
+Analyzing Verilog file "E:\Lab3\Lab3\MUX2T1_32.v" into library work
+Parsing module <MUX2T1_32>.
+Analyzing Verilog file "E:\Lab3\Lab3\LEDP2S_IO.v" into library work
+Parsing module <LEDP2S>.
+Analyzing Verilog file "E:\Lab3\Lab3\INST26_28.v" into library work
+Parsing module <INST26_28>.
+Analyzing Verilog file "E:\Lab3\Lab3\HexTo8SEG.v" into library work
+Parsing module <HexTo8SEG>.
+Analyzing Verilog file "E:\Lab3\Lab3\Controller.v" into library work
+Parsing module <Controller>.
+Analyzing Verilog file "E:\Lab3\Lab3\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "E:\Lab3\Lab3\ADD4.v" into library work
+Parsing module <ADD4>.
+Analyzing Verilog file "E:\Lab3\Lab3\ADD32.v" into library work
+Parsing module <ADD32>.
+Analyzing Verilog file "E:\Lab3\Lab3\SEnter_2_32.v" into library work
+Parsing module <SEnter_2_32>.
+Analyzing Verilog file "E:\Lab3\Lab3\Seg7_Dev_IO.v" into library work
+Parsing module <Seg7_Dev>.
+Analyzing Verilog file "E:\Lab3\Lab3\SCPU_TOP.vf" into library work
+Parsing module <ADD4_MUSER_SCPU_TOP>.
+Parsing module <SCPU_TOP>.
+Analyzing Verilog file "E:\Lab3\Lab3\SAnti_jitter_IO.v" into library work
+Parsing module <SAnti_jitter>.
+Analyzing Verilog file "E:\Lab3\Lab3\OExp03-IP2SOC\PIO_IO.v" into library work
+Parsing module <PIO>.
+Analyzing Verilog file "E:\Lab3\Lab3\Multi_8CH32.v" into library work
+Parsing module <Multi_8CH32>.
+Analyzing Verilog file "E:\Lab3\Lab3\MIO_BUS_IO.v" into library work
+Parsing module <MIO_BUS>.
+Analyzing Verilog file "E:\Lab3\Lab3\ipcore_dir\ROM_D.v" into library work
+Parsing module <ROM_D>.
+Analyzing Verilog file "E:\Lab3\Lab3\ipcore_dir\RAM_B.v" into library work
+Parsing module <RAM_B>.
+Analyzing Verilog file "E:\Lab3\Lab3\GPIO.v" into library work
+Parsing module <GPIO>.
+Analyzing Verilog file "E:\Lab3\Lab3\Display.v" into library work
+Parsing module <Display>.
+Analyzing Verilog file "E:\Lab3\Lab3\Counter_3_IO.v" into library work
+Parsing module <Counter_x>.
+Analyzing Verilog file "E:\Lab3\Lab3\clk_div.v" into library work
+Parsing module <clk_div>.
+Analyzing Verilog file "E:\Lab3\Lab3\OEXP01_MUX.vf" into library work
+Parsing module <ADD4_MUSER_OEXP01_MUX>.
+Parsing module <SCPU_TOP_MUSER_OEXP01_MUX>.
+Parsing module <OEXP01_MUX>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <OEXP01_MUX>.
+
+Elaborating module <SEnter_2_32>.
+WARNING:HDLCompiler:1499 - "E:\Lab3\Lab3\SEnter_2_32.v" Line 19: Empty module <SEnter_2_32> remains a black box.
+WARNING:HDLCompiler:1127 - "E:\Lab3\Lab3\OEXP01_MUX.vf" Line 366: Assignment to Bi ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Lab3\Lab3\OEXP01_MUX.vf" Line 367: Assignment to blink ignored, since the identifier is never used
+
+Elaborating module <Multi_8CH32>.
+
+Elaborating module <MUX8T1_32>.
+
+Elaborating module <MUX8T1_8>.
+WARNING:HDLCompiler:189 - "E:\Lab3\Lab3\Multi_8CH32.v" Line 68: Size mismatch in connection of port <I1>. Formal port size is 8-bit while actual signal size is 9-bit.
+
+Elaborating module <Display>.
+
+Elaborating module <P2S>.
+WARNING:HDLCompiler:1499 - "E:\Lab3\Lab3\P2S_IO.v" Line 21: Empty module <P2S> remains a black box.
+
+Elaborating module <HexTo8SEG>.
+
+Elaborating module <MyMC14495>.
+
+Elaborating module <SSeg_map>.
+
+Elaborating module <MUX2T1_64>.
+
+Elaborating module <GPIO>.
+
+Elaborating module <LEDP2S(DATA_BITS=16,DATA_COUNT_BITS=4)>.
+WARNING:HDLCompiler:1499 - "E:\Lab3\Lab3\LEDP2S_IO.v" Line 21: Empty module <LEDP2S(DATA_BITS=16,DATA_COUNT_BITS=4)> remains a black box.
+
+Elaborating module <clk_div>.
+
+Elaborating module <SAnti_jitter>.
+WARNING:HDLCompiler:1499 - "E:\Lab3\Lab3\SAnti_jitter_IO.v" Line 21: Empty module <SAnti_jitter> remains a black box.
+WARNING:HDLCompiler:1127 - "E:\Lab3\Lab3\OEXP01_MUX.vf" Line 428: Assignment to Pulse ignored, since the identifier is never used
+
+Elaborating module <Seg7_Dev>.
+WARNING:HDLCompiler:1499 - "E:\Lab3\Lab3\Seg7_Dev_IO.v" Line 21: Empty module <Seg7_Dev> remains a black box.
+
+Elaborating module <PIO>.
+WARNING:HDLCompiler:1499 - "E:\Lab3\Lab3\OExp03-IP2SOC\PIO_IO.v" Line 21: Empty module <PIO> remains a black box.
+
+Elaborating module <INV>.
+
+Elaborating module <GND>.
+
+Elaborating module <VCC>.
+
+Elaborating module <BUF>.
+
+Elaborating module <MIO_BUS>.
+WARNING:HDLCompiler:1499 - "E:\Lab3\Lab3\MIO_BUS_IO.v" Line 21: Empty module <MIO_BUS> remains a black box.
+WARNING:HDLCompiler:1127 - "E:\Lab3\Lab3\OEXP01_MUX.vf" Line 467: Assignment to XLXN_271 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Lab3\Lab3\OEXP01_MUX.vf" Line 472: Assignment to XLXN_270 ignored, since the identifier is never used
+
+Elaborating module <ROM_D>.
+WARNING:HDLCompiler:1499 - "E:\Lab3\Lab3\ipcore_dir\ROM_D.v" Line 39: Empty module <ROM_D> remains a black box.
+
+Elaborating module <RAM_B>.
+WARNING:HDLCompiler:1499 - "E:\Lab3\Lab3\ipcore_dir\RAM_B.v" Line 39: Empty module <RAM_B> remains a black box.
+
+Elaborating module <Counter_x>.
+WARNING:HDLCompiler:1127 - "E:\Lab3\Lab3\Counter_3_IO.v" Line 43: Assignment to M2 ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "E:\Lab3\Lab3\Counter_3_IO.v" Line 36: Net <counter1[32]> does not have a driver.
+
+Elaborating module <SCPU_TOP_MUSER_OEXP01_MUX>.
+
+Elaborating module <PC>.
+
+Elaborating module <ADD4>.
+
+Elaborating module <ADD32>.
+
+Elaborating module <MUX2T1_32>.
+
+Elaborating module <OR2>.
+
+Elaborating module <Controller>.
+
+Elaborating module <RegFile>.
+
+Elaborating module <MUX2T1_5>.
+
+Elaborating module <ALU>.
+WARNING:HDLCompiler:413 - "E:\Lab3\Lab3\ALU.v" Line 44: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <AND2>.
+
+Elaborating module <UnSignExtent>.
+
+Elaborating module <SignExtent>.
+
+Elaborating module <INST26_28>.
+
+Elaborating module <SLL2>.
+WARNING:HDLCompiler:634 - "E:\Lab3\Lab3\OEXP01_MUX.vf" Line 316: Net <Addr_out[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\Lab3\Lab3\OEXP01_MUX.vf" Line 325: Net <Data_out[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\Lab3\Lab3\OEXP01_MUX.vf" Line 329: Net <inst[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\Lab3\Lab3\OEXP01_MUX.vf" Line 344: Net <XLXN_275[31]> does not have a driver.
+WARNING:HDLCompiler:552 - "E:\Lab3\Lab3\OEXP01_MUX.vf" Line 475: Input port wea[0] is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <OEXP01_MUX>.
+    Related source file is "E:\Lab3\Lab3\OEXP01_MUX.vf".
+INFO:Xst:3210 - "E:\Lab3\Lab3\OEXP01_MUX.vf" line 360: Output port <Bi> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Lab3\Lab3\OEXP01_MUX.vf" line 360: Output port <blink> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Lab3\Lab3\OEXP01_MUX.vf" line 401: Output port <GPIOf0> of the instance <U7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Lab3\Lab3\OEXP01_MUX.vf" line 418: Output port <pulse_out> of the instance <U9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Lab3\Lab3\OEXP01_MUX.vf" line 439: Output port <counter_set> of the instance <U71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Lab3\Lab3\OEXP01_MUX.vf" line 439: Output port <GPIOf0> of the instance <U71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Lab3\Lab3\OEXP01_MUX.vf" line 452: Output port <ram_data_in> of the instance <XLXI_34> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Lab3\Lab3\OEXP01_MUX.vf" line 452: Output port <data_ram_we> of the instance <XLXI_34> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Lab3\Lab3\OEXP01_MUX.vf" line 473: Output port <spo> of the instance <XLXI_36> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Lab3\Lab3\OEXP01_MUX.vf" line 475: Output port <douta> of the instance <XLXI_37> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <Addr_out> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <Data_out> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <inst> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_275> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <OEXP01_MUX> synthesized.
+
+Synthesizing Unit <Multi_8CH32>.
+    Related source file is "E:\Lab3\Lab3\Multi_8CH32.v".
+WARNING:Xst:647 - Input <point_in<15:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <cpu_blink>.
+    Found 8-bit register for signal <cpu_point>.
+    Found 32-bit register for signal <disp_data>.
+    Summary:
+	inferred  48 D-type flip-flop(s).
+Unit <Multi_8CH32> synthesized.
+
+Synthesizing Unit <MUX8T1_32>.
+    Related source file is "E:\Lab3\Lab3\MUX8T1_32.v".
+    Found 32-bit 7-to-1 multiplexer for signal <O> created at line 34.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX8T1_32> synthesized.
+
+Synthesizing Unit <MUX8T1_8>.
+    Related source file is "E:\Lab3\Lab3\MUX8T1_8.v".
+    Found 8-bit 8-to-1 multiplexer for signal <o> created at line 34.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX8T1_8> synthesized.
+
+Synthesizing Unit <Display>.
+    Related source file is "E:\Lab3\Lab3\Display.v".
+    Summary:
+	no macro.
+Unit <Display> synthesized.
+
+Synthesizing Unit <HexTo8SEG>.
+    Related source file is "E:\Lab3\Lab3\HexTo8SEG.v".
+    Summary:
+	no macro.
+Unit <HexTo8SEG> synthesized.
+
+Synthesizing Unit <MyMC14495>.
+    Related source file is "E:\Lab3\Lab3\MyMC14495.v".
+    Summary:
+	no macro.
+Unit <MyMC14495> synthesized.
+
+Synthesizing Unit <SSeg_map>.
+    Related source file is "E:\Lab3\Lab3\SSeg_map.v".
+WARNING:Xst:647 - Input <Disp_num<63:32>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <SSeg_map> synthesized.
+
+Synthesizing Unit <MUX2T1_64>.
+    Related source file is "E:\Lab3\Lab3\MUX2T1_64.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX2T1_64> synthesized.
+
+Synthesizing Unit <GPIO>.
+    Related source file is "E:\Lab3\Lab3\GPIO.v".
+    Found 2-bit register for signal <counter_set>.
+    Found 16-bit register for signal <LED>.
+    Found 14-bit register for signal <GPIOf0>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <GPIO> synthesized.
+
+Synthesizing Unit <clk_div>.
+    Related source file is "E:\Lab3\Lab3\clk_div.v".
+    Found 32-bit register for signal <clkdiv>.
+    Found 32-bit adder for signal <clkdiv[31]_GND_15_o_add_0_OUT> created at line 32.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <clk_div> synthesized.
+
+Synthesizing Unit <Counter_x>.
+    Related source file is "E:\Lab3\Lab3\Counter_3_IO.v".
+WARNING:Xst:647 - Input <clk1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <counter1<32>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <counter2<32>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 24-bit register for signal <counter_Ctrl>.
+    Found 33-bit register for signal <counter0>.
+    Found 32-bit register for signal <counter0_Lock>.
+    Found 1-bit register for signal <sq0>.
+    Found 1-bit register for signal <M0>.
+    Found 1-bit register for signal <clr0>.
+    Found 33-bit subtractor for signal <counter0[32]_GND_26_o_sub_26_OUT> created at line 77.
+    Found 33-bit 4-to-1 multiplexer for signal <counter_Ctrl[2]_counter0[32]_wide_mux_26_OUT> created at line 70.
+    Found 1-bit comparator not equal for signal <n0017> created at line 76
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  92 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <Counter_x> synthesized.
+
+Synthesizing Unit <SCPU_TOP_MUSER_OEXP01_MUX>.
+    Related source file is "E:\Lab3\Lab3\OEXP01_MUX.vf".
+WARNING:Xst:647 - Input <INT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "E:\Lab3\Lab3\OEXP01_MUX.vf" line 230: Output port <overflow> of the instance <XLXI_19> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <SCPU_TOP_MUSER_OEXP01_MUX> synthesized.
+
+Synthesizing Unit <PC>.
+    Related source file is "E:\Lab3\Lab3\PC.v".
+    Found 32-bit register for signal <PC_out>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <PC> synthesized.
+
+Synthesizing Unit <ADD4>.
+    Related source file is "E:\Lab3\Lab3\ADD4.v".
+    Found 32-bit adder for signal <res> created at line 25.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ADD4> synthesized.
+
+Synthesizing Unit <ADD32>.
+    Related source file is "E:\Lab3\Lab3\ADD32.v".
+    Found 32-bit adder for signal <res> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ADD32> synthesized.
+
+Synthesizing Unit <MUX2T1_32>.
+    Related source file is "E:\Lab3\Lab3\MUX2T1_32.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX2T1_32> synthesized.
+
+Synthesizing Unit <Controller>.
+    Related source file is "E:\Lab3\Lab3\Controller.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <RI>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <LW>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <SW>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <beq>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <bne>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Jump>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <JAL>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <JR>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shift>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALU_control<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALU_control<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALU_control<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALU_control<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <LUI>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RR>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  15 Latch(s).
+	inferred  18 Multiplexer(s).
+Unit <Controller> synthesized.
+
+Synthesizing Unit <RegFile>.
+    Related source file is "E:\Lab3\Lab3\RegFile.v".
+    Found 992-bit register for signal <n0051[991:0]>.
+    Found 32-bit 31-to-1 multiplexer for signal <RS_addrA[4]_register[31][31]_wide_mux_1_OUT> created at line 34.
+    Found 32-bit 31-to-1 multiplexer for signal <RT_addrB[4]_register[31][31]_wide_mux_4_OUT> created at line 35.
+    Summary:
+	inferred 992 D-type flip-flop(s).
+	inferred  35 Multiplexer(s).
+Unit <RegFile> synthesized.
+
+Synthesizing Unit <MUX2T1_5>.
+    Related source file is "E:\Lab3\Lab3\MUX2T1_5.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX2T1_5> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "E:\Lab3\Lab3\ALU.v".
+    Found 32-bit subtractor for signal <A[31]_B[31]_sub_11_OUT> created at line 37.
+    Found 32-bit adder for signal <A[31]_B[31]_add_2_OUT> created at line 33.
+    Found 32-bit shifter logical left for signal <A[31]_B[31]_shift_left_14_OUT> created at line 39
+    Found 32-bit shifter logical right for signal <A[31]_B[31]_shift_right_15_OUT> created at line 40
+    Found 32-bit 10-to-1 multiplexer for signal <res> created at line 30.
+    Found 32-bit comparator greater for signal <A[31]_B[31]_LessThan_12_o> created at line 38
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred  16 Multiplexer(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <UnSignExtent>.
+    Related source file is "E:\Lab3\Lab3\UnSignExtent.v".
+    Summary:
+	no macro.
+Unit <UnSignExtent> synthesized.
+
+Synthesizing Unit <SignExtent>.
+    Related source file is "E:\Lab3\Lab3\SignExtent.v".
+    Summary:
+	no macro.
+Unit <SignExtent> synthesized.
+
+Synthesizing Unit <INST26_28>.
+    Related source file is "E:\Lab3\Lab3\INST26_28.v".
+    Summary:
+	no macro.
+Unit <INST26_28> synthesized.
+
+Synthesizing Unit <SLL2>.
+    Related source file is "E:\Lab3\Lab3\SLL2.v".
+WARNING:Xst:647 - Input <A<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <SLL2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 32-bit adder                                          : 3
+ 32-bit addsub                                         : 1
+ 33-bit subtractor                                     : 1
+# Registers                                            : 15
+ 1-bit register                                        : 3
+ 14-bit register                                       : 1
+ 16-bit register                                       : 1
+ 2-bit register                                        : 1
+ 24-bit register                                       : 1
+ 32-bit register                                       : 4
+ 33-bit register                                       : 1
+ 8-bit register                                        : 2
+ 992-bit register                                      : 1
+# Latches                                              : 15
+ 1-bit latch                                           : 15
+# Comparators                                          : 2
+ 1-bit comparator not equal                            : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 88
+ 1-bit 2-to-1 multiplexer                              : 19
+ 32-bit 2-to-1 multiplexer                             : 56
+ 32-bit 31-to-1 multiplexer                            : 2
+ 32-bit 7-to-1 multiplexer                             : 1
+ 33-bit 2-to-1 multiplexer                             : 4
+ 33-bit 4-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 2
+ 64-bit 2-to-1 multiplexer                             : 1
+ 8-bit 8-to-1 multiplexer                              : 2
+# Logic shifters                                       : 2
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <SAnti_jitter.ngc>.
+Reading core <SEnter_2_32.ngc>.
+Reading core <MIO_BUS.ngc>.
+Reading core <PIO.ngc>.
+Reading core <ipcore_dir/RAM_B.ngc>.
+Reading core <Seg7_Dev.ngc>.
+Reading core <ipcore_dir/ROM_D.ngc>.
+Reading core <P2S.ngc>.
+Reading core <LEDP2S.ngc>.
+Loading core <SAnti_jitter> for timing and area information for instance <U9>.
+Loading core <SEnter_2_32> for timing and area information for instance <M4>.
+Loading core <MIO_BUS> for timing and area information for instance <XLXI_34>.
+Loading core <PIO> for timing and area information for instance <U71>.
+Loading core <RAM_B> for timing and area information for instance <XLXI_37>.
+Loading core <Seg7_Dev> for timing and area information for instance <U61>.
+Loading core <ROM_D> for timing and area information for instance <XLXI_36>.
+Loading core <P2S> for timing and area information for instance <MM2>.
+Loading core <LEDP2S> for timing and area information for instance <LEDP2S>.
+WARNING:Xst:1293 - FF/Latch <RI> has a constant value of 0 in block <XLXI_12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <LUI> has a constant value of 0 in block <XLXI_12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <counter_Ctrl_0> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_3> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_4> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_5> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_6> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_7> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_8> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_9> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_10> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_11> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_12> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_13> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_14> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_15> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_16> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_17> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_18> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_19> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_20> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_21> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_22> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:2677 - Node <counter_Ctrl_23> of sequential type is unconnected in block <XLXI_38>.
+WARNING:Xst:1294 - Latch <LW> is equivalent to a wire in block <XLXI_12>.
+WARNING:Xst:1294 - Latch <SW> is equivalent to a wire in block <XLXI_12>.
+WARNING:Xst:1294 - Latch <beq> is equivalent to a wire in block <XLXI_12>.
+WARNING:Xst:1294 - Latch <bne> is equivalent to a wire in block <XLXI_12>.
+WARNING:Xst:1294 - Latch <Jump> is equivalent to a wire in block <XLXI_12>.
+WARNING:Xst:1294 - Latch <JAL> is equivalent to a wire in block <XLXI_12>.
+WARNING:Xst:1294 - Latch <RR> is equivalent to a wire in block <XLXI_12>.
+WARNING:Xst:1294 - Latch <JR> is equivalent to a wire in block <XLXI_12>.
+WARNING:Xst:1294 - Latch <shift> is equivalent to a wire in block <XLXI_12>.
+
+Synthesizing (advanced) Unit <clk_div>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+Unit <clk_div> synthesized (advanced).
+WARNING:Xst:2677 - Node <counter_Ctrl_0> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_3> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_4> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_5> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_6> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_7> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_8> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_9> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_10> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_11> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_12> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_13> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_14> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_15> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_16> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_17> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_18> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_19> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_20> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_21> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_22> of sequential type is unconnected in block <Counter_x>.
+WARNING:Xst:2677 - Node <counter_Ctrl_23> of sequential type is unconnected in block <Counter_x>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+ 33-bit subtractor                                     : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 1174
+ Flip-Flops                                            : 1174
+# Comparators                                          : 2
+ 1-bit comparator not equal                            : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 151
+ 1-bit 2-to-1 multiplexer                              : 84
+ 32-bit 2-to-1 multiplexer                             : 56
+ 32-bit 31-to-1 multiplexer                            : 2
+ 32-bit 7-to-1 multiplexer                             : 1
+ 33-bit 2-to-1 multiplexer                             : 2
+ 33-bit 4-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 2
+ 64-bit 2-to-1 multiplexer                             : 1
+ 8-bit 8-to-1 multiplexer                              : 2
+# Logic shifters                                       : 2
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <cpu_blink_0> in Unit <Multi_8CH32> is equivalent to the following 7 FFs/Latches, which will be removed : <cpu_blink_1> <cpu_blink_2> <cpu_blink_3> <cpu_blink_4> <cpu_blink_5> <cpu_blink_6> <cpu_blink_7> 
+WARNING:Xst:1293 - FF/Latch <RI> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <LUI> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1294 - Latch <LW> is equivalent to a wire in block <Controller>.
+WARNING:Xst:1294 - Latch <SW> is equivalent to a wire in block <Controller>.
+WARNING:Xst:1294 - Latch <beq> is equivalent to a wire in block <Controller>.
+WARNING:Xst:1294 - Latch <bne> is equivalent to a wire in block <Controller>.
+WARNING:Xst:1294 - Latch <Jump> is equivalent to a wire in block <Controller>.
+WARNING:Xst:1294 - Latch <JAL> is equivalent to a wire in block <Controller>.
+WARNING:Xst:1294 - Latch <RR> is equivalent to a wire in block <Controller>.
+WARNING:Xst:1294 - Latch <JR> is equivalent to a wire in block <Controller>.
+WARNING:Xst:1294 - Latch <shift> is equivalent to a wire in block <Controller>.
+WARNING:Xst:2677 - Node <register_31_0> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_1> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_2> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_3> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_4> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_5> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_6> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_7> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_8> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_9> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_10> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_11> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_12> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_13> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_14> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_15> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_16> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_17> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_18> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_19> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_20> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_21> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_22> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_23> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_24> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_25> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_26> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_27> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_28> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_29> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_30> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_31> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_32> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_33> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_34> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_35> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_36> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_37> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_38> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_39> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_40> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_41> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_42> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_43> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_44> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_45> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_46> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_47> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_48> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_49> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_50> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_51> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_52> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_53> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_54> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_55> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_56> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_57> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_58> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_59> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_60> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_61> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_62> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_63> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_64> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_65> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_66> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_67> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_68> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_69> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_70> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_71> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_72> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_73> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_74> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_75> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_76> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_77> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_78> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_79> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_80> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_81> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_82> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_83> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_84> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_85> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_86> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_87> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_88> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_89> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_90> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_91> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_92> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_93> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_94> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_95> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_96> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_97> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_98> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_99> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_100> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_101> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_102> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_103> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_104> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_105> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_106> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_107> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_108> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_109> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_110> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_111> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_112> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_113> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_114> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_115> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_116> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_117> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_118> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_119> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_120> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_121> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_122> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_123> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_124> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_125> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_126> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_127> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_128> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_129> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_130> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_131> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_132> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_133> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_134> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_135> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_136> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_137> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_138> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_139> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_140> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_141> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_142> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_143> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_144> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_145> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_146> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_147> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_148> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_149> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_150> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_151> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_152> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_153> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_154> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_155> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_156> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_157> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_158> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_159> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_160> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_161> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_162> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_163> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_164> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_165> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_166> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_167> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_168> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_169> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_170> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_171> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_172> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_173> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_174> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_175> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_176> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_177> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_178> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_179> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_180> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_181> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_182> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_183> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_184> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_185> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_186> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_187> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_188> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_189> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_190> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_191> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_192> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_193> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_194> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_195> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_196> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_197> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_198> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_199> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_200> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_201> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_202> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_203> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_204> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_205> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_206> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_207> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_208> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_209> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_210> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_211> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_212> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_213> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_214> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_215> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_216> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_217> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_218> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_219> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_220> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_221> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_222> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_223> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_224> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_225> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_226> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_227> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_228> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_229> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_230> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_231> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_232> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_233> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_234> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_235> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_236> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_237> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_238> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_239> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_240> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_241> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_242> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_243> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_244> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_245> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_246> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_247> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_248> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_249> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_250> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_251> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_252> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_253> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_254> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_255> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_256> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_257> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_258> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_259> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_260> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_261> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_262> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_263> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_264> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_265> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_266> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_267> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_268> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_269> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_270> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_271> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_272> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_273> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_274> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_275> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_276> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_277> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_278> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_279> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_280> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_281> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_282> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_283> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_284> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_285> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_286> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_287> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_288> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_289> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_290> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_291> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_292> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_293> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_294> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_295> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_296> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_297> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_298> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_299> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_300> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_301> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_302> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_303> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_304> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_305> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_306> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_307> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_308> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_309> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_310> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_311> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_312> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_313> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_314> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_315> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_316> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_317> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_318> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_319> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_320> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_321> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_322> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_323> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_324> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_325> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_326> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_327> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_328> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_329> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_330> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_331> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_332> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_333> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_334> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_335> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_336> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_337> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_338> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_339> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_340> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_341> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_342> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_343> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_344> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_345> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_346> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_347> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_348> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_349> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_350> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_351> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_352> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_353> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_354> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_355> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_356> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_357> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_358> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_359> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_360> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_361> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_362> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_363> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_364> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_365> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_366> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_367> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_368> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_369> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_370> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_371> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_372> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_373> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_374> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_375> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_376> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_377> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_378> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_379> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_380> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_381> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_382> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_383> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_384> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_385> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_386> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_387> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_388> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_389> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_390> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_391> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_392> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_393> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_394> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_395> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_396> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_397> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_398> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_399> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_400> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_401> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_402> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_403> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_404> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_405> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_406> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_407> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_408> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_409> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_410> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_411> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_412> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_413> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_414> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_415> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_416> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_417> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_418> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_419> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_420> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_421> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_422> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_423> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_424> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_425> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_426> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_427> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_428> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_429> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_430> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_431> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_432> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_433> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_434> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_435> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_436> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_437> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_438> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_439> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_440> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_441> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_442> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_443> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_444> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_445> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_446> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_447> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_448> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_449> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_450> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_451> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_452> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_453> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_454> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_455> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_456> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_457> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_458> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_459> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_460> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_461> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_462> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_463> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_464> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_465> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_466> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_467> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_468> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_469> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_470> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_471> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_472> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_473> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_474> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_475> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_476> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_477> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_478> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_479> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_480> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_481> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_482> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_483> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_484> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_485> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_486> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_487> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_488> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_489> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_490> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_491> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_492> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_493> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_494> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_495> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_496> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_497> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_498> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_499> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_500> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_501> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_502> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_503> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_504> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_505> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_506> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_507> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_508> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_509> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_510> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_511> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_512> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_513> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_514> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_515> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_516> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_517> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_518> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_519> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_520> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_521> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_522> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_523> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_524> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_525> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_526> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_527> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_528> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_529> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_530> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_531> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_532> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_533> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_534> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_535> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_536> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_537> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_538> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_539> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_540> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_541> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_542> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_543> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_544> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_545> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_546> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_547> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_548> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_549> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_550> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_551> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_552> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_553> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_554> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_555> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_556> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_557> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_558> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_559> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_560> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_561> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_562> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_563> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_564> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_565> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_566> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_567> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_568> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_569> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_570> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_571> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_572> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_573> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_574> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_575> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_576> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_577> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_578> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_579> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_580> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_581> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_582> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_583> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_584> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_585> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_586> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_587> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_588> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_589> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_590> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_591> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_592> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_593> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_594> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_595> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_596> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_597> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_598> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_599> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_600> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_601> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_602> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_603> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_604> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_605> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_606> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_607> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_608> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_609> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_610> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_611> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_612> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_613> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_614> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_615> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_616> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_617> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_618> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_619> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_620> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_621> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_622> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_623> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_624> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_625> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_626> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_627> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_628> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_629> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_630> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_631> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_632> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_633> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_634> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_635> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_636> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_637> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_638> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_639> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_640> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_641> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_642> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_643> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_644> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_645> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_646> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_647> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_648> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_649> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_650> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_651> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_652> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_653> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_654> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_655> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_656> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_657> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_658> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_659> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_660> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_661> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_662> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_663> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_664> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_665> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_666> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_667> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_668> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_669> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_670> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_671> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_672> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_673> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_674> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_675> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_676> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_677> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_678> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_679> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_680> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_681> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_682> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_683> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_684> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_685> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_686> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_687> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_688> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_689> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_690> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_691> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_692> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_693> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_694> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_695> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_696> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_697> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_698> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_699> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_700> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_701> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_702> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_703> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_704> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_705> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_706> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_707> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_708> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_709> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_710> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_711> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_712> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_713> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_714> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_715> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_716> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_717> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_718> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_719> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_720> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_721> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_722> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_723> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_724> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_725> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_726> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_727> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_728> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_729> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_730> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_731> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_732> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_733> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_734> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_735> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_736> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_737> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_738> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_739> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_740> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_741> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_742> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_743> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_744> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_745> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_746> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_747> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_748> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_749> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_750> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_751> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_752> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_753> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_754> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_755> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_756> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_757> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_758> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_759> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_760> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_761> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_762> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_763> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_764> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_765> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_766> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_767> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_768> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_769> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_770> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_771> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_772> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_773> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_774> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_775> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_776> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_777> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_778> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_779> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_780> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_781> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_782> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_783> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_784> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_785> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_786> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_787> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_788> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_789> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_790> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_791> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_792> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_793> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_794> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_795> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_796> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_797> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_798> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_799> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_800> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_801> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_802> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_803> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_804> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_805> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_806> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_807> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_808> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_809> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_810> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_811> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_812> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_813> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_814> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_815> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_816> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_817> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_818> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_819> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_820> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_821> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_822> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_823> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_824> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_825> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_826> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_827> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_828> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_829> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_830> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_831> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_832> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_833> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_834> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_835> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_836> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_837> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_838> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_839> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_840> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_841> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_842> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_843> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_844> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_845> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_846> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_847> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_848> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_849> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_850> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_851> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_852> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_853> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_854> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_855> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_856> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_857> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_858> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_859> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_860> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_861> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_862> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_863> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_864> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_865> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_866> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_867> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_868> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_869> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_870> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_871> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_872> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_873> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_874> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_875> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_876> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_877> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_878> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_879> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_880> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_881> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_882> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_883> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_884> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_885> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_886> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_887> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_888> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_889> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_890> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_891> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_892> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_893> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_894> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_895> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_896> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_897> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_898> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_899> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_900> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_901> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_902> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_903> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_904> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_905> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_906> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_907> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_908> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_909> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_910> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_911> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_912> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_913> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_914> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_915> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_916> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_917> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_918> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_919> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_920> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_921> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_922> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_923> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_924> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_925> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_926> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_927> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_928> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_929> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_930> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_931> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_932> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_933> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_934> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_935> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_936> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_937> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_938> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_939> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_940> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_941> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_942> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_943> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_944> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_945> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_946> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_947> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_948> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_949> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_950> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_951> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_952> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_953> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_954> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_955> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_956> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_957> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_958> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_959> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_960> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_961> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_962> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_963> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_964> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_965> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_966> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_967> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_968> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_969> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_970> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_971> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_972> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_973> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_974> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_975> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_976> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_977> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_978> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_979> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_980> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_981> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_982> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_983> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_984> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_985> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_986> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_987> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_988> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_989> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_990> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:2677 - Node <register_31_991> of sequential type is unconnected in block <RegFile>.
+WARNING:Xst:1710 - FF/Latch <ALU_control_3> (without init value) has a constant value of 1 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ALU_control_2> (without init value) has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ALU_control_1> (without init value) has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ALU_control_0> (without init value) has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <PC> ...
+
+Optimizing unit <OEXP01_MUX> ...
+
+Optimizing unit <Multi_8CH32> ...
+
+Optimizing unit <GPIO> ...
+
+Optimizing unit <Counter_x> ...
+
+Optimizing unit <SCPU_TOP_MUSER_OEXP01_MUX> ...
+
+Optimizing unit <ALU> ...
+WARNING:Xst:1426 - The value init of the FF/Latch U5/cpu_blink_0 hinder the constant cleaning in the block OEXP01_MUX.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1293 - FF/Latch <XLXI_49/XLXI_2/PC_out_1> has a constant value of 0 in block <OEXP01_MUX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <XLXI_49/XLXI_2/PC_out_0> has a constant value of 0 in block <OEXP01_MUX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <U7/GPIOf0_13> of sequential type is unconnected in block <OEXP01_MUX>.
+WARNING:Xst:2677 - Node <U7/GPIOf0_12> of sequential type is unconnected in block <OEXP01_MUX>.
+WARNING:Xst:2677 - Node <U7/GPIOf0_11> of sequential type is unconnected in block <OEXP01_MUX>.
+WARNING:Xst:2677 - Node <U7/GPIOf0_10> of sequential type is unconnected in block <OEXP01_MUX>.
+WARNING:Xst:2677 - Node <U7/GPIOf0_9> of sequential type is unconnected in block <OEXP01_MUX>.
+WARNING:Xst:2677 - Node <U7/GPIOf0_8> of sequential type is unconnected in block <OEXP01_MUX>.
+WARNING:Xst:2677 - Node <U7/GPIOf0_7> of sequential type is unconnected in block <OEXP01_MUX>.
+WARNING:Xst:2677 - Node <U7/GPIOf0_6> of sequential type is unconnected in block <OEXP01_MUX>.
+WARNING:Xst:2677 - Node <U7/GPIOf0_5> of sequential type is unconnected in block <OEXP01_MUX>.
+WARNING:Xst:2677 - Node <U7/GPIOf0_4> of sequential type is unconnected in block <OEXP01_MUX>.
+WARNING:Xst:2677 - Node <U7/GPIOf0_3> of sequential type is unconnected in block <OEXP01_MUX>.
+WARNING:Xst:2677 - Node <U7/GPIOf0_2> of sequential type is unconnected in block <OEXP01_MUX>.
+WARNING:Xst:2677 - Node <U7/GPIOf0_1> of sequential type is unconnected in block <OEXP01_MUX>.
+WARNING:Xst:2677 - Node <U7/GPIOf0_0> of sequential type is unconnected in block <OEXP01_MUX>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block OEXP01_MUX, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 191
+ Flip-Flops                                            : 191
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : OEXP01_MUX.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1654
+#      AND2                        : 4
+#      AND3                        : 11
+#      AND4                        : 9
+#      BUF                         : 1
+#      GND                         : 4
+#      INV                         : 71
+#      LUT1                        : 127
+#      LUT2                        : 63
+#      LUT3                        : 121
+#      LUT4                        : 138
+#      LUT5                        : 229
+#      LUT6                        : 467
+#      MUXCY                       : 182
+#      MUXF7                       : 42
+#      OR2                         : 9
+#      OR3                         : 3
+#      OR4                         : 4
+#      VCC                         : 5
+#      XORCY                       : 164
+# FlipFlops/Latches                : 515
+#      FD                          : 205
+#      FDC                         : 75
+#      FDCE                        : 35
+#      FDCE_1                      : 22
+#      FDE                         : 89
+#      FDE_1                       : 22
+#      FDPE_1                      : 6
+#      FDR                         : 32
+#      FDRE                        : 29
+# RAMS                             : 1
+#      RAMB36E1                    : 1
+# Clock Buffers                    : 4
+#      BUFG                        : 3
+#      BUFGP                       : 1
+# IO Buffers                       : 58
+#      IBUF                        : 21
+#      OBUF                        : 37
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             515  out of  202800     0%  
+ Number of Slice LUTs:                 1216  out of  101400     1%  
+    Number used as Logic:              1216  out of  101400     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1323
+   Number with an unused Flip Flop:     808  out of   1323    61%  
+   Number with an unused LUT:           107  out of   1323     8%  
+   Number of fully used LUT-FF pairs:   408  out of   1323    30%  
+   Number of unique control sets:        27
+
+IO Utilization: 
+ Number of IOs:                          59
+ Number of bonded IOBs:                  59  out of    400    14%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of    325     0%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                4  out of     32    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_100mhz                         | BUFGP                  | 262   |
+Clk_CPU(U8/Mmux_Clk_CPU11:O)       | BUFG(*)(U5/cpu_point_7)| 175   |
+U8/clkdiv_6                        | BUFG                   | 35    |
+U9/clk1                            | BUFG                   | 41    |
+M4/push(M4/push1:O)                | NONE(*)(M4/state_0)    | 3     |
+-----------------------------------+------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                     | Buffer(FF name)                                                                                                                              | Load  |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------+
+XLXI_37/N1(XLXI_37/XST_GND:G)      | NONE(XLXI_37/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)| 2     |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 3.512ns (Maximum Frequency: 284.726MHz)
+   Minimum input arrival time before clock: 2.542ns
+   Maximum output required time after clock: 6.537ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_100mhz'
+  Clock period: 3.512ns (frequency: 284.726MHz)
+  Total number of paths / destination ports: 9332 / 333
+-------------------------------------------------------------------------
+Delay:               3.512ns (Levels of Logic = 6)
+  Source:            U9/SW_OK_7 (FF)
+  Destination:       U6/MM2/buffer_51 (FF)
+  Source Clock:      clk_100mhz rising
+  Destination Clock: clk_100mhz rising
+
+  Data Path: U9/SW_OK_7 to U6/MM2/buffer_51
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q            117   0.282   0.656  SW_OK_7 (SW_OK<7>)
+     end scope: 'U9:SW_OK<7>'
+     LUT5:I3->O            2   0.053   0.491  U5/MUX1_DispData/Mmux_O301 (U5/MUX1_DispData/Mmux_O30)
+     LUT6:I4->O            9   0.053   0.655  U5/MUX1_DispData/Mmux_O302 (Disp_num<7>)
+     LUT5:I2->O            1   0.053   0.413  U6/M/Mmux_o491 (U6/M/Mmux_o49)
+     LUT3:I2->O            1   0.053   0.739  U6/M/Mmux_o492 (U6/SEGMENT<53>)
+     begin scope: 'U6/MM2:P_Data<53>'
+     LUT6:I0->O            1   0.053   0.000  buffer_53_rstpot (buffer_53_rstpot)
+     FD:D                      0.011          buffer_53
+    ----------------------------------------
+    Total                      3.512ns (0.558ns logic, 2.954ns route)
+                                       (15.9% logic, 84.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U8/clkdiv_6'
+  Clock period: 2.654ns (frequency: 376.790MHz)
+  Total number of paths / destination ports: 787 / 36
+-------------------------------------------------------------------------
+Delay:               2.654ns (Levels of Logic = 35)
+  Source:            XLXI_38/counter0_0 (FF)
+  Destination:       XLXI_38/counter0_32 (FF)
+  Source Clock:      U8/clkdiv_6 rising
+  Destination Clock: U8/clkdiv_6 rising
+
+  Data Path: XLXI_38/counter0_0 to XLXI_38/counter0_32
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.282   0.440  XLXI_38/counter0_0 (XLXI_38/counter0_0)
+     LUT1:I0->O            1   0.053   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<0>_rt (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<0>_rt)
+     MUXCY:S->O            1   0.291   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<0> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<0>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<1> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<2> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<3> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<3>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<4> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<4>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<5> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<5>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<6> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<6>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<7> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<7>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<8> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<8>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<9> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<9>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<10> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<10>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<11> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<11>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<12> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<12>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<13> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<13>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<14> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<14>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<15> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<15>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<16> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<16>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<17> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<17>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<18> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<18>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<19> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<19>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<20> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<20>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<21> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<21>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<22> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<22>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<23> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<23>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<24> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<24>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<25> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<25>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<26> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<26>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<27> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<27>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<28> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<28>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<29> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<29>)
+     MUXCY:CI->O           1   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<30> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<30>)
+     MUXCY:CI->O           0   0.015   0.000  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<31> (XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_cy<31>)
+     XORCY:CI->O           1   0.320   0.739  XLXI_38/Msub_counter0[32]_GND_26_o_sub_26_OUT_xor<32> (XLXI_38/counter0[32]_GND_26_o_sub_26_OUT<32>)
+     LUT6:I0->O            1   0.053   0.000  XLXI_38/Mmux_counter_Ctrl[2]_counter0[32]_wide_mux_26_OUT262 (XLXI_38/counter_Ctrl[2]_counter0[32]_wide_mux_26_OUT<32>)
+     FDC:D                     0.011          XLXI_38/counter0_32
+    ----------------------------------------
+    Total                      2.654ns (1.475ns logic, 1.179ns route)
+                                       (55.6% logic, 44.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk_CPU'
+  Clock period: 3.128ns (frequency: 319.693MHz)
+  Total number of paths / destination ports: 942 / 116
+-------------------------------------------------------------------------
+Delay:               1.564ns (Levels of Logic = 3)
+  Source:            U7/LED_0 (FF)
+  Destination:       U7/LEDP2S/Q_1 (FF)
+  Source Clock:      Clk_CPU rising
+  Destination Clock: Clk_CPU falling
+
+  Data Path: U7/LED_0 to U7/LEDP2S/Q_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE_1:C->Q           2   0.289   0.405  U7/LED_0 (U7/LED_0)
+     INV:I->O              1   0.067   0.739  U7/LED[15]_inv_8_OUT<0>1_INV_0 (U7/LED[15]_inv_8_OUT<0>)
+     begin scope: 'U7/LEDP2S:PData<0>'
+     LUT6:I0->O            1   0.053   0.000  Q_1_rstpot (Q_1_rstpot)
+     FD:D                      0.011          Q_1
+    ----------------------------------------
+    Total                      1.564ns (0.420ns logic, 1.144ns route)
+                                       (26.9% logic, 73.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U9/clk1'
+  Clock period: 2.576ns (frequency: 388.199MHz)
+  Total number of paths / destination ports: 1454 / 90
+-------------------------------------------------------------------------
+Delay:               2.576ns (Levels of Logic = 7)
+  Source:            U9/counter_8 (FF)
+  Destination:       U9/Key_x_0 (FF)
+  Source Clock:      U9/clk1 rising
+  Destination Clock: U9/clk1 rising
+
+  Data Path: U9/counter_8 to U9/Key_x_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.282   0.739  counter_8 (counter<8>)
+     LUT5:I0->O            1   0.053   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_lut<0> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_lut<0>)
+     MUXCY:S->O            1   0.291   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<0> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<0>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<1> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<2> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<3> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<3>)
+     MUXCY:CI->O           8   0.015   0.445  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<4> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<4>)
+     INV:I->O              7   0.067   0.439  _n0225_inv1_cepot_INV_0 (_n0225_inv1_cepot)
+     FDE:CE                    0.200          Key_x_0
+    ----------------------------------------
+    Total                      2.576ns (0.953ns logic, 1.623ns route)
+                                       (37.0% logic, 63.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M4/push'
+  Clock period: 1.277ns (frequency: 783.085MHz)
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Delay:               1.277ns (Levels of Logic = 1)
+  Source:            M4/state_0 (FF)
+  Destination:       M4/state_0 (FF)
+  Source Clock:      M4/push rising
+  Destination Clock: M4/push rising
+
+  Data Path: M4/state_0 to M4/state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             19   0.282   0.518  state_0 (state<0>)
+     INV:I->O              1   0.067   0.399  Result<0>1_INV_0 (Result<0>)
+     FDE:D                     0.011          state_0
+    ----------------------------------------
+    Total                      1.277ns (0.360ns logic, 0.917ns route)
+                                       (28.2% logic, 71.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 1195 / 100
+-------------------------------------------------------------------------
+Offset:              2.498ns (Levels of Logic = 10)
+  Source:            SW<2> (PAD)
+  Destination:       U9/SW_OK_0 (FF)
+  Destination Clock: clk_100mhz rising
+
+  Data Path: SW<2> to U9/SW_OK_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.000   0.753  SW_2_IBUF (SW_2_IBUF)
+     begin scope: 'U9:SW<2>'
+     LUT6:I0->O            1   0.053   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_lut<0> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_lut<0>)
+     MUXCY:S->O            1   0.291   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<0> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<0>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<1> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<2> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<3> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<3>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<4> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<4>)
+     MUXCY:CI->O          43   0.015   0.554  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<5> (sw_temp[15]_SW[15]_not_equal_100_o)
+     INV:I->O             17   0.067   0.505  _n0243_inv1_cepot_cepot_INV_0 (_n0243_inv1_cepot_cepot)
+     FDE:CE                    0.200          SW_OK_0
+    ----------------------------------------
+    Total                      2.498ns (0.686ns logic, 1.812ns route)
+                                       (27.5% logic, 72.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U9/clk1'
+  Total number of paths / destination ports: 176 / 41
+-------------------------------------------------------------------------
+Offset:              2.542ns (Levels of Logic = 6)
+  Source:            K_COL<3> (PAD)
+  Destination:       U9/Key_x_1 (FF)
+  Destination Clock: U9/clk1 rising
+
+  Data Path: K_COL<3> to U9/Key_x_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.000   0.668  K_COL_3_IBUF (K_COL_3_IBUF)
+     begin scope: 'U9:Key_y<3>'
+     LUT4:I0->O           12   0.053   0.811  out1 (n0016)
+     LUT6:I0->O            3   0.053   0.427  _n0295<0>1 (_n0295<0>)
+     LUT6:I5->O            1   0.053   0.413  Key_x[4]_PWR_1_o_select_74_OUT<1>1 (Key_x[4]_PWR_1_o_select_74_OUT<4>)
+     LUT3:I2->O            1   0.053   0.000  Key_x_4_dpot (Key_x_4_dpot)
+     FDE:D                     0.011          Key_x_4
+    ----------------------------------------
+    Total                      2.542ns (0.223ns logic, 2.319ns route)
+                                       (8.8% logic, 91.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 4627 / 18
+-------------------------------------------------------------------------
+Offset:              6.226ns (Levels of Logic = 12)
+  Source:            U9/SW_OK_7 (FF)
+  Destination:       SEGMENT<6> (PAD)
+  Source Clock:      clk_100mhz rising
+
+  Data Path: U9/SW_OK_7 to SEGMENT<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q            117   0.282   0.656  SW_OK_7 (SW_OK<7>)
+     end scope: 'U9:SW_OK<7>'
+     LUT5:I3->O            1   0.053   0.413  U5/MUX1_DispData/Mmux_O171 (U5/MUX1_DispData/Mmux_O17)
+     LUT6:I5->O           11   0.053   0.701  U5/MUX1_DispData/Mmux_O172 (Disp_num<24>)
+     begin scope: 'U61:Hexs<24>'
+     LUT6:I2->O            1   0.053   0.000  M2/Mmux_Hexo_3 (M2/Mmux_Hexo_3)
+     MUXF7:I1->O          12   0.217   0.471  M2/Mmux_Hexo_2_f7 (Hex<0>)
+     INV:I->O              6   0.067   0.772  M1/XLXI_4 (M1/XLXN_24)
+     AND4:I0->O            1   0.053   0.739  M1/XLXI_28 (M1/XLXN_141)
+     OR4:I0->O             1   0.053   0.725  M1/XLXI_29 (M1/XLXN_211)
+     OR2:I1->O             1   0.053   0.413  M1/XLXI_50 (SEG_TXT<3>)
+     LUT3:I2->O            1   0.053   0.399  MUXHM/Mmux_o4 (SEGMENT<3>)
+     end scope: 'U61:SEGMENT<3>'
+     OBUF:I->O                 0.000          SEGMENT_3_OBUF (SEGMENT<3>)
+    ----------------------------------------
+    Total                      6.226ns (0.937ns logic, 5.289ns route)
+                                       (15.0% logic, 85.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U9/clk1'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              0.779ns (Levels of Logic = 2)
+  Source:            U9/Key_x_4 (FF)
+  Destination:       K_ROW<4> (PAD)
+  Source Clock:      U9/clk1 rising
+
+  Data Path: U9/Key_x_4 to K_ROW<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             16   0.282   0.497  Key_x_4 (Key_x<4>)
+     end scope: 'U9:Key_x<4>'
+     OBUF:I->O                 0.000          K_ROW_4_OBUF (K_ROW<4>)
+    ----------------------------------------
+    Total                      0.779ns (0.282ns logic, 0.497ns route)
+                                       (36.2% logic, 63.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk_CPU'
+  Total number of paths / destination ports: 2469 / 19
+-------------------------------------------------------------------------
+Offset:              6.442ns (Levels of Logic = 11)
+  Source:            XLXI_49/XLXI_2/PC_out_10 (FF)
+  Destination:       SEGMENT<6> (PAD)
+  Source Clock:      Clk_CPU rising
+
+  Data Path: XLXI_49/XLXI_2/PC_out_10 to SEGMENT<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             53   0.282   0.882  XLXI_49/XLXI_2/PC_out_10 (XLXI_49/XLXI_2/PC_out_10)
+     LUT5:I0->O            2   0.053   0.419  U5/MUX1_DispData/Mmux_O311 (U5/MUX1_DispData/Mmux_O31)
+     LUT6:I5->O            9   0.053   0.688  U5/MUX1_DispData/Mmux_O312 (Disp_num<8>)
+     begin scope: 'U61:Hexs<8>'
+     LUT6:I2->O            1   0.053   0.000  M2/Mmux_Hexo_4 (M2/Mmux_Hexo_4)
+     MUXF7:I0->O          12   0.214   0.471  M2/Mmux_Hexo_2_f7 (Hex<0>)
+     INV:I->O              6   0.067   0.772  M1/XLXI_4 (M1/XLXN_24)
+     AND4:I0->O            1   0.053   0.739  M1/XLXI_28 (M1/XLXN_141)
+     OR4:I0->O             1   0.053   0.725  M1/XLXI_29 (M1/XLXN_211)
+     OR2:I1->O             1   0.053   0.413  M1/XLXI_50 (SEG_TXT<3>)
+     LUT3:I2->O            1   0.053   0.399  MUXHM/Mmux_o4 (SEGMENT<3>)
+     end scope: 'U61:SEGMENT<3>'
+     OBUF:I->O                 0.000          SEGMENT_3_OBUF (SEGMENT<3>)
+    ----------------------------------------
+    Total                      6.442ns (0.934ns logic, 5.508ns route)
+                                       (14.5% logic, 85.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U8/clkdiv_6'
+  Total number of paths / destination ports: 1463 / 8
+-------------------------------------------------------------------------
+Offset:              6.537ns (Levels of Logic = 12)
+  Source:            XLXI_38/counter0_24 (FF)
+  Destination:       SEGMENT<6> (PAD)
+  Source Clock:      U8/clkdiv_6 rising
+
+  Data Path: XLXI_38/counter0_24 to SEGMENT<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.282   0.655  XLXI_38/counter0_24 (XLXI_38/counter0_24)
+     begin scope: 'XLXI_34:counter_out<24>'
+     LUT6:I2->O            1   0.053   0.725  Mmux_Cpu_data4bus171 (Cpu_data4bus<24>)
+     end scope: 'XLXI_34:Cpu_data4bus<24>'
+     LUT6:I1->O           11   0.053   0.701  U5/MUX1_DispData/Mmux_O172 (Disp_num<24>)
+     begin scope: 'U61:Hexs<24>'
+     LUT6:I2->O            1   0.053   0.000  M2/Mmux_Hexo_3 (M2/Mmux_Hexo_3)
+     MUXF7:I1->O          12   0.217   0.471  M2/Mmux_Hexo_2_f7 (Hex<0>)
+     INV:I->O              6   0.067   0.772  M1/XLXI_4 (M1/XLXN_24)
+     AND4:I0->O            1   0.053   0.739  M1/XLXI_28 (M1/XLXN_141)
+     OR4:I0->O             1   0.053   0.725  M1/XLXI_29 (M1/XLXN_211)
+     OR2:I1->O             1   0.053   0.413  M1/XLXI_50 (SEG_TXT<3>)
+     LUT3:I2->O            1   0.053   0.399  MUXHM/Mmux_o4 (SEGMENT<3>)
+     end scope: 'U61:SEGMENT<3>'
+     OBUF:I->O                 0.000          SEGMENT_3_OBUF (SEGMENT<3>)
+    ----------------------------------------
+    Total                      6.537ns (0.937ns logic, 5.600ns route)
+                                       (14.3% logic, 85.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clk_CPU
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk_CPU        |    2.358|         |    2.231|         |
+U8/clkdiv_6    |         |         |    1.667|         |
+clk_100mhz     |    1.739|         |    1.656|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M4/push
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M4/push        |    1.277|         |         |         |
+U9/clk1        |    1.001|         |         |         |
+clk_100mhz     |    1.604|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U8/clkdiv_6
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk_CPU        |         |    2.586|         |         |
+U8/clkdiv_6    |    2.654|         |         |         |
+clk_100mhz     |    1.845|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U9/clk1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U9/clk1        |    2.576|         |         |         |
+clk_100mhz     |    1.557|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_100mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk_CPU        |    3.739|    3.259|         |         |
+M4/push        |    2.339|         |         |         |
+U8/clkdiv_6    |    3.792|         |         |         |
+U9/clk1        |    1.324|         |         |         |
+clk_100mhz     |    3.512|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 19.09 secs
+ 
+--> 
+
+Total memory usage is 4671944 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings : 1130 (   0 filtered)
+Number of infos    :   14 (   0 filtered)
+

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -w -refsym RS_EN E:/test_1/logicproject/11/Top_Fsm/RS_EN.sch E:/test_1/logicproject/11/Top_Fsm/RS_EN.sym 

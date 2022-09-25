@@ -1,0 +1,4 @@
+sch2hdl,-sympath,E:/xq/MCPU_ORG13/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,E:/xq/MCPU_ORG13/alu.vf,-w,E:/xq/MCPU_ORG13/alu.sch
+sch2hdl,-sympath,E:/xq/MCPU_ORG13/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,E:/xq/MCPU_ORG13/MCPU.vf,-w,E:/xq/MCPU_ORG13/MCPU.sch
+sch2hdl,-sympath,E:/xq/MCPU_ORG13/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,E:/xq/MCPU_ORG13/decoder_38.vf,-w,E:/xq/MCPU_ORG13/decoder_38.sch
+sch2hdl,-sympath,E:/xq/MCPU_ORG13/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,E:/xq/MCPU_ORG13/MC14495.vf,-w,E:/xq/MCPU_ORG13/MC14495.sch

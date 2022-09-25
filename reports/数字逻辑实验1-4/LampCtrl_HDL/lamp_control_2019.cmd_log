@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "Y:/Desktop/LampCtrl_HDL/lamp_control_2019.xst" -ofn "Y:/Desktop/LampCtrl_HDL/lamp_control_2019.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UCF_ver.ucf -p xc7k160t-fbg676-1 lamp_control_2019.ngc lamp_control_2019.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o lamp_control_2019_map.ncd lamp_control_2019.ngd lamp_control_2019.pcf 
+par -w -intstyle ise -ol high -mt off lamp_control_2019_map.ncd lamp_control_2019.ncd lamp_control_2019.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lamp_control_2019.twx lamp_control_2019.ncd -o lamp_control_2019.twr lamp_control_2019.pcf -ucf UCF_ver.ucf 
+bitgen -intstyle ise -f lamp_control_2019.ut lamp_control_2019.ncd 

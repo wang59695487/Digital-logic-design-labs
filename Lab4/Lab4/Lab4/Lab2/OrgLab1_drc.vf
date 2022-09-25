@@ -1,0 +1,302 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : OrgLab1_drc.vf
+// /___/   /\     Timestamp : 03/09/2019 19:37:22
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: K:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -sympath "C:/Users/z/Documents/Projects/OrgLab/Full_20190305/Org-z/Lab2 RSC-4-9-85-61-5-46-1/Org02_20190227/Lab2/ipcore_dir" -intstyle ise -family kintex7 -verilog OrgLab1_drc.vf -w "C:/Users/z/Documents/Projects/OrgLab/Full_20190305/Org-z/Lab2 RSC-4-9-85-61-5-46-1/Org02_20190227/Lab2/OrgLab1.sch"
+//Design Name: OrgLab1
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Seg7_Dev_MUSER_OrgLab1(flash, 
+                              Hexs, 
+                              LES, 
+                              point, 
+                              Scan, 
+                              SW0, 
+                              AN, 
+                              SEGMENT);
+
+    input flash;
+    input [31:0] Hexs;
+    input [7:0] LES;
+    input [7:0] point;
+    input [2:0] Scan;
+    input SW0;
+   output [3:0] AN;
+   output [7:0] SEGMENT;
+   
+   wire XLXN_2;
+   wire [7:0] XLXN_6;
+   wire [7:0] XLXN_7;
+   wire [3:0] XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   
+   AND2  XLXI_1 (.I0(XLXN_2), 
+                .I1(flash), 
+                .O(XLXN_9));
+   MC14495_ZJU  XLXI_3 (.D0(XLXN_8[0]), 
+                       .D1(XLXN_8[1]), 
+                       .D2(XLXN_8[2]), 
+                       .D3(XLXN_8[3]), 
+                       .LE(XLXN_9), 
+                       .point(XLXN_10), 
+                       .a(XLXN_7[0]), 
+                       .b(XLXN_7[1]), 
+                       .c(XLXN_7[2]), 
+                       .d(XLXN_7[3]), 
+                       .e(XLXN_7[4]), 
+                       .f(XLXN_7[5]), 
+                       .g(XLXN_7[6]), 
+                       .p(XLXN_7[7]));
+   Seg_map  XLXI_4 (.Hexs(Hexs[31:0]), 
+                   .Scan(Scan[2:0]), 
+                   .Seg_map(XLXN_6[7:0]));
+   MUX2T1_8  XLXI_5 (.I0(XLXN_6[7:0]), 
+                    .I1(XLXN_7[7:0]), 
+                    .s(SW0), 
+                    .o(SEGMENT[7:0]));
+   Scansync  XLXI_7 (.Hexs(Hexs[31:0]), 
+                    .LES(LES[7:0]), 
+                    .point(point[7:0]), 
+                    .Scan(Scan[2:0]), 
+                    .AN(AN[3:0]), 
+                    .Hexo(XLXN_8[3:0]), 
+                    .LE(XLXN_2), 
+                    .p(XLXN_10));
+endmodule
+`timescale 1ns / 1ps
+
+module SSeg7_Dev_MUSER_OrgLab1(clk, 
+                               flash, 
+                               LES, 
+                               point, 
+                               rst, 
+                               Start, 
+                               SW0, 
+                               seg_clk, 
+                               seg_clrn, 
+                               SEG_PEN, 
+                               seg_sout);
+
+    input clk;
+    input flash;
+    input [31:0] LES;
+    input [7:0] point;
+    input rst;
+    input Start;
+    input SW0;
+   output seg_clk;
+   output seg_clrn;
+   output SEG_PEN;
+   output seg_sout;
+   
+   wire [31:0] Hexs;
+   wire [63:0] XLXN_14;
+   wire [63:0] XLXN_15;
+   wire [63:0] XLXN_16;
+   
+   HexTo8SEG  XLXI_1 (.flash(flash), 
+                     .Hexs(LES[31:0]), 
+                     .LES(Hexs[7:0]), 
+                     .point(point[7:0]), 
+                     .SEG_TXT(XLXN_14[63:0]));
+   SSeg_map  XLXI_2 (.Disp_num({Hexs[31:0], Hexs[31:0]}), 
+                    .Seg_map(XLXN_15[63:0]));
+   MUX2T1_64  XLXI_3 (.a(XLXN_14[63:0]), 
+                     .b(XLXN_15[63:0]), 
+                     .sel(SW0), 
+                     .o(XLXN_16[63:0]));
+   P2S  XLXI_4 (.clk(clk), 
+               .P_Data(XLXN_16[63:0]), 
+               .rst(rst), 
+               .Serial(Start), 
+               .EN(seg_clrn), 
+               .sout(SEG_PEN), 
+               .s_clk(seg_clk), 
+               .s_clrn(seg_sout));
+endmodule
+`timescale 1ns / 1ps
+
+module OrgLab1(BTN_y, 
+               clk_100mhz, 
+               RSTN, 
+               SW, 
+               AN, 
+               BTN_x, 
+               Buzzer, 
+               CR, 
+               LED, 
+               led_clk, 
+               led_clrn, 
+               LED_PEN, 
+               led_sout, 
+               RDY, 
+               readn, 
+               SEGMENT, 
+               seg_clk, 
+               seg_clrn, 
+               SEG_PEN, 
+               seg_sout);
+
+    input [3:0] BTN_y;
+    input clk_100mhz;
+    input RSTN;
+    input [15:0] SW;
+   output [3:0] AN;
+   output [4:0] BTN_x;
+   output Buzzer;
+   output CR;
+   output [7:0] LED;
+   output led_clk;
+   output led_clrn;
+   output LED_PEN;
+   output led_sout;
+   output RDY;
+   output readn;
+   output [7:0] SEGMENT;
+   output seg_clk;
+   output seg_clrn;
+   output SEG_PEN;
+   output seg_sout;
+   
+   wire [31:0] Ai;
+   wire [31:0] Bi;
+   wire [7:0] blink;
+   wire [3:0] BTN_OK;
+   wire Clk_CPU;
+   wire [31:0] Disp_num;
+   wire [31:0] Div;
+   wire [7:0] LE_out;
+   wire N0;
+   wire [7:0] point_out;
+   wire [3:0] Pulse;
+   wire rst;
+   wire [15:0] SW_OK;
+   wire V5;
+   wire [4:0] XLXN_13;
+   wire XLXN_34;
+   wire XLXN_55;
+   wire [31:0] XLXN_58;
+   wire [31:0] XLXN_60;
+   wire [31:0] XLXN_63;
+   wire [31:0] XLXN_64;
+   wire [31:0] XLXN_65;
+   wire RDY_DUMMY;
+   wire readn_DUMMY;
+   
+   assign RDY = RDY_DUMMY;
+   assign readn = readn_DUMMY;
+   SAnti_jitter  XLXI_1 (.clk(clk_100mhz), 
+                        .Key_y(BTN_y[3:0]), 
+                        .readn(readn_DUMMY), 
+                        .RSTN(RSTN), 
+                        .SW(SW[15:0]), 
+                        .BTN_OK(BTN_OK[3:0]), 
+                        .CR(CR), 
+                        .Key_out(XLXN_13[4:0]), 
+                        .Key_ready(RDY_DUMMY), 
+                        .Key_x(BTN_x[4:0]), 
+                        .pulse_out(Pulse[3:0]), 
+                        .rst(XLXN_34), 
+                        .SW_OK(SW_OK[15:0]));
+   clk_div  XLXI_2 (.clk(clk_100mhz), 
+                   .rst(XLXN_34), 
+                   .SW2(SW_OK[2]), 
+                   .clkdiv(Div[31:0]), 
+                   .Clk_CPU(Clk_CPU));
+   SEnter_2_32  XLXI_3 (.BTN(BTN_OK[2:0]), 
+                       .clk(clk_100mhz), 
+                       .Ctrl({SW_OK[7:5], SW_OK[15], SW_OK[0]}), 
+                       .Din(XLXN_13[4:0]), 
+                       .D_ready(RDY_DUMMY), 
+                       .Ai(Ai[31:0]), 
+                       .Bi(Bi[31:0]), 
+                       .blink(blink[7:0]), 
+                       .readn(readn_DUMMY));
+   SSeg7_Dev_MUSER_OrgLab1  XLXI_4 (.clk(clk_100mhz), 
+                                   .flash(Div[25]), 
+                                   .Hexs(Disp_num[31:0]), 
+                                   .LES(LE_out[7:0]), 
+                                   .point(point_out[7:0]), 
+                                   .rst(rst), 
+                                   .Start(Div[20]), 
+                                   .SW0(SW_OK[0]), 
+                                   .seg_clk(seg_clk), 
+                                   .seg_clrn(seg_clrn), 
+                                   .SEG_PEN(SEG_PEN), 
+                                   .seg_sout(seg_sout));
+   Multi_8CH32  XLXI_5 (.clk(clk_100mhz), 
+                       .Data0(Ai[31:0]), 
+                       .data1(Bi[31:0]), 
+                       .data2(Div[31:0]), 
+                       .data3(XLXN_63[31:0]), 
+                       .data4(XLXN_64[31:0]), 
+                       .data5(XLXN_65[31:0]), 
+                       .data6(XLXN_58[31:0]), 
+                       .data7(XLXN_60[31:0]), 
+                       .EN(V5), 
+                       .LES({N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
+         blink[3:0], N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
+         N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
+         N0, blink[7:0], blink[7:0]}), 
+                       .point_in({Div[31:0], Div[31:0]}), 
+                       .rst(XLXN_34), 
+                       .Test(SW_OK[7:5]), 
+                       .Disp_num(Disp_num[31:0]), 
+                       .LE_out(LE_out[7:0]), 
+                       .point_out(point_out[7:0]));
+   SPIO  XLXI_6 (.clk(clk_100mhz), 
+                .EN(V5), 
+                .P_Data({SW[13:0], SW_OK[15:0], N0, N0}), 
+                .rst(rst), 
+                .Start(Div[20]), 
+                .counter_set(), 
+                .GPIOf0(), 
+                .led_clk(led_clk), 
+                .led_clrn(led_clrn), 
+                .LED_out(), 
+                .LED_PEN(LED_PEN), 
+                .led_sout(led_sout));
+   INV  XLXI_10 (.I(clk_100mhz), 
+                .O(XLXN_55));
+   VCC  XLXI_11 (.P(V5));
+   GND  XLXI_12 (.G(N0));
+   PIO  XLXI_13 (.clk(clk_100mhz), 
+                .EN(V5), 
+                .PData_in(Ai[31:0]), 
+                .rst(N0), 
+                .counter_set(), 
+                .GPIOf0(), 
+                .LED_out(LED[7:0]));
+   Seg7_Dev_MUSER_OrgLab1  XLXI_14 (.flash(Div[25]), 
+                                   .Hexs(Disp_num[31:0]), 
+                                   .LES(LE_out[7:0]), 
+                                   .point(point_out[7:0]), 
+                                   .Scan({SW_OK[1], Div[19:18]}), 
+                                   .SW0(SW_OK[0]), 
+                                   .AN(AN[3:0]), 
+                                   .SEGMENT(SEGMENT[7:0]));
+   BUF  XLXI_16 (.I(V5), 
+                .O(Buzzer));
+   RAM_B  XLXI_17 (.addra({N0, N0, N0, N0, N0, SW[3], Div[27:24]}), 
+                  .clka(XLXN_55), 
+                  .dina(XLXN_58[31:0]), 
+                  .wea(SW_OK[4]), 
+                  .douta(XLXN_60[31:0]));
+   ROM_D  XLXI_18 (.a({N0, N0, N0, N0, N0, SW[3], Div[27:24]}), 
+                  .spo(XLXN_58[31:0]));
+endmodule

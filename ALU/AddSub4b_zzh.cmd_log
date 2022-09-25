@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family kintex7 -refsym AddSub4b_zzh C:/Users/Zhangxin/Desktop/las/ALU/AddSub4b_zzh.sch C:/Users/Zhangxin/Desktop/las/ALU/AddSub4b_zzh.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog AddSub4b_zzh_drc.vf -w C:/Users/Zhangxin/Desktop/las/ALU/AddSub4b_zzh.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog AddSub4b_zzh_drc.vf -w C:/Users/Zhangxin/Desktop/las/ALU/AddSub4b_zzh.sch 

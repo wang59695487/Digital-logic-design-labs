@@ -1,0 +1,16 @@
+[Inputs]
+=choose[2:0]=
+=Data0[31:0]=
+=Data1[31:0]=
+=Data2[31:0]=
+=Data3[31:0]=
+=Data4[31:0]=
+=Data5[31:0]=
+=Data6[31:0]=
+=Data7[31:0]=
+[Outputs]
+=Data_out[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Choose32_8_1
+

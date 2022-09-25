@@ -1,0 +1,6 @@
+vhdtdtfi -lib work {C:/Users/z/Documents/Projects/OrgLab/Full_20190305/Org-z/Lab2 RSC-4-9-85-61-5-46-1/Org02_20190227/Lab2/Scansync.v} -lang verilog -prj Lab1 -o Scansync.spl -module Scansync -template K:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Scansync.spl {C:/Users/z/Documents/Projects/OrgLab/Full_20190305/Org-z/Lab2 RSC-4-9-85-61-5-46-1/Org02_20190227/Lab2/Scansync.sym} 
+vhdtdtfi -lib work {C:/Users/z/Documents/Projects/OrgLab/Full_20190305/Org-z/Lab2 RSC-4-9-85-61-5-46-1/Org02_20190227/Lab2/Scansync.v} -lang verilog -prj Lab1 -o Scansync.spl -module Scansync -template K:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Scansync.spl {C:/Users/z/Documents/Projects/OrgLab/Full_20190305/Org-z/Lab2 RSC-4-9-85-61-5-46-1/Org02_20190227/Lab2/Scansync.sym} 
+vhdtdtfi -lib work C:/Users/z/Documents/Projects/OrgLab/Lab3/Lab3/Scansync.v -lang verilog -prj Lab1 -o Scansync.spl -module Scansync -template K:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Scansync.spl C:/Users/z/Documents/Projects/OrgLab/Lab3/Lab3/Scansync.sym 

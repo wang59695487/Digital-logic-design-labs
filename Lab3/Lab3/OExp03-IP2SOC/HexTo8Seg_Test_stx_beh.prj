@@ -1,0 +1,4 @@
+verilog isim_temp "MyMC14495.v"
+verilog isim_temp "HexTo8SEG.v"
+verilog isim_temp "HexTo8Seg_Test.v"
+verilog isim_temp "F:/14.7/ISE_DS/ISE//verilog/src/glbl.v"

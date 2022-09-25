@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+Shift_32 instance_name (
+    .PData(PData), 
+    .S(S), 
+    .SR(SR), 
+    .SL(SL), 
+    .clk(clk), 
+    .clear(clear), 
+    .Q(Q)
+    );
+
+

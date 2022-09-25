@@ -1,0 +1,6 @@
+sch2hdl,-sympath,G:/OexpExp04_IP2SCPU/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,G:/OexpExp04_IP2SCPU/MUX4T1.vf,-w,G:/OexpExp04_IP2SCPU/MUX4T1.sch
+sch2hdl,-sympath,G:/OexpExp04_IP2SCPU/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,G:/OexpExp04_IP2SCPU/MUX8T1_32.vf,-w,G:/OexpExp04_IP2SCPU/MUX8T1_32.sch
+sch2hdl,-sympath,G:/OexpExp04_IP2SCPU/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,G:/OexpExp04_IP2SCPU/MUX8T1_8.vf,-w,G:/OexpExp04_IP2SCPU/MUX8T1_8.sch
+sch2hdl,-sympath,G:/OexpExp04_IP2SCPU/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,G:/OexpExp04_IP2SCPU/MC14495.vf,-w,G:/OexpExp04_IP2SCPU/MC14495.sch
+sch2hdl,-sympath,G:/OexpExp04_IP2SCPU/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,G:/OexpExp04_IP2SCPU/Oexp02_IO.vf,-w,G:/OexpExp04_IP2SCPU/Oexp02_IO.sch
+sch2hdl,-sympath,G:/OexpExp04_IP2SCPU/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,G:/OexpExp04_IP2SCPU/SCPU.vf,-w,G:/OexpExp04_IP2SCPU/SCPU.sch

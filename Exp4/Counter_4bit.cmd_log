@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -w -refsym Counter_4bit E:/test_1/logicproject/10/Top_Fsm/Counter_4bit.sch E:/test_1/logicproject/10/Top_Fsm/Counter_4bit.sym 

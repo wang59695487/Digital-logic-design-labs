@@ -1,0 +1,4 @@
+vhdtdtfi -lib work E:/test_1/logicproject/11/Top_Fsm/lock.v -lang verilog -prj Exp07-MUX -o lock.spl -module lock -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w lock.spl E:/test_1/logicproject/11/Top_Fsm/lock.sym 
+vhdtdtfi -lib work E:/test_1/logicproject/11/Top_Fsm/lock.v -lang verilog -prj Exp07-MUX -o lock.spl -module lock -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w lock.spl E:/test_1/logicproject/11/Top_Fsm/lock.sym 

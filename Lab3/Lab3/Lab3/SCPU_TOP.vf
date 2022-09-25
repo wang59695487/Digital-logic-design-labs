@@ -1,0 +1,271 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : SCPU_TOP.vf
+// /___/   /\     Timestamp : 05/20/2019 17:33:16
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -sympath E:/Lab3/Lab3/ipcore_dir -intstyle ise -family kintex7 -verilog SCPU_TOP.vf -w E:/Lab3/Lab3/SCPU_TOP.sch
+//Design Name: SCPU_TOP
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module ADD4_MUSER_SCPU_TOP(A0, 
+                           A1, 
+                           A2, 
+                           A3, 
+                           B0, 
+                           B1, 
+                           B2, 
+                           B3, 
+                           CI, 
+                           CO, 
+                           OFL, 
+                           S0, 
+                           S1, 
+                           S2, 
+                           S3);
+
+    input A0;
+    input A1;
+    input A2;
+    input A3;
+    input B0;
+    input B1;
+    input B2;
+    input B3;
+    input CI;
+   output CO;
+   output OFL;
+   output S0;
+   output S1;
+   output S2;
+   output S3;
+   
+   wire C0;
+   wire C1;
+   wire C2;
+   wire C2O;
+   wire I0;
+   wire I1;
+   wire I2;
+   wire I3;
+   wire CO_DUMMY;
+   
+   assign CO = CO_DUMMY;
+   MUXCY_L  I_36_55 (.CI(C0), 
+                    .DI(A1), 
+                    .S(I1), 
+                    .LO(C1));
+   MUXCY  I_36_58 (.CI(C2), 
+                  .DI(A3), 
+                  .S(I3), 
+                  .O(CO_DUMMY));
+   MUXCY_D  I_36_62 (.CI(C1), 
+                    .DI(A2), 
+                    .S(I2), 
+                    .LO(C2), 
+                    .O(C2O));
+   XORCY  I_36_73 (.CI(CI), 
+                  .LI(I0), 
+                  .O(S0));
+   XORCY  I_36_74 (.CI(C0), 
+                  .LI(I1), 
+                  .O(S1));
+   XORCY  I_36_75 (.CI(C2), 
+                  .LI(I3), 
+                  .O(S3));
+   XORCY  I_36_76 (.CI(C1), 
+                  .LI(I2), 
+                  .O(S2));
+   MUXCY_L  I_36_111 (.CI(CI), 
+                     .DI(A0), 
+                     .S(I0), 
+                     .LO(C0));
+   XOR2  I_36_239 (.I0(A0), 
+                  .I1(B0), 
+                  .O(I0));
+   XOR2  I_36_240 (.I0(A1), 
+                  .I1(B1), 
+                  .O(I1));
+   XOR2  I_36_241 (.I0(A2), 
+                  .I1(B2), 
+                  .O(I2));
+   XOR2  I_36_242 (.I0(A3), 
+                  .I1(B3), 
+                  .O(I3));
+   XOR2  I_36_259 (.I0(C2O), 
+                  .I1(CO_DUMMY), 
+                  .O(OFL));
+endmodule
+`timescale 1ns / 1ps
+
+module SCPU_TOP(clk, 
+                Data_in, 
+                inst, 
+                INT, 
+                rst, 
+                Addr_out, 
+                Data_out, 
+                mem_w, 
+                PC_out);
+
+    input clk;
+    input [31:0] Data_in;
+    input [31:0] inst;
+    input INT;
+    input rst;
+   output [31:0] Addr_out;
+   output [31:0] Data_out;
+   output mem_w;
+   output [31:0] PC_out;
+   
+   wire [27:0] Addr_Ext;
+   wire beq;
+   wire bne;
+   wire [4:0] constant31;
+   wire jal;
+   wire jr;
+   wire jump;
+   wire m2reg;
+   wire [31:0] PC_add4;
+   wire [31:0] PC_in;
+   wire RtRd;
+   wire shift;
+   wire [31:0] SignImm;
+   wire srcb;
+   wire wreg;
+   wire [31:0] XLXN_8;
+   wire [31:0] XLXN_12;
+   wire XLXN_13;
+   wire [31:0] XLXN_16;
+   wire [4:0] XLXN_31;
+   wire [4:0] XLXN_36;
+   wire [31:0] XLXN_37;
+   wire [31:0] XLXN_38;
+   wire [31:0] XLXN_39;
+   wire [3:0] XLXN_42;
+   wire [31:0] XLXN_51;
+   wire XLXN_53;
+   wire XLXN_54;
+   wire XLXN_55;
+   wire XLXN_60;
+   wire XLXN_61;
+   wire [31:0] XLXN_65;
+   wire [31:0] XLXN_68;
+   wire [31:0] XLXN_81;
+   wire [31:0] Data_out_DUMMY;
+   wire [31:0] PC_out_DUMMY;
+   wire [31:0] Addr_out_DUMMY;
+   
+   assign constant31 = 5'b11111;
+   assign Addr_out[31:0] = Addr_out_DUMMY[31:0];
+   assign Data_out[31:0] = Data_out_DUMMY[31:0];
+   assign PC_out[31:0] = PC_out_DUMMY[31:0];
+   PC  XLXI_2 (.clk(clk), 
+              .PC_in(PC_in[31:0]), 
+              .rst(rst), 
+              .PC_out(PC_out_DUMMY[31:0]));				  
+   ADD4	XLXI_5  (.A(PC_out[31:0]), 
+                 .res(PC_add4[31:0]));
+   ADD32  XLXI_6 (.A(PC_add4[31:0]), 
+                 .B(XLXN_81[31:0]), 
+                 .res(XLXN_8[31:0]));
+   MUX2T1_32  XLXI_7 (.I0(PC_add4[31:0]), 
+                     .I1(XLXN_8[31:0]), 
+                     .s(XLXN_53), 
+                     .o(XLXN_12[31:0]));
+   MUX2T1_32  XLXI_9 (.I0(XLXN_12[31:0]), 
+                     .I1({PC_add4[31:28], Addr_Ext[27:0]}), 
+                     .s(XLXN_13), 
+                     .o(XLXN_16[31:0]));
+   OR2  XLXI_10 (.I0(jal), 
+                .I1(jump), 
+                .O(XLXN_13));
+   MUX2T1_32  XLXI_11 (.I0(XLXN_16[31:0]), 
+                      .I1(XLXN_37[31:0]), 
+                      .s(jr), 
+                      .o(PC_in[31:0]));
+   Controller  XLXI_12 (.Func(inst[5:0]), 
+                       .opcode(inst[31:26]), 
+                       .ALU_control(XLXN_42[3:0]), 
+                       .beq(beq), 
+                       .bne(bne), 
+                       .JAL(jal), 
+                       .JR(jr), 
+                       .Jump(jump), 
+                       .M2Reg(m2reg), 
+                       .RtRd(RtRd), 
+                       .shift(shift), 
+                       .SrcB(srcb), 
+                       .WMem(mem_w), 
+                       .Wreg(wreg));
+   RegFile  XLXI_13 (.clk(clk), 
+                    .Data_in(XLXN_65[31:0]), 
+                    .rst(rst), 
+                    .RS_addrA(inst[25:21]), 
+                    .RT_addrB(inst[20:16]), 
+                    .wt(wreg), 
+                    .WT_addr(XLXN_36[4:0]), 
+                    .R_dataA(XLXN_37[31:0]), 
+                    .R_dataB(Data_out_DUMMY[31:0]));
+   MUX2T1_5  XLXI_16 (.I0(inst[20:16]), 
+                     .I1(inst[15:11]), 
+                     .s(RtRd), 
+                     .o(XLXN_31[4:0]));
+   MUX2T1_5  XLXI_17 (.I0(XLXN_31[4:0]), 
+                     .I1(constant31[4:0]), 
+                     .s(jal), 
+                     .o(XLXN_36[4:0]));
+   ALU  XLXI_19 (.A(XLXN_37[31:0]), 
+                .ALU_op(XLXN_42[3:0]), 
+                .B(XLXN_38[31:0]), 
+                .overflow(), 
+                .res(Addr_out_DUMMY[31:0]), 
+                .zero(XLXN_60));
+   MUX2T1_32  XLXI_20 (.I0(Data_out_DUMMY[31:0]), 
+                      .I1(XLXN_68[31:0]), 
+                      .s(shift), 
+                      .o(XLXN_39[31:0]));
+   MUX2T1_32  XLXI_21 (.I0(XLXN_39[31:0]), 
+                      .I1(SignImm[31:0]), 
+                      .s(srcb), 
+                      .o(XLXN_38[31:0]));
+   MUX2T1_32  XLXI_22 (.I0(Addr_out_DUMMY[31:0]), 
+                      .I1(Data_in[31:0]), 
+                      .s(m2reg), 
+                      .o(XLXN_51[31:0]));
+   MUX2T1_32  XLXI_23 (.I0(XLXN_51[31:0]), 
+                      .I1(PC_add4[31:0]), 
+                      .s(jal), 
+                      .o(XLXN_65[31:0]));
+   OR2  XLXI_24 (.I0(XLXN_55), 
+                .I1(XLXN_54), 
+                .O(XLXN_53));
+   AND2  XLXI_25 (.I0(XLXN_60), 
+                 .I1(beq), 
+                 .O(XLXN_54));
+   AND2  XLXI_27 (.I0(XLXN_61), 
+                 .I1(bne), 
+                 .O(XLXN_55));
+   INV  XLXI_28 (.I(XLXN_60), 
+                .O(XLXN_61));
+   UnSignExtent  XLXI_29 (.A(inst[10:6]), 
+                         .res(XLXN_68[31:0]));
+   SignExtent  XLXI_30 (.A(inst[15:0]), 
+                       .res(SignImm[31:0]));
+   INST26_28  XLXI_31 (.A(inst[25:0]), 
+                      .res(Addr_Ext[27:0]));
+   SLL2  XLXI_33 (.A(SignImm[31:0]), 
+                 .res(XLXN_81[31:0]));
+endmodule

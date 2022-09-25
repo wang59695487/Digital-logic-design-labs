@@ -1,0 +1,2 @@
+sch2hdl,-sympath,C:/Users/asus/Desktop/Computer_Organization/Lab/Lab5/Oxp6/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,C:/Users/asus/Desktop/Computer_Organization/Lab/Lab5/Oxp6/Data_path.vf,-w,C:/Users/asus/Desktop/Computer_Organization/Lab/Lab5/Oxp6/Data_path.sch
+sch2hdl,-sympath,C:/Users/asus/Desktop/Computer_Organization/Lab/Lab5/Oxp6/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,C:/Users/asus/Desktop/Computer_Organization/Lab/Lab5/Oxp6/SCPU.vf,-w,C:/Users/asus/Desktop/Computer_Organization/Lab/Lab5/Oxp6/SCPU.sch

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "E:/OrgLab/OExp12_MSOC/MCPU.xst" -ofn "E:/OrgLab/OExp12_MSOC/MCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ngc -sd ipcore_dir -nt timestamp -uc SOC-Sword.ucf -p xc7k160t-ffg676-2L MCPU.ngc MCPU.ngd  

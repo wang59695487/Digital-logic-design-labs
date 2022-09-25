@@ -1,0 +1,2 @@
+vhdtdtfi -lib work I:/framework/SEnter_2_32_IO.v -lang verilog -prj framework -o SEnter_2_32.spl -module SEnter_2_32 -template D:/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w SEnter_2_32.spl I:/framework/SEnter_2_32.sym 

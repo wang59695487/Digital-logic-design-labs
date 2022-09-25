@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab1&2/Project_File/Lab2/Oexp02_I0/HexTo8SEG_Test_isim_beh.exe" -prj "C:/Users/asus/Desktop/Computer_Organization/Lab/Lab1&2/Project_File/Lab2/Oexp02_I0/HexTo8SEG_Test_beh.prj" "work.HexTo8SEG_Test" "work.glbl" 

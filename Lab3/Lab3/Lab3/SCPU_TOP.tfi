@@ -1,0 +1,17 @@
+// Verilog instantiation template created from schematic F:\ComputerOrganism Program\Lab3-WJZ-1\OExp03-IP2SOC_wjz\SCPU_TOP.sch - Sat May 11 23:07:49 2019
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   SCPU_TOP UUT (
+		.clk(    ), 
+		.rst(    ), 
+		.PC_out(    ), 
+		.inst(    ), 
+		.mem_w(    ), 
+		.Addr_out(    ), 
+		.Data_in(    ), 
+		.Data_out(    ), 
+		.INT(    )
+   );

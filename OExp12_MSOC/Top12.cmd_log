@@ -1,0 +1,53 @@
+xst -intstyle ise -ifn "E:/OrgLab/OExp12_MSOC/Top12.xst" -ofn "E:/OrgLab/OExp12_MSOC/Top12.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ngc -sd ipcore_dir -nt timestamp -uc SOC-Sword.ucf -p xc7k160t-ffg676-2L Top12.ngc Top12.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top12_map.ncd Top12.ngd Top12.pcf 
+par -w -intstyle ise -ol high -mt off Top12_map.ncd Top12.ncd Top12.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top12.twx Top12.ncd -o Top12.twr Top12.pcf -ucf SOC-Sword.ucf 
+bitgen -intstyle ise -f Top12.ut Top12.ncd 
+xst -intstyle ise -ifn "E:/OrgLab/OExp12_MSOC/Top12.xst" -ofn "E:/OrgLab/OExp12_MSOC/Top12.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ngc -sd ipcore_dir -nt timestamp -uc SOC-Sword.ucf -p xc7k160t-ffg676-2L Top12.ngc Top12.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top12_map.ncd Top12.ngd Top12.pcf 
+par -w -intstyle ise -ol high -mt off Top12_map.ncd Top12.ncd Top12.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top12.twx Top12.ncd -o Top12.twr Top12.pcf -ucf SOC-Sword.ucf 
+bitgen -intstyle ise -f Top12.ut Top12.ncd 
+xst -intstyle ise -ifn "E:/OrgLab/OExp12_MSOC/Top12.xst" -ofn "E:/OrgLab/OExp12_MSOC/Top12.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ngc -sd ipcore_dir -nt timestamp -uc SOC-Sword.ucf -p xc7k160t-ffg676-2L Top12.ngc Top12.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top12_map.ncd Top12.ngd Top12.pcf 
+par -w -intstyle ise -ol high -mt off Top12_map.ncd Top12.ncd Top12.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top12.twx Top12.ncd -o Top12.twr Top12.pcf -ucf SOC-Sword.ucf 
+bitgen -intstyle ise -f Top12.ut Top12.ncd 
+xst -intstyle ise -ifn "E:/OrgLab/OExp12_MSOC/Top12.xst" -ofn "E:/OrgLab/OExp12_MSOC/Top12.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ngc -sd ipcore_dir -nt timestamp -uc SOC-Sword.ucf -p xc7k160t-ffg676-2L Top12.ngc Top12.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top12_map.ncd Top12.ngd Top12.pcf 
+par -w -intstyle ise -ol high -mt off Top12_map.ncd Top12.ncd Top12.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top12.twx Top12.ncd -o Top12.twr Top12.pcf -ucf SOC-Sword.ucf 
+bitgen -intstyle ise -f Top12.ut Top12.ncd 
+xst -intstyle ise -ifn "E:/OrgLab/OExp12_MSOC/Top12.xst" -ofn "E:/OrgLab/OExp12_MSOC/Top12.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ngc -sd ipcore_dir -nt timestamp -uc SOC-Sword.ucf -p xc7k160t-ffg676-2L Top12.ngc Top12.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top12_map.ncd Top12.ngd Top12.pcf 
+par -w -intstyle ise -ol high -mt off Top12_map.ncd Top12.ncd Top12.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top12.twx Top12.ncd -o Top12.twr Top12.pcf -ucf SOC-Sword.ucf 
+bitgen -intstyle ise -f Top12.ut Top12.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ngc -sd ipcore_dir -nt timestamp -uc SOC-Sword.ucf -p xc7k160t-ffg676-2L Top12.ngc Top12.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top12_map.ncd Top12.ngd Top12.pcf 
+par -w -intstyle ise -ol high -mt off Top12_map.ncd Top12.ncd Top12.pcf 
+bitgen -intstyle ise -f Top12.ut Top12.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ngc -sd ipcore_dir -nt timestamp -uc SOC-Sword.ucf -p xc7k160t-ffg676-2L Top12.ngc Top12.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top12_map.ncd Top12.ngd Top12.pcf 
+par -w -intstyle ise -ol high -mt off Top12_map.ncd Top12.ncd Top12.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top12.twx Top12.ncd -o Top12.twr Top12.pcf -ucf SOC-Sword.ucf 
+bitgen -intstyle ise -f Top12.ut Top12.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ngc -sd ipcore_dir -nt timestamp -uc SOC-Sword.ucf -p xc7k160t-ffg676-2L Top12.ngc Top12.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top12_map.ncd Top12.ngd Top12.pcf 
+par -w -intstyle ise -ol high -mt off Top12_map.ncd Top12.ncd Top12.pcf 
+bitgen -intstyle ise -f Top12.ut Top12.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ngc -sd ipcore_dir -nt timestamp -uc SOC-Sword.ucf -p xc7k160t-ffg676-2L Top12.ngc Top12.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top12_map.ncd Top12.ngd Top12.pcf 
+par -w -intstyle ise -ol high -mt off Top12_map.ncd Top12.ncd Top12.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top12.twx Top12.ncd -o Top12.twr Top12.pcf -ucf SOC-Sword.ucf 
+bitgen -intstyle ise -f Top12.ut Top12.ncd 
+xst -intstyle ise -ifn "E:/OExp12_MSOC/Top12.xst" -ofn "E:/OExp12_MSOC/Top12.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ngc -sd ipcore_dir -nt timestamp -uc SOC-Sword.ucf -p xc7k160t-ffg676-2L Top12.ngc Top12.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top12_map.ncd Top12.ngd Top12.pcf 
+par -w -intstyle ise -ol high -mt off Top12_map.ncd Top12.ncd Top12.pcf 
+bitgen -intstyle ise -f Top12.ut Top12.ncd 

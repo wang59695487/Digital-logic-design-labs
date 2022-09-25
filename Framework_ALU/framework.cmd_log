@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "D:/Framework_ALU/framework.xst" -ofn "D:/Framework_ALU/framework.syr" 
+xst -intstyle ise -ifn "D:/Framework_ALU/framework.xst" -ofn "D:/Framework_ALU/framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Frameworkcode/sources_1/imports/Framework -sd Frameworkcode/sources_1/imports/Framework_Backup -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L framework.ngc framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o framework_map.ncd framework.ngd framework.pcf 
+par -w -intstyle ise -ol high -mt off framework_map.ncd framework.ncd framework.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd Frameworkcode/sources_1/imports/Framework -sd Frameworkcode/sources_1/imports/Framework_Backup -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L framework.ngc framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o framework_map.ncd framework.ngd framework.pcf 
+par -w -intstyle ise -ol high -mt off framework_map.ncd framework.ncd framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml framework.twx framework.ncd -o framework.twr framework.pcf -ucf framework.ucf 
+bitgen -intstyle ise -f framework.ut framework.ncd 
+xst -intstyle ise -ifn "D:/Framework_ALU/framework.xst" -ofn "D:/Framework_ALU/framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Frameworkcode/sources_1/imports/Framework -sd Frameworkcode/sources_1/imports/Framework_Backup -nt timestamp -uc framework.ucf -p xc7k160t-ffg676-2L framework.ngc framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o framework_map.ncd framework.ngd framework.pcf 
+par -w -intstyle ise -ol high -mt off framework_map.ncd framework.ncd framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml framework.twx framework.ncd -o framework.twr framework.pcf -ucf framework.ucf 
+bitgen -intstyle ise -f framework.ut framework.ncd 

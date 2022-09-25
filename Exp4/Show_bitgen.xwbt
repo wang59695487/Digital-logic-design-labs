@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\test_1\logicproject\7\test1\Exp07-MUX\Show.ncd
+OUTFILE=E:\test_1\logicproject\7\test1\Exp07-MUX\Show.bit
+FAMILY=Kintex7
+PART=xc7k160t-2lffg676
+WORKINGDIR=E:\test_1\logicproject\7\test1\Exp07-MUX
+LICENSE=WebPack
+USER_INFO=__0_0_0

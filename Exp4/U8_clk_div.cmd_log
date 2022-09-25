@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {E:/test_2/computer_/1/Top_Fsm _2/U8_clk_div.v} -lang verilog -prj Exp07-MUX -o U8_clk_div.spl -module U8_clk_div -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w U8_clk_div.spl {E:/test_2/computer_/1/Top_Fsm _2/U8_clk_div.sym} 

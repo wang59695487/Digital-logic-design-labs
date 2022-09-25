@@ -1,0 +1,13 @@
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w {F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/SCPU_TOP.sch} SCPU_TOP.tfi 
+sch2sym -intstyle ise -family kintex7 -refsym SCPU_TOP {F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/SCPU_TOP.sch} {F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/SCPU_TOP.sym} 
+sch2hdl -sympath {F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/ipcore_dir} -intstyle ise -family kintex7 -verilog SCPU_TOP.vf -w {F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/SCPU_TOP.sch} 
+sch2sym -intstyle ise -family kintex7 -refsym SCPU_TOP {F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/SCPU_TOP.sch} {F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/SCPU_TOP.sym} 
+sch2hdl -sympath E:/Lab3/Lab3/ipcore_dir -intstyle ise -family kintex7 -verilog SCPU_TOP.vf -w E:/Lab3/Lab3/SCPU_TOP.sch 
+sch2hdl -sympath E:/Lab3/Lab3/ipcore_dir -intstyle ise -family kintex7 -verilog SCPU_TOP.vf -w E:/Lab3/Lab3/SCPU_TOP.sch 
+sch2hdl -sympath E:/Lab3/Lab3/ipcore_dir -intstyle ise -family kintex7 -verilog SCPU_TOP.vf -w E:/Lab3/Lab3/SCPU_TOP.sch 
+sch2hdl -sympath E:/Lab3/Lab3/ipcore_dir -intstyle ise -family kintex7 -verilog SCPU_TOP.vf -w E:/Lab3/Lab3/SCPU_TOP.sch 
+sch2sym -intstyle ise -family kintex7 -refsym SCPU_TOP E:/Lab3/Lab3/SCPU_TOP.sch E:/Lab3/Lab3/SCPU_TOP.sym 
+sch2sym -intstyle ise -family kintex7 -refsym SCPU_TOP E:/Lab3/Lab3/SCPU_TOP.sch E:/Lab3/Lab3/SCPU_TOP.sym 
+sch2hdl -sympath E:/Lab3/Lab3/ipcore_dir -intstyle ise -family kintex7 -verilog SCPU_TOP.vf -w E:/Lab3/Lab3/SCPU_TOP.sch 
+sch2hdl -sympath E:/Lab3/Lab3/ipcore_dir -intstyle ise -family kintex7 -verilog SCPU_TOP.vf -w E:/Lab3/Lab3/SCPU_TOP.sch 
+sch2sym -intstyle ise -family kintex7 -refsym SCPU_TOP E:/Lab3/Lab3/SCPU_TOP.sch E:/Lab3/Lab3/SCPU_TOP.sym 

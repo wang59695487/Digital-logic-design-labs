@@ -1,0 +1,485 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: SOCMF.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SOCMF.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SOCMF"
+Output Format                      : NGC
+Target Device                      : xc7k160t-2L-ffg676
+
+---- Source Options
+Top Module Name                    : SOCMF
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+WARNING:Xst:2838 - Path definition '$XILINX/vhdl/xst/nt64/unimacro' in file C:/Xilinx/14.7/ISE_DS/ISE/vhdl/xst/nt64/hdc.ini is invalid and being ignored.  Check the path and ensure that any environment variable specification is legal.
+WARNING:Xst:2838 - Path definition '$XILINX/vhdl/xst/nt64/xilinxcorelib' in file C:/Xilinx/14.7/ISE_DS/ISE/vhdl/xst/nt64/hdc.ini is invalid and being ignored.  Check the path and ensure that any environment variable specification is legal.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\xor32.v" into library work
+Parsing module <xor32>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\srl32.v" into library work
+Parsing module <srl32>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\or_bit_32 .v" into library work
+Parsing module <or_bit_32>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\or32.v" into library work
+Parsing module <or32>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\nor32.v" into library work
+Parsing module <nor32>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\MUX8T1_32.v" into library work
+Parsing module <MUX8T1_32>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\and32.v" into library work
+Parsing module <and32>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\ABC32.v" into library work
+Parsing module <ABC32>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\regs.v" into library work
+Parsing module <Regs>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\REG32.v" into library work
+Parsing module <REG32>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\MUX4T1_5.v" into library work
+Parsing module <MUX4T1_5>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\MUX4T1_32.v" into library work
+Parsing module <MUX4T1_32>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\MUX2T1_32.v" into library work
+Parsing module <MUX2T1_32>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\Ext_32.v" into library work
+Parsing module <Ext_32>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\ALU.vf" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\MDPath_IO.v" into library work
+Parsing module <MDPath>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\MCtrl_IO.v" into library work
+Parsing module <MCtrl>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\SEnter_2_32_IO.v" into library work
+Parsing module <SEnter_2_32>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\Seg7_Dev_IO.v" into library work
+Parsing module <Seg7_Dev>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\SAnti_jitter_IO.v" into library work
+Parsing module <SAnti_jitter>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\PIO_IO.v" into library work
+Parsing module <PIO>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\Multi_8CH32_IO.v" into library work
+Parsing module <Multi_8CH32>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\MIO_BUS_IO.v" into library work
+Parsing module <MIO_BUS>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\ipcore_dir\RAM_B.v" into library work
+Parsing module <RAM_B>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\GPIO_IO.v" into library work
+Parsing module <GPIO>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\Display_IO.v" into library work
+Parsing module <Display>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\Counter_3_IO.v" into library work
+Parsing module <Counter>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\Code\MCPU.v" into library work
+Parsing module <MCPU>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\clk_div.v" into library work
+Parsing module <clk_div>.
+Analyzing Verilog file "E:\Lab9&10&11&12\Lab10\Oexp10\Code\SOCMF.v" into library work
+Parsing module <SOCMF>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <SOCMF>.
+
+Elaborating module <SAnti_jitter>.
+WARNING:HDLCompiler:1499 - "E:\Lab9&10&11&12\Lab10\Oexp10\SAnti_jitter_IO.v" Line 21: Empty module <SAnti_jitter> remains a black box.
+
+Elaborating module <SEnter_2_32>.
+WARNING:HDLCompiler:1499 - "E:\Lab9&10&11&12\Lab10\Oexp10\SEnter_2_32_IO.v" Line 21: Empty module <SEnter_2_32> remains a black box.
+WARNING:HDLCompiler:1127 - "E:\Lab9&10&11&12\Lab10\Oexp10\Code\SOCMF.v" Line 93: Assignment to Ai ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Lab9&10&11&12\Lab10\Oexp10\Code\SOCMF.v" Line 94: Assignment to Bi ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Lab9&10&11&12\Lab10\Oexp10\Code\SOCMF.v" Line 95: Assignment to blink ignored, since the identifier is never used
+
+Elaborating module <clk_div>.
+
+Elaborating module <Display>.
+WARNING:HDLCompiler:1499 - "E:\Lab9&10&11&12\Lab10\Oexp10\Display_IO.v" Line 21: Empty module <Display> remains a black box.
+
+Elaborating module <Multi_8CH32>.
+WARNING:HDLCompiler:1499 - "E:\Lab9&10&11&12\Lab10\Oexp10\Multi_8CH32_IO.v" Line 21: Empty module <Multi_8CH32> remains a black box.
+
+Elaborating module <GPIO>.
+WARNING:HDLCompiler:1499 - "E:\Lab9&10&11&12\Lab10\Oexp10\GPIO_IO.v" Line 21: Empty module <GPIO> remains a black box.
+
+Elaborating module <Counter>.
+WARNING:HDLCompiler:1127 - "E:\Lab9&10&11&12\Lab10\Oexp10\Counter_3_IO.v" Line 43: Assignment to M2 ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "E:\Lab9&10&11&12\Lab10\Oexp10\Counter_3_IO.v" Line 36: Net <counter1[32]> does not have a driver.
+
+Elaborating module <RAM_B>.
+WARNING:HDLCompiler:1499 - "E:\Lab9&10&11&12\Lab10\Oexp10\ipcore_dir\RAM_B.v" Line 39: Empty module <RAM_B> remains a black box.
+
+Elaborating module <Seg7_Dev>.
+WARNING:HDLCompiler:1499 - "E:\Lab9&10&11&12\Lab10\Oexp10\Seg7_Dev_IO.v" Line 21: Empty module <Seg7_Dev> remains a black box.
+
+Elaborating module <PIO>.
+WARNING:HDLCompiler:1499 - "E:\Lab9&10&11&12\Lab10\Oexp10\PIO_IO.v" Line 21: Empty module <PIO> remains a black box.
+
+Elaborating module <MIO_BUS>.
+WARNING:HDLCompiler:1499 - "E:\Lab9&10&11&12\Lab10\Oexp10\MIO_BUS_IO.v" Line 21: Empty module <MIO_BUS> remains a black box.
+
+Elaborating module <MCPU>.
+
+Elaborating module <MCtrl>.
+WARNING:HDLCompiler:1499 - "E:\Lab9&10&11&12\Lab10\Oexp10\MCtrl_IO.v" Line 21: Empty module <MCtrl> remains a black box.
+WARNING:HDLCompiler:1016 - "E:\Lab9&10&11&12\Lab10\Oexp10\MDPath_IO.v" Line 126: Port Co is not connected to this instance
+
+Elaborating module <MDPath>.
+
+Elaborating module <REG32>.
+
+Elaborating module <MUX4T1_5>.
+
+Elaborating module <MUX4T1_32>.
+
+Elaborating module <Regs>.
+
+Elaborating module <Ext_32>.
+
+Elaborating module <MUX2T1_32>.
+WARNING:HDLCompiler:1016 - "E:\Lab9&10&11&12\Lab10\Oexp10\ALU.vf" Line 55: Port shfit is not connected to this instance
+
+Elaborating module <ALU>.
+
+Elaborating module <xor32>.
+
+Elaborating module <nor32>.
+
+Elaborating module <srl32>.
+
+Elaborating module <and32>.
+
+Elaborating module <or_bit_32>.
+WARNING:HDLCompiler:413 - "E:\Lab9&10&11&12\Lab10\Oexp10\or_bit_32 .v" Line 25: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <GND>.
+
+Elaborating module <MUX8T1_32>.
+
+Elaborating module <or32>.
+
+Elaborating module <ABC32>.
+WARNING:HDLCompiler:552 - "E:\Lab9&10&11&12\Lab10\Oexp10\ALU.vf" Line 55: Input port shfit[4] is not connected on this instance
+WARNING:HDLCompiler:1127 - "E:\Lab9&10&11&12\Lab10\Oexp10\Code\SOCMF.v" Line 226: Assignment to State ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <SOCMF>.
+    Related source file is "E:\Lab9&10&11&12\Lab10\Oexp10\Code\SOCMF.v".
+INFO:Xst:3210 - "E:\Lab9&10&11&12\Lab10\Oexp10\Code\SOCMF.v" line 72: Output port <pulse_out> of the instance <U9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Lab9&10&11&12\Lab10\Oexp10\Code\SOCMF.v" line 87: Output port <Ai> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Lab9&10&11&12\Lab10\Oexp10\Code\SOCMF.v" line 87: Output port <Bi> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Lab9&10&11&12\Lab10\Oexp10\Code\SOCMF.v" line 87: Output port <blink> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Lab9&10&11&12\Lab10\Oexp10\Code\SOCMF.v" line 138: Output port <GPIOf0> of the instance <U7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Lab9&10&11&12\Lab10\Oexp10\Code\SOCMF.v" line 183: Output port <counter_set> of the instance <U71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Lab9&10&11&12\Lab10\Oexp10\Code\SOCMF.v" line 183: Output port <GPIOf0> of the instance <U71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Lab9&10&11&12\Lab10\Oexp10\Code\SOCMF.v" line 215: Output port <state> of the instance <U1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Lab9&10&11&12\Lab10\Oexp10\Code\SOCMF.v" line 215: Output port <CPU_MIO> of the instance <U1> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <SOCMF> synthesized.
+
+Synthesizing Unit <clk_div>.
+    Related source file is "E:\Lab9&10&11&12\Lab10\Oexp10\clk_div.v".
+    Found 32-bit register for signal <clkdiv>.
+    Found 32-bit adder for signal <clkdiv[31]_GND_4_o_add_0_OUT> created at line 33.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <clk_div> synthesized.
+
+Synthesizing Unit <Counter>.
+    Related source file is "E:\Lab9&10&11&12\Lab10\Oexp10\Counter_3_IO.v".
+WARNING:Xst:647 - Input <clk1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <counter1<32>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <counter2<32>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 24-bit register for signal <counter_Ctrl>.
+    Found 33-bit register for signal <counter0>.
+    Found 32-bit register for signal <counter0_Lock>.
+    Found 1-bit register for signal <sq0>.
+    Found 1-bit register for signal <M0>.
+    Found 1-bit register for signal <clr0>.
+    Found 33-bit subtractor for signal <counter0[32]_GND_8_o_sub_26_OUT> created at line 77.
+    Found 33-bit 4-to-1 multiplexer for signal <counter_Ctrl[2]_counter0[32]_wide_mux_26_OUT> created at line 70.
+    Found 1-bit comparator not equal for signal <n0017> created at line 76
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  92 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <Counter> synthesized.
+
+Synthesizing Unit <MCPU>.
+    Related source file is "E:\Lab9&10&11&12\Lab10\Oexp10\Code\MCPU.v".
+WARNING:Xst:647 - Input <INT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <MCPU> synthesized.
+
+Synthesizing Unit <MDPath>.
+    Related source file is "E:\Lab9&10&11&12\Lab10\Oexp10\MDPath_IO.v".
+INFO:Xst:3210 - "E:\Lab9&10&11&12\Lab10\Oexp10\MDPath_IO.v" line 126: Output port <Co> of the instance <U1> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <MDPath> synthesized.
+
+Synthesizing Unit <REG32>.
+    Related source file is "E:\Lab9&10&11&12\Lab10\Oexp10\REG32.v".
+    Found 32-bit register for signal <Q>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <REG32> synthesized.
+
+Synthesizing Unit <MUX4T1_5>.
+    Related source file is "E:\Lab9&10&11&12\Lab10\Oexp10\MUX4T1_5.v".
+    Found 5-bit 4-to-1 multiplexer for signal <o> created at line 30.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX4T1_5> synthesized.
+
+Synthesizing Unit <MUX4T1_32>.
+    Related source file is "E:\Lab9&10&11&12\Lab10\Oexp10\MUX4T1_32.v".
+    Found 32-bit 4-to-1 multiplexer for signal <o> created at line 30.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX4T1_32> synthesized.
+
+Synthesizing Unit <Regs>.
+    Related source file is "E:\Lab9&10&11&12\Lab10\Oexp10\regs.v".
+    Found 992-bit register for signal <n0051[991:0]>.
+    Found 32-bit 31-to-1 multiplexer for signal <R_addr_A[4]_register[31][31]_wide_mux_1_OUT> created at line 35.
+    Found 32-bit 31-to-1 multiplexer for signal <R_addr_B[4]_register[31][31]_wide_mux_4_OUT> created at line 36.
+    Summary:
+	inferred 992 D-type flip-flop(s).
+	inferred  35 Multiplexer(s).
+Unit <Regs> synthesized.
+
+Synthesizing Unit <Ext_32>.
+    Related source file is "E:\Lab9&10&11&12\Lab10\Oexp10\Ext_32.v".
+    Summary:
+	no macro.
+Unit <Ext_32> synthesized.
+
+Synthesizing Unit <MUX2T1_32>.
+    Related source file is "E:\Lab9&10&11&12\Lab10\Oexp10\MUX2T1_32.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX2T1_32> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "E:\Lab9&10&11&12\Lab10\Oexp10\ALU.vf".
+WARNING:Xst:2898 - Port 'shfit', unconnected in block instance 'XLXI_6', is tied to GND.
+WARNING:Xst:653 - Signal <overflow> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <ALU> synthesized.
+
+Synthesizing Unit <xor32>.
+    Related source file is "E:\Lab9&10&11&12\Lab10\Oexp10\xor32.v".
+    Summary:
+Unit <xor32> synthesized.
+
+Synthesizing Unit <nor32>.
+    Related source file is "E:\Lab9&10&11&12\Lab10\Oexp10\nor32.v".
+    Summary:
+	no macro.
+Unit <nor32> synthesized.
+
+Synthesizing Unit <srl32>.
+    Related source file is "E:\Lab9&10&11&12\Lab10\Oexp10\srl32.v".
+WARNING:Xst:647 - Input <A<31:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <shfit> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit shifter logical right for signal <res> created at line 24
+    Summary:
+	inferred   1 Combinational logic shifter(s).
+Unit <srl32> synthesized.
+
+Synthesizing Unit <and32>.
+    Related source file is "E:\Lab9&10&11&12\Lab10\Oexp10\and32.v".
+    Summary:
+	no macro.
+Unit <and32> synthesized.
+
+Synthesizing Unit <or_bit_32>.
+    Related source file is "E:\Lab9&10&11&12\Lab10\Oexp10\or_bit_32 .v".
+    Summary:
+	no macro.
+Unit <or_bit_32> synthesized.
+
+Synthesizing Unit <MUX8T1_32>.
+    Related source file is "E:\Lab9&10&11&12\Lab10\Oexp10\MUX8T1_32.v".
+    Found 32-bit 8-to-1 multiplexer for signal <o> created at line 35.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX8T1_32> synthesized.
+
+Synthesizing Unit <or32>.
+    Related source file is "E:\Lab9&10&11&12\Lab10\Oexp10\or32.v".
+    Summary:
+	no macro.
+Unit <or32> synthesized.
+
+Synthesizing Unit <ABC32>.
+    Related source file is "E:\Lab9&10&11&12\Lab10\Oexp10\ABC32.v".
+    Found 33-bit adder for signal <n0018> created at line 30.
+    Found 33-bit adder for signal <n0007> created at line 30.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Multiplexer(s).
+Unit <ABC32> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 1
+ 33-bit adder                                          : 2
+ 33-bit subtractor                                     : 1
+# Registers                                            : 12
+ 1-bit register                                        : 3
+ 24-bit register                                       : 1
+ 32-bit register                                       : 6
+ 33-bit register                                       : 1
+ 992-bit register                                      : 1
+# Comparators                                          : 1
+ 1-bit comparator not equal                            : 1
+# Multiplexers                                         : 49
+ 1-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 36
+ 32-bit 31-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 3
+ 32-bit 8-to-1 multiplexer                             : 1
+ 33-bit 2-to-1 multiplexer                             : 4
+ 33-bit 4-to-1 multiplexer                             : 1
+ 5-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 2
+ 32-bit xor2                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <SAnti_jitter.ngc>.
+Reading core <SEnter_2_32.ngc>.
+Reading core <Display.ngc>.
+Reading core <ipcore_dir/RAM_B.ngc>.
+Reading core <MIO_BUS.ngc>.
+Reading core <Multi_8CH32.ngc>.
+Reading core <GPIO.ngc>.
+Reading core <PIO.ngc>.
+Reading core <Seg7_Dev.ngc>.
+Reading core <MCtrl.ngc>.
+Loading core <SAnti_jitter> for timing and area information for instance <U9>.
+Loading core <SEnter_2_32> for timing and area information for instance <M4>.
+Loading core <Display> for timing and area information for instance <U6>.
+Loading core <RAM_B> for timing and area information for instance <U3>.
+Loading core <MIO_BUS> for timing and area information for instance <U4>.
+Loading core <Multi_8CH32> for timing and area information for instance <U5>.
+Loading core <GPIO> for timing and area information for instance <U7>.
+Loading core <PIO> for timing and area information for instance <U71>.
+Loading core <Seg7_Dev> for timing and area information for instance <U61>.
+Loading core <MCtrl> for timing and area information for instance <Controller>.

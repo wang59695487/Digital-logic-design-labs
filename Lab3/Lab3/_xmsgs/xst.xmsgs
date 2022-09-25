@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="2838" delta="old" >Path definition &apos;<arg fmt="%s" index="1">$XILINX/vhdl/xst/nt64/unimacro</arg>&apos; in file <arg fmt="%s" index="2">C:/Xilinx/14.7/ISE_DS/ISE/vhdl/xst/nt64/hdc.ini</arg> is invalid and being ignored.  Check the path and ensure that any environment variable specification is legal.
+</msg>
+
+<msg type="warning" file="Xst" num="2838" delta="old" >Path definition &apos;<arg fmt="%s" index="1">$XILINX/vhdl/xst/nt64/xilinxcorelib</arg>&apos; in file <arg fmt="%s" index="2">C:/Xilinx/14.7/ISE_DS/ISE/vhdl/xst/nt64/hdc.ini</arg> is invalid and being ignored.  Check the path and ensure that any environment variable specification is legal.
+</msg>
+
+</messages>
+

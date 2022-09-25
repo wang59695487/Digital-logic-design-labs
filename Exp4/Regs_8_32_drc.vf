@@ -1,0 +1,240 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Regs_8_32_drc.vf
+// /___/   /\     Timestamp : 12/12/2018 15:05:53
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: D:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family kintex7 -verilog Regs_8_32_drc.vf -w E:/test_1/logicproject/11/Top_Fsm/Regs_8_32.sch
+//Design Name: Regs_8_32
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Decoder_38_MUSER_Regs_8_32(A, 
+                                  B, 
+                                  C, 
+                                  D0, 
+                                  D1, 
+                                  D2, 
+                                  D3, 
+                                  D4, 
+                                  D5, 
+                                  D6, 
+                                  D7);
+
+    input A;
+    input B;
+    input C;
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   output D4;
+   output D5;
+   output D6;
+   output D7;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_8;
+   wire XLXN_10;
+   wire XLXN_12;
+   wire XLXN_14;
+   wire XLXN_16;
+   
+   INV  XLXI_1 (.I(A), 
+               .O(XLXN_1));
+   INV  XLXI_2 (.I(B), 
+               .O(XLXN_2));
+   AND2  XLXI_3 (.I0(XLXN_2), 
+                .I1(XLXN_1), 
+                .O(XLXN_8));
+   AND2  XLXI_4 (.I0(XLXN_2), 
+                .I1(A), 
+                .O(XLXN_10));
+   AND2  XLXI_5 (.I0(B), 
+                .I1(XLXN_1), 
+                .O(XLXN_12));
+   AND2  XLXI_6 (.I0(B), 
+                .I1(A), 
+                .O(XLXN_14));
+   INV  XLXI_7 (.I(C), 
+               .O(XLXN_16));
+   AND2  XLXI_8 (.I0(XLXN_16), 
+                .I1(XLXN_8), 
+                .O(D0));
+   AND2  XLXI_9 (.I0(XLXN_16), 
+                .I1(XLXN_10), 
+                .O(D1));
+   AND2  XLXI_10 (.I0(XLXN_16), 
+                 .I1(XLXN_12), 
+                 .O(D2));
+   AND2  XLXI_11 (.I0(XLXN_16), 
+                 .I1(XLXN_14), 
+                 .O(D3));
+   AND2  XLXI_12 (.I0(C), 
+                 .I1(XLXN_8), 
+                 .O(D4));
+   AND2  XLXI_13 (.I0(C), 
+                 .I1(XLXN_10), 
+                 .O(D5));
+   AND2  XLXI_14 (.I0(C), 
+                 .I1(XLXN_12), 
+                 .O(D6));
+   AND2  XLXI_15 (.I0(C), 
+                 .I1(XLXN_14), 
+                 .O(D7));
+endmodule
+`timescale 1ns / 1ps
+
+module Regs_8_32(Addr_A, 
+                 Addr_B, 
+                 Addr_W, 
+                 clk, 
+                 cr, 
+                 Di, 
+                 WE, 
+                 QA, 
+                 QB);
+
+    input [2:0] Addr_A;
+    input [2:0] Addr_B;
+    input [2:0] Addr_W;
+    input clk;
+    input cr;
+    input [31:0] Di;
+    input WE;
+   output [31:0] QA;
+   output [31:0] QB;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_37;
+   wire XLXN_38;
+   wire XLXN_39;
+   wire XLXN_40;
+   wire XLXN_41;
+   wire XLXN_42;
+   wire XLXN_43;
+   wire XLXN_44;
+   wire [31:0] XLXN_45;
+   wire [31:0] XLXN_46;
+   wire [31:0] XLXN_49;
+   wire [31:0] XLXN_50;
+   wire [31:0] XLXN_51;
+   wire [31:0] XLXN_52;
+   wire [31:0] XLXN_53;
+   wire [31:0] XLXN_54;
+   
+   Reg_32  XLXI_1 (.C(XLXN_1), 
+                  .clear(cr), 
+                  .clk(clk), 
+                  .D(Di[31:0]), 
+                  .Q(XLXN_45[31:0]));
+   Reg_32  XLXI_2 (.C(XLXN_2), 
+                  .clear(cr), 
+                  .clk(clk), 
+                  .D(Di[31:0]), 
+                  .Q(XLXN_46[31:0]));
+   Reg_32  XLXI_3 (.C(XLXN_3), 
+                  .clear(cr), 
+                  .clk(clk), 
+                  .D(Di[31:0]), 
+                  .Q(XLXN_49[31:0]));
+   Reg_32  XLXI_4 (.C(XLXN_4), 
+                  .clear(cr), 
+                  .clk(clk), 
+                  .D(Di[31:0]), 
+                  .Q(XLXN_50[31:0]));
+   Reg_32  XLXI_5 (.C(XLXN_5), 
+                  .clear(cr), 
+                  .clk(clk), 
+                  .D(Di[31:0]), 
+                  .Q(XLXN_51[31:0]));
+   Reg_32  XLXI_6 (.C(XLXN_6), 
+                  .clear(cr), 
+                  .clk(clk), 
+                  .D(Di[31:0]), 
+                  .Q(XLXN_52[31:0]));
+   Reg_32  XLXI_7 (.C(XLXN_7), 
+                  .clear(cr), 
+                  .clk(clk), 
+                  .D(Di[31:0]), 
+                  .Q(XLXN_53[31:0]));
+   Reg_32  XLXI_8 (.C(XLXN_8), 
+                  .clear(cr), 
+                  .clk(clk), 
+                  .D(Di[31:0]), 
+                  .Q(XLXN_54[31:0]));
+   AND2  XLXI_9 (.I0(XLXN_37), 
+                .I1(WE), 
+                .O(XLXN_1));
+   AND2  XLXI_10 (.I0(XLXN_38), 
+                 .I1(WE), 
+                 .O(XLXN_2));
+   AND2  XLXI_11 (.I0(XLXN_39), 
+                 .I1(WE), 
+                 .O(XLXN_3));
+   AND2  XLXI_12 (.I0(XLXN_40), 
+                 .I1(WE), 
+                 .O(XLXN_4));
+   AND2  XLXI_14 (.I0(XLXN_41), 
+                 .I1(WE), 
+                 .O(XLXN_5));
+   AND2  XLXI_15 (.I0(XLXN_42), 
+                 .I1(WE), 
+                 .O(XLXN_6));
+   AND2  XLXI_16 (.I0(XLXN_43), 
+                 .I1(WE), 
+                 .O(XLXN_7));
+   AND2  XLXI_17 (.I0(XLXN_44), 
+                 .I1(WE), 
+                 .O(XLXN_8));
+   Decoder_38_MUSER_Regs_8_32  XLXI_18 (.A(Addr_W[0]), 
+                                       .B(Addr_W[1]), 
+                                       .C(Addr_W[2]), 
+                                       .D0(XLXN_37), 
+                                       .D1(XLXN_38), 
+                                       .D2(XLXN_39), 
+                                       .D3(XLXN_40), 
+                                       .D4(XLXN_41), 
+                                       .D5(XLXN_42), 
+                                       .D6(XLXN_43), 
+                                       .D7(XLXN_44));
+   Choose32_8_1  XLXI_21 (.choose(Addr_A[2:0]), 
+                         .Data0(XLXN_45[31:0]), 
+                         .Data1(XLXN_46[31:0]), 
+                         .Data2(XLXN_49[31:0]), 
+                         .Data3(XLXN_50[31:0]), 
+                         .Data4(XLXN_51[31:0]), 
+                         .Data5(XLXN_52[31:0]), 
+                         .Data6(XLXN_53[31:0]), 
+                         .Data7(XLXN_54[31:0]), 
+                         .Data_out(QA[31:0]));
+   Choose32_8_1  XLXI_22 (.choose(Addr_B[2:0]), 
+                         .Data0(XLXN_45[31:0]), 
+                         .Data1(XLXN_46[31:0]), 
+                         .Data2(XLXN_49[31:0]), 
+                         .Data3(XLXN_50[31:0]), 
+                         .Data4(XLXN_51[31:0]), 
+                         .Data5(XLXN_52[31:0]), 
+                         .Data6(XLXN_53[31:0]), 
+                         .Data7(XLXN_54[31:0]), 
+                         .Data_out(QB[31:0]));
+endmodule

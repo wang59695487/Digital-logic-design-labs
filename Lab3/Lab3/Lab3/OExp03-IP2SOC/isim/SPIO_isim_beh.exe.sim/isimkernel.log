@@ -1,0 +1,28 @@
+Command line:
+   SPIO_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  58988
+
+Sun Mar 10 13:32:15 2019
+
+
+ Elaboration Time: 0.25 sec
+
+ Current Memory Usage: 5830.2 Meg
+
+ Total Signals          : 23
+ Total Nets             : 85
+ Total Signal Drivers   : 7
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 8
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 181
+
+ Total Simulation Time: 0.3125 sec
+
+ Current Memory Usage: 5830.2 Meg
+
+Sun Mar 10 13:32:39 2019
+

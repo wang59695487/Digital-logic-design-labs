@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym adc32 E:/test_1/logicproject/8/Framework/adc32.sch E:/test_1/logicproject/8/Framework/adc32.sym 

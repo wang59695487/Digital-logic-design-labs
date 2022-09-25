@@ -1,0 +1,1075 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+F:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2L -n 3
+-fastpaths -xml Datapath.twx Datapath.ncd -o Datapath.twr Datapath.pcf
+
+Design file:              Datapath.ncd
+Physical constraint file: Datapath.pcf
+Device,package,speed:     xc7k160t,ffg676,C,-2L (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+--------------+------------+------------+------------+------------+------------------+--------+
+              |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source        | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+--------------+------------+------------+------------+------------+------------------+--------+
+ALUSrc_B      |    3.591(R)|      SLOW  |    0.997(R)|      SLOW  |clk_BUFGP         |   0.000|
+ALU_Control<0>|    2.232(R)|      FAST  |    1.704(R)|      SLOW  |clk_BUFGP         |   0.000|
+ALU_Control<1>|    2.013(R)|      FAST  |    1.384(R)|      SLOW  |clk_BUFGP         |   0.000|
+ALU_Control<2>|    3.481(R)|      SLOW  |    1.742(R)|      SLOW  |clk_BUFGP         |   0.000|
+Branch        |    0.596(R)|      FAST  |    1.764(R)|      SLOW  |clk_BUFGP         |   0.000|
+Data_in<0>    |    1.516(R)|      FAST  |    2.315(R)|      SLOW  |clk_BUFGP         |   0.000|
+Data_in<1>    |    1.566(R)|      FAST  |    2.447(R)|      SLOW  |clk_BUFGP         |   0.000|
+Data_in<2>    |    1.744(R)|      FAST  |    2.553(R)|      SLOW  |clk_BUFGP         |   0.000|
+Data_in<3>    |    1.708(R)|      FAST  |    2.244(R)|      SLOW  |clk_BUFGP         |   0.000|
+Data_in<4>    |    1.279(R)|      FAST  |    2.488(R)|      SLOW  |clk_BUFGP         |   0.000|
+Jump          |    0.603(R)|      FAST  |    1.680(R)|      SLOW  |clk_BUFGP         |   0.000|
+MemtoReg      |    1.869(R)|      FAST  |    2.401(R)|      SLOW  |clk_BUFGP         |   0.000|
+RegDst        |    4.982(R)|      SLOW  |    1.742(R)|      SLOW  |clk_BUFGP         |   0.000|
+RegWrite      |    2.048(R)|      FAST  |    1.871(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<0> |    3.440(R)|      SLOW  |    1.190(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<1> |    2.799(R)|      SLOW  |    1.296(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<2> |    3.226(R)|      SLOW  |    0.822(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<3> |    4.011(R)|      SLOW  |    0.937(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<4> |    2.111(R)|      SLOW  |    2.225(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<5> |    2.560(R)|      SLOW  |    2.039(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<6> |    2.698(R)|      SLOW  |    1.480(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<7> |    2.385(R)|      SLOW  |    1.646(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<8> |    2.842(R)|      SLOW  |    1.590(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<9> |    2.359(R)|      SLOW  |    1.925(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<10>|    2.404(R)|      FAST  |    1.623(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<11>|    3.054(R)|      SLOW  |    1.349(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<12>|    3.451(R)|      SLOW  |    1.221(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<13>|    5.220(R)|      SLOW  |    1.940(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<14>|    3.324(R)|      SLOW  |    1.561(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<15>|    3.051(R)|      SLOW  |    1.937(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<16>|    7.004(R)|      SLOW  |    0.382(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<17>|    7.034(R)|      SLOW  |    0.920(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<18>|    4.546(R)|      SLOW  |    1.762(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<19>|    4.104(R)|      SLOW  |    1.657(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<20>|    5.130(R)|      SLOW  |    1.629(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<21>|    7.220(R)|      SLOW  |    0.141(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<22>|    7.577(R)|      SLOW  |    0.302(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<23>|    4.490(R)|      SLOW  |    1.043(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<24>|    4.661(R)|      SLOW  |    1.637(R)|      SLOW  |clk_BUFGP         |   0.000|
+inst_field<25>|    5.209(R)|      SLOW  |    1.938(R)|      SLOW  |clk_BUFGP         |   0.000|
+rst           |    1.956(R)|      FAST  |    2.329(R)|      SLOW  |clk_BUFGP         |   0.000|
+--------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+ALU_out<0>  |        14.535(R)|      SLOW  |         5.409(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<1>  |        13.690(R)|      SLOW  |         5.306(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<2>  |        13.522(R)|      SLOW  |         5.362(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<3>  |        14.016(R)|      SLOW  |         5.581(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<4>  |        13.256(R)|      SLOW  |         5.106(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<5>  |        13.125(R)|      SLOW  |         5.206(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<6>  |        12.787(R)|      SLOW  |         5.015(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<7>  |        12.815(R)|      SLOW  |         5.037(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<8>  |        13.021(R)|      SLOW  |         5.117(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<9>  |        13.223(R)|      SLOW  |         5.212(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<10> |        13.225(R)|      SLOW  |         5.248(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<11> |        13.532(R)|      SLOW  |         5.398(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<12> |        13.028(R)|      SLOW  |         5.084(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<13> |        13.300(R)|      SLOW  |         5.255(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<14> |        12.974(R)|      SLOW  |         5.094(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<15> |        13.453(R)|      SLOW  |         5.364(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<16> |        13.410(R)|      SLOW  |         5.331(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<17> |        13.213(R)|      SLOW  |         5.170(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<18> |        13.329(R)|      SLOW  |         5.279(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<19> |        13.708(R)|      SLOW  |         5.491(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<20> |        13.379(R)|      SLOW  |         5.307(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<21> |        13.725(R)|      SLOW  |         5.461(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<22> |        13.856(R)|      SLOW  |         5.581(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<23> |        13.698(R)|      SLOW  |         5.445(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<24> |        13.605(R)|      SLOW  |         5.375(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<25> |        13.838(R)|      SLOW  |         5.479(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<26> |        13.552(R)|      SLOW  |         5.338(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<27> |        13.797(R)|      SLOW  |         5.510(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<28> |        13.949(R)|      SLOW  |         5.597(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<29> |        14.001(R)|      SLOW  |         5.582(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<30> |        13.564(R)|      SLOW  |         5.377(R)|      FAST  |clk_BUFGP         |   0.000|
+ALU_out<31> |        13.858(R)|      SLOW  |         5.542(R)|      FAST  |clk_BUFGP         |   0.000|
+Data_out<0> |        12.568(R)|      SLOW  |         5.296(R)|      FAST  |clk_BUFGP         |   0.000|
+Data_out<1> |        12.435(R)|      SLOW  |         5.152(R)|      FAST  |clk_BUFGP         |   0.000|
+Data_out<2> |        12.516(R)|      SLOW  |         5.246(R)|      FAST  |clk_BUFGP         |   0.000|
+Data_out<3> |        13.019(R)|      SLOW  |         5.220(R)|      FAST  |clk_BUFGP         |   0.000|
+Data_out<4> |        12.822(R)|      SLOW  |         5.416(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<2>   |         8.825(R)|      SLOW  |         3.853(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<3>   |         8.819(R)|      SLOW  |         3.882(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<4>   |         8.941(R)|      SLOW  |         3.956(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<5>   |         9.212(R)|      SLOW  |         4.116(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<6>   |         9.038(R)|      SLOW  |         4.007(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<7>   |         9.104(R)|      SLOW  |         4.039(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<8>   |         8.903(R)|      SLOW  |         3.989(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<9>   |         8.998(R)|      SLOW  |         3.984(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<10>  |         9.023(R)|      SLOW  |         4.033(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<11>  |         9.367(R)|      SLOW  |         4.213(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<12>  |         8.988(R)|      SLOW  |         3.997(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<13>  |         8.924(R)|      SLOW  |         3.971(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<14>  |         8.614(R)|      SLOW  |         3.773(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<15>  |         8.699(R)|      SLOW  |         3.823(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<16>  |         9.117(R)|      SLOW  |         4.064(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<17>  |         8.714(R)|      SLOW  |         3.818(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<18>  |         9.055(R)|      SLOW  |         4.006(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<19>  |         9.177(R)|      SLOW  |         4.082(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<20>  |         8.886(R)|      SLOW  |         3.955(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<21>  |         8.838(R)|      SLOW  |         3.896(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<22>  |         8.744(R)|      SLOW  |         3.849(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<23>  |         8.734(R)|      SLOW  |         3.852(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<24>  |         8.719(R)|      SLOW  |         3.833(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<25>  |         8.738(R)|      SLOW  |         3.838(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<26>  |         9.061(R)|      SLOW  |         4.019(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<27>  |         8.735(R)|      SLOW  |         3.851(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<28>  |         8.695(R)|      SLOW  |         3.814(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<29>  |         8.860(R)|      SLOW  |         3.917(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<30>  |         8.898(R)|      SLOW  |         3.930(R)|      FAST  |clk_BUFGP         |   0.000|
+PC_out<31>  |         8.922(R)|      SLOW  |         3.937(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.180|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+ALUSrc_B       |ALU_out<0>     |   10.612|
+ALUSrc_B       |ALU_out<1>     |    9.857|
+ALUSrc_B       |ALU_out<2>     |    9.548|
+ALUSrc_B       |ALU_out<3>     |   10.129|
+ALUSrc_B       |ALU_out<4>     |    9.811|
+ALUSrc_B       |ALU_out<5>     |    9.224|
+ALUSrc_B       |ALU_out<6>     |    8.886|
+ALUSrc_B       |ALU_out<7>     |    8.914|
+ALUSrc_B       |ALU_out<8>     |    9.098|
+ALUSrc_B       |ALU_out<9>     |    9.300|
+ALUSrc_B       |ALU_out<10>    |    9.302|
+ALUSrc_B       |ALU_out<11>    |    9.609|
+ALUSrc_B       |ALU_out<12>    |    9.105|
+ALUSrc_B       |ALU_out<13>    |    9.377|
+ALUSrc_B       |ALU_out<14>    |    9.051|
+ALUSrc_B       |ALU_out<15>    |    9.530|
+ALUSrc_B       |ALU_out<16>    |    9.487|
+ALUSrc_B       |ALU_out<17>    |    9.290|
+ALUSrc_B       |ALU_out<18>    |    9.406|
+ALUSrc_B       |ALU_out<19>    |    9.785|
+ALUSrc_B       |ALU_out<20>    |    9.456|
+ALUSrc_B       |ALU_out<21>    |    9.802|
+ALUSrc_B       |ALU_out<22>    |    9.933|
+ALUSrc_B       |ALU_out<23>    |    9.775|
+ALUSrc_B       |ALU_out<24>    |    9.682|
+ALUSrc_B       |ALU_out<25>    |    9.915|
+ALUSrc_B       |ALU_out<26>    |    9.629|
+ALUSrc_B       |ALU_out<27>    |    9.874|
+ALUSrc_B       |ALU_out<28>    |   10.026|
+ALUSrc_B       |ALU_out<29>    |   10.078|
+ALUSrc_B       |ALU_out<30>    |    9.641|
+ALUSrc_B       |ALU_out<31>    |    9.935|
+ALU_Control<0> |ALU_out<0>     |    9.182|
+ALU_Control<0> |ALU_out<1>     |    8.234|
+ALU_Control<0> |ALU_out<2>     |    8.419|
+ALU_Control<0> |ALU_out<3>     |    8.396|
+ALU_Control<0> |ALU_out<4>     |    7.828|
+ALU_Control<0> |ALU_out<5>     |    6.762|
+ALU_Control<0> |ALU_out<6>     |    6.692|
+ALU_Control<0> |ALU_out<7>     |    6.837|
+ALU_Control<0> |ALU_out<8>     |    6.862|
+ALU_Control<0> |ALU_out<9>     |    7.254|
+ALU_Control<0> |ALU_out<10>    |    7.107|
+ALU_Control<0> |ALU_out<11>    |    7.258|
+ALU_Control<0> |ALU_out<12>    |    6.871|
+ALU_Control<0> |ALU_out<13>    |    6.984|
+ALU_Control<0> |ALU_out<14>    |    7.061|
+ALU_Control<0> |ALU_out<15>    |    7.081|
+ALU_Control<0> |ALU_out<16>    |    7.466|
+ALU_Control<0> |ALU_out<17>    |    7.245|
+ALU_Control<0> |ALU_out<18>    |    7.117|
+ALU_Control<0> |ALU_out<19>    |    5.842|
+ALU_Control<0> |ALU_out<20>    |    5.435|
+ALU_Control<0> |ALU_out<21>    |    5.930|
+ALU_Control<0> |ALU_out<22>    |    5.952|
+ALU_Control<0> |ALU_out<23>    |    7.612|
+ALU_Control<0> |ALU_out<24>    |    7.306|
+ALU_Control<0> |ALU_out<25>    |    7.527|
+ALU_Control<0> |ALU_out<26>    |    7.669|
+ALU_Control<0> |ALU_out<27>    |    6.327|
+ALU_Control<0> |ALU_out<28>    |    6.180|
+ALU_Control<0> |ALU_out<29>    |    5.991|
+ALU_Control<0> |ALU_out<30>    |    7.677|
+ALU_Control<0> |ALU_out<31>    |    7.471|
+ALU_Control<1> |ALU_out<0>     |    8.705|
+ALU_Control<1> |ALU_out<1>     |    8.707|
+ALU_Control<1> |ALU_out<2>     |    8.426|
+ALU_Control<1> |ALU_out<3>     |    8.566|
+ALU_Control<1> |ALU_out<4>     |    8.212|
+ALU_Control<1> |ALU_out<5>     |    6.956|
+ALU_Control<1> |ALU_out<6>     |    7.205|
+ALU_Control<1> |ALU_out<7>     |    7.055|
+ALU_Control<1> |ALU_out<8>     |    6.997|
+ALU_Control<1> |ALU_out<9>     |    7.388|
+ALU_Control<1> |ALU_out<10>    |    7.193|
+ALU_Control<1> |ALU_out<11>    |    7.329|
+ALU_Control<1> |ALU_out<12>    |    7.207|
+ALU_Control<1> |ALU_out<13>    |    7.475|
+ALU_Control<1> |ALU_out<14>    |    7.350|
+ALU_Control<1> |ALU_out<15>    |    7.551|
+ALU_Control<1> |ALU_out<16>    |    7.876|
+ALU_Control<1> |ALU_out<17>    |    7.716|
+ALU_Control<1> |ALU_out<18>    |    7.494|
+ALU_Control<1> |ALU_out<19>    |    6.020|
+ALU_Control<1> |ALU_out<20>    |    5.532|
+ALU_Control<1> |ALU_out<21>    |    6.094|
+ALU_Control<1> |ALU_out<22>    |    5.959|
+ALU_Control<1> |ALU_out<23>    |    7.594|
+ALU_Control<1> |ALU_out<24>    |    7.478|
+ALU_Control<1> |ALU_out<25>    |    8.240|
+ALU_Control<1> |ALU_out<26>    |    7.772|
+ALU_Control<1> |ALU_out<27>    |    6.397|
+ALU_Control<1> |ALU_out<28>    |    6.330|
+ALU_Control<1> |ALU_out<29>    |    6.306|
+ALU_Control<1> |ALU_out<30>    |    8.087|
+ALU_Control<1> |ALU_out<31>    |    7.546|
+ALU_Control<2> |ALU_out<0>     |   10.502|
+ALU_Control<2> |ALU_out<1>     |    9.340|
+ALU_Control<2> |ALU_out<2>     |    9.438|
+ALU_Control<2> |ALU_out<3>     |    9.841|
+ALU_Control<2> |ALU_out<4>     |    9.245|
+ALU_Control<2> |ALU_out<5>     |    9.114|
+ALU_Control<2> |ALU_out<6>     |    8.776|
+ALU_Control<2> |ALU_out<7>     |    8.804|
+ALU_Control<2> |ALU_out<8>     |    8.988|
+ALU_Control<2> |ALU_out<9>     |    9.190|
+ALU_Control<2> |ALU_out<10>    |    9.192|
+ALU_Control<2> |ALU_out<11>    |    9.499|
+ALU_Control<2> |ALU_out<12>    |    8.995|
+ALU_Control<2> |ALU_out<13>    |    9.267|
+ALU_Control<2> |ALU_out<14>    |    8.941|
+ALU_Control<2> |ALU_out<15>    |    9.420|
+ALU_Control<2> |ALU_out<16>    |    9.377|
+ALU_Control<2> |ALU_out<17>    |    9.180|
+ALU_Control<2> |ALU_out<18>    |    9.296|
+ALU_Control<2> |ALU_out<19>    |    9.675|
+ALU_Control<2> |ALU_out<20>    |    9.346|
+ALU_Control<2> |ALU_out<21>    |    9.692|
+ALU_Control<2> |ALU_out<22>    |    9.823|
+ALU_Control<2> |ALU_out<23>    |    9.665|
+ALU_Control<2> |ALU_out<24>    |    9.572|
+ALU_Control<2> |ALU_out<25>    |    9.805|
+ALU_Control<2> |ALU_out<26>    |    9.519|
+ALU_Control<2> |ALU_out<27>    |    9.764|
+ALU_Control<2> |ALU_out<28>    |    9.916|
+ALU_Control<2> |ALU_out<29>    |    9.968|
+ALU_Control<2> |ALU_out<30>    |    9.531|
+ALU_Control<2> |ALU_out<31>    |    9.825|
+inst_field<0>  |ALU_out<0>     |   10.461|
+inst_field<0>  |ALU_out<1>     |    9.299|
+inst_field<0>  |ALU_out<2>     |    9.397|
+inst_field<0>  |ALU_out<3>     |    9.800|
+inst_field<0>  |ALU_out<4>     |    9.204|
+inst_field<0>  |ALU_out<5>     |    9.073|
+inst_field<0>  |ALU_out<6>     |    8.735|
+inst_field<0>  |ALU_out<7>     |    8.763|
+inst_field<0>  |ALU_out<8>     |    8.947|
+inst_field<0>  |ALU_out<9>     |    9.149|
+inst_field<0>  |ALU_out<10>    |    9.151|
+inst_field<0>  |ALU_out<11>    |    9.458|
+inst_field<0>  |ALU_out<12>    |    8.954|
+inst_field<0>  |ALU_out<13>    |    9.226|
+inst_field<0>  |ALU_out<14>    |    8.900|
+inst_field<0>  |ALU_out<15>    |    9.379|
+inst_field<0>  |ALU_out<16>    |    9.336|
+inst_field<0>  |ALU_out<17>    |    9.139|
+inst_field<0>  |ALU_out<18>    |    9.255|
+inst_field<0>  |ALU_out<19>    |    9.634|
+inst_field<0>  |ALU_out<20>    |    9.305|
+inst_field<0>  |ALU_out<21>    |    9.651|
+inst_field<0>  |ALU_out<22>    |    9.782|
+inst_field<0>  |ALU_out<23>    |    9.624|
+inst_field<0>  |ALU_out<24>    |    9.531|
+inst_field<0>  |ALU_out<25>    |    9.764|
+inst_field<0>  |ALU_out<26>    |    9.478|
+inst_field<0>  |ALU_out<27>    |    9.723|
+inst_field<0>  |ALU_out<28>    |    9.875|
+inst_field<0>  |ALU_out<29>    |    9.927|
+inst_field<0>  |ALU_out<30>    |    9.490|
+inst_field<0>  |ALU_out<31>    |    9.784|
+inst_field<1>  |ALU_out<0>     |    9.788|
+inst_field<1>  |ALU_out<1>     |    9.668|
+inst_field<1>  |ALU_out<2>     |    8.732|
+inst_field<1>  |ALU_out<3>     |    9.135|
+inst_field<1>  |ALU_out<4>     |    8.531|
+inst_field<1>  |ALU_out<5>     |    8.400|
+inst_field<1>  |ALU_out<6>     |    8.062|
+inst_field<1>  |ALU_out<7>     |    8.090|
+inst_field<1>  |ALU_out<8>     |    8.274|
+inst_field<1>  |ALU_out<9>     |    8.476|
+inst_field<1>  |ALU_out<10>    |    8.478|
+inst_field<1>  |ALU_out<11>    |    8.785|
+inst_field<1>  |ALU_out<12>    |    8.281|
+inst_field<1>  |ALU_out<13>    |    8.553|
+inst_field<1>  |ALU_out<14>    |    8.227|
+inst_field<1>  |ALU_out<15>    |    8.706|
+inst_field<1>  |ALU_out<16>    |    8.663|
+inst_field<1>  |ALU_out<17>    |    8.466|
+inst_field<1>  |ALU_out<18>    |    8.582|
+inst_field<1>  |ALU_out<19>    |    8.961|
+inst_field<1>  |ALU_out<20>    |    8.632|
+inst_field<1>  |ALU_out<21>    |    8.978|
+inst_field<1>  |ALU_out<22>    |    9.109|
+inst_field<1>  |ALU_out<23>    |    8.951|
+inst_field<1>  |ALU_out<24>    |    8.858|
+inst_field<1>  |ALU_out<25>    |    9.091|
+inst_field<1>  |ALU_out<26>    |    8.805|
+inst_field<1>  |ALU_out<27>    |    9.050|
+inst_field<1>  |ALU_out<28>    |    9.202|
+inst_field<1>  |ALU_out<29>    |    9.254|
+inst_field<1>  |ALU_out<30>    |    8.817|
+inst_field<1>  |ALU_out<31>    |    9.111|
+inst_field<2>  |ALU_out<0>     |   10.247|
+inst_field<2>  |ALU_out<1>     |    9.773|
+inst_field<2>  |ALU_out<2>     |    9.690|
+inst_field<2>  |ALU_out<3>     |    9.532|
+inst_field<2>  |ALU_out<4>     |    8.990|
+inst_field<2>  |ALU_out<5>     |    8.859|
+inst_field<2>  |ALU_out<6>     |    8.521|
+inst_field<2>  |ALU_out<7>     |    8.549|
+inst_field<2>  |ALU_out<8>     |    8.733|
+inst_field<2>  |ALU_out<9>     |    8.935|
+inst_field<2>  |ALU_out<10>    |    8.937|
+inst_field<2>  |ALU_out<11>    |    9.244|
+inst_field<2>  |ALU_out<12>    |    8.740|
+inst_field<2>  |ALU_out<13>    |    9.012|
+inst_field<2>  |ALU_out<14>    |    8.686|
+inst_field<2>  |ALU_out<15>    |    9.165|
+inst_field<2>  |ALU_out<16>    |    9.122|
+inst_field<2>  |ALU_out<17>    |    8.925|
+inst_field<2>  |ALU_out<18>    |    9.041|
+inst_field<2>  |ALU_out<19>    |    9.420|
+inst_field<2>  |ALU_out<20>    |    9.091|
+inst_field<2>  |ALU_out<21>    |    9.437|
+inst_field<2>  |ALU_out<22>    |    9.568|
+inst_field<2>  |ALU_out<23>    |    9.410|
+inst_field<2>  |ALU_out<24>    |    9.317|
+inst_field<2>  |ALU_out<25>    |    9.550|
+inst_field<2>  |ALU_out<26>    |    9.264|
+inst_field<2>  |ALU_out<27>    |    9.509|
+inst_field<2>  |ALU_out<28>    |    9.661|
+inst_field<2>  |ALU_out<29>    |    9.713|
+inst_field<2>  |ALU_out<30>    |    9.276|
+inst_field<2>  |ALU_out<31>    |    9.570|
+inst_field<3>  |ALU_out<0>     |   11.032|
+inst_field<3>  |ALU_out<2>     |   10.585|
+inst_field<3>  |ALU_out<3>     |   10.736|
+inst_field<3>  |ALU_out<4>     |    9.775|
+inst_field<3>  |ALU_out<5>     |    9.644|
+inst_field<3>  |ALU_out<6>     |    9.306|
+inst_field<3>  |ALU_out<7>     |    9.334|
+inst_field<3>  |ALU_out<8>     |    9.518|
+inst_field<3>  |ALU_out<9>     |    9.720|
+inst_field<3>  |ALU_out<10>    |    9.722|
+inst_field<3>  |ALU_out<11>    |   10.029|
+inst_field<3>  |ALU_out<12>    |    9.525|
+inst_field<3>  |ALU_out<13>    |    9.797|
+inst_field<3>  |ALU_out<14>    |    9.471|
+inst_field<3>  |ALU_out<15>    |    9.950|
+inst_field<3>  |ALU_out<16>    |    9.907|
+inst_field<3>  |ALU_out<17>    |    9.710|
+inst_field<3>  |ALU_out<18>    |    9.826|
+inst_field<3>  |ALU_out<19>    |   10.205|
+inst_field<3>  |ALU_out<20>    |    9.876|
+inst_field<3>  |ALU_out<21>    |   10.222|
+inst_field<3>  |ALU_out<22>    |   10.353|
+inst_field<3>  |ALU_out<23>    |   10.195|
+inst_field<3>  |ALU_out<24>    |   10.102|
+inst_field<3>  |ALU_out<25>    |   10.335|
+inst_field<3>  |ALU_out<26>    |   10.049|
+inst_field<3>  |ALU_out<27>    |   10.294|
+inst_field<3>  |ALU_out<28>    |   10.446|
+inst_field<3>  |ALU_out<29>    |   10.498|
+inst_field<3>  |ALU_out<30>    |   10.061|
+inst_field<3>  |ALU_out<31>    |   10.355|
+inst_field<4>  |ALU_out<0>     |    9.132|
+inst_field<4>  |ALU_out<3>     |    9.130|
+inst_field<4>  |ALU_out<4>     |    7.823|
+inst_field<4>  |ALU_out<5>     |    7.590|
+inst_field<4>  |ALU_out<6>     |    7.355|
+inst_field<4>  |ALU_out<7>     |    7.375|
+inst_field<4>  |ALU_out<8>     |    7.618|
+inst_field<4>  |ALU_out<9>     |    7.820|
+inst_field<4>  |ALU_out<10>    |    7.822|
+inst_field<4>  |ALU_out<11>    |    8.129|
+inst_field<4>  |ALU_out<12>    |    7.625|
+inst_field<4>  |ALU_out<13>    |    7.897|
+inst_field<4>  |ALU_out<14>    |    7.571|
+inst_field<4>  |ALU_out<15>    |    8.050|
+inst_field<4>  |ALU_out<16>    |    8.007|
+inst_field<4>  |ALU_out<17>    |    7.810|
+inst_field<4>  |ALU_out<18>    |    7.926|
+inst_field<4>  |ALU_out<19>    |    8.305|
+inst_field<4>  |ALU_out<20>    |    7.976|
+inst_field<4>  |ALU_out<21>    |    8.322|
+inst_field<4>  |ALU_out<22>    |    8.453|
+inst_field<4>  |ALU_out<23>    |    8.295|
+inst_field<4>  |ALU_out<24>    |    8.202|
+inst_field<4>  |ALU_out<25>    |    8.435|
+inst_field<4>  |ALU_out<26>    |    8.149|
+inst_field<4>  |ALU_out<27>    |    8.394|
+inst_field<4>  |ALU_out<28>    |    8.546|
+inst_field<4>  |ALU_out<29>    |    8.598|
+inst_field<4>  |ALU_out<30>    |    8.161|
+inst_field<4>  |ALU_out<31>    |    8.455|
+inst_field<5>  |ALU_out<0>     |    9.581|
+inst_field<5>  |ALU_out<4>     |    8.514|
+inst_field<5>  |ALU_out<5>     |    7.922|
+inst_field<5>  |ALU_out<6>     |    7.812|
+inst_field<5>  |ALU_out<7>     |    7.832|
+inst_field<5>  |ALU_out<8>     |    8.067|
+inst_field<5>  |ALU_out<9>     |    8.269|
+inst_field<5>  |ALU_out<10>    |    8.271|
+inst_field<5>  |ALU_out<11>    |    8.578|
+inst_field<5>  |ALU_out<12>    |    8.074|
+inst_field<5>  |ALU_out<13>    |    8.346|
+inst_field<5>  |ALU_out<14>    |    8.020|
+inst_field<5>  |ALU_out<15>    |    8.499|
+inst_field<5>  |ALU_out<16>    |    8.456|
+inst_field<5>  |ALU_out<17>    |    8.259|
+inst_field<5>  |ALU_out<18>    |    8.375|
+inst_field<5>  |ALU_out<19>    |    8.754|
+inst_field<5>  |ALU_out<20>    |    8.425|
+inst_field<5>  |ALU_out<21>    |    8.771|
+inst_field<5>  |ALU_out<22>    |    8.902|
+inst_field<5>  |ALU_out<23>    |    8.744|
+inst_field<5>  |ALU_out<24>    |    8.651|
+inst_field<5>  |ALU_out<25>    |    8.884|
+inst_field<5>  |ALU_out<26>    |    8.598|
+inst_field<5>  |ALU_out<27>    |    8.843|
+inst_field<5>  |ALU_out<28>    |    8.995|
+inst_field<5>  |ALU_out<29>    |    9.047|
+inst_field<5>  |ALU_out<30>    |    8.610|
+inst_field<5>  |ALU_out<31>    |    8.904|
+inst_field<6>  |ALU_out<0>     |    9.719|
+inst_field<6>  |ALU_out<5>     |    7.139|
+inst_field<6>  |ALU_out<6>     |    7.857|
+inst_field<6>  |ALU_out<7>     |    7.908|
+inst_field<6>  |ALU_out<8>     |    8.205|
+inst_field<6>  |ALU_out<9>     |    8.407|
+inst_field<6>  |ALU_out<10>    |    8.409|
+inst_field<6>  |ALU_out<11>    |    8.716|
+inst_field<6>  |ALU_out<12>    |    8.212|
+inst_field<6>  |ALU_out<13>    |    8.484|
+inst_field<6>  |ALU_out<14>    |    8.158|
+inst_field<6>  |ALU_out<15>    |    8.637|
+inst_field<6>  |ALU_out<16>    |    8.594|
+inst_field<6>  |ALU_out<17>    |    8.397|
+inst_field<6>  |ALU_out<18>    |    8.513|
+inst_field<6>  |ALU_out<19>    |    8.892|
+inst_field<6>  |ALU_out<20>    |    8.563|
+inst_field<6>  |ALU_out<21>    |    8.909|
+inst_field<6>  |ALU_out<22>    |    9.040|
+inst_field<6>  |ALU_out<23>    |    8.882|
+inst_field<6>  |ALU_out<24>    |    8.789|
+inst_field<6>  |ALU_out<25>    |    9.022|
+inst_field<6>  |ALU_out<26>    |    8.736|
+inst_field<6>  |ALU_out<27>    |    8.981|
+inst_field<6>  |ALU_out<28>    |    9.133|
+inst_field<6>  |ALU_out<29>    |    9.185|
+inst_field<6>  |ALU_out<30>    |    8.748|
+inst_field<6>  |ALU_out<31>    |    9.042|
+inst_field<7>  |ALU_out<0>     |    9.406|
+inst_field<7>  |ALU_out<6>     |    7.045|
+inst_field<7>  |ALU_out<7>     |    7.535|
+inst_field<7>  |ALU_out<8>     |    7.892|
+inst_field<7>  |ALU_out<9>     |    8.094|
+inst_field<7>  |ALU_out<10>    |    8.096|
+inst_field<7>  |ALU_out<11>    |    8.403|
+inst_field<7>  |ALU_out<12>    |    7.899|
+inst_field<7>  |ALU_out<13>    |    8.171|
+inst_field<7>  |ALU_out<14>    |    7.845|
+inst_field<7>  |ALU_out<15>    |    8.324|
+inst_field<7>  |ALU_out<16>    |    8.281|
+inst_field<7>  |ALU_out<17>    |    8.084|
+inst_field<7>  |ALU_out<18>    |    8.200|
+inst_field<7>  |ALU_out<19>    |    8.579|
+inst_field<7>  |ALU_out<20>    |    8.250|
+inst_field<7>  |ALU_out<21>    |    8.596|
+inst_field<7>  |ALU_out<22>    |    8.727|
+inst_field<7>  |ALU_out<23>    |    8.569|
+inst_field<7>  |ALU_out<24>    |    8.476|
+inst_field<7>  |ALU_out<25>    |    8.709|
+inst_field<7>  |ALU_out<26>    |    8.423|
+inst_field<7>  |ALU_out<27>    |    8.668|
+inst_field<7>  |ALU_out<28>    |    8.820|
+inst_field<7>  |ALU_out<29>    |    8.872|
+inst_field<7>  |ALU_out<30>    |    8.435|
+inst_field<7>  |ALU_out<31>    |    8.729|
+inst_field<8>  |ALU_out<0>     |    9.863|
+inst_field<8>  |ALU_out<7>     |    7.834|
+inst_field<8>  |ALU_out<8>     |    8.156|
+inst_field<8>  |ALU_out<9>     |    8.397|
+inst_field<8>  |ALU_out<10>    |    8.502|
+inst_field<8>  |ALU_out<11>    |    8.801|
+inst_field<8>  |ALU_out<12>    |    8.356|
+inst_field<8>  |ALU_out<13>    |    8.628|
+inst_field<8>  |ALU_out<14>    |    8.302|
+inst_field<8>  |ALU_out<15>    |    8.781|
+inst_field<8>  |ALU_out<16>    |    8.738|
+inst_field<8>  |ALU_out<17>    |    8.541|
+inst_field<8>  |ALU_out<18>    |    8.657|
+inst_field<8>  |ALU_out<19>    |    9.036|
+inst_field<8>  |ALU_out<20>    |    8.707|
+inst_field<8>  |ALU_out<21>    |    9.053|
+inst_field<8>  |ALU_out<22>    |    9.184|
+inst_field<8>  |ALU_out<23>    |    9.026|
+inst_field<8>  |ALU_out<24>    |    8.933|
+inst_field<8>  |ALU_out<25>    |    9.166|
+inst_field<8>  |ALU_out<26>    |    8.880|
+inst_field<8>  |ALU_out<27>    |    9.125|
+inst_field<8>  |ALU_out<28>    |    9.277|
+inst_field<8>  |ALU_out<29>    |    9.329|
+inst_field<8>  |ALU_out<30>    |    8.892|
+inst_field<8>  |ALU_out<31>    |    9.186|
+inst_field<9>  |ALU_out<0>     |    9.380|
+inst_field<9>  |ALU_out<8>     |    7.560|
+inst_field<9>  |ALU_out<9>     |    7.797|
+inst_field<9>  |ALU_out<10>    |    8.027|
+inst_field<9>  |ALU_out<11>    |    8.326|
+inst_field<9>  |ALU_out<12>    |    7.873|
+inst_field<9>  |ALU_out<13>    |    8.145|
+inst_field<9>  |ALU_out<14>    |    7.819|
+inst_field<9>  |ALU_out<15>    |    8.298|
+inst_field<9>  |ALU_out<16>    |    8.255|
+inst_field<9>  |ALU_out<17>    |    8.058|
+inst_field<9>  |ALU_out<18>    |    8.174|
+inst_field<9>  |ALU_out<19>    |    8.553|
+inst_field<9>  |ALU_out<20>    |    8.224|
+inst_field<9>  |ALU_out<21>    |    8.570|
+inst_field<9>  |ALU_out<22>    |    8.701|
+inst_field<9>  |ALU_out<23>    |    8.543|
+inst_field<9>  |ALU_out<24>    |    8.450|
+inst_field<9>  |ALU_out<25>    |    8.683|
+inst_field<9>  |ALU_out<26>    |    8.397|
+inst_field<9>  |ALU_out<27>    |    8.642|
+inst_field<9>  |ALU_out<28>    |    8.794|
+inst_field<9>  |ALU_out<29>    |    8.846|
+inst_field<9>  |ALU_out<30>    |    8.409|
+inst_field<9>  |ALU_out<31>    |    8.703|
+inst_field<10> |ALU_out<0>     |    9.422|
+inst_field<10> |ALU_out<9>     |    7.941|
+inst_field<10> |ALU_out<10>    |    8.414|
+inst_field<10> |ALU_out<11>    |    8.306|
+inst_field<10> |ALU_out<12>    |    7.915|
+inst_field<10> |ALU_out<13>    |    8.187|
+inst_field<10> |ALU_out<14>    |    7.861|
+inst_field<10> |ALU_out<15>    |    8.340|
+inst_field<10> |ALU_out<16>    |    8.297|
+inst_field<10> |ALU_out<17>    |    8.100|
+inst_field<10> |ALU_out<18>    |    8.216|
+inst_field<10> |ALU_out<19>    |    8.595|
+inst_field<10> |ALU_out<20>    |    8.266|
+inst_field<10> |ALU_out<21>    |    8.612|
+inst_field<10> |ALU_out<22>    |    8.743|
+inst_field<10> |ALU_out<23>    |    8.585|
+inst_field<10> |ALU_out<24>    |    8.492|
+inst_field<10> |ALU_out<25>    |    8.725|
+inst_field<10> |ALU_out<26>    |    8.439|
+inst_field<10> |ALU_out<27>    |    8.684|
+inst_field<10> |ALU_out<28>    |    8.836|
+inst_field<10> |ALU_out<29>    |    8.888|
+inst_field<10> |ALU_out<30>    |    8.451|
+inst_field<10> |ALU_out<31>    |    8.745|
+inst_field<11> |ALU_out<0>     |    9.488|
+inst_field<11> |ALU_out<10>    |    7.674|
+inst_field<11> |ALU_out<11>    |    8.312|
+inst_field<11> |ALU_out<12>    |    7.981|
+inst_field<11> |ALU_out<13>    |    8.253|
+inst_field<11> |ALU_out<14>    |    7.927|
+inst_field<11> |ALU_out<15>    |    8.406|
+inst_field<11> |ALU_out<16>    |    8.363|
+inst_field<11> |ALU_out<17>    |    8.166|
+inst_field<11> |ALU_out<18>    |    8.282|
+inst_field<11> |ALU_out<19>    |    8.661|
+inst_field<11> |ALU_out<20>    |    8.332|
+inst_field<11> |ALU_out<21>    |    8.678|
+inst_field<11> |ALU_out<22>    |    8.809|
+inst_field<11> |ALU_out<23>    |    8.651|
+inst_field<11> |ALU_out<24>    |    8.558|
+inst_field<11> |ALU_out<25>    |    8.791|
+inst_field<11> |ALU_out<26>    |    8.505|
+inst_field<11> |ALU_out<27>    |    8.750|
+inst_field<11> |ALU_out<28>    |    8.902|
+inst_field<11> |ALU_out<29>    |    8.954|
+inst_field<11> |ALU_out<30>    |    8.517|
+inst_field<11> |ALU_out<31>    |    8.811|
+inst_field<12> |ALU_out<0>     |   10.113|
+inst_field<12> |ALU_out<11>    |    8.526|
+inst_field<12> |ALU_out<12>    |    8.413|
+inst_field<12> |ALU_out<13>    |    8.724|
+inst_field<12> |ALU_out<14>    |    8.501|
+inst_field<12> |ALU_out<15>    |    8.972|
+inst_field<12> |ALU_out<16>    |    8.988|
+inst_field<12> |ALU_out<17>    |    8.791|
+inst_field<12> |ALU_out<18>    |    8.907|
+inst_field<12> |ALU_out<19>    |    9.286|
+inst_field<12> |ALU_out<20>    |    8.957|
+inst_field<12> |ALU_out<21>    |    9.303|
+inst_field<12> |ALU_out<22>    |    9.434|
+inst_field<12> |ALU_out<23>    |    9.276|
+inst_field<12> |ALU_out<24>    |    9.183|
+inst_field<12> |ALU_out<25>    |    9.416|
+inst_field<12> |ALU_out<26>    |    9.130|
+inst_field<12> |ALU_out<27>    |    9.375|
+inst_field<12> |ALU_out<28>    |    9.527|
+inst_field<12> |ALU_out<29>    |    9.579|
+inst_field<12> |ALU_out<30>    |    9.142|
+inst_field<12> |ALU_out<31>    |    9.436|
+inst_field<13> |ALU_out<0>     |    9.518|
+inst_field<13> |ALU_out<12>    |    7.512|
+inst_field<13> |ALU_out<13>    |    8.012|
+inst_field<13> |ALU_out<14>    |    7.914|
+inst_field<13> |ALU_out<15>    |    8.385|
+inst_field<13> |ALU_out<16>    |    8.393|
+inst_field<13> |ALU_out<17>    |    8.196|
+inst_field<13> |ALU_out<18>    |    8.312|
+inst_field<13> |ALU_out<19>    |    8.691|
+inst_field<13> |ALU_out<20>    |    8.362|
+inst_field<13> |ALU_out<21>    |    8.708|
+inst_field<13> |ALU_out<22>    |    8.839|
+inst_field<13> |ALU_out<23>    |    8.681|
+inst_field<13> |ALU_out<24>    |    8.588|
+inst_field<13> |ALU_out<25>    |    8.821|
+inst_field<13> |ALU_out<26>    |    8.535|
+inst_field<13> |ALU_out<27>    |    8.780|
+inst_field<13> |ALU_out<28>    |    8.932|
+inst_field<13> |ALU_out<29>    |    8.984|
+inst_field<13> |ALU_out<30>    |    8.547|
+inst_field<13> |ALU_out<31>    |    8.841|
+inst_field<14> |ALU_out<0>     |   10.053|
+inst_field<14> |ALU_out<13>    |    8.102|
+inst_field<14> |ALU_out<14>    |    8.356|
+inst_field<14> |ALU_out<15>    |    8.858|
+inst_field<14> |ALU_out<16>    |    8.928|
+inst_field<14> |ALU_out<17>    |    8.731|
+inst_field<14> |ALU_out<18>    |    8.847|
+inst_field<14> |ALU_out<19>    |    9.226|
+inst_field<14> |ALU_out<20>    |    8.897|
+inst_field<14> |ALU_out<21>    |    9.243|
+inst_field<14> |ALU_out<22>    |    9.374|
+inst_field<14> |ALU_out<23>    |    9.216|
+inst_field<14> |ALU_out<24>    |    9.123|
+inst_field<14> |ALU_out<25>    |    9.356|
+inst_field<14> |ALU_out<26>    |    9.070|
+inst_field<14> |ALU_out<27>    |    9.315|
+inst_field<14> |ALU_out<28>    |    9.467|
+inst_field<14> |ALU_out<29>    |    9.519|
+inst_field<14> |ALU_out<30>    |    9.082|
+inst_field<14> |ALU_out<31>    |    9.376|
+inst_field<15> |ALU_out<0>     |   10.072|
+inst_field<15> |ALU_out<14>    |    8.380|
+inst_field<15> |ALU_out<15>    |    8.514|
+inst_field<15> |ALU_out<16>    |    8.644|
+inst_field<15> |ALU_out<17>    |    8.447|
+inst_field<15> |ALU_out<18>    |    8.635|
+inst_field<15> |ALU_out<19>    |    9.006|
+inst_field<15> |ALU_out<20>    |    8.766|
+inst_field<15> |ALU_out<21>    |    9.112|
+inst_field<15> |ALU_out<22>    |    9.243|
+inst_field<15> |ALU_out<23>    |    9.085|
+inst_field<15> |ALU_out<24>    |    9.043|
+inst_field<15> |ALU_out<25>    |    9.276|
+inst_field<15> |ALU_out<26>    |    8.990|
+inst_field<15> |ALU_out<27>    |    9.235|
+inst_field<15> |ALU_out<28>    |    9.438|
+inst_field<15> |ALU_out<29>    |    9.490|
+inst_field<15> |ALU_out<30>    |    9.053|
+inst_field<15> |ALU_out<31>    |    9.347|
+inst_field<16> |ALU_out<0>     |   14.025|
+inst_field<16> |ALU_out<1>     |   13.607|
+inst_field<16> |ALU_out<2>     |   13.296|
+inst_field<16> |ALU_out<3>     |   13.955|
+inst_field<16> |ALU_out<4>     |   12.768|
+inst_field<16> |ALU_out<5>     |   12.637|
+inst_field<16> |ALU_out<6>     |   12.299|
+inst_field<16> |ALU_out<7>     |   12.327|
+inst_field<16> |ALU_out<8>     |   12.511|
+inst_field<16> |ALU_out<9>     |   12.713|
+inst_field<16> |ALU_out<10>    |   12.715|
+inst_field<16> |ALU_out<11>    |   13.022|
+inst_field<16> |ALU_out<12>    |   12.518|
+inst_field<16> |ALU_out<13>    |   12.790|
+inst_field<16> |ALU_out<14>    |   12.464|
+inst_field<16> |ALU_out<15>    |   12.943|
+inst_field<16> |ALU_out<16>    |   12.900|
+inst_field<16> |ALU_out<17>    |   12.703|
+inst_field<16> |ALU_out<18>    |   12.819|
+inst_field<16> |ALU_out<19>    |   13.198|
+inst_field<16> |ALU_out<20>    |   12.869|
+inst_field<16> |ALU_out<21>    |   13.215|
+inst_field<16> |ALU_out<22>    |   13.346|
+inst_field<16> |ALU_out<23>    |   13.188|
+inst_field<16> |ALU_out<24>    |   13.095|
+inst_field<16> |ALU_out<25>    |   13.328|
+inst_field<16> |ALU_out<26>    |   13.042|
+inst_field<16> |ALU_out<27>    |   13.287|
+inst_field<16> |ALU_out<28>    |   13.439|
+inst_field<16> |ALU_out<29>    |   13.491|
+inst_field<16> |ALU_out<30>    |   13.054|
+inst_field<16> |ALU_out<31>    |   13.348|
+inst_field<16> |Data_out<0>    |   11.779|
+inst_field<16> |Data_out<1>    |   12.352|
+inst_field<16> |Data_out<2>    |   12.305|
+inst_field<16> |Data_out<3>    |   12.713|
+inst_field<16> |Data_out<4>    |   12.761|
+inst_field<17> |ALU_out<0>     |   14.055|
+inst_field<17> |ALU_out<1>     |   13.647|
+inst_field<17> |ALU_out<2>     |   13.333|
+inst_field<17> |ALU_out<3>     |   13.996|
+inst_field<17> |ALU_out<4>     |   12.798|
+inst_field<17> |ALU_out<5>     |   12.667|
+inst_field<17> |ALU_out<6>     |   12.329|
+inst_field<17> |ALU_out<7>     |   12.357|
+inst_field<17> |ALU_out<8>     |   12.541|
+inst_field<17> |ALU_out<9>     |   12.743|
+inst_field<17> |ALU_out<10>    |   12.745|
+inst_field<17> |ALU_out<11>    |   13.052|
+inst_field<17> |ALU_out<12>    |   12.548|
+inst_field<17> |ALU_out<13>    |   12.820|
+inst_field<17> |ALU_out<14>    |   12.494|
+inst_field<17> |ALU_out<15>    |   12.973|
+inst_field<17> |ALU_out<16>    |   12.930|
+inst_field<17> |ALU_out<17>    |   12.733|
+inst_field<17> |ALU_out<18>    |   12.849|
+inst_field<17> |ALU_out<19>    |   13.228|
+inst_field<17> |ALU_out<20>    |   12.899|
+inst_field<17> |ALU_out<21>    |   13.245|
+inst_field<17> |ALU_out<22>    |   13.376|
+inst_field<17> |ALU_out<23>    |   13.218|
+inst_field<17> |ALU_out<24>    |   13.125|
+inst_field<17> |ALU_out<25>    |   13.358|
+inst_field<17> |ALU_out<26>    |   13.072|
+inst_field<17> |ALU_out<27>    |   13.317|
+inst_field<17> |ALU_out<28>    |   13.469|
+inst_field<17> |ALU_out<29>    |   13.521|
+inst_field<17> |ALU_out<30>    |   13.084|
+inst_field<17> |ALU_out<31>    |   13.378|
+inst_field<17> |Data_out<0>    |   11.668|
+inst_field<17> |Data_out<1>    |   12.392|
+inst_field<17> |Data_out<2>    |   12.342|
+inst_field<17> |Data_out<3>    |   12.743|
+inst_field<17> |Data_out<4>    |   12.802|
+inst_field<18> |ALU_out<0>     |   11.260|
+inst_field<18> |ALU_out<1>     |   10.395|
+inst_field<18> |ALU_out<2>     |   10.306|
+inst_field<18> |ALU_out<3>     |   10.803|
+inst_field<18> |ALU_out<4>     |   10.003|
+inst_field<18> |ALU_out<5>     |    9.872|
+inst_field<18> |ALU_out<6>     |    9.534|
+inst_field<18> |ALU_out<7>     |    9.562|
+inst_field<18> |ALU_out<8>     |    9.746|
+inst_field<18> |ALU_out<9>     |    9.948|
+inst_field<18> |ALU_out<10>    |    9.950|
+inst_field<18> |ALU_out<11>    |   10.257|
+inst_field<18> |ALU_out<12>    |    9.753|
+inst_field<18> |ALU_out<13>    |   10.025|
+inst_field<18> |ALU_out<14>    |    9.699|
+inst_field<18> |ALU_out<15>    |   10.178|
+inst_field<18> |ALU_out<16>    |   10.135|
+inst_field<18> |ALU_out<17>    |    9.938|
+inst_field<18> |ALU_out<18>    |   10.054|
+inst_field<18> |ALU_out<19>    |   10.433|
+inst_field<18> |ALU_out<20>    |   10.104|
+inst_field<18> |ALU_out<21>    |   10.450|
+inst_field<18> |ALU_out<22>    |   10.581|
+inst_field<18> |ALU_out<23>    |   10.423|
+inst_field<18> |ALU_out<24>    |   10.330|
+inst_field<18> |ALU_out<25>    |   10.563|
+inst_field<18> |ALU_out<26>    |   10.277|
+inst_field<18> |ALU_out<27>    |   10.522|
+inst_field<18> |ALU_out<28>    |   10.674|
+inst_field<18> |ALU_out<29>    |   10.726|
+inst_field<18> |ALU_out<30>    |   10.289|
+inst_field<18> |ALU_out<31>    |   10.583|
+inst_field<18> |Data_out<0>    |    9.518|
+inst_field<18> |Data_out<1>    |    9.140|
+inst_field<18> |Data_out<2>    |    9.175|
+inst_field<18> |Data_out<3>    |    9.652|
+inst_field<18> |Data_out<4>    |    9.609|
+inst_field<19> |ALU_out<0>     |   11.125|
+inst_field<19> |ALU_out<1>     |   10.623|
+inst_field<19> |ALU_out<2>     |   10.459|
+inst_field<19> |ALU_out<3>     |   11.029|
+inst_field<19> |ALU_out<4>     |    9.868|
+inst_field<19> |ALU_out<5>     |    9.737|
+inst_field<19> |ALU_out<6>     |    9.399|
+inst_field<19> |ALU_out<7>     |    9.427|
+inst_field<19> |ALU_out<8>     |    9.611|
+inst_field<19> |ALU_out<9>     |    9.813|
+inst_field<19> |ALU_out<10>    |    9.815|
+inst_field<19> |ALU_out<11>    |   10.122|
+inst_field<19> |ALU_out<12>    |    9.618|
+inst_field<19> |ALU_out<13>    |    9.890|
+inst_field<19> |ALU_out<14>    |    9.564|
+inst_field<19> |ALU_out<15>    |   10.043|
+inst_field<19> |ALU_out<16>    |   10.000|
+inst_field<19> |ALU_out<17>    |    9.803|
+inst_field<19> |ALU_out<18>    |    9.919|
+inst_field<19> |ALU_out<19>    |   10.298|
+inst_field<19> |ALU_out<20>    |    9.969|
+inst_field<19> |ALU_out<21>    |   10.315|
+inst_field<19> |ALU_out<22>    |   10.446|
+inst_field<19> |ALU_out<23>    |   10.288|
+inst_field<19> |ALU_out<24>    |   10.195|
+inst_field<19> |ALU_out<25>    |   10.428|
+inst_field<19> |ALU_out<26>    |   10.142|
+inst_field<19> |ALU_out<27>    |   10.387|
+inst_field<19> |ALU_out<28>    |   10.539|
+inst_field<19> |ALU_out<29>    |   10.591|
+inst_field<19> |ALU_out<30>    |   10.154|
+inst_field<19> |ALU_out<31>    |   10.448|
+inst_field<19> |Data_out<0>    |    9.433|
+inst_field<19> |Data_out<1>    |    9.368|
+inst_field<19> |Data_out<2>    |    9.468|
+inst_field<19> |Data_out<3>    |    9.645|
+inst_field<19> |Data_out<4>    |    9.835|
+inst_field<20> |ALU_out<0>     |   12.151|
+inst_field<20> |ALU_out<1>     |   10.989|
+inst_field<20> |ALU_out<2>     |   11.087|
+inst_field<20> |ALU_out<3>     |   11.490|
+inst_field<20> |ALU_out<4>     |   10.894|
+inst_field<20> |ALU_out<5>     |   10.763|
+inst_field<20> |ALU_out<6>     |   10.425|
+inst_field<20> |ALU_out<7>     |   10.453|
+inst_field<20> |ALU_out<8>     |   10.637|
+inst_field<20> |ALU_out<9>     |   10.839|
+inst_field<20> |ALU_out<10>    |   10.841|
+inst_field<20> |ALU_out<11>    |   11.148|
+inst_field<20> |ALU_out<12>    |   10.644|
+inst_field<20> |ALU_out<13>    |   10.916|
+inst_field<20> |ALU_out<14>    |   10.590|
+inst_field<20> |ALU_out<15>    |   11.069|
+inst_field<20> |ALU_out<16>    |   11.026|
+inst_field<20> |ALU_out<17>    |   10.829|
+inst_field<20> |ALU_out<18>    |   10.945|
+inst_field<20> |ALU_out<19>    |   11.324|
+inst_field<20> |ALU_out<20>    |   10.995|
+inst_field<20> |ALU_out<21>    |   11.341|
+inst_field<20> |ALU_out<22>    |   11.472|
+inst_field<20> |ALU_out<23>    |   11.314|
+inst_field<20> |ALU_out<24>    |   11.221|
+inst_field<20> |ALU_out<25>    |   11.454|
+inst_field<20> |ALU_out<26>    |   11.168|
+inst_field<20> |ALU_out<27>    |   11.413|
+inst_field<20> |ALU_out<28>    |   11.565|
+inst_field<20> |ALU_out<29>    |   11.617|
+inst_field<20> |ALU_out<30>    |   11.180|
+inst_field<20> |ALU_out<31>    |   11.474|
+inst_field<20> |Data_out<0>    |    9.180|
+inst_field<20> |Data_out<1>    |    9.204|
+inst_field<20> |Data_out<2>    |    9.320|
+inst_field<20> |Data_out<3>    |    9.695|
+inst_field<20> |Data_out<4>    |    9.653|
+inst_field<21> |ALU_out<0>     |   14.241|
+inst_field<21> |ALU_out<1>     |   13.079|
+inst_field<21> |ALU_out<2>     |   13.177|
+inst_field<21> |ALU_out<3>     |   13.580|
+inst_field<21> |ALU_out<4>     |   12.984|
+inst_field<21> |ALU_out<5>     |   12.853|
+inst_field<21> |ALU_out<6>     |   12.515|
+inst_field<21> |ALU_out<7>     |   12.543|
+inst_field<21> |ALU_out<8>     |   12.727|
+inst_field<21> |ALU_out<9>     |   12.929|
+inst_field<21> |ALU_out<10>    |   12.931|
+inst_field<21> |ALU_out<11>    |   13.238|
+inst_field<21> |ALU_out<12>    |   12.734|
+inst_field<21> |ALU_out<13>    |   13.006|
+inst_field<21> |ALU_out<14>    |   12.680|
+inst_field<21> |ALU_out<15>    |   13.159|
+inst_field<21> |ALU_out<16>    |   13.116|
+inst_field<21> |ALU_out<17>    |   12.919|
+inst_field<21> |ALU_out<18>    |   13.035|
+inst_field<21> |ALU_out<19>    |   13.414|
+inst_field<21> |ALU_out<20>    |   13.085|
+inst_field<21> |ALU_out<21>    |   13.431|
+inst_field<21> |ALU_out<22>    |   13.562|
+inst_field<21> |ALU_out<23>    |   13.404|
+inst_field<21> |ALU_out<24>    |   13.311|
+inst_field<21> |ALU_out<25>    |   13.544|
+inst_field<21> |ALU_out<26>    |   13.258|
+inst_field<21> |ALU_out<27>    |   13.503|
+inst_field<21> |ALU_out<28>    |   13.655|
+inst_field<21> |ALU_out<29>    |   13.707|
+inst_field<21> |ALU_out<30>    |   13.270|
+inst_field<21> |ALU_out<31>    |   13.564|
+inst_field<22> |ALU_out<0>     |   14.598|
+inst_field<22> |ALU_out<1>     |   13.565|
+inst_field<22> |ALU_out<2>     |   13.542|
+inst_field<22> |ALU_out<3>     |   13.945|
+inst_field<22> |ALU_out<4>     |   13.341|
+inst_field<22> |ALU_out<5>     |   13.210|
+inst_field<22> |ALU_out<6>     |   12.872|
+inst_field<22> |ALU_out<7>     |   12.900|
+inst_field<22> |ALU_out<8>     |   13.084|
+inst_field<22> |ALU_out<9>     |   13.286|
+inst_field<22> |ALU_out<10>    |   13.288|
+inst_field<22> |ALU_out<11>    |   13.595|
+inst_field<22> |ALU_out<12>    |   13.091|
+inst_field<22> |ALU_out<13>    |   13.363|
+inst_field<22> |ALU_out<14>    |   13.037|
+inst_field<22> |ALU_out<15>    |   13.516|
+inst_field<22> |ALU_out<16>    |   13.473|
+inst_field<22> |ALU_out<17>    |   13.276|
+inst_field<22> |ALU_out<18>    |   13.392|
+inst_field<22> |ALU_out<19>    |   13.771|
+inst_field<22> |ALU_out<20>    |   13.442|
+inst_field<22> |ALU_out<21>    |   13.788|
+inst_field<22> |ALU_out<22>    |   13.919|
+inst_field<22> |ALU_out<23>    |   13.761|
+inst_field<22> |ALU_out<24>    |   13.668|
+inst_field<22> |ALU_out<25>    |   13.901|
+inst_field<22> |ALU_out<26>    |   13.615|
+inst_field<22> |ALU_out<27>    |   13.860|
+inst_field<22> |ALU_out<28>    |   14.012|
+inst_field<22> |ALU_out<29>    |   14.064|
+inst_field<22> |ALU_out<30>    |   13.627|
+inst_field<22> |ALU_out<31>    |   13.921|
+inst_field<23> |ALU_out<0>     |   11.511|
+inst_field<23> |ALU_out<1>     |   10.350|
+inst_field<23> |ALU_out<2>     |   10.447|
+inst_field<23> |ALU_out<3>     |   10.858|
+inst_field<23> |ALU_out<4>     |   10.254|
+inst_field<23> |ALU_out<5>     |   10.123|
+inst_field<23> |ALU_out<6>     |    9.785|
+inst_field<23> |ALU_out<7>     |    9.813|
+inst_field<23> |ALU_out<8>     |    9.997|
+inst_field<23> |ALU_out<9>     |   10.199|
+inst_field<23> |ALU_out<10>    |   10.201|
+inst_field<23> |ALU_out<11>    |   10.508|
+inst_field<23> |ALU_out<12>    |   10.004|
+inst_field<23> |ALU_out<13>    |   10.276|
+inst_field<23> |ALU_out<14>    |    9.950|
+inst_field<23> |ALU_out<15>    |   10.429|
+inst_field<23> |ALU_out<16>    |   10.386|
+inst_field<23> |ALU_out<17>    |   10.189|
+inst_field<23> |ALU_out<18>    |   10.305|
+inst_field<23> |ALU_out<19>    |   10.684|
+inst_field<23> |ALU_out<20>    |   10.355|
+inst_field<23> |ALU_out<21>    |   10.701|
+inst_field<23> |ALU_out<22>    |   10.832|
+inst_field<23> |ALU_out<23>    |   10.674|
+inst_field<23> |ALU_out<24>    |   10.581|
+inst_field<23> |ALU_out<25>    |   10.814|
+inst_field<23> |ALU_out<26>    |   10.528|
+inst_field<23> |ALU_out<27>    |   10.773|
+inst_field<23> |ALU_out<28>    |   10.925|
+inst_field<23> |ALU_out<29>    |   10.977|
+inst_field<23> |ALU_out<30>    |   10.540|
+inst_field<23> |ALU_out<31>    |   10.834|
+inst_field<24> |ALU_out<0>     |   11.682|
+inst_field<24> |ALU_out<1>     |   10.508|
+inst_field<24> |ALU_out<2>     |   10.575|
+inst_field<24> |ALU_out<3>     |   11.129|
+inst_field<24> |ALU_out<4>     |   10.425|
+inst_field<24> |ALU_out<5>     |   10.294|
+inst_field<24> |ALU_out<6>     |    9.956|
+inst_field<24> |ALU_out<7>     |    9.984|
+inst_field<24> |ALU_out<8>     |   10.168|
+inst_field<24> |ALU_out<9>     |   10.370|
+inst_field<24> |ALU_out<10>    |   10.372|
+inst_field<24> |ALU_out<11>    |   10.679|
+inst_field<24> |ALU_out<12>    |   10.175|
+inst_field<24> |ALU_out<13>    |   10.447|
+inst_field<24> |ALU_out<14>    |   10.121|
+inst_field<24> |ALU_out<15>    |   10.600|
+inst_field<24> |ALU_out<16>    |   10.557|
+inst_field<24> |ALU_out<17>    |   10.360|
+inst_field<24> |ALU_out<18>    |   10.476|
+inst_field<24> |ALU_out<19>    |   10.855|
+inst_field<24> |ALU_out<20>    |   10.526|
+inst_field<24> |ALU_out<21>    |   10.872|
+inst_field<24> |ALU_out<22>    |   11.003|
+inst_field<24> |ALU_out<23>    |   10.845|
+inst_field<24> |ALU_out<24>    |   10.752|
+inst_field<24> |ALU_out<25>    |   10.985|
+inst_field<24> |ALU_out<26>    |   10.699|
+inst_field<24> |ALU_out<27>    |   10.944|
+inst_field<24> |ALU_out<28>    |   11.096|
+inst_field<24> |ALU_out<29>    |   11.148|
+inst_field<24> |ALU_out<30>    |   10.711|
+inst_field<24> |ALU_out<31>    |   11.005|
+inst_field<25> |ALU_out<0>     |   12.230|
+inst_field<25> |ALU_out<1>     |   11.068|
+inst_field<25> |ALU_out<2>     |   11.166|
+inst_field<25> |ALU_out<3>     |   11.569|
+inst_field<25> |ALU_out<4>     |   10.973|
+inst_field<25> |ALU_out<5>     |   10.842|
+inst_field<25> |ALU_out<6>     |   10.504|
+inst_field<25> |ALU_out<7>     |   10.532|
+inst_field<25> |ALU_out<8>     |   10.716|
+inst_field<25> |ALU_out<9>     |   10.918|
+inst_field<25> |ALU_out<10>    |   10.920|
+inst_field<25> |ALU_out<11>    |   11.227|
+inst_field<25> |ALU_out<12>    |   10.723|
+inst_field<25> |ALU_out<13>    |   10.995|
+inst_field<25> |ALU_out<14>    |   10.669|
+inst_field<25> |ALU_out<15>    |   11.148|
+inst_field<25> |ALU_out<16>    |   11.105|
+inst_field<25> |ALU_out<17>    |   10.908|
+inst_field<25> |ALU_out<18>    |   11.024|
+inst_field<25> |ALU_out<19>    |   11.403|
+inst_field<25> |ALU_out<20>    |   11.074|
+inst_field<25> |ALU_out<21>    |   11.420|
+inst_field<25> |ALU_out<22>    |   11.551|
+inst_field<25> |ALU_out<23>    |   11.393|
+inst_field<25> |ALU_out<24>    |   11.300|
+inst_field<25> |ALU_out<25>    |   11.533|
+inst_field<25> |ALU_out<26>    |   11.247|
+inst_field<25> |ALU_out<27>    |   11.492|
+inst_field<25> |ALU_out<28>    |   11.644|
+inst_field<25> |ALU_out<29>    |   11.696|
+inst_field<25> |ALU_out<30>    |   11.259|
+inst_field<25> |ALU_out<31>    |   11.553|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Apr 16 10:10:27 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 769 MB
+
+
+

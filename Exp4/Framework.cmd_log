@@ -1,0 +1,173 @@
+xst -intstyle ise -ifn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.xst" -ofn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.xst" -ofn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.xst" -ofn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.xst" -ofn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.syr" 
+sch2hdl -intstyle ise -family kintex7 -verilog Framework_drc.vf -w E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.sch 
+xst -intstyle ise -ifn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.xst" -ofn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.xst" -ofn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.syr" 
+sch2hdl -intstyle ise -family kintex7 -verilog Framework.vf -w E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.sch 
+xst -intstyle ise -ifn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.xst" -ofn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.xst" -ofn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.xst" -ofn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.xst" -ofn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.xst" -ofn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.xst" -ofn "E:/test_1/logicproject/7/test1/Exp07-MUX/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf frame.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "E:/test_1/logicproject/8/Framework/Framework.xst" -ofn "E:/test_1/logicproject/8/Framework/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/8/Framework/Framework.xst" -ofn "E:/test_1/logicproject/8/Framework/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/8/Framework/Framework.xst" -ofn "E:/test_1/logicproject/8/Framework/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+xst -intstyle ise -ifn "E:/test_1/logicproject/8/Framework/Framework.xst" -ofn "E:/test_1/logicproject/8/Framework/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf frame.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "E:/test_1/logicproject/8/Framework/Framework.xst" -ofn "E:/test_1/logicproject/8/Framework/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf frame.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "E:/test_1/logicproject/10/Top_Fsm/Framework.xst" -ofn "E:/test_1/logicproject/10/Top_Fsm/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf frame.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+sch2hdl -intstyle ise -family kintex7 -verilog Framework_drc.vf -w E:/test_1/logicproject/11/Top_Fsm/Framework.sch 
+xst -intstyle ise -ifn "E:/test_1/logicproject/11/Top_Fsm/Framework.xst" -ofn "E:/test_1/logicproject/11/Top_Fsm/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/11/Top_Fsm/Framework.xst" -ofn "E:/test_1/logicproject/11/Top_Fsm/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/11/Top_Fsm/Framework.xst" -ofn "E:/test_1/logicproject/11/Top_Fsm/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+xst -intstyle ise -ifn "E:/test_1/logicproject/11/Top_Fsm/Framework.xst" -ofn "E:/test_1/logicproject/11/Top_Fsm/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf frame.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "E:/test_1/logicproject/11/Top_Fsm/Framework.xst" -ofn "E:/test_1/logicproject/11/Top_Fsm/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf frame.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "E:/test_1/logicproject/11/Top_Fsm/Framework.xst" -ofn "E:/test_1/logicproject/11/Top_Fsm/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/11/Top_Fsm/Framework.xst" -ofn "E:/test_1/logicproject/11/Top_Fsm/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+xst -intstyle ise -ifn "E:/test_1/logicproject/11/Top_Fsm/Framework.xst" -ofn "E:/test_1/logicproject/11/Top_Fsm/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf frame.ucf 
+xst -intstyle ise -ifn "E:/test_1/logicproject/11/Top_Fsm _1/Framework.xst" -ofn "E:/test_1/logicproject/11/Top_Fsm _1/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/11/Top_Fsm _1/Framework.xst" -ofn "E:/test_1/logicproject/11/Top_Fsm _1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L "Framework.ngc" Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf frame.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "E:/test_1/logicproject/12/Top_Fsm _1/Framework.xst" -ofn "E:/test_1/logicproject/12/Top_Fsm _1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L "Framework.ngc" Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf frame.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "E:/test_1/logicproject/12/Top_Fsm _1/Framework.xst" -ofn "E:/test_1/logicproject/12/Top_Fsm _1/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/12/Top_Fsm _1/Framework.xst" -ofn "E:/test_1/logicproject/12/Top_Fsm _1/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/12/Top_Fsm _1/Framework.xst" -ofn "E:/test_1/logicproject/12/Top_Fsm _1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L "Framework.ngc" Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf frame.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "E:/test_1/logicproject/12/Top_Fsm _2/Framework.xst" -ofn "E:/test_1/logicproject/12/Top_Fsm _2/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L "Framework.ngc" Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.xst" -ofn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.xst" -ofn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.xst" -ofn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L "Framework.ngc" Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+xst -intstyle ise -ifn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.xst" -ofn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.xst" -ofn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.xst" -ofn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.xst" -ofn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.xst" -ofn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.xst" -ofn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.xst" -ofn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.xst" -ofn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.xst" -ofn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.xst" -ofn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.xst" -ofn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.xst" -ofn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.xst" -ofn "E:/test_1/logicproject/13/Top_Fsm _2/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_2/computer_/1/test_2/Framework.xst" -ofn "E:/test_2/computer_/1/test_2/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf frame.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "E:/test_2/computer_/1/111/test_2/Framework.xst" -ofn "E:/test_2/computer_/1/111/test_2/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf frame.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "E:/test_2/computer_/1/111/test_2/Framework.xst" -ofn "E:/test_2/computer_/1/111/test_2/Framework.syr" 
+xst -intstyle ise -ifn "H:/file/test_2/Framework.xst" -ofn "H:/file/test_2/Framework.syr" 
+xst -intstyle ise -ifn "H:/file/test_2/Framework.xst" -ofn "H:/file/test_2/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf frame.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "H:/file/test_2/Framework.xst" -ofn "H:/file/test_2/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf frame.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "E:/test_2/computer_/1/111/v1.4/Framework.xst" -ofn "E:/test_2/computer_/1/111/v1.4/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf frame.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "E:/test_2/computer_/3/v1.6/Framework.xst" -ofn "E:/test_2/computer_/3/v1.6/Framework.syr" 
+xst -intstyle ise -ifn "E:/test_2/computer_/3/v1.6/Framework.xst" -ofn "E:/test_2/computer_/3/v1.6/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf frame.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "E:/test_2/computer_/3/v1.6.1/Framework.xst" -ofn "E:/test_2/computer_/3/v1.6.1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf frame.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "H:/v1.6.1/Framework.xst" -ofn "H:/v1.6.1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf frame.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 
+xst -intstyle ise -ifn "D:/v1.6.1/Framework.xst" -ofn "D:/v1.6.1/Framework.syr" 
+xst -intstyle ise -ifn "D:/v1.6.1/Framework.xst" -ofn "D:/v1.6.1/Framework.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame.ucf -p xc7k160t-ffg676-2L Framework.ngc Framework.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Framework_map.ncd Framework.ngd Framework.pcf 
+par -w -intstyle ise -ol high -mt off Framework_map.ncd Framework.ncd Framework.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Framework.twx Framework.ncd -o Framework.twr Framework.pcf -ucf frame.ucf 
+bitgen -intstyle ise -f Framework.ut Framework.ncd 

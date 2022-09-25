@@ -1,0 +1,4 @@
+sch2hdl -sympath D:/shuoluowendang/OExp04_IP2CPU/ipcore_dir -intstyle ise -family kintex7 -verilog SCPU_drc.vf -w D:/shuoluowendang/OExp04_IP2CPU/SCPU.sch 
+sch2hdl -sympath D:/shuoluowendang/OExp04_IP2CPU/ipcore_dir -intstyle ise -family kintex7 -verilog SCPU_drc.vf -w D:/shuoluowendang/OExp04_IP2CPU/SCPU.sch 
+sch2hdl -sympath E:/sha/OExp04_IP2CPU/ipcore_dir -intstyle ise -family kintex7 -verilog SCPU_drc.vf -w E:/sha/OExp04_IP2CPU/SCPU.sch 
+sch2sym -intstyle ise -family kintex7 -refsym SCPU E:/sha/OExp04_IP2CPU/SCPU.sch E:/sha/OExp04_IP2CPU/SCPU.sym 

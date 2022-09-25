@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj LAB3_SCPU -o "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/RegFile.tfi" -lib work "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz//RegFile.v" -module RegFile -template F:/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

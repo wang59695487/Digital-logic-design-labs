@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family kintex7 -refsym MB_DFF E:/test_1/logicproject/10/Top_Fsm/MB_DFF.sch E:/test_1/logicproject/10/Top_Fsm/MB_DFF.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym MB_DFF E:/test_1/logicproject/10/Top_Fsm/MB_DFF.sch E:/test_1/logicproject/10/Top_Fsm/MB_DFF.sym 

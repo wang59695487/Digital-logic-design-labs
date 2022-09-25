@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/test_1/logicproject/7/test1/Exp07-MUX/SSeg_map.v -lang verilog -prj Exp07-MUX -o SSeg_map.spl -module SSeg_map -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 SSeg_map.spl E:/test_1/logicproject/7/test1/Exp07-MUX/SSeg_map.sym 

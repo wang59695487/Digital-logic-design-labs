@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+my74LS161 instance_name (
+    .CR(CR), 
+    .Ld(Ld), 
+    .CTp(CTp), 
+    .CTt(CTt), 
+    .CP(CP), 
+    .D(D), 
+    .Q(Q), 
+    .CO(CO)
+    );
+
+

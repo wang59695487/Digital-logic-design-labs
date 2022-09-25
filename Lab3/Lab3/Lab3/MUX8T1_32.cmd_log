@@ -1,0 +1,3 @@
+vhdtdtfi -lib work E:/Z/OExp02-7SEG/MUX8T1_32.v -lang verilog -prj OExp02-7SEG -o MUX8T1_32.spl -module MUX8T1_32 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 MUX8T1_32.spl E:/Z/OExp02-7SEG/MUX8T1_32.sym 
+vhdtdtfi -lang verilog -prj OExp02-7SEG -o E:/Z/OExp02-7SEG/MUX8T1_32.tfi -lib work E:/Z/OExp02-7SEG//MUX8T1_32.v -module MUX8T1_32 -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

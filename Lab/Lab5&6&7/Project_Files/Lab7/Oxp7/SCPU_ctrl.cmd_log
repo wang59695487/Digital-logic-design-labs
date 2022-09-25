@@ -1,0 +1,4 @@
+vhdtdtfi -lib work G:/Oxp7/SCPU_ctrl.v -lang verilog -prj OExp03_IP2SOC -o SCPU_ctrl.spl -module SCPU_ctrl -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 SCPU_ctrl.spl G:/Oxp7/SCPU_ctrl.sym 
+vhdtdtfi -lib work C:/Users/asus/Desktop/Computer_Organization/Lab/Lab5&6&7/Project_Files/Lab7/Oxp7/SCPU_ctrl.v -lang verilog -prj OExp03_IP2SOC -o SCPU_ctrl.spl -module SCPU_ctrl -template D:/ISE/ise/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 SCPU_ctrl.spl C:/Users/asus/Desktop/Computer_Organization/Lab/Lab5&6&7/Project_Files/Lab7/Oxp7/SCPU_ctrl.sym 

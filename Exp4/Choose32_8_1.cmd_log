@@ -1,0 +1,9 @@
+vhdtdtfi -lib work E:/test_1/logicproject/11/Top_Fsm/Choose32_8_1.v -lang verilog -prj Exp07-MUX -o Choose32_8_1.spl -module Choose32_8_1 -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w Choose32_8_1.spl E:/test_1/logicproject/11/Top_Fsm/Choose32_8_1.sym 
+vhdtdtfi -lib work E:/test_1/logicproject/11/Top_Fsm/Choose32_8_1.v -lang verilog -prj Exp07-MUX -o Choose32_8_1.spl -module Choose32_8_1 -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w Choose32_8_1.spl E:/test_1/logicproject/11/Top_Fsm/Choose32_8_1.sym 
+vhdtdtfi -lib work E:/test_1/logicproject/11/Top_Fsm/Choose32_8_1.v -lang verilog -prj Exp07-MUX -o Choose32_8_1.spl -module Choose32_8_1 -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w Choose32_8_1.spl E:/test_1/logicproject/11/Top_Fsm/Choose32_8_1.sym 
+vhdtdtfi -lib work E:/test_1/logicproject/11/Top_Fsm/Choose32_8_1.v -lang verilog -prj Exp07-MUX -o Choose32_8_1.spl -module Choose32_8_1 -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w Choose32_8_1.spl E:/test_1/logicproject/11/Top_Fsm/Choose32_8_1.sym 
+xst -intstyle ise -ifn "E:/test_1/logicproject/11/Top_Fsm/Choose32_8_1.xst" -ofn "E:/test_1/logicproject/11/Top_Fsm/Choose32_8_1.syr" 

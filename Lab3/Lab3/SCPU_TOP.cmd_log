@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym SCPU_TOP E:/Lab3/Lab3/SCPU_TOP.sch E:/Lab3/Lab3/SCPU_TOP.sym 

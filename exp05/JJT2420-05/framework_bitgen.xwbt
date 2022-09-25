@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\exp05\JJT2420-05\framework.ncd
+OUTFILE=E:\exp05\JJT2420-05\framework.bit
+FAMILY=Kintex7
+PART=xc7k160t-2lffg676
+WORKINGDIR=E:\exp05\JJT2420-05
+LICENSE=WebPack
+USER_INFO=__0_0_0

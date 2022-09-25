@@ -1,0 +1,11 @@
+[Inputs]
+clk
+rst
+SW2
+[Outputs]
+Clk_CPU
+=clkdiv[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel U8_clk_div
+

@@ -1,0 +1,40 @@
+sch2hdl -intstyle ise -family kintex7 -verilog OrgLab1_drc.vf -w D:/Org-z/Lab1/Lab1/OrgLab1.sch 
+xst -intstyle ise -ifn "D:/Org-z/Lab1/Lab1/OrgLab1.xst" -ofn "D:/Org-z/Lab1/Lab1/OrgLab1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp01.ucf -p xc7k70t-fbg676-2L OrgLab1.ngc OrgLab1.ngd  
+map -intstyle ise -p xc7k70t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OrgLab1_map.ncd OrgLab1.ngd OrgLab1.pcf 
+xst -intstyle ise -ifn "D:/Org-z/Lab1/Lab1/OrgLab1.xst" -ofn "D:/Org-z/Lab1/Lab1/OrgLab1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp01.ucf -p xc7k160t-ffg676-2L OrgLab1.ngc OrgLab1.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OrgLab1_map.ncd OrgLab1.ngd OrgLab1.pcf 
+par -w -intstyle ise -ol high -mt off OrgLab1_map.ncd OrgLab1.ncd OrgLab1.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OrgLab1.twx OrgLab1.ncd -o OrgLab1.twr OrgLab1.pcf -ucf Exp01.ucf 
+bitgen -intstyle ise -f OrgLab1.ut OrgLab1.ncd 
+sch2sym -intstyle ise -family kintex7 -refsym OrgLab1 {D:/Org-z/Lab2 RSC-4-9-85-61-5-46-1/Org02_20190227/Lab2/OrgLab1.sch} {D:/Org-z/Lab2 RSC-4-9-85-61-5-46-1/Org02_20190227/Lab2/OrgLab1.sym} 
+sch2hdl -sympath {C:/Users/z/Documents/Projects/OrgLab/Full_20190305/Org-z/Lab2 RSC-4-9-85-61-5-46-1/Org02_20190227/Lab2/ipcore_dir} -intstyle ise -family kintex7 -verilog OrgLab1_drc.vf -w {C:/Users/z/Documents/Projects/OrgLab/Full_20190305/Org-z/Lab2 RSC-4-9-85-61-5-46-1/Org02_20190227/Lab2/OrgLab1.sch} 
+sch2hdl -sympath {C:/Users/z/Documents/Projects/OrgLab/Full_20190305/Org-z/Lab2 RSC-4-9-85-61-5-46-1/Org02_20190227/Lab2/ipcore_dir} -intstyle ise -family kintex7 -verilog OrgLab1_drc.vf -w {C:/Users/z/Documents/Projects/OrgLab/Full_20190305/Org-z/Lab2 RSC-4-9-85-61-5-46-1/Org02_20190227/Lab2/OrgLab1.sch} 
+xst -intstyle ise -ifn "D:/z/Lab2/Lab2/OrgLab1.xst" -ofn "D:/z/Lab2/Lab2/OrgLab1.syr" 
+xst -intstyle ise -ifn "D:/z/Lab2/Lab2/OrgLab1.xst" -ofn "D:/z/Lab2/Lab2/OrgLab1.syr" 
+xst -intstyle ise -ifn "D:/z/Lab2/Lab2/OrgLab1.xst" -ofn "D:/z/Lab2/Lab2/OrgLab1.syr" 
+xst -intstyle ise -ifn "D:/z/Lab2/Lab2/OrgLab1.xst" -ofn "D:/z/Lab2/Lab2/OrgLab1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp01.ucf -uc ok.ucf -p xc7k160t-ffg676-2L OrgLab1.ngc OrgLab1.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OrgLab1_map.ncd OrgLab1.ngd OrgLab1.pcf 
+par -w -intstyle ise -ol high -mt off OrgLab1_map.ncd OrgLab1.ncd OrgLab1.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OrgLab1.twx OrgLab1.ncd -o OrgLab1.twr OrgLab1.pcf -ucf Exp01.ucf -ucf ok.ucf 
+bitgen -intstyle ise -f OrgLab1.ut OrgLab1.ncd 
+xst -intstyle ise -ifn "D:/z/Lab2/Lab2/OrgLab1.xst" -ofn "D:/z/Lab2/Lab2/OrgLab1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp01.ucf -uc ok.ucf -p xc7k160t-ffg676-2L OrgLab1.ngc OrgLab1.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OrgLab1_map.ncd OrgLab1.ngd OrgLab1.pcf 
+par -w -intstyle ise -ol high -mt off OrgLab1_map.ncd OrgLab1.ncd OrgLab1.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OrgLab1.twx OrgLab1.ncd -o OrgLab1.twr OrgLab1.pcf -ucf Exp01.ucf -ucf ok.ucf 
+bitgen -intstyle ise -f OrgLab1.ut OrgLab1.ncd 
+xst -intstyle ise -ifn "D:/z/Lab2/Lab2/OrgLab1.xst" -ofn "D:/z/Lab2/Lab2/OrgLab1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp01.ucf -uc ok.ucf -p xc7k160t-ffg676-2L OrgLab1.ngc OrgLab1.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OrgLab1_map.ncd OrgLab1.ngd OrgLab1.pcf 
+par -w -intstyle ise -ol high -mt off OrgLab1_map.ncd OrgLab1.ncd OrgLab1.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OrgLab1.twx OrgLab1.ncd -o OrgLab1.twr OrgLab1.pcf -ucf Exp01.ucf -ucf ok.ucf 
+bitgen -intstyle ise -f OrgLab1.ut OrgLab1.ncd 
+xst -intstyle ise -ifn "D:/z/Lab2/Lab2/OrgLab1.xst" -ofn "D:/z/Lab2/Lab2/OrgLab1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp01.ucf -uc ok.ucf -p xc7k160t-ffg676-2L OrgLab1.ngc OrgLab1.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OrgLab1_map.ncd OrgLab1.ngd OrgLab1.pcf 
+par -w -intstyle ise -ol high -mt off OrgLab1_map.ncd OrgLab1.ncd OrgLab1.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OrgLab1.twx OrgLab1.ncd -o OrgLab1.twr OrgLab1.pcf -ucf Exp01.ucf -ucf ok.ucf 
+bitgen -intstyle ise -f OrgLab1.ut OrgLab1.ncd 

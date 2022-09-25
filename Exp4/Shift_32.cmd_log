@@ -1,0 +1,17 @@
+sch2hdl -intstyle ise -family kintex7 -verilog Shift_32_drc.vf -w {E:/test_1/logicproject/12/Top_Fsm _1/Shift_32.sch} 
+sch2sym -intstyle ise -family kintex7 -w -refsym Shift_32 {E:/test_1/logicproject/12/Top_Fsm _1/Shift_32.sch} {E:/test_1/logicproject/12/Top_Fsm _1/Shift_32.sym} 
+vhdtdtfi -lang verilog -prj Exp07-MUX -o "E:/test_1/logicproject/13/Top_Fsm _2/Shift_32.tfi" -lib work "E:/test_1/logicproject/13/Top_Fsm _2//Shift_32.v" -module Shift_32 -template D:/ISE/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work {E:/test_1/logicproject/13/Top_Fsm _2/Shift_32.v} -lang verilog -prj Exp07-MUX -o Shift_32.spl -module Shift_32 -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w Shift_32.spl {E:/test_1/logicproject/13/Top_Fsm _2/Shift_32.sym} 
+vhdtdtfi -lib work {E:/test_1/logicproject/13/Top_Fsm _2/Shift_32.v} -lang verilog -prj Exp07-MUX -o Shift_32.spl -module Shift_32 -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w Shift_32.spl {E:/test_1/logicproject/13/Top_Fsm _2/Shift_32.sym} 
+vhdtdtfi -lib work {E:/test_1/logicproject/13/Top_Fsm _2/Shift_32.v} -lang verilog -prj Exp07-MUX -o Shift_32.spl -module Shift_32 -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w Shift_32.spl {E:/test_1/logicproject/13/Top_Fsm _2/Shift_32.sym} 
+vhdtdtfi -lib work {E:/test_1/logicproject/13/Top_Fsm _2/Shift_32.v} -lang verilog -prj Exp07-MUX -o Shift_32.spl -module Shift_32 -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w Shift_32.spl {E:/test_1/logicproject/13/Top_Fsm _2/Shift_32.sym} 
+vhdtdtfi -lib work {E:/test_1/logicproject/13/Top_Fsm _2/Shift_32.v} -lang verilog -prj Exp07-MUX -o Shift_32.spl -module Shift_32 -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w Shift_32.spl {E:/test_1/logicproject/13/Top_Fsm _2/Shift_32.sym} 
+vhdtdtfi -lib work {E:/test_1/logicproject/13/Top_Fsm _2/Shift_32.v} -lang verilog -prj Exp07-MUX -o Shift_32.spl -module Shift_32 -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w Shift_32.spl {E:/test_1/logicproject/13/Top_Fsm _2/Shift_32.sym} 
+vhdtdtfi -lib work {E:/test_1/logicproject/13/Top_Fsm _2/sh_32.v} -lang verilog -prj Exp07-MUX -o Shift_32.spl -module Shift_32 -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w Shift_32.spl {E:/test_1/logicproject/13/Top_Fsm _2/Shift_32.sym} 

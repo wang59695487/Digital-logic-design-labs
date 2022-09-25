@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {C:/Users/z/Documents/Projects/OrgLab/Full_20190305/Org-z/Lab2 RSC-4-9-85-61-5-46-1/Org02_20190227/Lab2/P2S_IO.v} -lang verilog -prj Lab1 -o P2S.spl -module P2S -template K:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 P2S.spl {C:/Users/z/Documents/Projects/OrgLab/Full_20190305/Org-z/Lab2 RSC-4-9-85-61-5-46-1/Org02_20190227/Lab2/P2S.sym} 

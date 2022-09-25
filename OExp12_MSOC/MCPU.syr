@@ -1,0 +1,645 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: MCPU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MCPU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MCPU"
+Output Format                      : NGC
+Target Device                      : xc7k160t-2L-ffg676
+
+---- Source Options
+Top Module Name                    : MCPU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ngc" "ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\OrgLab\OExp12_MSOC\elements\Regs.v" into library work
+Parsing module <Regs>.
+Analyzing Verilog file "E:\OrgLab\OExp12_MSOC\elements\REG32.v" into library work
+Parsing module <REG32>.
+Analyzing Verilog file "E:\OrgLab\OExp12_MSOC\elements\MUX4T1_5.v" into library work
+Parsing module <MUX4T1_5>.
+Analyzing Verilog file "E:\OrgLab\OExp12_MSOC\elements\MUX4T1_32.v" into library work
+Parsing module <MUX4T1_32>.
+Analyzing Verilog file "E:\OrgLab\OExp12_MSOC\elements\MUX2T1_32.v" into library work
+Parsing module <MUX2T1_32>.
+Analyzing Verilog file "E:\OrgLab\OExp12_MSOC\elements\Ext_imm16.v" into library work
+Parsing module <Ext_32>.
+Analyzing Verilog file "E:\OrgLab\OExp12_MSOC\code\ALU_Decoder.v" into library work
+Parsing module <ALU_Decoder>.
+Analyzing Verilog file "E:\OrgLab\OExp12_MSOC\code\alu.v" into library work
+Parsing module <alu>.
+Analyzing Verilog file "E:\OrgLab\OExp12_MSOC\code\MDPath.v" into library work
+Parsing module <MDPath>.
+Analyzing Verilog file "E:\OrgLab\OExp12_MSOC\code\MCtrl.v" into library work
+Parsing module <MCtrl>.
+Analyzing Verilog file "E:\OrgLab\OExp12_MSOC\code\MCPU.v" into library work
+Parsing module <MCPU>.
+WARNING:HDLCompiler:751 - "E:\OrgLab\OExp12_MSOC\code\MCPU.v" Line 35: Redeclaration of ansi port INT is not allowed
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <MCPU>.
+
+Elaborating module <MCtrl>.
+
+Elaborating module <ALU_Decoder>.
+WARNING:HDLCompiler:1016 - "E:\OrgLab\OExp12_MSOC\code\MDPath.v" Line 113: Port shamt is not connected to this instance
+
+Elaborating module <MDPath>.
+
+Elaborating module <REG32>.
+
+Elaborating module <Regs>.
+
+Elaborating module <MUX4T1_5>.
+
+Elaborating module <MUX4T1_32>.
+
+Elaborating module <Ext_32>.
+
+Elaborating module <MUX2T1_32>.
+
+Elaborating module <alu>.
+WARNING:HDLCompiler:1127 - "E:\OrgLab\OExp12_MSOC\code\alu.v" Line 38: Assignment to carryout_add_tmp ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\OrgLab\OExp12_MSOC\code\alu.v" Line 39: Assignment to carryout_sub_tmp ignored, since the identifier is never used
+
+Elaborating module <AND2>.
+
+Elaborating module <OR2>.
+WARNING:HDLCompiler:552 - "E:\OrgLab\OExp12_MSOC\code\MDPath.v" Line 84: Input port I2[4] is not connected on this instance
+WARNING:HDLCompiler:552 - "E:\OrgLab\OExp12_MSOC\code\MDPath.v" Line 91: Input port I2[31] is not connected on this instance
+WARNING:HDLCompiler:552 - "E:\OrgLab\OExp12_MSOC\code\MDPath.v" Line 113: Input port shamt[4] is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <MCPU>.
+    Related source file is "E:\OrgLab\OExp12_MSOC\code\MCPU.v".
+WARNING:Xst:647 - Input <INT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <MCPU> synthesized.
+
+Synthesizing Unit <MCtrl>.
+    Related source file is "E:\OrgLab\OExp12_MSOC\code\MCtrl.v".
+        IF = 4'b0000
+        ID = 4'b0001
+        Mem_Ex = 4'b0010
+        Mem_RD = 4'b0011
+        LW_WB = 4'b0100
+        Mem_W = 4'b0101
+        R_Exc = 4'b0110
+        R_WB = 4'b0111
+        Beq_Exc = 4'b1000
+        J = 4'b1001
+        Error = 4'b1111
+        value0 = 20'b10010100000010000000
+        value1 = 20'b00000000000110000000
+        value2 = 20'b00000000001100000000
+        value3 = 20'b00110000000000000001
+        value4 = 20'b00000001000001000000
+        value5 = 20'b00101000000000000001
+        value6 = 20'b00000000001000000100
+        value7 = 20'b00000000000001010000
+        value8 = 20'b01000000011000001010
+        value9 = 20'b10000000100000000000
+        AND = 3'b000
+        OR = 3'b001
+        ADD = 3'b010
+        SUB = 3'b110
+        NOR = 3'b100
+        SLT = 3'b111
+        XOR = 3'b011
+        SRL = 3'b101
+WARNING:Xst:647 - Input <Inst_in<25:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <zero> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <overflow> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MIO_ready> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <Q>.
+    Found 16x18-bit Read Only RAM for signal <_n0137>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   4 D-type flip-flop(s).
+Unit <MCtrl> synthesized.
+
+Synthesizing Unit <ALU_Decoder>.
+    Related source file is "E:\OrgLab\OExp12_MSOC\code\ALU_Decoder.v".
+WARNING:Xst:647 - Input <Fun<5:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <ALU_Decoder> synthesized.
+
+Synthesizing Unit <MDPath>.
+    Related source file is "E:\OrgLab\OExp12_MSOC\code\MDPath.v".
+WARNING:Xst:2898 - Port 'I2', unconnected in block instance 'regsrc', is tied to GND.
+WARNING:Xst:2898 - Port 'I3', unconnected in block instance 'regsrc', is tied to GND.
+WARNING:Xst:2898 - Port 'I2', unconnected in block instance 'wrdsrc', is tied to GND.
+WARNING:Xst:2898 - Port 'I3', unconnected in block instance 'wrdsrc', is tied to GND.
+WARNING:Xst:2898 - Port 'shamt', unconnected in block instance 'U1', is tied to GND.
+INFO:Xst:3210 - "E:\OrgLab\OExp12_MSOC\code\MDPath.v" line 113: Output port <Co> of the instance <U1> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <MDPath> synthesized.
+
+Synthesizing Unit <REG32>.
+    Related source file is "E:\OrgLab\OExp12_MSOC\elements\REG32.v".
+    Found 32-bit register for signal <Q>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <REG32> synthesized.
+
+Synthesizing Unit <Regs>.
+    Related source file is "E:\OrgLab\OExp12_MSOC\elements\Regs.v".
+    Found 992-bit register for signal <n0051[991:0]>.
+    Found 32-bit 31-to-1 multiplexer for signal <R_addr_A[4]_register[31][31]_wide_mux_1_OUT> created at line 36.
+    Found 32-bit 31-to-1 multiplexer for signal <R_addr_B[4]_register[31][31]_wide_mux_4_OUT> created at line 37.
+    Summary:
+	inferred 992 D-type flip-flop(s).
+	inferred  35 Multiplexer(s).
+Unit <Regs> synthesized.
+
+Synthesizing Unit <MUX4T1_5>.
+    Related source file is "E:\OrgLab\OExp12_MSOC\elements\MUX4T1_5.v".
+    Found 5-bit 3-to-1 multiplexer for signal <o> created at line 10.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX4T1_5> synthesized.
+
+Synthesizing Unit <MUX4T1_32>.
+    Related source file is "E:\OrgLab\OExp12_MSOC\elements\MUX4T1_32.v".
+    Found 32-bit 4-to-1 multiplexer for signal <o> created at line 10.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX4T1_32> synthesized.
+
+Synthesizing Unit <Ext_32>.
+    Related source file is "E:\OrgLab\OExp12_MSOC\elements\Ext_imm16.v".
+    Summary:
+	no macro.
+Unit <Ext_32> synthesized.
+
+Synthesizing Unit <MUX2T1_32>.
+    Related source file is "E:\OrgLab\OExp12_MSOC\elements\MUX2T1_32.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX2T1_32> synthesized.
+
+Synthesizing Unit <alu>.
+    Related source file is "E:\OrgLab\OExp12_MSOC\code\alu.v".
+        one = 32'b00000000000000000000000000000001
+        zero_0 = 32'b00000000000000000000000000000000
+    Found 33-bit subtractor for signal <n0029> created at line 39.
+    Found 34-bit subtractor for signal <n0025> created at line 47.
+    Found 33-bit adder for signal <n0039> created at line 38.
+    Found 34-bit adder for signal <n0042> created at line 46.
+    Found 32-bit shifter logical right for signal <res_srl> created at line 31
+    Found 32-bit 8-to-1 multiplexer for signal <res> created at line 53.
+    Found 32-bit comparator greater for signal <res_slt<0>> created at line 51
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Combinational logic shifter(s).
+Unit <alu> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x18-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 4
+ 33-bit adder                                          : 1
+ 33-bit subtractor                                     : 1
+ 34-bit adder                                          : 1
+ 34-bit subtractor                                     : 1
+# Registers                                            : 6
+ 32-bit register                                       : 4
+ 4-bit register                                        : 1
+ 992-bit register                                      : 1
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 44
+ 1-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 35
+ 32-bit 31-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 3
+ 32-bit 8-to-1 multiplexer                             : 1
+ 5-bit 3-to-1 multiplexer                              : 1
+# Logic shifters                                       : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 2
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <MCtrl>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0137> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 18-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Q>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <MCtrl> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x18-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 4
+ 33-bit adder                                          : 1
+ 33-bit subtractor                                     : 1
+ 34-bit adder                                          : 1
+ 34-bit subtractor                                     : 1
+# Registers                                            : 1124
+ Flip-Flops                                            : 1124
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 44
+ 1-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 35
+ 32-bit 31-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 3
+ 32-bit 8-to-1 multiplexer                             : 1
+ 5-bit 3-to-1 multiplexer                              : 1
+# Logic shifters                                       : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 2
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <REG32> ...
+
+Optimizing unit <MCPU> ...
+
+Optimizing unit <MDPath> ...
+
+Optimizing unit <alu> ...
+
+Optimizing unit <Regs> ...
+
+Optimizing unit <MCtrl> ...
+WARNING:Xst:1710 - FF/Latch <MD/PC/Q_1> (without init value) has a constant value of 0 in block <MCPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MD/PC/Q_0> (without init value) has a constant value of 0 in block <MCPU>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MCPU, actual ratio is 2.
+FlipFlop MC/Q_0 has been replicated 1 time(s)
+FlipFlop MC/Q_1 has been replicated 1 time(s)
+FlipFlop MC/Q_3 has been replicated 1 time(s)
+FlipFlop MD/IR/Q_16 has been replicated 3 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop MD/IR/Q_16 connected to a primary input has been replicated
+FlipFlop MD/IR/Q_17 has been replicated 3 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop MD/IR/Q_17 connected to a primary input has been replicated
+FlipFlop MD/IR/Q_19 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop MD/IR/Q_19 connected to a primary input has been replicated
+FlipFlop MD/IR/Q_20 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop MD/IR/Q_20 connected to a primary input has been replicated
+FlipFlop MD/IR/Q_21 has been replicated 3 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop MD/IR/Q_21 connected to a primary input has been replicated
+FlipFlop MD/IR/Q_22 has been replicated 3 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop MD/IR/Q_22 connected to a primary input has been replicated
+FlipFlop MD/IR/Q_25 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop MD/IR/Q_25 connected to a primary input has been replicated
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1140
+ Flip-Flops                                            : 1140
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : MCPU.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2339
+#      AND2                        : 4
+#      GND                         : 1
+#      LUT2                        : 19
+#      LUT3                        : 996
+#      LUT4                        : 76
+#      LUT5                        : 281
+#      LUT6                        : 814
+#      MUXCY                       : 82
+#      OR2                         : 1
+#      VCC                         : 1
+#      XORCY                       : 64
+# FlipFlops/Latches                : 1140
+#      FD                          : 64
+#      FDC                         : 7
+#      FDCE                        : 1069
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 169
+#      IBUF                        : 34
+#      OBUF                        : 135
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-2l 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1140  out of  202800     0%  
+ Number of Slice LUTs:                 2186  out of  101400     2%  
+    Number used as Logic:              2186  out of  101400     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   3249
+   Number with an unused Flip Flop:    2109  out of   3249    64%  
+   Number with an unused LUT:          1063  out of   3249    32%  
+   Number of fully used LUT-FF pairs:    77  out of   3249     2%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                         171
+ Number of bonded IOBs:                 170  out of    400    42%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1140  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 8.022ns (Maximum Frequency: 124.654MHz)
+   Minimum input arrival time before clock: 1.286ns
+   Maximum output required time after clock: 2.273ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.022ns (frequency: 124.654MHz)
+  Total number of paths / destination ports: 7192291 / 2130
+-------------------------------------------------------------------------
+Delay:               8.022ns (Levels of Logic = 14)
+  Source:            MD/U2/register_31_736 (FF)
+  Destination:       MD/PC/Q_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: MD/U2/register_31_736 to MD/PC/Q_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.236   0.625  MD/U2/register_31_736 (MD/U2/register_31_736)
+     LUT6:I0->O            1   0.043   0.522  MD/U2/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_92 (MD/U2/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_92)
+     LUT6:I2->O            2   0.043   0.410  MD/U2/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_4 (MD/U2/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_4)
+     LUT4:I2->O            3   0.043   0.417  MD/U2/Mmux_rdata_B110 (Data_out_0_OBUF)
+     LUT5:I3->O            1   0.043   0.000  MD/U1/Madd_n0042_lut<0>1 (MD/U1/Madd_n0042_lut<0>1)
+     MUXCY:S->O            1   0.238   0.000  MD/U1/Madd_n0042_cy<0> (MD/U1/Madd_n0042_cy<0>)
+     XORCY:CI->O           1   0.262   0.405  MD/U1/Madd_n0042_xor<1> (MD/U1/n0042<1>)
+     LUT6:I4->O            2   0.043   0.608  MD/U1/Mmux_res11 (MD/res<1>)
+     LUT5:I0->O            1   0.043   0.350  MD/U1/zero<31>1_SW0 (N246)
+     LUT6:I5->O            1   0.043   0.350  MD/U1/zero<31>2_SW0_SW0 (N248)
+     LUT6:I5->O            1   0.043   0.603  MD/U1/zero<31>7 (zero)
+     AND2:I1->O            1   0.053   0.603  MD/and2a (MD/br)
+     AND2:I1->O            1   0.053   0.603  MD/and2b (MD/pcwc)
+     OR2:I1->O             1   0.053   0.603  MD/or2a (MD/pcw)
+     AND2:I1->O           30   0.053   0.468  MD/and2c (MD/CE)
+     FDCE:CE                   0.161          MD/PC/Q_2
+    ----------------------------------------
+    Total                      8.022ns (1.453ns logic, 6.569ns route)
+                                       (18.1% logic, 81.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1185 / 1185
+-------------------------------------------------------------------------
+Offset:              1.286ns (Levels of Logic = 2)
+  Source:            MIO_ready (PAD)
+  Destination:       MD/PC/Q_31 (FF)
+  Destination Clock: clk rising
+
+  Data Path: MIO_ready to MD/PC/Q_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.000   0.613  MIO_ready_IBUF (MIO_ready_IBUF)
+     AND2:I0->O           30   0.043   0.468  MD/and2c (MD/CE)
+     FDCE:CE                   0.161          MD/PC/Q_2
+    ----------------------------------------
+    Total                      1.286ns (0.204ns logic, 1.082ns route)
+                                       (15.9% logic, 84.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2092 / 132
+-------------------------------------------------------------------------
+Offset:              2.273ns (Levels of Logic = 4)
+  Source:            MD/U2/register_31_758 (FF)
+  Destination:       Data_out<22> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: MD/U2/register_31_758 to Data_out<22>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.236   0.625  MD/U2/register_31_758 (MD/U2/register_31_758)
+     LUT6:I0->O            1   0.043   0.522  MD/U2/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_944 (MD/U2/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_944)
+     LUT6:I2->O            2   0.043   0.410  MD/U2/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_414 (MD/U2/Mmux_R_addr_B[4]_register[31][31]_wide_mux_4_OUT_414)
+     LUT4:I2->O            3   0.043   0.351  MD/U2/Mmux_rdata_B151 (Data_out_22_OBUF)
+     OBUF:I->O                 0.000          Data_out_22_OBUF (Data_out<22>)
+    ----------------------------------------
+    Total                      2.273ns (0.365ns logic, 1.908ns route)
+                                       (16.1% logic, 83.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    8.022|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 16.30 secs
+ 
+--> 
+
+Total memory usage is 481776 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   20 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

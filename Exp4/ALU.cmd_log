@@ -1,0 +1,4 @@
+vhdtdtfi -lib work E:/test_1/logicproject/8/Framework/ALU.v -lang verilog -prj Exp07-MUX -o ALU.spl -module ALU -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 ALU.spl E:/test_1/logicproject/8/Framework/ALU.sym 
+vhdtdtfi -lib work E:/test_1/logicproject/8/Framework/ALU.v -lang verilog -prj Exp07-MUX -o ALU.spl -module ALU -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 ALU.spl E:/test_1/logicproject/8/Framework/ALU.sym 

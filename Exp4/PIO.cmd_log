@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/test_2/computer_/3/v1.5/PIO.v -lang verilog -prj Exp07-MUX -o PIO.spl -module PIO -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w PIO.spl E:/test_2/computer_/3/v1.5/PIO.sym 

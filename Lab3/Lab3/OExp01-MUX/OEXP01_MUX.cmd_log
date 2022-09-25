@@ -1,0 +1,24 @@
+sch2sym -intstyle ise -family kintex7 -refsym OEXP01_MUX C:/ISEPRO/OExp01-MUX/OEXP01_MUX.sch C:/ISEPRO/OExp01-MUX/OEXP01_MUX.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog OEXP01_MUX_drc.vf -w C:/ISEPRO/OExp01-MUX/OEXP01_MUX.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog OEXP01_MUX_drc.vf -w C:/ISEPRO/OExp01-MUX/OEXP01_MUX.sch 
+sch2sym -intstyle ise -family kintex7 -refsym OEXP01_MUX C:/ISEPRO/OExp01-MUX/OEXP01_MUX.sch C:/ISEPRO/OExp01-MUX/OEXP01_MUX.sym 
+xst -intstyle ise -ifn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.xst" -ofn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.syr" 
+sch2sym -intstyle ise -family kintex7 -refsym OEXP01_MUX C:/ISEPRO/OExp01-MUX/OEXP01_MUX.sch C:/ISEPRO/OExp01-MUX/OEXP01_MUX.sym 
+xst -intstyle ise -ifn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.xst" -ofn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.xst" -ofn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.xst" -ofn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.xst" -ofn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.xst" -ofn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.xst" -ofn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.xst" -ofn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+xst -intstyle ise -ifn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.xst" -ofn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+xst -intstyle ise -ifn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.xst" -ofn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+xst -intstyle ise -ifn "E:/Z/OExp01-MUX/OExp01-MUX/OEXP01_MUX.xst" -ofn "E:/Z/OExp01-MUX/OExp01-MUX/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OEXP01_MUX_map.ncd OEXP01_MUX.ngd OEXP01_MUX.pcf 
+par -w -intstyle ise -ol high -mt off OEXP01_MUX_map.ncd OEXP01_MUX.ncd OEXP01_MUX.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml OEXP01_MUX.twx OEXP01_MUX.ncd -o OEXP01_MUX.twr OEXP01_MUX.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OEXP01_MUX.ut OEXP01_MUX.ncd 

@@ -1,0 +1,189 @@
+sch2sym -intstyle ise -family kintex7 -refsym OEXP01_MUX C:/ISEPRO/OExp01-MUX/OEXP01_MUX.sch C:/ISEPRO/OExp01-MUX/OEXP01_MUX.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog OEXP01_MUX_drc.vf -w C:/ISEPRO/OExp01-MUX/OEXP01_MUX.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog OEXP01_MUX_drc.vf -w C:/ISEPRO/OExp01-MUX/OEXP01_MUX.sch 
+sch2sym -intstyle ise -family kintex7 -refsym OEXP01_MUX C:/ISEPRO/OExp01-MUX/OEXP01_MUX.sch C:/ISEPRO/OExp01-MUX/OEXP01_MUX.sym 
+xst -intstyle ise -ifn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.xst" -ofn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.syr" 
+sch2sym -intstyle ise -family kintex7 -refsym OEXP01_MUX C:/ISEPRO/OExp01-MUX/OEXP01_MUX.sch C:/ISEPRO/OExp01-MUX/OEXP01_MUX.sym 
+xst -intstyle ise -ifn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.xst" -ofn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.xst" -ofn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.xst" -ofn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.xst" -ofn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.xst" -ofn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.xst" -ofn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.xst" -ofn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+xst -intstyle ise -ifn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.xst" -ofn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+xst -intstyle ise -ifn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.xst" -ofn "C:/ISEPRO/OExp01-MUX/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+xst -intstyle ise -ifn "E:/Z/OExp01-MUX/OEXP01_MUX.xst" -ofn "E:/Z/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp01-MUX/OEXP01_MUX.xst" -ofn "E:/Z/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp01-MUX/OEXP01_MUX.xst" -ofn "E:/Z/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp01-MUX/OEXP01_MUX.xst" -ofn "E:/Z/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp01-MUX/OEXP01_MUX.xst" -ofn "E:/Z/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp01-MUX/OEXP01_MUX.xst" -ofn "E:/Z/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp01-MUX/OEXP01_MUX.xst" -ofn "E:/Z/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp01-MUX/OEXP01_MUX.xst" -ofn "E:/Z/OExp01-MUX/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -bm MUX8T1_8.bmm -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+xst -intstyle ise -ifn "E:/Z/OExp01-MUX/OEXP01_MUX.xst" -ofn "E:/Z/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp01-MUX/OEXP01_MUX.xst" -ofn "E:/Z/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp01-MUX/OEXP01_MUX.xst" -ofn "E:/Z/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp01-MUX/OEXP01_MUX.xst" -ofn "E:/Z/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp01-MUX/OEXP01_MUX.xst" -ofn "E:/Z/OExp01-MUX/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp01-MUX/OEXP01_MUX.xst" -ofn "E:/Z/OExp01-MUX/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -uc ok.ucf -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+xst -intstyle ise -ifn "E:/Z/OExp01-MUX/OEXP01_MUX.xst" -ofn "E:/Z/OExp01-MUX/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OEXP01_MUX_map.ncd OEXP01_MUX.ngd OEXP01_MUX.pcf 
+par -w -intstyle ise -ol high -mt off OEXP01_MUX_map.ncd OEXP01_MUX.ncd OEXP01_MUX.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml OEXP01_MUX.twx OEXP01_MUX.ncd -o OEXP01_MUX.twr OEXP01_MUX.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OEXP01_MUX.ut OEXP01_MUX.ncd 
+xst -intstyle ise -ifn "E:/Z/OExp01-MUX/OEXP01_MUX.xst" -ofn "E:/Z/OExp01-MUX/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OEXP01_MUX_map.ncd OEXP01_MUX.ngd OEXP01_MUX.pcf 
+par -w -intstyle ise -ol high -mt off OEXP01_MUX_map.ncd OEXP01_MUX.ncd OEXP01_MUX.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml OEXP01_MUX.twx OEXP01_MUX.ncd -o OEXP01_MUX.twr OEXP01_MUX.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OEXP01_MUX.ut OEXP01_MUX.ncd 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OEXP01_MUX_map.ncd OEXP01_MUX.ngd OEXP01_MUX.pcf 
+par -w -intstyle ise -ol high -mt off OEXP01_MUX_map.ncd OEXP01_MUX.ncd OEXP01_MUX.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml OEXP01_MUX.twx OEXP01_MUX.ncd -o OEXP01_MUX.twr OEXP01_MUX.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OEXP01_MUX.ut OEXP01_MUX.ncd 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OEXP01_MUX_map.ncd OEXP01_MUX.ngd OEXP01_MUX.pcf 
+par -w -intstyle ise -ol high -mt off OEXP01_MUX_map.ncd OEXP01_MUX.ncd OEXP01_MUX.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml OEXP01_MUX.twx OEXP01_MUX.ncd -o OEXP01_MUX.twr OEXP01_MUX.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OEXP01_MUX.ut OEXP01_MUX.ncd 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OEXP01_MUX_map.ncd OEXP01_MUX.ngd OEXP01_MUX.pcf 
+par -w -intstyle ise -ol high -mt off OEXP01_MUX_map.ncd OEXP01_MUX.ncd OEXP01_MUX.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml OEXP01_MUX.twx OEXP01_MUX.ncd -o OEXP01_MUX.twr OEXP01_MUX.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OEXP01_MUX.ut OEXP01_MUX.ncd 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/OExp02-7SEG/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/OExp02-7SEG/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/OExp02-7SEG/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/OExp02-7SEG/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/OExp02-7SEG/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/OExp02-7SEG/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/OExp02-7SEG/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/OExp02-7SEG/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/OExp02-7SEG/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/OExp02-7SEG/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/OExp02-7SEG/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/OExp02-7SEG/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 "OEXP01_MUX.ngc" OEXP01_MUX.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OEXP01_MUX_map.ncd OEXP01_MUX.ngd OEXP01_MUX.pcf 
+par -w -intstyle ise -ol high -mt off OEXP01_MUX_map.ncd OEXP01_MUX.ncd OEXP01_MUX.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml OEXP01_MUX.twx OEXP01_MUX.ncd -o OEXP01_MUX.twr OEXP01_MUX.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OEXP01_MUX.ut OEXP01_MUX.ncd 
+xst -intstyle ise -ifn "E:/Z/OExp02-7SEG/OEXP01_MUX.xst" -ofn "E:/Z/OExp02-7SEG/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OEXP01_MUX_map.ncd OEXP01_MUX.ngd OEXP01_MUX.pcf 
+par -w -intstyle ise -ol high -mt off OEXP01_MUX_map.ncd OEXP01_MUX.ncd OEXP01_MUX.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml OEXP01_MUX.twx OEXP01_MUX.ncd -o OEXP01_MUX.twr OEXP01_MUX.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OEXP01_MUX.ut OEXP01_MUX.ncd 
+xst -intstyle ise -ifn "E:/Z/OExp03-IP2SOC/OExp03-IP2SOC/OEXP01_MUX.xst" -ofn "E:/Z/OExp03-IP2SOC/OExp03-IP2SOC/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Z/OExp03-IP2SOC/OExp03-IP2SOC/OEXP01_MUX.xst" -ofn "E:/Z/OExp03-IP2SOC/OExp03-IP2SOC/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OEXP01_MUX_map.ncd OEXP01_MUX.ngd OEXP01_MUX.pcf 
+par -w -intstyle ise -ol high -mt off OEXP01_MUX_map.ncd OEXP01_MUX.ncd OEXP01_MUX.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml OEXP01_MUX.twx OEXP01_MUX.ncd -o OEXP01_MUX.twr OEXP01_MUX.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OEXP01_MUX.ut OEXP01_MUX.ncd 
+xst -intstyle ise -ifn "C:/Users/TLT3620/Documents/Tencent Files/2758780805/FileRecv/OExp03-IP2SOC/OExp03-IP2SOC/OEXP01_MUX.xst" -ofn "C:/Users/TLT3620/Documents/Tencent Files/2758780805/FileRecv/OExp03-IP2SOC/OExp03-IP2SOC/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 "OEXP01_MUX.ngc" OEXP01_MUX.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OEXP01_MUX_map.ncd OEXP01_MUX.ngd OEXP01_MUX.pcf 
+par -w -intstyle ise -ol high -mt off OEXP01_MUX_map.ncd OEXP01_MUX.ncd OEXP01_MUX.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml OEXP01_MUX.twx OEXP01_MUX.ncd -o OEXP01_MUX.twr OEXP01_MUX.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OEXP01_MUX.ut OEXP01_MUX.ncd 
+xst -intstyle ise -ifn "C:/Users/CST/Documents/Tencent Files/2758780805/FileRecv/OExp03-IP2SOC/OExp03-IP2SOC/OExp03-IP2SOC/OEXP01_MUX.xst" -ofn "C:/Users/CST/Documents/Tencent Files/2758780805/FileRecv/OExp03-IP2SOC/OExp03-IP2SOC/OExp03-IP2SOC/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "C:/Users/CST/Documents/Tencent Files/2758780805/FileRecv/OExp03-IP2SOC/OExp03-IP2SOC/OExp03-IP2SOC/OEXP01_MUX.xst" -ofn "C:/Users/CST/Documents/Tencent Files/2758780805/FileRecv/OExp03-IP2SOC/OExp03-IP2SOC/OExp03-IP2SOC/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 "OEXP01_MUX.ngc" OEXP01_MUX.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OEXP01_MUX_map.ncd OEXP01_MUX.ngd OEXP01_MUX.pcf 
+par -w -intstyle ise -ol high -mt off OEXP01_MUX_map.ncd OEXP01_MUX.ncd OEXP01_MUX.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml OEXP01_MUX.twx OEXP01_MUX.ncd -o OEXP01_MUX.twr OEXP01_MUX.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OEXP01_MUX.ut OEXP01_MUX.ncd 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/Lab3-WJZ/OExp03-IP2SOC_wjz/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/Lab3-WJZ/OExp03-IP2SOC_wjz/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 "OEXP01_MUX.ngc" OEXP01_MUX.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OEXP01_MUX_map.ncd OEXP01_MUX.ngd OEXP01_MUX.pcf 
+par -w -intstyle ise -ol high -mt off OEXP01_MUX_map.ncd OEXP01_MUX.ncd OEXP01_MUX.pcf 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.syr" 
+sch2hdl -sympath {F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/ipcore_dir} -intstyle ise -family kintex7 -verilog OEXP01_MUX_drc.vf -w {F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.sch} 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 "OEXP01_MUX.ngc" OEXP01_MUX.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OEXP01_MUX_map.ncd OEXP01_MUX.ngd OEXP01_MUX.pcf 
+par -w -intstyle ise -ol high -mt off OEXP01_MUX_map.ncd OEXP01_MUX.ncd OEXP01_MUX.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml OEXP01_MUX.twx OEXP01_MUX.ncd -o OEXP01_MUX.twr OEXP01_MUX.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OEXP01_MUX.ut OEXP01_MUX.ncd 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 "OEXP01_MUX.ngc" OEXP01_MUX.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OEXP01_MUX_map.ncd OEXP01_MUX.ngd OEXP01_MUX.pcf 
+par -w -intstyle ise -ol high -mt off OEXP01_MUX_map.ncd OEXP01_MUX.ncd OEXP01_MUX.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml OEXP01_MUX.twx OEXP01_MUX.ncd -o OEXP01_MUX.twr OEXP01_MUX.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OEXP01_MUX.ut OEXP01_MUX.ncd 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.xst" -ofn "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 "OEXP01_MUX.ngc" OEXP01_MUX.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OEXP01_MUX_map.ncd OEXP01_MUX.ngd OEXP01_MUX.pcf 
+par -w -intstyle ise -ol high -mt off OEXP01_MUX_map.ncd OEXP01_MUX.ncd OEXP01_MUX.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml OEXP01_MUX.twx OEXP01_MUX.ncd -o OEXP01_MUX.twr OEXP01_MUX.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OEXP01_MUX.ut OEXP01_MUX.ncd 
+xst -intstyle ise -ifn "E:/Lab3/Lab3/OEXP01_MUX.xst" -ofn "E:/Lab3/Lab3/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OEXP01_MUX_map.ncd OEXP01_MUX.ngd OEXP01_MUX.pcf 
+par -w -intstyle ise -ol high -mt off OEXP01_MUX_map.ncd OEXP01_MUX.ncd OEXP01_MUX.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml OEXP01_MUX.twx OEXP01_MUX.ncd -o OEXP01_MUX.twr OEXP01_MUX.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OEXP01_MUX.ut OEXP01_MUX.ncd 
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w E:/Lab3/Lab3/OEXP01_MUX.sch OEXP01_MUX.tfi 
+sch2hdl -sympath E:/Lab3/Lab3/ipcore_dir -intstyle ise -family kintex7 -verilog OEXP01_MUX.vf -w E:/Lab3/Lab3/OEXP01_MUX.sch 
+xst -intstyle ise -ifn "E:/Lab3/Lab3/OEXP01_MUX.xst" -ofn "E:/Lab3/Lab3/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Lab3/Lab3/OEXP01_MUX.xst" -ofn "E:/Lab3/Lab3/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Lab3/Lab3/OEXP01_MUX.xst" -ofn "E:/Lab3/Lab3/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Lab3/Lab3/OEXP01_MUX.xst" -ofn "E:/Lab3/Lab3/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OEXP01_MUX_map.ncd OEXP01_MUX.ngd OEXP01_MUX.pcf 
+par -w -intstyle ise -ol high -mt off OEXP01_MUX_map.ncd OEXP01_MUX.ncd OEXP01_MUX.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml OEXP01_MUX.twx OEXP01_MUX.ncd -o OEXP01_MUX.twr OEXP01_MUX.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OEXP01_MUX.ut OEXP01_MUX.ncd 
+xst -intstyle ise -ifn "E:/Lab3/Lab3/OEXP01_MUX.xst" -ofn "E:/Lab3/Lab3/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Lab3/Lab3/OEXP01_MUX.xst" -ofn "E:/Lab3/Lab3/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Lab3/Lab3/OEXP01_MUX.xst" -ofn "E:/Lab3/Lab3/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Lab3/Lab3/OEXP01_MUX.xst" -ofn "E:/Lab3/Lab3/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OEXP01_MUX_map.ncd OEXP01_MUX.ngd OEXP01_MUX.pcf 
+par -w -intstyle ise -ol high -mt off OEXP01_MUX_map.ncd OEXP01_MUX.ncd OEXP01_MUX.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml OEXP01_MUX.twx OEXP01_MUX.ncd -o OEXP01_MUX.twr OEXP01_MUX.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OEXP01_MUX.ut OEXP01_MUX.ncd 
+xst -intstyle ise -ifn "E:/Lab3/Lab3/OEXP01_MUX.xst" -ofn "E:/Lab3/Lab3/OEXP01_MUX.syr" 
+xst -intstyle ise -ifn "E:/Lab3/Lab3/OEXP01_MUX.xst" -ofn "E:/Lab3/Lab3/OEXP01_MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Exp02.ucf -p xc7k160t-ffg676-1 OEXP01_MUX.ngc OEXP01_MUX.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OEXP01_MUX_map.ncd OEXP01_MUX.ngd OEXP01_MUX.pcf 
+par -w -intstyle ise -ol high -mt off OEXP01_MUX_map.ncd OEXP01_MUX.ncd OEXP01_MUX.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml OEXP01_MUX.twx OEXP01_MUX.ncd -o OEXP01_MUX.twr OEXP01_MUX.pcf -ucf Exp02.ucf 
+bitgen -intstyle ise -f OEXP01_MUX.ut OEXP01_MUX.ncd 

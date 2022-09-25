@@ -1,0 +1,4 @@
+sch2hdl,-sympath,D:/v1.6.1/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,D:/v1.6.1/Framework.vf,-w,D:/v1.6.1/Framework.sch
+sch2hdl,-sympath,D:/v1.6.1/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,D:/v1.6.1/SCPU.vf,-w,D:/v1.6.1/SCPU.sch
+sch2hdl,-sympath,D:/v1.6.1/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,D:/v1.6.1/Framework.vf,-w,D:/v1.6.1/Framework.sch
+sch2hdl,-sympath,D:/v1.6.1/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,D:/v1.6.1/SCPU.vf,-w,D:/v1.6.1/SCPU.sch

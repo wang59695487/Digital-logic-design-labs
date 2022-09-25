@@ -1,0 +1,10 @@
+[Inputs]
+lock
+clear
+=D[7:0]=
+[Outputs]
+=Q[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel lock
+

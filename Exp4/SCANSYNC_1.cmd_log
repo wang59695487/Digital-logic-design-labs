@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym SCANSYNC_1 E:/test_1/logicproject/7/test1/Exp07-MUX/SCANSYNC_1.sch E:/test_1/logicproject/7/test1/Exp07-MUX/SCANSYNC_1.sym 

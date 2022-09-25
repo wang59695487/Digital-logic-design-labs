@@ -1,0 +1,12 @@
+[Inputs]
+=a[31:0]=
+=b[31:0]=
+=c[31:0]=
+=d[31:0]=
+=s[1:0]=
+[Outputs]
+o
+[BiDir]
+[ATTRIBUTES]
+VeriModel MUX4T1_32
+

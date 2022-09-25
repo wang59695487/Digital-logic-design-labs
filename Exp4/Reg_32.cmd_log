@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/test_1/logicproject/11/Top_Fsm/Reg_32.v -lang verilog -prj Exp07-MUX -o Reg_32.spl -module Reg_32 -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w Reg_32.spl E:/test_1/logicproject/11/Top_Fsm/Reg_32.sym 

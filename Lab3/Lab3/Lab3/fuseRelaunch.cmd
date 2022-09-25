@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/Controller_Test_isim_beh.exe" -prj "F:/ComputerOrganism Program/Lab3-WJZ-1/OExp03-IP2SOC_wjz/Controller_Test_beh.prj" "work.Controller_Test" "work.glbl" 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Framework_ALU\framework.ncd
+OUTFILE=D:\Framework_ALU\framework.bit
+FAMILY=Kintex7
+PART=xc7k160t-2lffg676
+WORKINGDIR=D:\Framework_ALU
+LICENSE=WebPack
+USER_INFO=__0_0_0

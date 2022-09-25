@@ -1,0 +1,199 @@
+update symbols Anti_jitter
+add instance Anti_jitter 1232 560 R0 -sn=1
+BeginGroup
+add wire 1232 336 1200 336 -sn=1
+add iomarker 1200 336 0 Input Unknown -sn=1
+add wire 1232 400 1200 400 -sn=1
+add iomarker 1200 400 0 Input Unknown -sn=1
+add wire 1232 464 1200 464 -sn=1
+add iomarker 1200 464 0 Input Unknown -sn=1
+add wire 1232 528 1200 528 -sn=1
+add iomarker 1200 528 0 Output Unknown -sn=1
+EndGroup
+undo
+select figure at 1514 377 8 -branches -sn=1
+move instance at 1232 560 to 784 672 R0 -keepConn -sn=1
+select figure at 693 551 8 -branches -sn=1
+add autowire 736 384 784 384 8 -sn=1
+add autowire 736 448 784 448 8 -sn=1
+BeginGroup
+add wire 784 512 752 512 -sn=1
+add iomarker 752 512 0 Input Unknown -sn=1
+add wire 784 576 752 576 -sn=1
+add iomarker 752 576 0 Input Unknown -sn=1
+add wire 784 640 752 640 -sn=1
+add iomarker 752 640 0 Output Unknown -sn=1
+EndGroup
+select figure at 687 520 8 -branches -sn=1
+select figure at 687 520 8 -branches -all -sn=1
+set attr NA|XLXN_5(3:0)|Name value K_COL(3:0) -sn=1
+select figure at 511 870 8 -branches -sn=1
+select figure at 680 568 8 -branches -sn=1
+select figure at 680 568 8 -branches -all -sn=1
+set attr NA|XLXN_6(15:0)|Name value SW(15:0) -sn=1
+set attr NA|SW(15:0)|Name value XLXN_6(15:0) -sn=1
+select figure at 674 584 8 -branches -sn=1
+select figure at 674 584 8 -branches -all -sn=1
+set attr NA|XLXN_6(15:0)|Name value SW(15:0) -sn=1
+set attr NA|SW(15:0)|Name value XLXN_6(15:0) -sn=1
+select figure at 751 860 8 -branches -sn=1
+select figure at 651 570 8 -branches -sn=1
+select figure at 651 570 8 -branches -all -sn=1
+set attr NA|XLXN_6(15:0)|Name value SW(15:0) -sn=1
+select figure at 670 739 8 -branches -sn=1
+select figure at 639 630 8 -branches -sn=1
+select figure at 639 630 8 -branches -all -sn=1
+set attr NA|XLXN_7(4:0)|Name value K_ROW(4:0) -sn=1
+select figure at 653 921 8 -branches -sn=1
+select figure at 674 490 8 -branches -sn=1
+select figure at 660 488 8 -branches -sn=1
+select figure at 657 486 8 -branches -all -sn=1
+move iomarker at 752 512 to 256 512 R180 -keepConn -sn=1
+select figure at 668 572 8 -branches -sn=1
+move iomarker at 752 576 to 224 576 R180 -keepConn -sn=1
+select figure at 689 653 8 -branches -sn=1
+move iomarker at 752 640 to 256 640 R180 -keepConn -sn=1
+add autowire 672 384 912 1232 8 -sn=1
+add autowire 1248 448 912 1296 8 -sn=1
+select figure at 1209 1398 8 -branches -sn=1
+move wire at 848 1392 1360 1392 to 848 752 1360 752 -keepConn -sn=1
+BeginGroup
+add wire 848 2112 816 2112 -sn=1
+add iomarker 816 2112 0 Input Unknown -sn=1
+add wire 848 2208 816 2208 -sn=1
+add iomarker 816 2208 0 Input Unknown -sn=1
+add wire 848 2304 816 2304 -sn=1
+add iomarker 816 2304 0 Input Unknown -sn=1
+EndGroup
+select figure at 726 2112 8 -branches -sn=1
+select figure at 726 2112 8 -branches -all -sn=1
+set attr NA|XLXN_10|Name value Div(0) -sn=1
+delete selection -sn=1
+select figure at 470 2108 8 -branches -sn=1
+select figure at 779 2110 8 -branches -sn=1
+undo
+undo
+select figure at 785 2114 8 -branches -sn=1
+undo
+select figure at 783 2119 8 -branches -sn=1
+delete selection -sn=1
+select figure at 271 1595 8 -branches -sn=1
+add iomarker 816 2112 0 Unknown Unknown -sn=1
+select figure at 783 2106 8 -branches -sn=1
+select figure at 783 2106 8 -branches -all -sn=1
+move iomarker at 816 2112 to 304 2112 R180 -keepConn -sn=1
+select figure at 688 2178 8 -branches -sn=1
+move iomarker at 816 2208 to 416 2208 R180 -keepConn -sn=1
+select figure at 739 2310 8 -branches -sn=1
+move iomarker at 816 2304 to 400 2288 R180 -keepConn -sn=1
+select figure at 321 2278 8 -branches -sn=1
+select figure at 321 2278 8 -branches -all -sn=1
+move iomarker at 400 2288 to 416 2304 R180 -keepConn -sn=1
+select figure at 268 2123 8 -branches -sn=1
+select figure at 268 2120 8 -branches -all -sn=1
+delete selection -sn=1
+select figure at 334 2225 8 -branches -sn=1
+select figure at 326 2223 8 -branches -sn=1
+select figure at 326 2223 8 -branches -all -sn=1
+set attr NA|XLXN_11(3:0)|Name value button_out(3:0) -sn=1
+set attr NA|button_out(3:0)|Name value XLXN_11(3:0) -sn=1
+delete selection -sn=1
+select figure at 312 2211 8 -branches -sn=1
+select figure at 312 2211 8 -branches -all -sn=1
+set attr NA|XLXN_11(3:0)|Name value button_out(3:0) -sn=1
+select figure at 243 2413 8 -branches -sn=1
+select figure at 304 2303 8 -branches -sn=1
+select figure at 304 2303 8 -branches -all -sn=1
+set attr NA|XLXN_12(4:0)|Name value SW(7:5),SW(1:0) -sn=1
+delete selection -sn=1
+add autowire 1248 512 1504 336 8 -sn=1
+add iomarker 1504 336 0 Unknown Unknown -sn=1
+select figure at 1512 293 8 -branches -sn=1
+select figure at 1512 293 8 -branches -all -sn=1
+select figure at 1507 301 8 -branches -sn=1
+select figure at 1507 301 8 -branches -all -sn=1
+delete selection -sn=1
+select figure at 1515 296 8 -branches -sn=1
+select figure at 1515 296 8 -branches -all -sn=1
+select figure at 1429 796 8 -branches -sn=1
+select figure at 1512 310 8 -branches -sn=1
+select figure at 1415 810 8 -branches -sn=1
+select figure at 1501 287 8 -branches -sn=1
+delete selection -sn=1
+select figure at 1750 1086 8 -branches -sn=1
+select figure at 1515 423 8 -branches -sn=1
+add iomarker 1504 336 0 Unknown Unknown -sn=1
+select figure at 1507 287 8 -branches -sn=1
+select figure at 1507 287 8 -branches -all -sn=1
+select figure at 1487 243 8 -branches -sn=1
+select figure at 1487 243 8 -branches -all -sn=1
+select figure at 1429 782 8 -branches -sn=1
+select figure at 1523 292 8 -branches -sn=1
+select figure at 1523 292 8 -branches -all -sn=1
+name branch at 1248 512 8 button_out(3:0) -sn=1
+delete selection -sn=1
+select figure at 1698 464 8 -branches -sn=1
+add autowire 1248 640 1536 640 8 -sn=1
+add iomarker 1536 640 0 Unknown Unknown -sn=1
+select figure at 1619 643 8 -branches -sn=1
+select figure at 1619 643 8 -branches -all -sn=1
+set attr NA|XLXN_14(15:0)|Name value SW_OK(15:0) -sn=1
+delete selection -sn=1
+select figure at 1395 2044 8 -branches -sn=1
+add instance vcc 2448 1280 R0 -sn=1
+add instance gnd 2496 1920 R0 -sn=1
+add autowire 2512 1280 2752 1360 8 -sn=1
+select figure at 2704 1361 8 -branches -sn=1
+select figure at 2704 1361 8 -branches -all -sn=1
+set attr NA|XLXN_15|Name value V5 -sn=1
+select figure at 2279 1509 8 -branches -sn=1
+add instance buf 2864 1392 R0 -sn=1
+add autowire 2752 1360 2864 1360 8 -sn=1
+select figure at 2532 1347 8 -branches -sn=1
+select figure at 2551 1376 8 -branches -sn=1
+select figure at 2532 1357 8 -branches -sn=1
+select figure at 2532 1357 8 -branches -all -sn=1
+select figure at 2556 1787 8 -branches -sn=1
+select figure at 2556 1787 8 -branches -all -sn=1
+select figure at 2861 1166 8 -branches -sn=1
+select all in 2861 1166 3525 1982 -branches -enclosed -sn=1
+select figure at 2723 1371 8 -branches -sn=1
+select figure at 2699 1366 8 -branches -sn=1
+delete selection -sn=1
+BeginGroup
+add wire 2512 1280 2512 1312 -sn=1
+add iomarker 2512 1312 0 Output Unknown -sn=1
+EndGroup
+select figure at 2522 1409 8 -branches -sn=1
+select figure at 2522 1409 8 -branches -all -sn=1
+set attr NA|XLXN_16|Name value V5 -sn=1
+delete selection -sn=1
+add autowire 2512 1312 2864 1360 8 -sn=1
+select figure at 2498 1622 8 -branches -sn=1
+BeginGroup
+add wire 3088 1360 3120 1360 -sn=1
+add iomarker 3120 1360 0 Output Unknown -sn=1
+EndGroup
+select figure at 3204 1360 8 -branches -sn=1
+select figure at 3204 1360 8 -branches -all -sn=1
+set attr NA|XLXN_18|Name value Buzzer -sn=1
+BeginGroup
+add wire 2560 1792 2560 1760 -sn=1
+add iomarker 2560 1760 0 Output Unknown -sn=1
+EndGroup
+select figure at 2554 1705 8 -branches -sn=1
+select figure at 2554 1705 8 -branches -all -sn=1
+set attr NA|XLXN_19|Name value G0 -sn=1
+select figure at 2704 1695 8 -branches -sn=1
+select figure at 2544 1742 8 -branches -sn=1
+delete selection -sn=1
+select figure at 2929 1911 8 -branches -sn=1
+BeginGroup
+add wire 1232 2240 1264 2240 -sn=1
+add iomarker 1264 2240 0 Output Unknown -sn=1
+EndGroup
+select figure at 1350 2233 8 -branches -sn=1
+select figure at 1350 2233 8 -branches -all -sn=1
+set attr NA|XLXN_20(2:0)|Name value LED(2:0) -sn=1
+move iomarker at 1264 2240 to 2848 2240 R0 -keepConn -sn=1
+select figure at 2717 2593 8 -branches -sn=1

@@ -1,0 +1,4 @@
+vhdtdtfi -lib work E:/test_1/logicproject/7/test/Exp07-MUX/InputT32HDL.v -lang verilog -prj Exp07-MUX -o InputT32HDL.spl -module InputT32HDL -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 InputT32HDL.spl E:/test_1/logicproject/7/test/Exp07-MUX/InputT32HDL.sym 
+vhdtdtfi -lib work E:/test_1/logicproject/11/Top_Fsm/InputT32HDL.v -lang verilog -prj Exp07-MUX -o InputT32HDL.spl -module InputT32HDL -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w InputT32HDL.spl E:/test_1/logicproject/11/Top_Fsm/InputT32HDL.sym 

@@ -1,0 +1,9 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+ERROR:sim - Unable to find G:/Exp09-12(Integrated Experiment1?SCPU
+ERROR:sim -    Design)/Exp09/coe/MCPU_DEMO9.coe
+ERROR:sim -    Coregen is looking for G:\Exp09-12(Integrated Experiment1?SCPU
+ERROR:sim -    Design)\Exp09\coe\MCPU_DEMO9.coe
+Cancelled executing Tcl generator.
+Wrote CGP file for project 'RAM_B'.

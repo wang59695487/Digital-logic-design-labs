@@ -1,0 +1,4 @@
+vhdtdtfi -lib work E:/test_1/logicproject/7/test/Exp07-MUX/clkdiv.v -lang verilog -prj Exp07-MUX -o clkdiv.spl -module clkdiv -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 clkdiv.spl E:/test_1/logicproject/7/test/Exp07-MUX/clkdiv.sym 
+vhdtdtfi -lib work E:/test_1/logicproject/7/test/Exp07-MUX/clkdiv.v -lang verilog -prj Exp07-MUX -o clkdiv.spl -module clkdiv -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 clkdiv.spl E:/test_1/logicproject/7/test/Exp07-MUX/clkdiv.sym 

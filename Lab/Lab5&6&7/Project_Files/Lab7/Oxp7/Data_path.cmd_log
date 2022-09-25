@@ -1,0 +1,6 @@
+sch2sym -intstyle ise -family kintex7 -refsym Data_path G:/Oxp7/Data_path.sch G:/Oxp7/Data_path.sym 
+sch2sym -intstyle ise -family kintex7 -refsym Data_path G:/Oxp7/Data_path.sch G:/Oxp7/Data_path.sym 
+sch2sym -intstyle ise -family kintex7 -refsym Data_path G:/Oxp7/Data_path.sch G:/Oxp7/Data_path.sym 
+sch2sym -intstyle ise -family kintex7 -refsym Data_path G:/Oxp7/Data_path.sch G:/Oxp7/Data_path.sym 
+sch2sym -intstyle ise -family kintex7 -refsym Data_path C:/Users/asus/Desktop/Computer_Organization/Lab/Lab5&6&7/Project_Files/Lab7/Oxp7/Data_path.sch C:/Users/asus/Desktop/Computer_Organization/Lab/Lab5&6&7/Project_Files/Lab7/Oxp7/Data_path.sym 
+sch2sym -intstyle ise -family kintex7 -refsym Data_path C:/Users/asus/Desktop/Computer_Organization/Lab/Lab5&6&7/Project_Files/Lab7/Oxp7/Data_path.sch C:/Users/asus/Desktop/Computer_Organization/Lab/Lab5&6&7/Project_Files/Lab7/Oxp7/Data_path.sym 

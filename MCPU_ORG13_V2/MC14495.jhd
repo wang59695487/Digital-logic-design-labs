@@ -1,0 +1,3 @@
+MODULE MC14495
+	SUBMODULE decoder_38
+		INSTANCE d38_inst
